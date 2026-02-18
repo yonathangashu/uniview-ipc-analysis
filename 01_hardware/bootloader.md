@@ -4,7 +4,7 @@
 
 Boot banner upon device startup:
 
-```shell
+```
 U-Boot 2020.04-00011-gddf6f040-dirty (Jun 17 2024 - 18:12:02 +0800), Build: jenkins-Compile_64位(10.188.40.119)-7385
 U-Boot code: 5C000400 -> 5C095BEC BSS: -> 5C0BD52C
 Model: AXERA AX620E_Qnand Board
@@ -28,7 +28,7 @@ uboot #
 
 Many commands available:
 
-```shell
+```
 uboot # help
 ?         - alias for 'help'
 adc       - ADC sub-system

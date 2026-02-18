@@ -4,6 +4,7 @@
 
 The device was disassembled by removing three screws from the case to expose the top PCB.
 An unpopulated 4-pin header was identified in a corner of the top PCB, adjacent to the ribbon cable connecting to the bottom PCB.
+Also, noticed what seems to be a NAND flash chip labeled U2.
 
 Initial Hypothesis: Likely UART debugging interface due to pin grouping and silkscreen labeling (J4).
 
