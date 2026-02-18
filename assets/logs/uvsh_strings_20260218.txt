@@ -1,0 +1,596 @@
+root@(none):~# ls -l usr/bin/uvsh
+-rwxrwxr-x    1 1001     1001         34580 Jun 17  2024 usr/bin/uvsh
+root@(none):~# file usr/bin/uvsh
+-/bin/sh: file: not found
+root@(none):~# strings
+^C
+root@(none):~# strings usr/bin/uvsh
+/lib/ld-linux-armhf.so.3
+HLY
+libc.so.6
+fflush
+strcpy
+execl
+readdir
+sprintf
+_IO_putc
+srand
+fopen
+strncmp
+cfmakeraw
+__isoc99_sscanf
+get_current_dir_name
+signal
+strncpy
+puts
+fork
+sigfillset
+time
+unlink
+putchar
+abort
+stdin
+strpbrk
+popen
+kill
+localtime_r
+strtok
+fgets
+calloc
+strlen
+memset
+strstr
+__errno_location
+tcsetattr
+chdir
+memcmp
+rand_r
+putenv
+stdout
+memcpy
+fclose
+malloc
+raise
+tzset
+opendir
+stderr
+system
+fscanf
+__fxstat
+fileno
+pclose
+fwrite
+fread
+sigaction
+waitpid
+strchr
+fprintf
+tcgetattr
+sleep
+fcntl
+access
+_IO_getc
+strcmp
+__libc_start_main
+stpcpy
+snprintf
+free
+__gmon_start__
+GLIBC_2.7
+GLIBC_2.4
+h3hA
+x@!FO
+x`!FO
+]	+'
+!*F-
+(FHN
+:F1F
+,F:F
+Q F1F
+)F F
+l !F
+:F1F(F
+)F@F
+:F1F(F
+)h
+49h
+l )F
+p!0F
+Sxc+9
+Zxf*
+Cx>+
+p!0F
+Da(F
+0hy`
+`8a(F
+9F F
+"+FO
+q+F F
+1F F
+3xu+|
+sxp+y
+F3FO
+0"+F
+X"+FO
+Co+`
+"Z`pG-
+9U,F
+0;T8F>!
+>!>+
+0C+0
+0H+,
+0O+(
+cx +
+ F,F
+F#F0F
+(! F
+#xl+.
+cxs++
+ `a`
+ `a`
+ aaa#
+ `a`
+ZF)F
+:iHF
+$1 F
+81 F
+T1 F
+|1 F
+$A F
+4A F
+\A F
+&(`i`
+`#x(aia+w
+&(`0Fi`
+x `a`
+&(`i`
+`#x(a0Fia+v
+&$x(`0Fi`,t
+& `a`
+&(`i`
+`(aia
+x(`i`
+&(`i`
+(aia+
+c h!o"
+x `a`#s
+ `a`
+ hi`
+%x?-2
+x`!F
+1!F(F
+&(`'y hi`
+`(a/u
+$Q F
+4Q F
+PQ F
+lQ F
+4a F
+Pa F
+cxs+
+ha F
+ta F
+|a F
+&(`i`
+`(aia
+&(` hi`
+cxs+
+`Q`B
+8p "
++1F8F
+`Tgp
+;h!Fhi
+fi`8
+41F F
+`z`;`
+D{e{n
+3{f{n
+F;nZ
+:fzh
+F;nZ
+:fzh
+#{azh
+{azh
+;izi
+`z`;`
+;h{a
+p{iZ
+za="
+p{iZ
+za="
+3;a{i
++h#`
+F	hG
+4c	d!
+x`{h
+"Za{hZi{h
+azhB
+`zhJ
+sS`zhM
+`zhE
+h[iZ
+hZi{h[
+{azh{i
+i?3zh
+x`9`;h
+{a{i7+
+;a:iH
+#{e;
+S0	+
+S003
+S0W3
+S0	+
+S003
+S0W3
+3{`{m
+3{e{m
+p{h ;
+x`9`{h
+h{e{h[h;e{h
+@"9h
+D{e{mO
+sc{ezm;m
+D{ezm;m
+D;e;mO
+#;e:m
+D;e:m
+D{e{mO
+sc{ezm;m
+D{ezm;m
+D;e;mO
+#;e:m
+D;e:m
+D{e{mO
+sc{ezm;m
+D{ezm;m
+$CO;
+D;e;mO
+#;e:m
+D;e:m
+D{e{mO
+sc{ezm;m
+D{ezm;m
+D;e;mO
+#;e:m
+D;e:m
+D{e{mO
+c{ezm;m
+D{ezm
+D;e;mO
+33;e:m
+D;e:m
+D{e{mO
+c{ezm;m
+D{ezm
+D;e;mO
+33;e:m
+D;e:m
+D{e{mO
+c{ezm;m
+D{ezm
+D;e;mO
+33;e:m
+D;e:m
+D{e{mO
+c{ezm;m
+D{ezm
+D;e;mO
+33;e:m
+D;e:m
+c{e{mO
+3s{ezm;m
+D{ezm;mZ@
+l{mZ@;mZ@{k
+lZ@{mZ@;l
+D;e;mO
+s#;e:m
+D;e:m
+D{e{mO
+3s{ezm;m
+D{ezm;mZ@
+l{mZ@;mZ@{j
+lZ@{mZ@;k
+D;e;mO
+s#;e:m
+D;e:m
+D{e{mO
+3s{ezm;m
+D{ezm;mZ@
+l{mZ@;mZ@{i
+lZ@{mZ@;j
+D;e;mO
+s#;e:m
+D;e:m
+D{e{mO
+3s{ezm;m
+D{ezm;mZ@
+l{mZ@;mZ@{l
+lZ@{mZ@;i
+D;e;mO
+s#;e:m
+D{e{mO
+c{ezm;m
+C;mZ@{j
+C{mZ@;l
+D;e;mO
+#;e:m
+D{e{mO
+c{ezm;m
+C;mZ@{i
+C{mZ@;k
+D;e;mO
+#;e:m
+D{e{mO
+c{ezm;m
+C;mZ@{l
+C{mZ@;j
+D;e;mO
+#;e:m
+D{e{mO
+c{ezm;m
+C;mZ@{k
+C{mZ@;i
+D;e;mO
+#;e:m
+D;e{h
+#;a3
+3{a;i
+3;a:i{h
+#;a&
+3{a;i
+3;a:i{h
+3{azi{h
+3{azi{h
+{pGJ
+@BpG
+@BpG8
+@BpG
+;JFAF8F
+uvshell.c
+NULL != pstCmdElement
+Assertion fail! %s,%s,line=%d
+%d.%d.%d.%d
+%d.%d.%d.%d
+check string NULL
+check len[%d] > src len[%d]
+.cal
+;<&|$`
+/tmp/manuinfo.txt
+/tmp/
+display device manuinfo |grep DEVICE_SERIAL_NUMBER
+DEVICE_SERIAL_NUMBER:%s
+The transformation from UTC time to localtime failed!
+%04d%02d%02d
+ Please input password:
+/config/Factor
+/proc/driver/factor
+ Check error, please login again, %lu Times Left
+15bee25652ddf1c9026185487cf7d76d
+update
+/usr/bin/update
+systemreport
+/program/bin/systemreport
+/bin/ls
+PATH
+No match
+/tmp/bin/update
+systemreport.sh
+/program/bin/systemreport.sh
+mountnfs
+/program/bin/mountnfs.sh
+display
+/usr/bin/display
+ifconfig
+/sbin/ifconfig
+route
+/sbin/route
+ping
+/bin/ping
+_hide
+/program/bin/_hide
+resetconfig
+/program/bin/resetconfig.sh
+setconfig.sh
+/program/bin/setconfig.sh
+killall
+/usr/bin/killall
+date
+/bin/date
+catmwarestate
+/bin/cat
+catfpn
+ECHO
+tcpdump
+tcpdump.sh
+sdformat
+manuinfotool
+tail
+/usr/bin/tail
+/sbin/reboot
+autotest
+/program/bin/autotest
+mactool
+/program/bin/mactool
+factorymode
+/program/bin/factorymode
+help
+    %s
+pumamanuinfo
+downmanuinfo
+runtime
+updateuboot
+/bin/updateuboot
+checksysready
+setrsa
+/program/bin/setrsa
+getrsa
+/program/bin/getrsa
+getauthdata
+/program/bin/getauthdata
+setlicense
+/program/bin/setlicense
+getlicense
+/program/bin/getlicense
+getudid
+/program/bin/getudid
+download_logo
+cleancfg
+/program/bin/cleancfg.sh
+iperf
+/program/bin/iperf
+downloadsetup
+/bin/ps
+cleanlogo
+lenscal
+downloadlensinfo
+displaylensinfo
+clearlensinfo
+downstitchcal
+uploadstitchcal
+setmonocularid
+secureboot
+/program/bin/secure_boot
+DIRECTORY NOT FOUND
+NOT A DIRECTORY NAME
+YOU DO NOT HAVE RIGHT TO ACCESS
+SOME ERROR HAPPENED IN CHDIR
+%d  %d  %s	%s
+No jobs!
+Running
+stopped
+[%d]	%s	%s
+running
+Error: open %s fail.
+mount -o remount,rw /calibration
+cd /calibration; pwd;
+%s tftp -pl %s %s -b 8192
+mount -o remount,ro /calibration
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/bin/X11:/usr/local/bin:/usr/local/sbin:/program/bin:/tmp/bin
+LD_LIBRARY_PATH=/program/lib
+PS1=\u@\h:\w$
+TERM=vt102
+tcsetattr error!
+logout
+exit
+User
+%s@%s>
+/tmp/.uvsh_history
+    Not Matched Cmd!
+%s@%s>
+write error
+not enough memory, malloc for temp(512byte) fail exit
+Bye bye!
+Not support cmd yet!
+/bin/sh
+/tmp/stateofmware
+/calibration/stateoffpn
+cat /proc/driver/eeprom
+ls /config/config*
+echo -c 6 > /proc/driver/eeprom
+mwareserver&
+/var/log/
+not supported yet
+/program/bin/pumamanuinfo
+tftp -gr manuinfo.txt %s
+eg: downmanuinfo 192.168.1.13
+version %d.%d
+cat /proc/driver/runtime
+cd /program/www/ActiveX ;pwd ;tftp -pl Setup.exe %s -b 8192
+eg: downloadsetup 192.168.1.13
+cat /proc/interrupts | grep %s
+cat /proc/interrupts
+eg: catinterrupts xxx
+ /calibration
+ /config
+cat /proc/driver/gpiodev_info
+mount -o remount,rw /program
+cd /program/bin;mv reboot.sh reboot.s
+mount -o remount,ro /program
+cd /program/bin;mv reboot.s reboot.sh
+cat /proc/driver/jed_motor
+echo
+>/proc/driver/motor
+eg: contorlmotor xxx xxx ...
+sh /program/bin/checksysready.sh
+/tmp/dome_mwarestate
+/calibration/logo.png
+mount -oremount,rw /calibration/
+mount -oremount,ro /calibration/
+test result: pass
+down
+%s tftp -gr KeyPoint.txt %s -b 8192 ;tftp -gr lens33.dat %s -b 8192
+delet
+cd %s ;mv KeyPoint%s KeyPoint%s ;mv lens33%s lens33%s
+.ivl
+.dat
+/config
+resume
+cd /calibration ;md5sum lens33.dat
+cd /calibration ;md5sum KeyPoint.txt
+lens33.dat
+cat /calibration/lens33.dat
+KeyPoint.txt
+cat /calibration/KeyPoint.txt
+no such lesscal files!
+infoBL
+cd /calibration ;md5sum  KeyPoint.txt
+eg: lenscal info/delet/resume or up/down 192.168.0.13
+df | grep calibration | cut -d '%' -f 2
+popen fail.
+calibration
+cd /calibration; tftp -gr logo.png %s -b 8192
+md5sum /calibration/logo.png | cut -d ' ' -f 1
+eg: download_logo 192.168.1.13
+cd /calibration; tftp -gr lens.xml %s
+test result: pass
+eg: downloadlensinfo 192.168.0.20
+/calibration/lens.xml
+md5sum /calibration/lens.xml | cut -d ' ' -f 1
+popen failed!
+MD5:%s
+lens files not exist!
+/calibration/lens.tar
+rm /calibration/lens.*
+file format is not .cal
+ip format error, check it
+cd /calibration; tftp -gr %s %s -b 8192
+/calibration/%s
+md5sum /calibration/%s
+test result:pass
+file %s not exit
+test result:fail
+usage: downstitchcal name.cal ip
+/program/bin/%s
+cd /program/bin; tftp -pl %s %s -b 8192
+md5sum /program/bin/%s
+usage: uploadstitchcal name.cal ip
+monocular id[%s] not 1~4 failed
+!!!monocular id[%u]
+monocular id[%u] not 1~4 failed
+echo -n %u > /config/panorama_monocular_id
+usage: setmonocularid 1
+cc=	
+ n;^
+Qkkbal
+i]Wb
+9a&g
+MGiI
+wn>Jj
+#.zf
++o*7
+-ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+%04X
+%04x
+invalid parameter[%p][%p]
+%4u%2u%2u
+sscanf failed! input:%s year:%u month:%u day:%u
+invalid param Month:%u
+invalid param Day:%u
+%s%08u
+%s%s%s
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+---pucEncData[%s]
+uniview
+QdCpBsjP_R301
+GCC: (Linaro GCC 7.5-2019.12) 7.5.0
+aeabi

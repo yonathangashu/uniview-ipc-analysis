@@ -1,0 +1,53 @@
+# Restricted Shell (uvsh) Analysis
+
+## Binary Metadata
+
+By inspecting the strings in the `usr/bin/uvsh` binary the following was determined:
+
+Path:
+usr/bin/uvsh
+
+Permissions:
+-rwxrwxr-x 1 1001 1001 34580 Jun 17 2024
+
+Architecture:
+ARM (linked against ld-linux-armhf.so.3)
+
+Compiled with:
+GCC 7.5.0 (Linaro)
+
+Indicates vendor-owned executable.
+
+The full results of `strings usr/bin/uvsh` are available in assets/logs/restricted_analysis_20260218.txt
+
+## Observed Characteristics
+
+- Custom developer-written shell (uvshell.c referenced in strings)
+- Root login configured to use this shell
+- Likely command whitelist implementation
+
+## Exposed Commands
+
+- ifconfig
+- route
+- ping
+- tcpdump
+- updateuboot
+- secureboot
+- setrsa
+- getrsa
+
+## Some Interesting Functionality
+
+Binary imports:
+
+- system()
+- popen()
+- fork()
+- execl()
+
+Presence of `/bin/sh`string
+
+This suggests possible internal shell invocation or command execution pathways through the vendor-owned shell.
+
+Further dynamic analysis would be required to confirm.
