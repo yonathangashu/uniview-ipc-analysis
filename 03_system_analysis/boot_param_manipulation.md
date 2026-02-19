@@ -49,6 +49,12 @@ uid=0(root) gid=0(root)
 
 Full filesystem access available.
 
+## Restriction
+
+Achieving this root shell through the U-Boot interrupt essentially provides access to a recover environment.
+The camera software is not running and the program partition has not yet been mounted.
+However, utilizing this root shell it may be possible to modify `init.d` to achieve a root shell on the device during normal boot with full firmware running.
+
 ## Security Implications
 
 The ability to modify `bootargs` through the unauthenticated U-Boot shell poses a significant security concern.
