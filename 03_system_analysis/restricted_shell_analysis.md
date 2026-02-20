@@ -37,17 +37,23 @@ The full results of `strings usr/bin/uvsh` are available in assets/logs/restrict
 - setrsa
 - getrsa
 
-## Some Interesting Functionality
+## Security Implications
 
-Binary imports:
+### Default Credentials
 
-- system()
-- popen()
-- fork()
-- execl()
+The root account successfully authenticated using the password `uniview`.
+It is currently unverified whether this password is unique per device, generated during manufacturing, or consistent across all devices of this model.
+Combined with exposed UART access this allows immediate authenticated login to the restricted shell without any exploitation.
 
-Presence of `/bin/sh`string
+### Potential Shell Escape Surface
 
-This suggests possible internal shell invocation or command execution pathways through the vendor-owned shell.
+The uvsh binary imports `system()`, `popen()`, `fork()`, and `execl()`, and contains the string `/bin/sh`.
+This suggests internal shell invocation pathways exist within the binary.
+The presence of these imports in a restricted shell binary warrants further dynamic analysis.
+If user-controlled input reaches these functions without strict sanitization, command injection or shell escape may be possible.
 
-Further dynamic analysis would be required to confirm.
+### Further Analysis
+
+Dynamic analysis of uvsh is needed to confirm whether shell escape is feasible.
+Candidates to test are commands that take user-supplied arguments: `ping`, `tcpdump`, `ifconfig`.
+Classic escape attempts via argument injection could be worth trying.
