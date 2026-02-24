@@ -21,6 +21,15 @@ No unauthorized systems were accessed.
 - UART interface identified and validated
 - U-Boot shell access obtained
 - Boot logs captured
+- Single-user mode boot achieved via modified `bootargs`
+- Root shell access obtained on live firmware
+- Default credentials identified and validated
+- Restricted shell (`uvsh`) analyzed (binary inspection, command enumeration)
+- Shell escape achieved via writable `/program` partition
+- Persisitent root command execution confirmed via writable init scripts on `/program`
+- `dropbear` deployed and configured for key-based SSH access
+- Remote root SSH access validated over LAN
+- Network attack surface enumerated: HTTP(80), RTSP(554), and proprietary middleware identified
 
 ## Acknowledgements
 
