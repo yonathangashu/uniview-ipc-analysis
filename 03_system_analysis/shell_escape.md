@@ -12,9 +12,9 @@ Because these scripts execute with root privileges and are not integrity-protect
 
 ## Prequisites
 
-- Physical UART access (see uart_analysis.md)
-- Single user mode root shell (see boot_param_manipulation.md)
-- Program partition mounted (see mnt_prgm_part.sh)
+- Physical UART access (see `uart_analysis.md`)
+- Single user mode root shell (see `boot_param_manipulation.md`)
+- Program partition mounted (see `mnt_prgm_part.sh`)
 
 ## Method
 

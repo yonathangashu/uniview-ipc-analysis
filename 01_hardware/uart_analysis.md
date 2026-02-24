@@ -29,7 +29,7 @@ Achieved successful connection and initial power-on output, confirming the initi
 
 Upon powering the device on, serial output displayed U-boot as the bootloader and identified the exact board model.
 
-See full logs here: assets/logs/bootlog_capture_20260217.txt
+See full logs here: `assets/logs/bootlog_capture_20260217.txt`
 
 ## Security Implications
 

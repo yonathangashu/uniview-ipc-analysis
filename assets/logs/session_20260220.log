@@ -1,0 +1,2136 @@
+V3N2C0N2C0RS
+
+U-Boot 2020.04-00011-gddf6f040-dirty (Jun 17 2024 - 18:12:02 +0800), Build: jenkins-Compile_64‰Ωç(10.188.40.119)-7385
+
+U-Boot code: 5C000400 -> 5C095BEC  BSS: -> 5C0BD52C
+Model: AXERA AX620E_Qnand Board
+DRAM:  Monitor len: 000BD12C
+Ram size: 10000000
+Ram top: 50000000
+TLB table from 4fff0000 to 4fff4000
+Reserving 756k for U-Boot at: 4ff32000
+Reserving 3584k for malloc() at: 4fbb2000
+Reserving 96 Bytes for Board Info at: 4fbb1fa0
+Reserving 216 Bytes for Global Data at: 4fbb1ec8
+Reserving 14400 Bytes for FDT at: 4fbae688
+
+RAM Configuration:
+Bank #0: 40000000 
+DRAM:  256 MiB
+New Stack Pointer is: 4fbae660
+Relocation Offset is: f3f31c00
+Relocating to 4ff32000, new gd at 4fbb1ec8, sp at 4fbae660
+WARNING: Caches not enabled
+ax_adc_probe
+No available THERMAL device
+MMC:   mmc@1B40000: 0, mmc@104E0000: 1
+NAND:  128 MiB
+Loading Environment from NAND... *** Warning - bad CRC, using default environment
+
+Loading Environment from SPI Flash... unrecognized JEDEC id bytes: ff, a1, e4
+uclass_get_device: Invalid bus 0 (err=-2)
+In:    serial
+Out:   serial
+Err:   serial
+Current chip type: AX620Q_CHIP
+Current board type: AX620Q_LP4_DEMO_V1_1
+boot_reason:0x0
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+selecting mode MMC legacy (freq : 0 MHz)
+Card did not respond to voltage select!
+mmc_init: -95, time 25
+no sd card
+enter normal boot mode
+boot_info_data.mode = 7
+Net:   
+Warning: ethernet@0x104C0000 (eth0) using random MAC address - 72:01:e5:a1:1f:b7
+eth0: ethernet@0x104C0000  
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+module_get_macaddr_test
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+module_get_macaddr_test
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+Detected MACID:e4:f1:4c:77:66:ba
+Detected ETH1 MACID:e4:f1:4c:77:66:ba
+Press Ctrl+B to abort autoboot in 2 seconds
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+ax_shutdown_ephy:0x410021d1
+enter do_axera_boot
+reading kernel image size 0x700000 from spi nand flash ...
+bondopt secureboot bit is enable:1, key_bits:2048
+CACHE: Misaligned operation at range [4fbadb4c, 4fbadcd8]
+total kernel image size = 6151640
+>>> * kernel image verify success! * <<< 
+header_info.blk_num=17, isize=6151640, osize=8629099, tile_cnt=12, last_tile_size=474568
+boot cmd is :bootm 0x4e000000#conf-1
+## Loading kernel from FIT Image at 4e000000 ...
+   Using 'conf-1' configuration
+   Trying 'kernel' kernel subimage
+     Description:  Axera Linux kernel
+     Type:         Kernel Image
+     Compression:  uncompressed
+     Data Start:   0x4e0000e4
+     Data Size:    8485640 Bytes = 8.1 MiB
+     Architecture: ARM
+     OS:           Linux
+     Load Address: 0x40008000
+     Entry Point:  0x40008000
+   Verifying Hash Integrity ... OK
+## Loading fdt from FIT Image at 4e000000 ...
+   Using 'conf-1' configuration
+   Trying 'fdt-1' fdt subimage
+     Description:  Flattened Device Tree blob
+     Type:         Flat Device Tree
+     Compression:  uncompressed
+     Data Start:   0x4e817c9c
+     Data Size:    141709 Bytes = 138.4 KiB
+     Architecture: ARM
+     Load Address: 0x42008000
+   Verifying Hash Integrity ... OK
+   Loading fdt from 0x4e817c9c to 0x42008000
+   Booting using the fdt blob at 0x42008000
+   Loading Kernel Image
+   Using Device Tree in place at 42008000, end 4202d98c
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.19.125 (jenkins@root123) (gcc version 7.5.0 (Linaro GCC 7.5-2019.12)) #1 SMP PREEMPT Mon Jun 17 18:12:19 CST 2024
+[    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=50c5383d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: axera,ax620e
+[    0.000000] ENC:0302C5TP;SEN:0302C4XQ;LENS:4801C0G2
+[    0.000000] PROTOTYPE_NAME:IPC3624LE-ADF28K-WP
+[    0.000000] chip type: 0x1
+[    0.000000] memory total: 0x10000000, Media: 0x9000000
+[    0.000000] earlycon: uart8250 at MMIO32 0x04880000 (options '')
+[    0.000000] bootconsole [uart8250] enabled
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 28672
+[    0.000000]   Normal zone: 224 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 28672 pages, LIFO batch:7
+[    0.000000] percpu: Embedded 18 pages/cpu s44236 r8192 d21300 u73728
+[    0.000000] pcpu-alloc: s44236 r8192 d21300 u73728 alloc=18*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 28448
+[    0.000000] Kernel command line: mem=112M console=ttyS0,115200n8 loglevel=8 earlycon=uart8250,mmio32,0x4880000 board_id=0,boot_reason=0x0 root=/dev/axramdisk rw rootfstype=ext2 init=/linuxrc mtdparts=spi4.0:1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 104156K/114688K available (3967K kernel code, 222K rwdata, 1384K rodata, 2516K init, 396K bss, 10532K reserved, 0K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xc7800000 - 0xff800000   ( 896 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xc7000000   ( 112 MB)
+[    0.000000]     modules : 0xbf800000 - 0xc0000000   (   8 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (3969 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (2516 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 223 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 397 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000005] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.008019] Switching to timer-based delay loop, resolution 41ns
+[    0.016614] Console: colour dummy device 80x30
+[    0.021089] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=120000)
+[    0.031462] pid_max: default: 32768 minimum: 301
+[    0.036180] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.042810] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.050260] CPU: Testing write buffer coherency: ok
+[    0.055393] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.091155] Setting up static identity map for 0x40008240 - 0x40008278
+[    0.107720] rcu: Hierarchical SRCU implementation.
+[    0.127750] smp: Bringing up secondary CPUs ...
+[    0.157970] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.158067] smp: Brought up 1 node, 2 CPUs
+[    0.167856] SMP: Total of 2 processors activated (96.00 BogoMIPS).
+[    0.174050] CPU: All CPU(s) started in SVC mode.
+[    0.179258] devtmpfs: initialized
+[    0.210189] random: get_random_u32 called from bucket_table_alloc+0x63/0x118 with crng_init=0
+[    0.218912] VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+[    0.226779] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 9556302231375000 ns
+[    0.236549] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.242773] pinctrl core: initialized pinctrl subsystem
+[    0.248262] NET: Registered protocol family 16
+[    0.252998] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.260735] ax_pin_init ret 0 index 7
+[    0.265979] console [pstore-1] enabled
+[    0.269735] pstore: Registered ramoops as persistent store backend
+[    0.275935] ramoops: attached 0x8000@0x41000000, ecc: 0/0
+[    0.294026] SCSI subsystem initialized
+[    0.297941] usbcore: registered new interface driver usbfs
+[    0.303490] usbcore: registered new interface driver hub
+[    0.308863] usbcore: registered new device driver usb
+[    0.314555] pps_core: LinuxPPS API ver. 1 registered
+[    0.319543] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.328704] PTP clock support registered
+[    0.332846] Advanced Linux Sound Architecture Driver Initialized.
+[    0.340037] dma_per 48a0000.dma_per: Axera DMA Peripherals Controller, 16 channels
+[    0.348047] dma:ax_dma_probe:1605: done
+[    0.352256] clocksource: Switched to clocksource arch_sys_counter
+[    0.362930] NET: Registered protocol family 2
+[    0.367761] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+[    0.375465] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.382460] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.388847] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.395272] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.401137] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.407516] NET: Registered protocol family 1
+[    0.412174] RPC: Registered named UNIX socket transport module.
+[    0.418122] RPC: Registered udp transport module.
+[    0.422844] RPC: Registered tcp transport module.
+[    0.427560] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.543151] workingset: timestamp_bits=30 max_order=15 bucket_order=0
+[    0.553743] axera_logctl_init: of_find_compatible_node 'axera,logctl' success!!!
+[    0.553750] axera_logctl_init: of_find_compatible_node config: /etc/ax_syslog.conf
+[    0.561214] axera_logctl_init: logstate:1 1 len:2
+[    0.573521] axera_logctl_init: loglevel:4 4 len:2
+[    0.578469] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.584789] NFS: Registering the id_resolver key type
+[    0.589877] Key type id_resolver registered
+[    0.594073] Key type id_legacy registered
+[    0.598118] jffs2: version 2.2. (NAND) ¬© 2001-2006 Red Hat, Inc.
+[    0.607062] io scheduler noop registered (default)
+[    0.611898] io scheduler mq-deadline registered
+[    0.616448] io scheduler kyber registered
+[    0.621689] axera-pinctrl 2300000.pinctrl: initialized pinctrl driver
+[    0.631916] ax_os_mem_init
+[    0.634786] [GZIP][D]: [     1][ax_gzipd_init : 730] enter ax_gzipd_init
+[    0.642341] Serial: 8250/16550 driver, 5 ports, IRQ sharing disabled
+[    0.649718] console [ttyS0] disabled
+[    0.653366] 4880000.ax_uart: ttyS0 at MMIO 0x4880000 (irq = 20, base_baud = 13000000) is a 16550A
+[    0.662292] console [ttyS0] enabled
+[    0.662292] console [ttyS0] enabled
+[    0.669274] bootconsole [uart8250] disabled
+[    0.669274] bootconsole [uart8250] disabled
+[    0.678852] null: module loaded
+[    0.682536] ax_ramdisk_init:can't find ramdisk device tree node
+[    0.689422] dw_spi_setup: rx_sample_dly_ns=0x6, chip->rx_sample_dly=0x3
+[    0.696199] spi_master spi4: set clk_div=0x4, speed_hz=104000000, dws->max_freq=416000000
+[    0.704397] spi_master spi4: set rx_sample_dly=0x3
+[    0.709242] spi-nand spi4.0: FudanMicroelec SPI NAND was found.
+[    0.715177] spi-nand spi4.0: 128 MiB, block size: 128 KiB, page size: 2048, OOB size: 64
+[    0.723789] 13 cmdlinepart partitions found on MTD device spi4.0
+[    0.729812] Creating 13 MTD partitions on "spi4.0":
+[    0.734702] 0x000000000000-0x000000100000 : "spl"
+[    0.740730] 0x000000100000-0x000000180000 : "ddrinit"
+[    0.746601] 0x000000180000-0x000000380000 : "uboot"
+[    0.753691] 0x000000380000-0x000000400000 : "env"
+[    0.759224] 0x000000400000-0x000000a00000 : "calibration"
+[    0.770487] 0x000000a00000-0x000000b00000 : "cliinfo"
+[    0.776821] 0x000000b00000-0x000001300000 : "config"
+[    0.789466] 0x000001300000-0x000001400000 : "runtime"
+[    0.795799] 0x000001400000-0x000001a00000 : "cfgbak"
+[    0.806600] 0x000001a00000-0x000002100000 : "kernel"
+[    0.818339] 0x000002100000-0x000002180000 : "update"
+[    0.824165] 0x000002180000-0x000007f80000 : "program"
+[    0.915255] 0x000007f80000-0x000008000000 : "other"
+[    0.921230] libphy: Fixed MDIO Bus: probed
+[    0.925394] tun: Universal TUN/TAP device driver, 1.6
+[    0.930687] stmmaceth 104c0000.ethernet: probe axera emac
+[    0.936196] stmmaceth 104c0000.ethernet: phy-rst-gpio not configure
+[    0.942500] stmmaceth 104c0000.ethernet: emac bus clock: 312MHz
+[    0.948463] stmmaceth 104c0000.ethernet: emac phy clock: 25MHz
+[    0.954341] stmmaceth 104c0000.ethernet: PTP rate: 50MHz
+[    0.959683] stmmaceth 104c0000.ethernet: reset axera emac...
+[    0.970365] stmmaceth 104c0000.ethernet: EMAC: select Inner RMII interface, value:0x00000000
+[    0.978934] stmmaceth 104c0000.ethernet: User ID: 0x10, Synopsys ID: 0x52
+[    0.985739] stmmaceth 104c0000.ethernet: 	DWMAC4/5
+[    0.990543] stmmaceth 104c0000.ethernet: DMA HW capability register supported
+[    0.997691] stmmaceth 104c0000.ethernet: RX Checksum Offload Engine supported
+[    1.004838] stmmaceth 104c0000.ethernet: TX Checksum insertion supported
+[    1.011548] stmmaceth 104c0000.ethernet: Wake-Up On Lan supported
+[    1.017654] stmmaceth 104c0000.ethernet: TSO supported
+[    1.022802] stmmaceth 104c0000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+[    1.030478] stmmaceth 104c0000.ethernet: Enabling HW TC (entries=256, max_off=256)
+[    1.038065] stmmaceth 104c0000.ethernet: USO feature enabled
+[    1.043734] stmmaceth 104c0000.ethernet: TSO feature enabled
+[    1.049481] libphy: stmmac: probed
+[    1.055802] PPP generic driver version 2.4.2
+[    1.060227] PPP BSD Compression module registered
+[    1.064949] PPP Deflate Compression module registered
+[    1.070012] NET: Registered protocol family 24
+[    1.074814] axera dwc3 soc:axera_dwc3: axera usb probe
+[    1.080141] axera dwc3 soc:axera_dwc3: usb bus clock: 312MHz
+[    1.085832] axera dwc3 soc:axera_dwc3: axera usb clk set succeed.
+[    1.091960] axera dwc3 soc:axera_dwc3: axera usb reset succeed.
+[    1.098153] dwc3 8000000.dwc3: probe later.
+[    1.102808] usbcore: registered new interface driver cdc_acm
+[    1.108479] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.116635] usbcore: registered new interface driver uas
+[    1.121995] usbcore: registered new interface driver usb-storage
+[    1.128074] usbcore: registered new interface driver usbserial_generic
+[    1.134627] usbserial: USB Serial support registered for generic
+[    1.176594] rtc_axera 23e0000.rtc-top: rtc core: registered 23e0000.rtc-top as rtc0
+[    1.184356] i2c /dev entries driver
+[    1.189322] ax_wdt:ax_wdt_drv_probe:346: done!
+[    1.189666] sdhci: Secure Digital Host Controller Interface driver
+[    1.200330] sdhci: Copyright(c) Pierre Ossman
+[    1.204723] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.204811] sdhci-axera 104e0000.sdhc: axera sdhci probe
+[    1.211050] usbcore: registered new interface driver usbhid
+[    1.218007] get cd gpio failed
+[    1.221296] usbhid: USB HID core driver
+[    1.230043] dev->intr_type = 0
+[    1.233135] dw_i2s_probe, hdmi_i2s: 0
+[    1.236901] config pin_sd_misc to 0x300100
+[    1.241024] dw_i2s_probe get irq is -6
+[    1.244797] IIS get i2s_mclk: 12288000
+[    1.248560] IIS get i2s_mclk: 12288000
+[    1.252354] IIS probe OK
+[    1.254935] dev->intr_type = 1
+[    1.258001] dw_i2s_probe, hdmi_i2s: 0
+[    1.261724] config pin_sd_misc to 0x300100
+[    1.265838] dw_i2s_probe get irq is -6
+[    1.269602] IIS get i2s_mclk: 12288000
+[    1.273361] IIS get i2s_mclk: 12288000
+[    1.277126] IIS probe OK
+[    1.280009] ax_actt_probe
+[    1.282692] designware-actt 23f2000.audio_codec: No cache used with register defaults set!
+[    1.291067] oprofile: hardware counters not available
+[    1.292340] mmc0: SDHCI controller on 104e0000.sdhc [104e0000.sdhc] using ADMA 64-bit
+[    1.296139] oprofile: using timer interrupt.
+[    1.303993] sdhci_cdns_read_phy_reg: phy lock successful
+[    1.308892] NET: Registered protocol family 10
+[    1.336421] Segment Routing with IPv6
+[    1.340229] mip6: Mobile IPv6
+[    1.343681] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.350352] NET: Registered protocol family 17
+[    1.354899] l2tp_core: L2TP core driver, V2.0
+[    1.359279] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.364101] Key type dns_resolver registered
+[    1.368552] Registering SWP/SWPB emulation handler
+[    1.373357] chip type: AX620Q
+[    1.376332] product init ok
+[    1.379876] pstore: Using compression: deflate
+[    1.385309] i2c_designware 4850000.i2c: running with gpio recovery mode! scl,sda
+[    1.392879] i2c i2c-0: using pinctrl states for GPIO recovery
+[    1.399039] i2c_designware 4851000.i2c: running with gpio recovery mode! scl,sda
+[    1.406569] i2c i2c-1: using pinctrl states for GPIO recovery
+[    1.412687] dwc3 8000000.dwc3: dr_mode is 3 (1-host 2-device 3-otg)
+[    1.418993] dwc3 8000000.dwc3: EP NUM:16
+[    1.423234] actt_component_probe
+[    1.423234]  
+[    1.423370] bengin actt_set_sysclk
+[    1.428177] actt_set_sysclk, freq: 12288000
+[    1.435771] actt_set_dai_fmt, fmt: 0x1001
+[    1.439789] actt_set_dai_fmt, actt rx only support master fmt_mode: 0x1000
+[    1.446672] actt in I2S Format
+[    1.449734] dw_i2s_set_fmt, fmt: 0x1001
+[    1.454125] asoc-simple-card sound: 23f2000.audio_codec <-> 6051000.i2s_slv mapping ok
+[    1.462053] bengin actt_set_sysclk
+[    1.462056] actt_set_sysclk, freq: 12288000
+[    1.469654] actt_set_dai_fmt, fmt: 0x4001
+[    1.473671] actt_set_dai_fmt, actt tx only support salve .fmt_mode: 0x4000
+[    1.480553] actt in I2S Format
+[    1.483614] dw_i2s_set_fmt, fmt: 0x4001
+[    1.487971] asoc-simple-card sound: 23f2000.audio_codec <-> 6050000.i2s_mst mapping ok
+[    1.496087] dwc3 8000000.dwc3: axera usb gadget init
+[    1.512768] rtc_axera 23e0000.rtc-top: setting system clock to 1970-01-01 08:00:00 UTC (28800)
+[    1.521814] OF: fdt: not creating '/sys/firmware/fdt': CRC check failed
+[    1.528709] ALSA device list:
+[    1.531679]   #0: Axera Audio
+[    1.534817] ttyS0 - failed to request DMA
+[    1.540761] Freeing unused kernel memory: 2516K
+[    1.545301] This architecture does not have kernel memory protection.
+[    1.551750] Run /init as init process
+[RCS]: /etc/init.d/S11init
+mount: mounting debugfs on /sys/kernel/debug failed: No such file or directory
+[RCS]: /etc/init.d/S30ambrwfs
+cp: can't stat '/root/*': No such file or directory
+[    1.852149] ubi0: default fastmap pool size: 35
+[    1.856762] ubi0: default fastmap WL pool size: 17
+[    1.861571] ubi0: attaching mtd12
+[    1.908916] random: fast init done
+[    2.141334] ubi0: scanning is finished
+[    2.150470] ubi0: attached mtd12 (name "program", size 94 MiB)
+[    2.156360] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.163256] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.170055] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.177028] ubi0: good PEBs: 751, bad PEBs: 1, corrupted PEBs: 0
+[    2.183046] ubi0: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.190281] ubi0: max/mean erase counter: 4/1, WL threshold: 4096, image sequence number: 1390195764
+[    2.199426] ubi0: available PEBs: 0, total reserved PEBs: 751, PEBs reserved for bad PEB handling: 15
+[    2.208673] ubi0: background thread "ubi_bgt0d" started, PID 169
+UBI device number 0, total 751 LEBs (95358976 bytes, 90.9 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+u[    2.225019] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 176
+bi0_0 exist.
+create Directory:/program
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi0:program /program 
+[    2.255790] UBIFS (ubi0:0): recovery needed
+[    2.358312] UBIFS (ubi0:0): recovery completed
+[    2.362786] UBIFS (ubi0:0): UBIFS: mounted UBI device 0, volume 0, name "program"
+[    2.370338] UBIFS (ubi0:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.380268] UBIFS (ubi0:0): FS size: 91295744 bytes (87 MiB, 719 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+[    2.390735] UBIFS (ubi0:0): reserved for root: 0 bytes (0 KiB)
+[    2.396580] UBIFS (ubi0:0): media format: w4/r0 (latest is w5/r0), UUID 5AA93821-CE3B-42DF-8B4C-323281550D45, small LPT model
+[    2.425113] ubi1: default fastmap pool size: 8
+[    2.429618] ubi1: default fastmap WL pool size: 4
+[    2.434361] ubi1: attaching mtd7
+[    2.461107] ubi1: scanning is finished
+[    2.472445] ubi1: attached mtd7 (name "config", size 8 MiB)
+[    2.478148] ubi1: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.485079] ubi1: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.492896] ubi1: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.499870] ubi1: good PEBs: 64, bad PEBs: 0, corrupted PEBs: 0
+[    2.505800] ubi1: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.513038] ubi1: max/mean erase counter: 20/12, WL threshold: 4096, image sequence number: 3376025183
+[    2.522359] ubi1: available PEBs: 0, total reserved PEBs: 64, PEBs reserved for bad PEB handling: 4
+[    2.531422] ubi1: background thread "ubi_bgt1d" started, PID 186
+UBI device number 1, total 64 LEBs (8126464 bytes, 7.7 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubi1[    2.547775] UBIFS (ubi1:0): background thread "ubifs_bgt1_0" started, PID 193
+_0 exist.
+create Directory:/config
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi1:config /config 
+[    2.578442] UBIFS (ubi1:0): recovery needed
+[    2.672606] UBIFS (ubi1:0): recovery completed
+[    2.677103] UBIFS (ubi1:0): UBIFS: mounted UBI device 1, volume 0, name "config"
+[    2.684530] UBIFS (ubi1:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.694461] UBIFS (ubi1:0): FS size: 5586944 bytes (5 MiB, 44 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    2.704561] UBIFS (ubi1:0): reserved for root: 263884 bytes (257 KiB)
+[    2.711015] UBIFS (ubi1:0): media format: w5/r0 (latest is w5/r0), UUID 6D0233DC-6B50-42EA-8560-1142E2371A7A, small LPT model
+[    2.734991] ubi2: default fastmap pool size: 8
+[    2.739530] ubi2: default fastmap WL pool size: 4
+[    2.744250] ubi2: attaching mtd9
+[    2.765281] ubi2: scanning is finished
+[    2.779077] ubi2: attached mtd9 (name "cfgbak", size 6 MiB)
+[    2.784687] ubi2: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.791580] ubi2: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.798384] ubi2: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.805358] ubi2: good PEBs: 48, bad PEBs: 0, corrupted PEBs: 0
+[    2.811289] ubi2: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.818528] ubi2: max/mean erase counter: 21/12, WL threshold: 4096, image sequence number: 1034400906
+[    2.827848] ubi2: available PEBs: 0, total reserved PEBs: 48, PEBs reserved for bad PEB handling: 4
+[    2.836920] ubi2: background thread "ubi_bgt2d" started, PID 203
+UBI device number 2, total 48 LEBs (6094848 bytes, 5.8 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubi2[    2.853293] UBIFS (ubi2:0): background thread "ubifs_bgt2_0" started, PID 210
+_0 exist.
+create Directory:/cfgbak
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi2:cfgbak /cfgbak 
+[    2.883823] UBIFS (ubi2:0): recovery needed
+[    2.985207] UBIFS (ubi2:0): recovery completed
+[    2.989715] UBIFS (ubi2:0): UBIFS: mounted UBI device 2, volume 0, name "cfgbak"
+[    2.997139] UBIFS (ubi2:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    3.007069] UBIFS (ubi2:0): FS size: 3555328 bytes (3 MiB, 28 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    3.017171] UBIFS (ubi2:0): reserved for root: 167926 bytes (163 KiB)
+[    3.023628] UBIFS (ubi2:0): media format: w5/r0 (latest is w5/r0), UUID 53E3460B-080A-4FEE-AEE2-4B0AFEB51CC3, small LPT model
+[    3.047613] ubi3: default fastmap pool size: 8
+[    3.052073] ubi3: default fastmap WL pool size: 4
+[    3.056808] ubi3: attaching mtd5
+[    3.077844] ubi3: scanning is finished
+[    3.089341] ubi3: attached mtd5 (name "calibration", size 6 MiB)
+[    3.095940] ubi3: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    3.102856] ubi3: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    3.109659] ubi3: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    3.116633] ubi3: good PEBs: 48, bad PEBs: 0, corrupted PEBs: 0
+[    3.122608] ubi3: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    3.129845] ubi3: max/mean erase counter: 5/2, WL threshold: 4096, image sequence number: 3091558067
+[    3.138993] ubi3: available PEBs: 0, total reserved PEBs: 48, PEBs reserved for bad PEB handling: 4
+[    3.148069] ubi3: background thread "ubi_bgt3d" started, PID 220
+UBI device number 3, total 48 LEBs (6094848 bytes, 5.8 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubi3[    3.162216] UBIFS (ubi3:0): background thread "ubifs_bgt3_0" started, PID 226
+_0 exist.
+    /calibration exists
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi3:calibration /calibration 
+[    3.229840] UBIFS (ubi3:0): UBIFS: mounted UBI device 3, volume 0, name "calibration"
+[    3.237704] UBIFS (ubi3:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    3.247668] UBIFS (ubi3:0): FS size: 3555328 bytes (3 MiB, 28 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    3.257771] UBIFS (ubi3:0): reserved for root: 167926 bytes (163 KiB)
+[    3.264225] UBIFS (ubi3:0): media format: w5/r0 (latest is w5/r0), UUID BF7BD558-BC9A-4D8D-B2C4-EE4F6925CECD, small LPT model
+[    3.299818] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" stops
+[    6.207284] random: crng init done
+[RCS]: /etc/init.d/S80network
+[    6.230579] NetUserDrv: loading out-of-tree module taints kernel.
+[    6.237553] NET_USR module init ok!
+[    6.249802] NET_DBG module init ok!
+      IP: 192.168.0.13
+   BOOTP: 
+ GATEWAY: 192.168.0.1
+ NETMASK: 255.255.255.0
+HOST[    6.259945] stmmaceth 104c0000.ethernet: axera_reset_phy
+NAME: 
+  NETDEV: eth0
+AUTOCONF: 
+[    6.270177] stmmaceth 104c0000.ethernet: ephy bgs=0x1, trim=0x7, ephy0_reg=0x410021d1
+[    6.382258] ax_ephy_config_init
+[    6.517263] AX620E Fast Ethernet stmmac-0:01: attached PHY driver [AX620E Fast Ethernet] (mii_bus:phy_addr=stmmac-0:01, irq=POLL)
+[    6.539725] stmmaceth 104c0000.ethernet eth0: No Safety Features support found
+[    6.546971] stmmaceth 104c0000.ethernet eth0: IEEE 1588-2008 Advanced Timestamp supported
+[    6.555397] stmmaceth 104c0000.ethernet eth0: registered PTP clock
+[    6.562032] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+passwd has changed
+run auto_load_all_drv.sh start 
+[    6.764768] npu 3800000.ax_npu: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 594000000, volt: 0, enabled: 1. New: freq: 594000000, volt: 0, enabled: 1
+[    6.814001] unsupport register display0
+[    6.818758] unsupport register display1
+run auto_load_all_drv.sh end 
+run npu_set_bw_limiter.sh start 
+already register bw limit for NPU
+this chip type is AX620Q_CHIP
+run npu_set_bw_limiter.sh end 
+
+root login: the same spl, don't need update
+[    7.656793] manuparse_inf[Manuparse_Init                : 293 ]ProductName[IPC3624LE-ADF28K-WP]
+[    7.665609] manuparse_inf[Manuparse_Init                : 294 ]BuildInfo[ENC-0302C5TP;SEN-0302C4XQ;LENS-4801C0G2]
+[    7.675890] manuparse_inf[Manuparse_Init                : 295 ]SerialNum[210235UEDW3247000191]
+[    7.684571] manuparse_inf[Manuparse_AnalysisSensorType  : 96  ]Sensor[0] type[589841] name[sc450ai]
+[    7.693631] manuparse_inf[Manuparse_AnalysisSpecialImageInv: 178 ]SpecialImgInverse[0]
+[    7.701561] manuparse_war[Manuparse_AnalysisLightInfo   : 152 ]Product type[1] no Light info
+[    7.710015] manuparse_inf[Manuparse_AnalysisFormCap     : 105 ]Manuparse form type [0]
+[    7.717947] manuparse_war[Manuparse_AnalysisLensInfo    : 89  ]Lens[0] build[4801C0G2] not match default OTHER_LENS
+[    7.728413] manuparse_inf[Manuparse_AnalysisIrCutType   : 235 ]Manuparse IrCut type[0]
+[    7.736339] manuparse_inf[Manuparse_AnalysisIrCutMotorType: 297 ]Manuparse IrCut Motor type[0]
+[    7.744963] manuparse_inf[Manuparse_LensType_Trans      : 360 ]Manuparse pcLensFlag: []
+[    7.752985] manuparse_inf[Manuparse_AnalysisFisheyeType : 301 ]Manuparse:IPC3624LE-ADF28K-WP FisheyeType[FALSE]
+[    7.763086] manuparse_inf[Manuparse_AnalysisAlarmCnt    : 635 ]Manuparse AlmInNum[2] AlmOutNum [1]
+[    7.772054] manuparse_inf[Manuparse_AnalysisHalfType    : 140 ]SerialNumber[210235UEDW3247000191]: IsHalfType[0]
+[    7.782239] manuparse_inf[Manuparse_AnalysisResButtLimi : 437 ]Manuparse:IPC3624LE-ADF28K-WP Reset button limit is TRUE
+[    7.793034] manuparse_inf[Manuparse_AnalysisSpkPowerType: 695 ]ENC speaker power type:[1]
+[    7.801218] manuparse_inf[Manuparse_AnalysisCloseSpkInFreeCap: 211 ]CloseSpkInFree[0]
+[    7.809058] manuparse_inf[Manuparse_AnalysisPOEatType   : 751 ]POEATType:[0]
+[    7.816117] manuparse_inf[Manuparse_AnalysisRunLedSite  : 808 ]Manuparse:IPC3624LE-ADF28K-WP Run Led on DSP
+[    7.825868] manuparse_inf[Manuparse_AnalysisAlarmLedSite: 865 ]Manuparse:IPC3624LE-ADF28K-WP Alarm Led on DSP
+[    7.835792] manuparse_inf[Manuparse_AnalysisPtMcuImageInfo: 490 ]Manuparse PtMcuImageInfo:no_pt_mcu_image
+cat: can't open '/proc/nandid': No such file or directory
+[    7.893836] gpio_inf[product_fixdome_init: 653 ]kgpio for fixdome 
+[    7.900132] gpio_inf[prior_init          : 825 ]Product type is FIXDOME
+[    7.912366] 
+[    7.912366] Encryption Board Reset
+[    7.917298] gpio_inf[SetAllLedGpio       : 485 ]no [gstGreenRunLedGpio] led pin
+[    7.924631] gpio_inf[SetAllLedGpio       : 486 ]no [gstRedRunLedGpio] led pin
+[    7.931777] gpio_inf[SetAllLedGpio       : 487 ]no [gstBlueRunLedGpio] led pin
+[    7.939030] gpio_inf[LightCtrlInit       : 417 ]Light channl 1 ctrled invalued, no need to init
+[    7.939187] dwc3 8000000.dwc3: dwc3_drd_notifier, mode is host
+[    7.941931] gpio_inf[Pwm_Init            : 192 ]Pwm_Init[4] Ok
+[    7.948146] dwc3 8000000.dwc3: axera usb host init
+[    7.953961] gpio_inf[Pwm_Init            : 192 ]Pwm_Init[5] Ok
+[    7.964810] dwc3 8000000.dwc3: usb2.0-only mode
+[    7.970402] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[    7.977592] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    7.981826] gpio_err[RunLightInit        : 547 ]Red run led init Fail
+[    7.989867] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 1
+[    8.002426] xhci-hcd xhci-hcd.1.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x0000000000010010
+[    8.011951] xhci-hcd xhci-hcd.1.auto: irq 67, io mem 0x08000000
+[    8.018148] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.19
+reset motor position axes, zoompos=[] focuspos=[] status=[]
+[    8.026580] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    8.039109] usb usb1: Product: xHCI Host Controller
+[    8.044018] usb usb1: Manufacturer: Linux 4.19.125 xhci-hcd
+[    8.049654] usb usb1: SerialNumber: xhci-hcd.1.auto
+[    8.054977] hub 1-0:1.0: USB hub found
+[    8.058864] hub 1-0:1.0: 1 port detected
+[    8.063116] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    8.068731] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 2
+[    8.076462] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+[    8.083096] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    8.091312] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 4.19
+[    8.099631] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    8.106887] usb usb2: Product: xHCI Host Controller
+[    8.111793] usb usb2: Manufacturer: Linux 4.19.125 xhci-hcd
+[    8.117410] usb usb2: SerialNumber: xhci-hcd.1.auto
+[    8.122858] hub 2-0:1.0: USB hub found
+[    8.126747] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    8.154497] motor_err[0234 @ Hw_Timer_Init]:	
+[    8.154501] Timer id invalid:1
+[    8.158954] 
+[    8.163695] motor_info[0321 @ WorkQueue_Init]:	
+[    8.163698] Work Queue init
+[    8.168252] 
+[    8.172586] motor_info[1558 @ motor_init]:	
+[    8.172587] motor finish init
+[    8.176771] 
+[    8.177278] motor_info[0094 @ LensPortMode_Init]:	
+[    8.177281] Init LensPortMode:2
+[    8.186089] 
+[    8.190760] motor_info[0827 @ Ircut_IPC_Init]:	
+[    8.190762] ircut init ch[0] type[0]
+[    8.195385] 
+[    8.200500] motor_info[0476 @ DC_Ircut_Init]:	
+[    8.200502] dc[ch0] ircut init ok
+[    8.204964] 
+[    8.209801] i2c_get_adapter fail!
+[    8.213134] driver init fail
+[    8.216026] i2c init fail
+[    8.218666] motor_info[0500 @ motor_init_thread]:	
+[    8.218668] motor thread init ok
+[    8.223477] 
+[    8.242354] RunTm_inf[runtime_set_startup_date      : 814 ]start system at: year=1970 month=1 date=1 hour=8 minute=0 second=0
+[    8.268398] RunTm_err[runtime_set_current_date_lastrtinfo: 893 ]iTmp=0, size=212
+[    8.275905] RunTm_war[runtime_init                  : 1434]wait for runtime_thread_process thread 
+[    8.284946] RunTm_war[runtime_init                  : 1452]wait for runtime_thread_process thread 
+[    8.293928] RunTm_inf[runtime_init                  : 1455]End of runtime!
+insmod: can't insert '/lib/modules/4.19.125/extra/SC450AI_MIPI.ko': No such file or directory
+net.core.wmem_max = 655360
+net.core.wmem_default = 655360
+cp: can't stat '/data/*': No such file or directory
+mount: mounting /tmp/.data/ on /data failed: No such file or directory
+vm.overcommit_memory = 0
+vm.overcommit_ratio = 50
+vm.min_free_kbytes = 598
+vm.dirty_background_ratio = 2
+vm.dirty_expire_centisecs = 500
+vm.dirty_ratio = 2
+vm.dirty_writeback_centisecs = 100
+vm.admin_reserve_kbytes = 0
+vm.user_reserve_kbytes = 0
+[    8.356966] drop_caches.sh (648): drop_caches: 4
+chmod: /tmp/bin/update: Read-only file system
+cp: can't stat '/usr/sbin/nandwrite_move': No such file or directory
+chmod: /tmp/bin/nandwrite: No such file or directory
+ln: /www/www: Read-only file system
+ln: /program/www/ActiveX/Setup64.exe: Read-only file system
+cp: can't stat '/program/bin/ca.cer': No such file or directory
+Open file fail
+rm: can't remove 'logo.png': Read-only file system
+ln: logo.png: File exists
+/program/www/skin/default_1/images
+Interversion is :GIPCV600R002B15D001SP68D2308NB
+
+DeviceName is SC-3243-IWPS-F28; PrototypeName is IPC3624LE-ADF28K-WP; ManufacturingDate is 2024-07-25. 
+Interversion is :GIPCV600R002B15D001SP68D2308NB
+
+szTmpManufacturingDate error:
+do: ls /program/factory/default_cfg_IPC2314LE.xml 
+[0;0m/program/factory/default_cfg_IPC2314LE.xml[m
+do: cp /program/factory/device_cap_IPC2314LE.xml /config/device_cap.xml 
+do: cp /program/factory/default_cfg_IPC2314LE.xml /config/default_cfg.xml 
+do: cp /program/factory/preset_scene_IPC2XXX.xml /config/preset_scene.xml 
+do: cp -rf /program/factory/ipu_lfw.bin /config/dla/ 
+cp: can't stat '/program/factory/ipu_lfw.bin': No such file or directory
+MW_XML_LoadFile:Open file fail! /calibration/customize/customized.xml
+Load XML File failed!
+Customize Time Zone Fail
+CustomerCode val is 02 
+ln: /www/skin/default_1/images/logo.png: File exists
+DeviceName is SC-3243-IWPS-F28. CustomCode is 02
+ShowLangList is [1,0,17,4,8,3,36,11,20,7,52,5,6]
+chmod: /program/bin/kernelsendbuff.sh: Read-only file system
+sed: no address after comma
+sed: no address after comma
+sed: no address after comma
+CPU type is AX620Q_CHIP
+CFG rowcnt[42]
+CFG rowcnt[97]
+CFG rowcnt[149]
+CFG rowcnt[172]
+CFG rowcnt[226]
+CFG rowcnt[403]
+CFG rowcnt[521]
+CFG rowcnt[1402]
+CFG rowcnt[1581]
+CFG rowcnt[1623]
+CFG rowcnt[1701]
+CFG rowcnt[1732]
+CFG rowcnt[1765]
+CFG rowcnt[1772]
+CFG rowcnt[1778]
+CFG rowcnt[1781]
+CFG rowcnt[1798]
+CFG rowcnt[1819]
+CFG rowcnt[1826]
+CFG rowcnt[1852]
+CFG rowcnt[1879]
+CFG rowcnt[1884]
+CFG rowcnt[1946]
+CFG rowcnt[1956]
+CFG rowcnt[1972]
+CFG rowcnt[1980]
+CFG rowcnt[1991]
+CFG rowcnt[1998]
+CFG rowcnt[2109]
+CFG rowcnt[2217]
+CFG rowcnt[2466]
+CFG rowcnt[2507]
+CFG rowcnt[2665]
+CFG rowcnt[2713]
+CFG rowcnt[2808]
+CFG rowcnt[3077]
+CFG rowcnt[3376]
+CFG rowcnt[3475]
+
+ MWARE System Initializing...
+
+ Invalid system time, restore default! 
+...Init Courese success...
+Control Init Config Capability success, ProductType:10, DoubleChlDevType:0, VideoInNum:1
+route: SIOCDELRT: No such process
+sh: can't create /proc/vpe/vpe_debug: nonexistent directory
+sh: can't create /proc/vpe/vpe_debug: nonexistent directory
+The Node areadly exist!
+ln: /www/device_cap.xml: File exists
+chpasswd: password for 'root' changed
+.....i2c_init: i2c device is /dev/i2c-0 
+can not find match model, just use manual table model and param
+
+MW_XML_LoadFile:Open file fail! /program/custom/config.xml
+MW_XML_LoadFile:Open file fail! /config/ftp.xml
+adding the following line to /var/net-snmp/snmpd.conf:
+adding the following line to /etc/snmp.conf:
+   rouser MD5
+sdk init success
+MW_XML_LoadFile:Open file fail! /program/custom/config.xml
+..Done !
+[   77.703164] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+‡Ä
+Password: 
+Login incorrect
+login[522]: invalid password for 'UNKNOWN' on 'ttyS0'
+root login: 
+root login: 
+root login: root
+Password: 
+login[522]: root login on 'ttyS0'
+
+User@/root>ls
+Not support cmd yet!
+
+User@/root>checkUser@/root>checksysready
+root@root:~$ ifconfig
+eth0      Link encap:Ethernet  HWaddr E4:F1:4C:77:66:BA  
+          inet addr:192.168.1.13  Bcast:192.168.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::e6f1:4cff:fe77:66ba/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:109 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:207 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:20856 (20.3 KiB)  TX bytes:26880 (26.2 KiB)
+          Interrupt:40 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:13 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:13 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1264 (1.2 KiB)  TX bytes:1264 (1.2 KiB)
+
+root@root:~$ ifconfig
+eth0      Link encap:Ethernet  HWaddr E4:F1:4C:77:66:BA  
+          inet addr:192.168.1.13  Bcast:192.168.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::e6f1:4cff:fe77:66ba/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:156 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:238 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:30347 (29.6 KiB)  TX bytes:29847 (29.1 KiB)
+          Interrupt:40 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:13 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:13 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1264 (1.2 KiB)  TX bytes:1264 (1.2 KiB)
+
+root@root:~$ ip
+BusyBox v1.36.1 (2024-03-19 11:46:10 CST) multi-call binary.
+
+Usage: ip [OPTIONS] address|route|link|tunnel|neigh|rule [ARGS]
+
+OPTIONS := -f[amily] inet|inet6|link | -o[neline]
+
+ip addr add|del IFADDR dev IFACE | show|flush [dev IFACE] [to PREFIX]
+ip route list|flush|add|del|change|append|replace|test ROUTE
+ip link set IFACE [up|down] [arp on|off] [multicast on|off]
+	[promisc on|off] [mtu NUM] [name NAME] [qlen NUM] [address MAC]
+	[master IFACE | nomaster] [netns PID]
+ip tunnel add|change|del|show [NAME]
+	[mode ipip|gre|sit] [remote ADDR] [local ADDR] [ttl TTL]
+ip neigh show|flush [to PREFIX] [dev DEV] [nud STATE]
+ip rule [list] | add|del SELECTOR ACTION
+root@root:~$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq qlen 1000
+    link/ether e4:f1:4c:77:66:ba brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.13/24 brd 192.168.1.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::e6f1:4cff:fe77:66ba/64 scope link 
+       valid_lft forever preferred_lft forever
+3: ip6_vti0@NONE: <NOARP> mtu 1428 qdisc noop qlen 1000
+    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop qlen 1000
+    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+root@root:~$ netstatu[J
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       
+
+root@root:~$ [H[Jroot@root:~$ [Jls
+root@root:~$ l[Jls -l
+total 0
+root@root:~$ cd /
+root@root:/$ ls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ cd wwroot@root:/$ cd www/[J
+root@root:/www$ ls
+[1;34mActiveX[m              [1;36mfingerprint.htm[m      [0;0mmongoose_http.conf[m
+[1;34mLANG[m                 [0;0mindex.htm[m            [0;0mmongoose_https.conf[m
+[0;0mSoftwareLicense.txt[m  [0;0mindex_debugger.html[m  [1;34mpage[m
+[1;36mVersion.html[m         [0;0mindex_error.htm[m      [1;34mscript[m
+[1;34mcgi-bin[m              [0;0mindex_skip.html[m      [1;34mskin[m
+[0;0mconfig.xml[m           [0;0mindex_softap.htm[m     [0;0mstatic.tgz[m
+[1;32mdaemon.cfg[m           [0;0mlang_conversion.txt[m
+[1;36mdevice_cap.xml[m       [1;36mmap_ports.html[m
+root@root:/www$ cd ..
+root@root:/$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq qlen 1000
+    link/ether e4:f1:4c:77:66:ba brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.13/24 brd 192.168.1.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::e6f1:4cff:fe77:66ba/64 scope link 
+       valid_lft forever preferred_lft forever
+3: ip6_vti0@NONE: <NOARP> mtu 1428 qdisc noop qlen 1000
+    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop qlen 1000
+    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+root@root:/$ grep[J[J[J[Jps | grep d[J
+BusyBox v1.36.1 (2024-03-19 11:46:10 CST) multi-call binary.
+
+Usage: grep [-HhnlLoqvsrRiwFE] [-m N] [-A|B|C N] { PATTERN | -e PATTERN... | -f FILE... } [FILE]...
+
+Search for PATTERN in FILEs (or stdin)
+
+	-H	Add 'filename:' prefix
+	-h	Do not add 'filename:' prefix
+	-n	Add 'line_no:' prefix
+	-l	Show only names of files that match
+	-L	Show only names of files that don't match
+	-c	Show only count of matching lines
+	-o	Show only the matching part of line
+	-q	Quiet. Return 0 if PATTERN is found, 1 otherwise
+	-v	Select non-matching lines
+	-s	Suppress open and read errors
+	-r	Recurse
+	-R	Recurse and dereference symlinks
+	-i	Ignore case
+	-w	Match whole words only
+	-x	Match whole lines only
+	-F	PATTERN is a literal (not regexp)
+	-E	PATTERN is an extended regexp
+	-m N	Match up to N times per file
+	-A N	Print N lines of trailing context
+	-B N	Print N lines of leading context
+	-C N	Same as '-A N -B N'
+	-e PTRN	Pattern to match
+	-f FILE	Read pattern from file
+root@root:/$ root@root:/$ ps | grep [J"dropbear"
+ 2402 root     2332 S    grep dropbear
+root@root:/$ ping 192.168.1.19[J0
+PING 192.168.1.10 (192.168.1.10): 56 data bytes
+
+--- 192.168.1.10 ping statistics ---
+29 packets transmitted, 0 packets received, 100% packet loss
+root@root:/$ dropbear -p 2222
+root@root:/$ ps | grep "dropbrea[J[J[J[Jbear"
+ 2518 root     2332 S    grep dropbear
+root@root:/$ b[Jl[J/[Js[Jwhich dropbear
+/usr/sbin/dropbear
+root@root:/$ /usroot@root:/$ /usr/[J[J[J[J[J[Jdropbear
+root@root:/$ root@root:/$ dropbear[J -p 2222
+root@root:/$ sysroot@root:/$ sys[J[J[J[Jsudo systemctl enable dropbear
+/bin/sh: sudo: not found
+root@root:/$ systemctl
+/bin/sh: systemctl: not found
+root@root:/$ dor[J[Jropbear -F -E -p 2222
+[2600] Dec 01 00:46:52 Failed loading /etc/dropbear/dropbear_rsa_host_key
+[2600] Dec 01 00:46:52 Failed loading /etc/dropbear/dropbear_dss_host_key
+[2600] Dec 01 00:46:52 Failed loading /etc/dropbear/dropbear_ecdsa_host_key
+[2600] Dec 01 00:46:52 Early exit: No hostkeys available. 'dropbear -R' may be useful or run dropbearkey.
+root@root:/$ droproot@root:/$ drop[Jbearkey
+Must specify a key filename
+Usage: dropbearkey -t <type> -f <filename> [-s bits]
+-t type	Type of key to generate. One of:
+		rsa
+		dss
+		ecdsa
+-f filename    Use filename for the secret key.
+               ~/.ssh/id_dropbear is recommended for client keys.
+-s bits	Key size in bits, should be a multiple of 8 (optional)
+           DSS has a fixed size of 1024 bits
+           ECDSA has sizes 256 384 521 
+-y		Just print the publickey and fingerprint for the
+		private key in <filename>.
+root@root:/$ dropbear -R -F -E -p 2222
+[2615] Dec 01 00:47:12 Not backgrounding
+[2615] Dec 01 00:47:27 Early exit: Terminated by signal
+root@root:/$ root@root:/$ dropbear -R -F -E -p 2222[J
+[2658] Dec 01 00:48:36 Not backgrounding
+[2658] Dec 01 00:52:26 Early exit: Terminated by signal
+root@root:/$ nmap
+/bin/sh: nmap: not found
+root@root:/$ ?[Jip link set eth0 down
+root@root:/$ ip link set eth0 up
+root@root:/$ arp -a
+root@root:/$ arp
+root@root:/$ [H[Jroot@root:/$ [Jip link show eth0
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq qlen 1000
+    link/ether e4:f1:4c:77:66:ba brd ff:ff:ff:ff:ff:ff
+root@root:/$ 
+root@root:/$ ip link show eth0
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq qlen 1000
+    link/ether e4:f1:4c:77:66:ba brd ff:ff:ff:ff:ff:ff
+root@root:/$ w[Jarping -I eth0 192.168.1.10
+ARPING 192.168.1.10 from 192.168.1.13 eth0
+Sent 28 probe(s) (28 broadcast(s))
+Received 0 response(s) (0 request(s), 0 broadcast(s))
+root@root:/$ l[Jdroot@root:/$ arping -I eth0 192.168.1.10[J[Jroot@root:/$ ip link show eth0[Jroot@root:/$ arping -I eth0 192.168.1.1[Jroot@root:/$ ip link show eth0[Jroot@root:/$ arp[Jroot@root:/$ arp -a[Jroot@root:/$ ip link set eth0 up[Jroot@root:/$ ip link set eth0 down[Jroot@root:/$ nmap[Jroot@root:/$ dropbear -R -F -E -p 2222[J
+[3052] Dec 01 01:00:37 Not backgrounding
+[3052] Dec 01 01:01:23 Early exit: Terminated by signal
+root@root:/$ [H[Jroot@root:/$ [Jroot@root:/$ dropbear -R -F -E -p 2222[J
+[3669] Dec 01 01:19:45 Not backgrounding
+[3669] Dec 01 01:21:01 Early exit: Terminated by signal
+root@root:/$ ip route
+192.168.1.0/24 dev eth0 scope link  src 192.168.1.13 
+root@root:/$ iptables -L -n
+/bin/sh: iptables: not found
+root@root:/$ tcpdump -i eth0 icmp
+/bin/sh: tcpdump: not found
+root@root:/$ netstat -tulnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:54321         0.0.0.0:*               LISTEN      751/mwareserver
+tcp        0      0 :::554                  :::*                    LISTEN      751/mwareserver
+tcp        0      0 :::80                   :::*                    LISTEN      751/mwareserver
+udp        0      0 127.0.0.1:2048          0.0.0.0:*                           751/mwareserver
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           934/mw_dhcpcd_wired
+udp        0      0 127.0.0.1:7001          0.0.0.0:*                           751/mwareserver
+udp        0      0 0.0.0.0:3702            0.0.0.0:*                           751/mwareserver
+root@root:/$ netstat -tulnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:54321         0.0.0.0:*               LISTEN      751/mwareserver
+tcp        0      0 :::554                  :::*                    LISTEN      751/mwareserver
+tcp        0      0 :::80                   :::*                    LISTEN      751/mwareserver
+udp        0      0 127.0.0.1:2048          0.0.0.0:*                           751/mwareserver
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           934/mw_dhcpcd_wired
+udp        0      0 127.0.0.1:7001          0.0.0.0:*                           751/mwareserver
+udp        0      0 0.0.0.0:3702            0.0.0.0:*                           751/mwareserver
+root@root:/$ [H[Jroot@root:/$ [Jroot@root:/$ netstat -tulnp[Jroot@root:/$ tcpdump -i eth0 icmp[Jroot@root:/$ iptables -L -n[Jroot@root:/$ ip route[Jroot@root:/$ dropbear -R -F -E -p 2222[Jroot@root:/$ arping -I eth0 192.168.1.1[Jroot@root:/$ ip link show eth0[Jroot@root:/$ arping -I eth0 192.168.1.1[Jroot@root:/$ dropbear -R -F -E -p 2222[J
+[3835] Dec 01 01:24:39 Not backgrounding
+[3835] Dec 01 01:25:31 Early exit: Terminated by signal
+root@root:/$ root@root:/$ dropbear -R -F -E -p 2222[J2222
+[3864] Dec 01 01:25:37 Not backgrounding
+[3864] Dec 01 01:27:14 Early exit: Terminated by signal
+root@root:/$ cat /proc/net/tcp
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+   0: 0100007F:D431 00000000:0000 0A 00000000:00000000 00:00000000 00000000     0        0 1436 1 aff8b9c5 100 0 0 10 0                              
+   1: 0100007F:8858 0100007F:9215 01 00000000:00000000 00:00000000 00000000     0        0 2139 1 76750c2a 20 0 0 10 -1                              
+   2: 0100007F:9215 0100007F:8858 01 00000000:00000000 00:00000000 00000000     0        0 2140 1 13b8d2d6 20 0 0 10 -1                              
+root@root:/$ dropbr[Jear -F-[J[JR -E -p 22222
+[3933] Dec 01 01:27:33 Running in background
+root@root:/$ root@root:/$ dropbear -R -E -p 2222[Jroot@root:/$ cat /proc/net/tcp[J
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+   0: 00000000:08AE 00000000:0000 0A 00000000:00000000 00:00000000 00000000     0        0 45073 1 2c265039 100 0 0 10 5                             
+   1: 0100007F:D431 00000000:0000 0A 00000000:00000000 00:00000000 00000000     0        0 1436 1 aff8b9c5 100 0 0 10 0                              
+   2: 0100007F:8858 0100007F:9215 01 00000000:00000000 00:00000000 00000000     0        0 2139 1 76750c2a 20 0 0 10 -1                              
+   3: 0100007F:9215 0100007F:8858 01 00000000:00000000 00:00000000 00000000     0        0 2140 1 13b8d2d6 20 0 0 10 -1                              
+root@root:/$ iptables
+/bin/sh: iptables: not found
+root@root:/$ nftrabl[J[J[J[Jables
+/bin/sh: nftables: not found
+root@root:/$ firewalld
+/bin/sh: firewalld: not found
+root@root:/$ ufw
+/bin/sh: ufw: not found
+root@root:/$ bpfilter
+/bin/sh: bpfilter: not found
+root@root:/$ netstat -tulm[Jbp[J[Jnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:2222            0.0.0.0:*               LISTEN      3933/dropbear
+tcp        0      0 127.0.0.1:54321         0.0.0.0:*               LISTEN      751/mwareserver
+tcp        0      0 :::554                  :::*                    LISTEN      751/mwareserver
+tcp        0      0 :::2222                 :::*                    LISTEN      3933/dropbear
+tcp        0      0 :::80                   :::*                    LISTEN      751/mwareserver
+udp        0      0 127.0.0.1:2048          0.0.0.0:*                           751/mwareserver
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           934/mw_dhcpcd_wired
+udp        0      0 127.0.0.1:7001          0.0.0.0:*                           751/mwareserver
+udp        0      0 0.0.0.0:3702            0.0.0.0:*                           751/mwareserver
+root@root:/$ nc -zv 192.168.1.13 2222
+/bin/sh: nc: not found
+root@root:/$ root@root:/$ nc -zv 192.168.1.13 2222[Jroot@root:/$ netstat -tulnp[Jroot@root:/$ bpfilter[Jroot@root:/$ ufw[Jroot@root:/$ firewalld[Jroot@root:/$ nftables[Jroot@root:/$ iptables[Jroot@root:/$ cat /proc/net/tcp[Jroot@root:/$ dropbear -R -E -p 2222[J
+[4203] Dec 01 01:35:40 Failed listening on '2222': Error listening: Address already in use
+[4203] Dec 01 01:35:40 Early exit: No listening ports available.
+root@root:/$ ps -[J| ausx[J[J[Jux -g[Jp[Jroot@root:/$ dropbear -R -E -p 2222[Jroot@root:/$ nc -zv 192.168.1.13 2222[Jroot@root:/$ netstat -tulnp[Jroot@root:/$ bpfilter[Jroot@root:/$ ufw[Jroot@root:/$ firewalld[Jroot@root:/$ nftables[Jroot@root:/$ iptables[Jroot@root:/$ cat /proc/net/tcp[Jroot@root:/$ dropbear -R -E -p 2222[Jroot@root:/$ cat /proc/net/tcp[Jroot@root:/$ dropbear -R -F -E -p 2222[Jroot@root:/$ netstat -tulnp[Jroot@root:/$ tcpdump -i eth0 icmp[Jroot@root:/$ iptables -L -n[Jroot@root:/$ ip route[Jroot@root:/$ dropbear -R -F -E -p 2222[Jroot@root:/$ arping -I eth0 192.168.1.1[Jroot@root:/$ ip link show eth0[Jroot@root:/$ arp[Jroot@root:/$ arp -a[Jroot@root:/$ ip link set eth0 up[Jroot@root:/$ ip link set eth0 down[Jroot@root:/$ nmap[Jroot@root:/$ ip link set eth0 down[Jroot@root:/$ ip link set eth0 up[Jroot@root:/$ ip link set eth0 down[Jroot@root:/$ ip link set eth0 up[Jroot@root:/$ arp -a[Jroot@root:/$ ip link set eth0 up[Jroot@root:/$ ip link set eth0 down[Jroot@root:/$ nmap[Jroot@root:/$ dropbear -R -F -E -p 2222[Jroot@root:/$ dropbearkey[Jroot@root:/$ dropbear -F -E -p 2222[Jroot@root:/$ systemctl[Jroot@root:/$ sudo systemctl enable dropbear[Jroot@root:/$ dropbear -p 2222[Jroot@root:/$ dropbear[Jroot@root:/$ which dropbear[Jroot@root:/$ ps | grep "dropbear"[Jroot@root:/$ dropbear -p 2222[Jroot@root:/$ ps | grep "dropbear"[Jroot@root:/$ dropbear -p 2222[Jroot@root:/$ ping 192.168.1.10[Jroot@root:/$ ps | grep "dropbear"[Jroot@root:/$ ps | grep [Jroot@root:/$ ip addr[Jroot@root:/$ cd ..[Jroot@root:/$ ls[Jroot@root:/$ cd www/[Jroot@root:/$ ls[Jroot@root:/$ cd /[Jroot@root:/$ ls -l[Jroot@root:/$ ls[Jroot@root:/$ netstat[Jroot@root:/$ ip addr[Jroot@root:/$ ip[Jroot@root:/$ ifconfig[Jroot@root:/$ ip[Jroot@root:/$ ip addr[Jroot@root:/$ netstat[Jroot@root:/$ ls[Jroot@root:/$ ls -l[Jroot@root:/$ cd /[Jroot@root:/$ ls[Jroot@root:/$ cd www/[Jroot@root:/$ ls[Jroot@root:/$ cd ..[Jroot@root:/$ ip addr[Jroot@root:/$ ps | grep [J[J[J[J[J[J[J[J[J[Js -aux
+ps: invalid option -- 'u'
+BusyBox v1.36.1 (2024-03-19 11:46:10 CST) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+root@root:/$ drop[J[J[J[Jg[Jps -aux | grep "dropo[Jbear"
+ps: invalid option -- 'u'
+BusyBox v1.36.1 (2024-03-19 11:46:10 CST) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+root@root:/$ root@root:/$ ps -aux | grep "dropbear"[Jx | grep "dropbear"[J[18D | grep "dropbear"[J[18D | grep "dropbear"[J[18D | grep "dropbear"[J[18D | grep "dropbear"[J[18D | grep "dropbear"
+ 3933 root     1824 S    dropbear -R -E -p 2222
+ 4431 root     2332 S    grep dropbear
+root@root:/$ kill pid [J[J[J[Jdrop[J[J[J[J[J[J[J[J[Jroot@root:/$ ps | grep "dropbear"[J-| grep "dropbear"[17Da| grep "dropbear"[17D | grep "dropbear"[17D| grep "dropbear"
+ 3933 root     1824 S    dropbear -R -E -p 2222
+ 4438 root     2332 S    grep dropbear
+root@root:/$ root@root:/$ ps -a | grep "dropbear"[Ja | grep "dropbear"[J[19Da | grep "dropbear"[J[18D- | grep "dropbear"[18Dx | grep "dropbear"[18D | grep "dropbear"
+ps: invalid option -- 'x'
+BusyBox v1.36.1 (2024-03-19 11:46:10 CST) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+root@root:/$ root@root:/$ ps -x | grep "dropbear"[Jroot@root:/$ ps -a | grep "dropbear"[J^C
+
+root@root:/$   ê »  bÃ   d  ‡˙  †È
+ Dq  $ñ  Ÿ   b  ¸  •…®{  &˛ H“  !  q  h  Ä   XÅàˆ p}   g v˜ ÑÎ ˚  íÛ L¢˘  —  ∆  PÚ   ∆ 8ˇ  †˚ UÈ  ¸  `Ó  Bÿ   ¡ Ak   @‘ ¿(  ˘ †0   ¨  Ñ¸     Äw ƒH  ˇ  ‰‡   ä  àÄ4  J¯   ¡úÓ  –Ê   ˆ   <Ò  D§$( +Ë Ä»  <   +÷   ˇ   ˇ   f|  ß  Ä˜ @”  !r  $™   b…ˇ pı dv  SÔ  Üò   Wˇ  @Üø  @)˙ˇ  ˙  ˝   <   äÚ  ‹ ˙  2ﬂ   ‰  ¯  ˇ  ﬂ  Ä˙  ‹    Í    Ä  Í  B˛  f˝  t¸  ¸ u˜ D˝  Ñı  ~	  »$ Xˇ  ÃÊ  ê  Ù   ‡  ÿ  åÏ  Pˆ  4”   ˜  àF  àá òˆ  Ññ 0"Z  ò“ à   !S 6‘  ^    ‘ l  ⁄ Z˝  t ˙   d¯   Bâˇ ˚ Dˆ    HÏ w †$D1Ô  ¥ÿ  ‰   Œ – Úl  ¬  ÜÌ r¬! ê  n˛ KSı  ˛ Ñú  Ù  à   r  ‡   À ‘  √˛ ‚˙  Ä\   —  ˇ  %e 0p€ Ÿ‹   Ü`¯0` AÔ   íÓ" V3N2C0N2C0RS
+
+U-Boot 2020.04-00011-gddf6f040-dirty (Jun 17 2024 - 18:12:02 +0800), Build: jenkins-Compile_64‰Ωç(10.188.40.119)-7385
+
+U-Boot code: 5C000400 -> 5C095BEC  BSS: -> 5C0BD52C
+Model: AXERA AX620E_Qnand Board
+DRAM:  Monitor len: 000BD12C
+Ram size: 10000000
+Ram top: 50000000
+TLB table from 4fff0000 to 4fff4000
+Reserving 756k for U-Boot at: 4ff32000
+Reserving 3584k for malloc() at: 4fbb2000
+Reserving 96 Bytes for Board Info at: 4fbb1fa0
+Reserving 216 Bytes for Global Data at: 4fbb1ec8
+Reserving 14400 Bytes for FDT at: 4fbae688
+
+RAM Configuration:
+Bank #0: 40000000 
+DRAM:  256 MiB
+New Stack Pointer is: 4fbae660
+Relocation Offset is: f3f31c00
+Relocating to 4ff32000, new gd at 4fbb1ec8, sp at 4fbae660
+WARNING: Caches not enabled
+ax_adc_probe
+No available THERMAL device
+MMC:   mmc@1B40000: 0, mmc@104E0000: 1
+NAND:  128 MiB
+Loading Environment from NAND... *** Warning - bad CRC, using default environment
+
+Loading Environment from SPI Flash... unrecognized JEDEC id bytes: ff, a1, e4
+uclass_get_device: Invalid bus 0 (err=-2)
+In:    serial
+Out:   serial
+Err:   serial
+Current chip type: AX620Q_CHIP
+Current board type: AX620Q_LP4_DEMO_V1_1
+boot_reason:0x0
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+selecting mode MMC legacy (freq : 0 MHz)
+Card did not respond to voltage select!
+mmc_init: -95, time 24
+no sd card
+enter normal boot mode
+boot_info_data.mode = 7
+Net:   
+Warning: ethernet@0x104C0000 (eth0) using random MAC address - 5e:37:3a:0c:02:aa
+eth0: ethernet@0x104C0000  
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+module_get_macaddr_test
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+module_get_macaddr_test
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+Detected MACID:e4:f1:4c:77:66:ba
+Detected ETH1 MACID:e4:f1:4c:77:66:ba
+Press Ctrl+B to abort autoboot in 2 seconds
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+ax_shutdown_ephy:0x410021d1
+enter do_axera_boot
+reading kernel image size 0x700000 from spi nand flash ...
+bondopt secureboot bit is enable:1, key_bits:2048
+CACHE: Misaligned operation at range [4fbadb4c, 4fbadcd8]
+total kernel image size = 6151640
+>>> * kernel image verify success! * <<< 
+header_info.blk_num=17, isize=6151640, osize=8629099, tile_cnt=12, last_tile_size=474568
+boot cmd is :bootm 0x4e000000#conf-1
+## Loading kernel from FIT Image at 4e000000 ...
+   Using 'conf-1' configuration
+   Trying 'kernel' kernel subimage
+     Description:  Axera Linux kernel
+     Type:         Kernel Image
+     Compression:  uncompressed
+     Data Start:   0x4e0000e4
+     Data Size:    8485640 Bytes = 8.1 MiB
+     Architecture: ARM
+     OS:           Linux
+     Load Address: 0x40008000
+     Entry Point:  0x40008000
+   Verifying Hash Integrity ... OK
+## Loading fdt from FIT Image at 4e000000 ...
+   Using 'conf-1' configuration
+   Trying 'fdt-1' fdt subimage
+     Description:  Flattened Device Tree blob
+     Type:         Flat Device Tree
+     Compression:  uncompressed
+     Data Start:   0x4e817c9c
+     Data Size:    141709 Bytes = 138.4 KiB
+     Architecture: ARM
+     Load Address: 0x42008000
+   Verifying Hash Integrity ... OK
+   Loading fdt from 0x4e817c9c to 0x42008000
+   Booting using the fdt blob at 0x42008000
+   Loading Kernel Image
+   Using Device Tree in place at 42008000, end 4202d98c
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.19.125 (jenkins@root123) (gcc version 7.5.0 (Linaro GCC 7.5-2019.12)) #1 SMP PREEMPT Mon Jun 17 18:12:19 CST 2024
+[    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=50c5383d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: axera,ax620e
+[    0.000000] ENC:0302C5TP;SEN:0302C4XQ;LENS:4801C0G2
+[    0.000000] PROTOTYPE_NAME:IPC3624LE-ADF28K-WP
+[    0.000000] chip type: 0x1
+[    0.000000] memory total: 0x10000000, Media: 0x9000000
+[    0.000000] earlycon: uart8250 at MMIO32 0x04880000 (options '')
+[    0.000000] bootconsole [uart8250] enabled
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 28672
+[    0.000000]   Normal zone: 224 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 28672 pages, LIFO batch:7
+[    0.000000] percpu: Embedded 18 pages/cpu s44236 r8192 d21300 u73728
+[    0.000000] pcpu-alloc: s44236 r8192 d21300 u73728 alloc=18*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 28448
+[    0.000000] Kernel command line: mem=112M console=ttyS0,115200n8 loglevel=8 earlycon=uart8250,mmio32,0x4880000 board_id=0,boot_reason=0x0 root=/dev/axramdisk rw rootfstype=ext2 init=/linuxrc mtdparts=spi4.0:1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 104156K/114688K available (3967K kernel code, 222K rwdata, 1384K rodata, 2516K init, 396K bss, 10532K reserved, 0K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xc7800000 - 0xff800000   ( 896 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xc7000000   ( 112 MB)
+[    0.000000]     modules : 0xbf800000 - 0xc0000000   (   8 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (3969 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (2516 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 223 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 397 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000004] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.008020] Switching to timer-based delay loop, resolution 41ns
+[    0.016677] Console: colour dummy device 80x30
+[    0.021153] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=120000)
+[    0.031526] pid_max: default: 32768 minimum: 301
+[    0.036241] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.042873] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.050326] CPU: Testing write buffer coherency: ok
+[    0.055464] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.091227] Setting up static identity map for 0x40008240 - 0x40008278
+[    0.107792] rcu: Hierarchical SRCU implementation.
+[    0.127820] smp: Bringing up secondary CPUs ...
+[    0.158040] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.158137] smp: Brought up 1 node, 2 CPUs
+[    0.167925] SMP: Total of 2 processors activated (96.00 BogoMIPS).
+[    0.174120] CPU: All CPU(s) started in SVC mode.
+[    0.179325] devtmpfs: initialized
+[    0.210230] random: get_random_u32 called from bucket_table_alloc+0x63/0x118 with crng_init=0
+[    0.218956] VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+[    0.226804] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 9556302231375000 ns
+[    0.236572] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.242797] pinctrl core: initialized pinctrl subsystem
+[    0.248288] NET: Registered protocol family 16
+[    0.253022] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.260763] ax_pin_init ret 0 index 7
+[    0.265977] console [pstore-1] enabled
+[    0.269733] pstore: Registered ramoops as persistent store backend
+[    0.275932] ramoops: attached 0x8000@0x41000000, ecc: 0/0
+[    0.294025] SCSI subsystem initialized
+[    0.297941] usbcore: registered new interface driver usbfs
+[    0.303490] usbcore: registered new interface driver hub
+[    0.308864] usbcore: registered new device driver usb
+[    0.314558] pps_core: LinuxPPS API ver. 1 registered
+[    0.319549] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.328711] PTP clock support registered
+[    0.332852] Advanced Linux Sound Architecture Driver Initialized.
+[    0.340039] dma_per 48a0000.dma_per: Axera DMA Peripherals Controller, 16 channels
+[    0.348047] dma:ax_dma_probe:1605: done
+[    0.352257] clocksource: Switched to clocksource arch_sys_counter
+[    0.362907] NET: Registered protocol family 2
+[    0.367739] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+[    0.375443] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.382438] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.388824] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.395249] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.401114] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.407494] NET: Registered protocol family 1
+[    0.412148] RPC: Registered named UNIX socket transport module.
+[    0.418095] RPC: Registered udp transport module.
+[    0.422811] RPC: Registered tcp transport module.
+[    0.427528] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.543095] workingset: timestamp_bits=30 max_order=15 bucket_order=0
+[    0.553669] axera_logctl_init: of_find_compatible_node 'axera,logctl' success!!!
+[    0.553675] axera_logctl_init: of_find_compatible_node config: /etc/ax_syslog.conf
+[    0.561149] axera_logctl_init: logstate:1 1 len:2
+[    0.573471] axera_logctl_init: loglevel:4 4 len:2
+[    0.578424] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.584743] NFS: Registering the id_resolver key type
+[    0.589834] Key type id_resolver registered
+[    0.594030] Key type id_legacy registered
+[    0.598075] jffs2: version 2.2. (NAND) ¬© 2001-2006 Red Hat, Inc.
+[    0.607005] io scheduler noop registered (default)
+[    0.611841] io scheduler mq-deadline registered
+[    0.616391] io scheduler kyber registered
+[    0.621630] axera-pinctrl 2300000.pinctrl: initialized pinctrl driver
+[    0.631876] ax_os_mem_init
+[    0.634738] [GZIP][D]: [     1][ax_gzipd_init : 730] enter ax_gzipd_init
+[    0.642247] Serial: 8250/16550 driver, 5 ports, IRQ sharing disabled
+[    0.649631] console [ttyS0] disabled
+[    0.653277] 4880000.ax_uart: ttyS0 at MMIO 0x4880000 (irq = 20, base_baud = 13000000) is a 16550A
+[    0.662199] console [ttyS0] enabled
+[    0.662199] console [ttyS0] enabled
+[    0.669184] bootconsole [uart8250] disabled
+[    0.669184] bootconsole [uart8250] disabled
+[    0.678767] null: module loaded
+[    0.682444] ax_ramdisk_init:can't find ramdisk device tree node
+[    0.689332] dw_spi_setup: rx_sample_dly_ns=0x6, chip->rx_sample_dly=0x3
+[    0.696108] spi_master spi4: set clk_div=0x4, speed_hz=104000000, dws->max_freq=416000000
+[    0.704308] spi_master spi4: set rx_sample_dly=0x3
+[    0.709162] spi-nand spi4.0: FudanMicroelec SPI NAND was found.
+[    0.715100] spi-nand spi4.0: 128 MiB, block size: 128 KiB, page size: 2048, OOB size: 64
+[    0.723705] 13 cmdlinepart partitions found on MTD device spi4.0
+[    0.729728] Creating 13 MTD partitions on "spi4.0":
+[    0.734620] 0x000000000000-0x000000100000 : "spl"
+[    0.740646] 0x000000100000-0x000000180000 : "ddrinit"
+[    0.746522] 0x000000180000-0x000000380000 : "uboot"
+[    0.753608] 0x000000380000-0x000000400000 : "env"
+[    0.759137] 0x000000400000-0x000000a00000 : "calibration"
+[    0.770380] 0x000000a00000-0x000000b00000 : "cliinfo"
+[    0.776712] 0x000000b00000-0x000001300000 : "config"
+[    0.789353] 0x000001300000-0x000001400000 : "runtime"
+[    0.795689] 0x000001400000-0x000001a00000 : "cfgbak"
+[    0.806496] 0x000001a00000-0x000002100000 : "kernel"
+[    0.818243] 0x000002100000-0x000002180000 : "update"
+[    0.824070] 0x000002180000-0x000007f80000 : "program"
+[    0.915316] 0x000007f80000-0x000008000000 : "other"
+[    0.921296] libphy: Fixed MDIO Bus: probed
+[    0.925461] tun: Universal TUN/TAP device driver, 1.6
+[    0.930754] stmmaceth 104c0000.ethernet: probe axera emac
+[    0.936265] stmmaceth 104c0000.ethernet: phy-rst-gpio not configure
+[    0.942568] stmmaceth 104c0000.ethernet: emac bus clock: 312MHz
+[    0.948530] stmmaceth 104c0000.ethernet: emac phy clock: 25MHz
+[    0.954408] stmmaceth 104c0000.ethernet: PTP rate: 50MHz
+[    0.959750] stmmaceth 104c0000.ethernet: reset axera emac...
+[    0.970430] stmmaceth 104c0000.ethernet: EMAC: select Inner RMII interface, value:0x00000000
+[    0.978999] stmmaceth 104c0000.ethernet: User ID: 0x10, Synopsys ID: 0x52
+[    0.985804] stmmaceth 104c0000.ethernet: 	DWMAC4/5
+[    0.990607] stmmaceth 104c0000.ethernet: DMA HW capability register supported
+[    0.997756] stmmaceth 104c0000.ethernet: RX Checksum Offload Engine supported
+[    1.004901] stmmaceth 104c0000.ethernet: TX Checksum insertion supported
+[    1.011615] stmmaceth 104c0000.ethernet: Wake-Up On Lan supported
+[    1.017721] stmmaceth 104c0000.ethernet: TSO supported
+[    1.022869] stmmaceth 104c0000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+[    1.030546] stmmaceth 104c0000.ethernet: Enabling HW TC (entries=256, max_off=256)
+[    1.038129] stmmaceth 104c0000.ethernet: USO feature enabled
+[    1.043797] stmmaceth 104c0000.ethernet: TSO feature enabled
+[    1.049542] libphy: stmmac: probed
+[    1.055848] PPP generic driver version 2.4.2
+[    1.060269] PPP BSD Compression module registered
+[    1.064990] PPP Deflate Compression module registered
+[    1.070054] NET: Registered protocol family 24
+[    1.074856] axera dwc3 soc:axera_dwc3: axera usb probe
+[    1.080177] axera dwc3 soc:axera_dwc3: usb bus clock: 312MHz
+[    1.085866] axera dwc3 soc:axera_dwc3: axera usb clk set succeed.
+[    1.091995] axera dwc3 soc:axera_dwc3: axera usb reset succeed.
+[    1.098189] dwc3 8000000.dwc3: probe later.
+[    1.102840] usbcore: registered new interface driver cdc_acm
+[    1.108511] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.116670] usbcore: registered new interface driver uas
+[    1.122029] usbcore: registered new interface driver usb-storage
+[    1.128107] usbcore: registered new interface driver usbserial_generic
+[    1.134661] usbserial: USB Serial support registered for generic
+[    1.176627] rtc_axera 23e0000.rtc-top: rtc core: registered 23e0000.rtc-top as rtc0
+[    1.184390] i2c /dev entries driver
+[    1.189324] ax_wdt:ax_wdt_drv_probe:346: done!
+[    1.189668] sdhci: Secure Digital Host Controller Interface driver
+[    1.200334] sdhci: Copyright(c) Pierre Ossman
+[    1.204726] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.204814] sdhci-axera 104e0000.sdhc: axera sdhci probe
+[    1.211052] usbcore: registered new interface driver usbhid
+[    1.218015] get cd gpio failed
+[    1.221300] usbhid: USB HID core driver
+[    1.230044] dev->intr_type = 0
+[    1.233134] dw_i2s_probe, hdmi_i2s: 0
+[    1.236897] config pin_sd_misc to 0x300100
+[    1.241022] dw_i2s_probe get irq is -6
+[    1.244795] IIS get i2s_mclk: 12288000
+[    1.248557] IIS get i2s_mclk: 12288000
+[    1.252350] IIS probe OK
+[    1.254932] dev->intr_type = 1
+[    1.257998] dw_i2s_probe, hdmi_i2s: 0
+[    1.261726] config pin_sd_misc to 0x300100
+[    1.265840] dw_i2s_probe get irq is -6
+[    1.269609] IIS get i2s_mclk: 12288000
+[    1.273368] IIS get i2s_mclk: 12288000
+[    1.277135] IIS probe OK
+[    1.280020] ax_actt_probe
+[    1.282705] designware-actt 23f2000.audio_codec: No cache used with register defaults set!
+[    1.291079] oprofile: hardware counters not available
+[    1.292342] mmc0: SDHCI controller on 104e0000.sdhc [104e0000.sdhc] using ADMA 64-bit
+[    1.296150] oprofile: using timer interrupt.
+[    1.304004] sdhci_cdns_read_phy_reg: phy lock successful
+[    1.308901] NET: Registered protocol family 10
+[    1.336414] Segment Routing with IPv6
+[    1.340223] mip6: Mobile IPv6
+[    1.343679] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.350348] NET: Registered protocol family 17
+[    1.354893] l2tp_core: L2TP core driver, V2.0
+[    1.359273] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.364094] Key type dns_resolver registered
+[    1.368544] Registering SWP/SWPB emulation handler
+[    1.373350] chip type: AX620Q
+[    1.376326] product init ok
+[    1.379869] pstore: Using compression: deflate
+[    1.385298] i2c_designware 4850000.i2c: running with gpio recovery mode! scl,sda
+[    1.392870] i2c i2c-0: using pinctrl states for GPIO recovery
+[    1.399031] i2c_designware 4851000.i2c: running with gpio recovery mode! scl,sda
+[    1.406566] i2c i2c-1: using pinctrl states for GPIO recovery
+[    1.412682] dwc3 8000000.dwc3: dr_mode is 3 (1-host 2-device 3-otg)
+[    1.418988] dwc3 8000000.dwc3: EP NUM:16
+[    1.423225] actt_component_probe
+[    1.423225]  
+[    1.423364] bengin actt_set_sysclk
+[    1.428171] actt_set_sysclk, freq: 12288000
+[    1.435764] actt_set_dai_fmt, fmt: 0x1001
+[    1.439783] actt_set_dai_fmt, actt rx only support master fmt_mode: 0x1000
+[    1.446665] actt in I2S Format
+[    1.449728] dw_i2s_set_fmt, fmt: 0x1001
+[    1.454117] asoc-simple-card sound: 23f2000.audio_codec <-> 6051000.i2s_slv mapping ok
+[    1.462046] bengin actt_set_sysclk
+[    1.462049] actt_set_sysclk, freq: 12288000
+[    1.469648] actt_set_dai_fmt, fmt: 0x4001
+[    1.473666] actt_set_dai_fmt, actt tx only support salve .fmt_mode: 0x4000
+[    1.480547] actt in I2S Format
+[    1.483609] dw_i2s_set_fmt, fmt: 0x4001
+[    1.487968] asoc-simple-card sound: 23f2000.audio_codec <-> 6050000.i2s_mst mapping ok
+[    1.496080] dwc3 8000000.dwc3: axera usb gadget init
+[    1.512750] rtc_axera 23e0000.rtc-top: setting system clock to 1970-01-01 08:00:00 UTC (28800)
+[    1.521792] OF: fdt: not creating '/sys/firmware/fdt': CRC check failed
+[    1.528682] ALSA device list:
+[    1.531653]   #0: Axera Audio
+[    1.534790] ttyS0 - failed to request DMA
+[    1.540736] Freeing unused kernel memory: 2516K
+[    1.545277] This architecture does not have kernel memory protection.
+[    1.551726] Run /init as init process
+[RCS]: /etc/init.d/S11init
+mount: mounting debugfs on /sys/kernel/debug failed: No such file or directory
+[RCS]: /etc/init.d/S30ambrwfs
+cp: can't stat '/root/*': No such file or directory
+[    1.855290] ubi0: default fastmap pool size: 35
+[    1.859881] ubi0: default fastmap WL pool size: 17
+[    1.864915] ubi0: attaching mtd12
+[    1.911030] random: fast init done
+[    2.138181] ubi0: scanning is finished
+[    2.152429] ubi0: attached mtd12 (name "program", size 94 MiB)
+[    2.158295] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.165182] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.171984] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.178961] ubi0: good PEBs: 751, bad PEBs: 1, corrupted PEBs: 0
+[    2.184981] ubi0: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.192216] ubi0: max/mean erase counter: 4/1, WL threshold: 4096, image sequence number: 1390195764
+[    2.201364] ubi0: available PEBs: 0, total reserved PEBs: 751, PEBs reserved for bad PEB handling: 15
+[    2.210635] ubi0: background thread "ubi_bgt0d" started, PID 169
+UBI device number 0, total 751 LEBs (95358976 bytes, 90.9 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+u[    2.227097] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 176
+bi0_0 exist.
+create Directory:/program
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi0:program /program 
+[    2.257888] UBIFS (ubi0:0): recovery needed
+[    2.367064] UBIFS (ubi0:0): recovery completed
+[    2.371617] UBIFS (ubi0:0): UBIFS: mounted UBI device 0, volume 0, name "program"
+[    2.379681] UBIFS (ubi0:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.389632] UBIFS (ubi0:0): FS size: 91295744 bytes (87 MiB, 719 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+[    2.400097] UBIFS (ubi0:0): reserved for root: 0 bytes (0 KiB)
+[    2.405951] UBIFS (ubi0:0): media format: w4/r0 (latest is w5/r0), UUID 5AA93821-CE3B-42DF-8B4C-323281550D45, small LPT model
+[    2.432406] ubi1: default fastmap pool size: 8
+[    2.436865] ubi1: default fastmap WL pool size: 4
+[    2.441620] ubi1: attaching mtd7
+[    2.468454] ubi1: scanning is finished
+[    2.478834] ubi1: attached mtd7 (name "config", size 8 MiB)
+[    2.484456] ubi1: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.491353] ubi1: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.498158] ubi1: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.505133] ubi1: good PEBs: 64, bad PEBs: 0, corrupted PEBs: 0
+[    2.511095] ubi1: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.518335] ubi1: max/mean erase counter: 21/12, WL threshold: 4096, image sequence number: 3376025183
+[    2.527656] ubi1: available PEBs: 0, total reserved PEBs: 64, PEBs reserved for bad PEB handling: 4
+[    2.536729] ubi1: background thread "ubi_bgt1d" started, PID 186
+UBI device number 1, total 64 LEBs (8126464 bytes, 7.7 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubi1_0 exist.
+create Directory:/config
+df: /dev/pts: No such file [    2.555005] UBIFS (ubi1:0): background thread "ubifs_bgt1_0" started, PID 193
+or directory
+    mount -t ubifs ubi1:config /config 
+[    2.589410] UBIFS (ubi1:0): recovery needed
+[    2.669005] UBIFS (ubi1:0): recovery completed
+[    2.673499] UBIFS (ubi1:0): UBIFS: mounted UBI device 1, volume 0, name "config"
+[    2.680908] UBIFS (ubi1:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.690838] UBIFS (ubi1:0): FS size: 5586944 bytes (5 MiB, 44 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    2.700939] UBIFS (ubi1:0): reserved for root: 263884 bytes (257 KiB)
+[    2.707396] UBIFS (ubi1:0): media format: w5/r0 (latest is w5/r0), UUID 6D0233DC-6B50-42EA-8560-1142E2371A7A, small LPT model
+[    2.733704] ubi2: default fastmap pool size: 8
+[    2.738236] ubi2: default fastmap WL pool size: 4
+[    2.742961] ubi2: attaching mtd9
+[    2.763564] ubi2: scanning is finished
+[    2.773840] ubi2: attached mtd9 (name "cfgbak", size 6 MiB)
+[    2.779482] ubi2: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.786380] ubi2: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.793185] ubi2: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.800159] ubi2: good PEBs: 48, bad PEBs: 0, corrupted PEBs: 0
+[    2.806113] ubi2: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.813353] ubi2: max/mean erase counter: 21/12, WL threshold: 4096, image sequence number: 1034400906
+[    2.822674] ubi2: available PEBs: 0, total reserved PEBs: 48, PEBs reserved for bad PEB handling: 4
+[    2.831747] ubi2: background thread "ubi_bgt2d" started, PID 203
+UBI device number 2, total 48 LEBs (6094848 bytes, 5.8 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubi2[    2.848247] UBIFS (ubi2:0): background thread "ubifs_bgt2_0" started, PID 210
+_0 exist.
+create Directory:/cfgbak
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi2:cfgbak /cfgbak 
+[    2.878917] UBIFS (ubi2:0): recovery needed
+[    2.964525] UBIFS (ubi2:0): recovery completed
+[    2.969031] UBIFS (ubi2:0): UBIFS: mounted UBI device 2, volume 0, name "cfgbak"
+[    2.976441] UBIFS (ubi2:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.986372] UBIFS (ubi2:0): FS size: 3555328 bytes (3 MiB, 28 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    2.996472] UBIFS (ubi2:0): reserved for root: 167926 bytes (163 KiB)
+[    3.002929] UBIFS (ubi2:0): media format: w5/r0 (latest is w5/r0), UUID 53E3460B-080A-4FEE-AEE2-4B0AFEB51CC3, small LPT model
+[    3.031149] ubi3: default fastmap pool size: 8
+[    3.035657] ubi3: default fastmap WL pool size: 4
+[    3.040556] ubi3: attaching mtd5
+[    3.061046] ubi3: scanning is finished
+[    3.074794] ubi3: attached mtd5 (name "calibration", size 6 MiB)
+[    3.080836] ubi3: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    3.087732] ubi3: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    3.094533] ubi3: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    3.101507] ubi3: good PEBs: 48, bad PEBs: 0, corrupted PEBs: 0
+[    3.107441] ubi3: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    3.114676] ubi3: max/mean erase counter: 5/2, WL threshold: 4096, image sequence number: 3091558067
+[    3.123823] ubi3: available PEBs: 0, total reserved PEBs: 48, PEBs reserved for bad PEB handling: 4
+[    3.132898] ubi3: background thread "ubi_bgt3d" started, PID 220
+UBI device number 3, total 48 LEBs (6094848 bytes, 5.8 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubi3[    3.147100] UBIFS (ubi3:0): background thread "ubifs_bgt3_0" started, PID 226
+_0 exist.
+    /calibration exists
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi3:calibration /calibration 
+[    3.214600] UBIFS (ubi3:0): UBIFS: mounted UBI device 3, volume 0, name "calibration"
+[    3.222462] UBIFS (ubi3:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    3.232391] UBIFS (ubi3:0): FS size: 3555328 bytes (3 MiB, 28 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    3.242491] UBIFS (ubi3:0): reserved for root: 167926 bytes (163 KiB)
+[    3.248944] UBIFS (ubi3:0): media format: w5/r0 (latest is w5/r0), UUID BF7BD558-BC9A-4D8D-B2C4-EE4F6925CECD, small LPT model
+[    3.284724] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" stops
+[    6.217289] random: crng init done
+[RCS]: /etc/init.d/S80network
+[    6.240472] NetUserDrv: loading out-of-tree module taints kernel.
+[    6.247396] NET_USR module init ok!
+[    6.259493] NET_DBG module init ok!
+      IP: 192.168.0.13
+   BOOTP: 
+ GATEWAY: 192.168.0.1
+ NETMASK: 255.255.255.0
+HO[    6.269554] stmmaceth 104c0000.ethernet: axera_reset_phy
+STNAME: 
+  NETDEV: eth0
+AUTOCONF: 
+[    6.279610] stmmaceth 104c0000.ethernet: ephy bgs=0x1, trim=0x7, ephy0_reg=0x410021d1
+[    6.392259] ax_ephy_config_init
+[    6.527264] AX620E Fast Ethernet stmmac-0:01: attached PHY driver [AX620E Fast Ethernet] (mii_bus:phy_addr=stmmac-0:01, irq=POLL)
+[    6.549734] stmmaceth 104c0000.ethernet eth0: No Safety Features support found
+[    6.556979] stmmaceth 104c0000.ethernet eth0: IEEE 1588-2008 Advanced Timestamp supported
+[    6.565330] stmmaceth 104c0000.ethernet eth0: registered PTP clock
+[    6.571953] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+passwd has changed
+run auto_load_all_drv.sh start 
+[    6.774711] npu 3800000.ax_npu: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 594000000, volt: 0, enabled: 1. New: freq: 594000000, volt: 0, enabled: 1
+[    6.825616] unsupport register display0
+[    6.837521] unsupport register display1
+run auto_load_all_drv.sh end 
+run npu_set_bw_limiter.sh start 
+already register bw limit for NPU
+this chip type is AX620Q_CHIP
+run npu_set_bw_limiter.sh end 
+
+root login: the same spl, don't need update
+[    7.667649] manuparse_inf[Manuparse_Init                : 293 ]ProductName[IPC3624LE-ADF28K-WP]
+[    7.676545] manuparse_inf[Manuparse_Init                : 294 ]BuildInfo[ENC-0302C5TP;SEN-0302C4XQ;LENS-4801C0G2]
+[    7.686826] manuparse_inf[Manuparse_Init                : 295 ]SerialNum[210235UEDW3247000191]
+[    7.695459] manuparse_inf[Manuparse_AnalysisSensorType  : 96  ]Sensor[0] type[589841] name[sc450ai]
+[    7.704524] manuparse_inf[Manuparse_AnalysisSpecialImageInv: 178 ]SpecialImgInverse[0]
+[    7.712457] manuparse_war[Manuparse_AnalysisLightInfo   : 152 ]Product type[1] no Light info
+[    7.720908] manuparse_inf[Manuparse_AnalysisFormCap     : 105 ]Manuparse form type [0]
+[    7.728840] manuparse_war[Manuparse_AnalysisLensInfo    : 89  ]Lens[0] build[4801C0G2] not match default OTHER_LENS
+[    7.739307] manuparse_inf[Manuparse_AnalysisIrCutType   : 235 ]Manuparse IrCut type[0]
+[    7.747234] manuparse_inf[Manuparse_AnalysisIrCutMotorType: 297 ]Manuparse IrCut Motor type[0]
+[    7.755855] manuparse_inf[Manuparse_LensType_Trans      : 360 ]Manuparse pcLensFlag: []
+[    7.763877] manuparse_inf[Manuparse_AnalysisFisheyeType : 301 ]Manuparse:IPC3624LE-ADF28K-WP FisheyeType[FALSE]
+[    7.773977] manuparse_inf[Manuparse_AnalysisAlarmCnt    : 635 ]Manuparse AlmInNum[2] AlmOutNum [1]
+[    7.782947] manuparse_inf[Manuparse_AnalysisHalfType    : 140 ]SerialNumber[210235UEDW3247000191]: IsHalfType[0]
+[    7.793133] manuparse_inf[Manuparse_AnalysisResButtLimi : 437 ]Manuparse:IPC3624LE-ADF28K-WP Reset button limit is TRUE
+[    7.803924] manuparse_inf[Manuparse_AnalysisSpkPowerType: 695 ]ENC speaker power type:[1]
+[    7.812109] manuparse_inf[Manuparse_AnalysisCloseSpkInFreeCap: 211 ]CloseSpkInFree[0]
+[    7.819949] manuparse_inf[Manuparse_AnalysisPOEatType   : 751 ]POEATType:[0]
+[    7.827006] manuparse_inf[Manuparse_AnalysisRunLedSite  : 808 ]Manuparse:IPC3624LE-ADF28K-WP Run Led on DSP
+[    7.836765] manuparse_inf[Manuparse_AnalysisAlarmLedSite: 865 ]Manuparse:IPC3624LE-ADF28K-WP Alarm Led on DSP
+[    7.846689] manuparse_inf[Manuparse_AnalysisPtMcuImageInfo: 490 ]Manuparse PtMcuImageInfo:no_pt_mcu_image
+cat: can't open '/proc/nandid': No such file or directory
+[    7.904288] gpio_inf[product_fixdome_init: 653 ]kgpio for fixdome 
+[    7.910533] gpio_inf[prior_init          : 825 ]Product type is FIXDOME
+[    7.927353] 
+[    7.927353] Encryption Board Reset
+[    7.932264] gpio_inf[SetAllLedGpio       : 485 ]no [gstGreenRunLedGpio] led pin
+[    7.939588] gpio_inf[SetAllLedGpio       : 486 ]no [gstRedRunLedGpio] led pin
+[    7.946744] gpio_inf[SetAllLedGpio       : 487 ]no [gstBlueRunLedGpio] led pin
+[    7.953981] gpio_inf[LightCtrlInit       : 417 ]Light channl 1 ctrled invalued, no need to init
+[    7.954140] dwc3 8000000.dwc3: dwc3_drd_notifier, mode is host
+[    7.957335] gpio_inf[Pwm_Init            : 192 ]Pwm_Init[4] Ok
+[    7.965894] dwc3 8000000.dwc3: axera usb host init
+[    7.968897] gpio_inf[Pwm_Init            : 192 ]Pwm_Init[5] Ok
+[    7.982161] dwc3 8000000.dwc3: usb2.0-only mode
+[    7.985317] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[    7.990107] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    7.996632] gpio_err[RunLightInit        : 547 ]Red run led init Fail
+[    8.004760] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 1
+[    8.017483] xhci-hcd xhci-hcd.1.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x0000000000010010
+[    8.027083] xhci-hcd xhci-hcd.1.auto: irq 67, io mem 0x08000000
+[    8.033277] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.19
+reset motor position axes, zoompos=[] focuspos=[] status=[]
+[    8.041647] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    8.054243] usb usb1: Product: xHCI Host Controller
+[    8.059154] usb usb1: Manufacturer: Linux 4.19.125 xhci-hcd
+[    8.064801] usb usb1: SerialNumber: xhci-hcd.1.auto
+[    8.070288] hub 1-0:1.0: USB hub found
+[    8.074204] hub 1-0:1.0: 1 port detected
+[    8.078608] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    8.084268] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 2
+[    8.091998] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+[    8.098637] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    8.106838] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 4.19
+[    8.115144] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    8.122397] usb usb2: Product: xHCI Host Controller
+[    8.127309] usb usb2: Manufacturer: Linux 4.19.125 xhci-hcd
+[    8.132903] usb usb2: SerialNumber: xhci-hcd.1.auto
+[    8.138485] hub 2-0:1.0: USB hub found
+[    8.142393] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    8.168141] motor_err[0234 @ Hw_Timer_Init]:	
+[    8.168145] Timer id invalid:1
+[    8.172567] 
+[    8.177310] motor_info[0321 @ WorkQueue_Init]:	
+[    8.177313] Work Queue init
+[    8.181846] 
+[    8.186181] motor_info[1558 @ motor_init]:	
+[    8.186183] motor finish init
+[    8.187377] motor_info[0094 @ LensPortMode_Init]:	
+[    8.190387] 
+[    8.193358] Init LensPortMode:2
+[    8.193359] 
+[    8.204330] motor_info[0827 @ Ircut_IPC_Init]:	
+[    8.204333] ircut init ch[0] type[0]
+[    8.208922] 
+[    8.214035] motor_info[0476 @ DC_Ircut_Init]:	
+[    8.214037] dc[ch0] ircut init ok
+[    8.218501] 
+[    8.223335] i2c_get_adapter fail!
+[    8.226660] driver init fail
+[    8.229561] i2c init fail
+[    8.232193] motor_info[0500 @ motor_init_thread]:	
+[    8.232194] motor thread init ok
+[    8.237003] 
+[    8.255313] RunTm_inf[runtime_set_startup_date      : 814 ]start system at: year=1970 month=1 date=1 hour=8 minute=0 second=0
+[    8.281303] RunTm_err[runtime_set_current_date_lastrtinfo: 893 ]iTmp=0, size=212
+[    8.288816] RunTm_war[runtime_init                  : 1434]wait for runtime_thread_process thread 
+[    8.297837] RunTm_war[runtime_init                  : 1452]wait for runtime_thread_process thread 
+[    8.306810] RunTm_inf[runtime_init                  : 1455]End of runtime!
+insmod: can't insert '/lib/modules/4.19.125/extra/SC450AI_MIPI.ko': No such file or directory
+net.core.wmem_max = 655360
+net.core.wmem_default = 655360
+cp: can't stat '/data/*': No such file or directory
+mount: mounting /tmp/.data/ on /data failed: No such file or directory
+vm.overcommit_memory = 0
+vm.overcommit_ratio = 50
+vm.min_free_kbytes = 598
+vm.dirty_background_ratio = 2
+vm.dirty_expire_centisecs = 500
+vm.dirty_ratio = 2
+vm.dirty_writeback_centisecs = 100
+vm.admin_reserve_kbytes = 0
+vm.user_reserve_kbytes = 0
+[    8.368374] drop_caches.sh (648): drop_caches: 4
+chmod: /tmp/bin/update: Read-only file system
+cp: can't stat '/usr/sbin/nandwrite_move': No such file or directory
+chmod: /tmp/bin/nandwrite: No such file or directory
+ln: /www/www: Read-only file system
+ln: /program/www/ActiveX/Setup64.exe: Read-only file system
+cp: can't stat '/program/bin/ca.cer': No such file or directory
+Open file fail
+rm: can't remove 'logo.png': Read-only file system
+ln: logo.png: File exists
+/program/www/skin/default_1/images
+Interversion is :GIPCV600R002B15D001SP68D2308NB
+
+DeviceName is SC-3243-IWPS-F28; PrototypeName is IPC3624LE-ADF28K-WP; ManufacturingDate is 2024-07-25. 
+Interversion is :GIPCV600R002B15D001SP68D2308NB
+
+szTmpManufacturingDate error:
+do: ls /program/factory/default_cfg_IPC2314LE.xml 
+[0;0m/program/factory/default_cfg_IPC2314LE.xml[m
+do: cp /program/factory/device_cap_IPC2314LE.xml /config/device_cap.xml 
+do: cp /program/factory/default_cfg_IPC2314LE.xml /config/default_cfg.xml 
+do: cp /program/factory/preset_scene_IPC2XXX.xml /config/preset_scene.xml 
+do: cp -rf /program/factory/ipu_lfw.bin /config/dla/ 
+cp: can't stat '/program/factory/ipu_lfw.bin': No such file or directory
+MW_XML_LoadFile:Open file fail! /calibration/customize/customized.xml
+Load XML File failed!
+Customize Time Zone Fail
+CustomerCode val is 02 
+ln: /www/skin/default_1/images/logo.png: File exists
+DeviceName is SC-3243-IWPS-F28. CustomCode is 02
+ShowLangList is [1,0,17,4,8,3,36,11,20,7,52,5,6]
+chmod: /program/bin/kernelsendbuff.sh: Read-only file system
+sed: no address after comma
+sed: no address after comma
+sed: no address after comma
+CPU type is AX620Q_CHIP
+CFG rowcnt[42]
+CFG rowcnt[97]
+CFG rowcnt[149]
+CFG rowcnt[172]
+CFG rowcnt[226]
+CFG rowcnt[403]
+CFG rowcnt[521]
+CFG rowcnt[1402]
+CFG rowcnt[1581]
+CFG rowcnt[1623]
+CFG rowcnt[1701]
+CFG rowcnt[1732]
+CFG rowcnt[1765]
+CFG rowcnt[1772]
+CFG rowcnt[1778]
+CFG rowcnt[1781]
+CFG rowcnt[1798]
+CFG rowcnt[1819]
+CFG rowcnt[1826]
+CFG rowcnt[1852]
+CFG rowcnt[1879]
+CFG rowcnt[1884]
+CFG rowcnt[1946]
+CFG rowcnt[1956]
+CFG rowcnt[1972]
+CFG rowcnt[1980]
+CFG rowcnt[1991]
+CFG rowcnt[1998]
+CFG rowcnt[2109]
+CFG rowcnt[2217]
+CFG rowcnt[2466]
+CFG rowcnt[2507]
+CFG rowcnt[2665]
+CFG rowcnt[2713]
+CFG rowcnt[2808]
+CFG rowcnt[3077]
+CFG rowcnt[3376]
+CFG rowcnt[3475]
+
+ MWARE System Initializing...
+
+ Invalid system time, restore default! 
+...Init Courese success...
+Control Init Config Capability success, ProductType:10, DoubleChlDevType:0, VideoInNum:1
+route: SIOCDELRT: No such process
+sh: can't create /proc/vpe/vpe_debug: nonexistent directory
+sh: can't create /proc/vpe/vpe_debug: nonexistent directory
+The Node areadly exist!
+ln: /www/device_cap.xml: File exists
+chpasswd: password for 'root' changed
+.....i2c_init: i2c device is /dev/i2c-0 
+can not find match model, just use manual table model and param
+
+MW_XML_LoadFile:Open file fail! /program/custom/config.xml
+MW_XML_LoadFile:Open file fail! /config/ftp.xml
+adding the following line to /var/net-snmp/snmpd.conf:
+adding the following line to /etc/snmp.conf:
+   rouser MD5
+sdk init success
+MW_XML_LoadFile:Open file fail! /program/custom/config.xml
+..Done !
+
+root login: root
+Password: 
+Login timed out after 60 seconds
+
+root login: root
+Password: 
+login[1133]: root login on 'ttyS0'
+
+User@/root>checkUser@/root>checksysready
+root@root:~$ cd /
+root@root:/$ ls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ l[Jarop[J[Jp -a
+
+root@root:/$ nic[J[Jestat -lunp
+/bin/sh: nestat: not found
+root@root:/$ netstat- [J[J -lunp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+udp        0      0 127.0.0.1:2048          0.0.0.0:*                           751/mwareserver
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           932/mw_dhcpcd_wired
+udp        0      0 127.0.0.1:7001          0.0.0.0:*                           751/mwareserver
+udp        0      0 0.0.0.0:3702            0.0.0.0:*                           751/mwareserver
+root@root:/$ ??[ 7776.160909] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+root@root:/$ ?????????????????? nestat -lunp???????????????????????~????????????
+???[J[1A[32Cn?estat -lunp???????????????????????~???????????
+????[1A[34C?estat -lunp???????????????????????~??????????
+?????[1A[35C?estat -lunp???????????????????????~?????????
+??????[1A[36C[ 8580.440407] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 8580.470971] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 8580.501490] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+?estat -lunp???????????????????????~????????
+???????[1A[37C?estat -lunp???????????????????????~???????
+????????[1A[38Croot@root:/$ ????????????????????????netstat -lunp?????`??????????????????[J??????
+??????????????????????????????[ 8581.209664] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 8581.240214] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+???^C
+
+root@root:/$ ???????^C
+
+root@root:/$ ??????[ 8581.294923] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+??????>???[ 8581.420462] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 8581.451006] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 8581.481526] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 8581.512045] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+??????>8???????????????????????[ 8581.683666] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+?????[52D?????????????>?????????>8????????????????????????????[52D?????????????>?????????>8????????????????????????????[52D?????????????>?????????>8????????????????????????????[52D?????????????>?????????>8????????????????????????????[52D?????????????>?????????>8????????????????????????????[52D[ 8583.483222] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+?????????????>?????????>8????????????????????????????[52D^C
+
+root@root:/$ ?[ 8584.356383] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+????????????????[ 8584.889941] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+?????^C
+
+root@root:/$ ls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ ps au[J[J[J -a
+PID   USER     VSZ  STAT COMMAND
+    1 root     2332 S    init
+    2 root        0 SW   [kthreadd]
+    3 root        0 IW<  [rcu_gp]
+    4 root        0 IW<  [rcu_par_gp]
+    6 root        0 IW<  [kworker/0:0H-kb]
+    7 root        0 IW   [kworker/u4:0-ev]
+    8 root        0 IW<  [mm_percpu_wq]
+    9 root        0 SW   [ksoftirqd/0]
+   10 root        0 RW   [rcu_preempt]
+   11 root        0 IW   [rcu_sched]
+   12 root        0 IW   [rcu_bh]
+   13 root        0 SW   [migration/0]
+   14 root        0 SW   [cpuhp/0]
+   15 root        0 SW   [cpuhp/1]
+   16 root        0 SW   [migration/1]
+   17 root        0 SW   [ksoftirqd/1]
+   19 root        0 IW<  [kworker/1:0H]
+   20 root        0 SW   [kdevtmpfs]
+   21 root        0 SW   [rcu_tasks_kthre]
+   22 root        0 IW   [kworker/0:1-mm_]
+   23 root        0 SW   [khungtaskd]
+   24 root        0 SW   [oom_reaper]
+   25 root        0 IW<  [writeback]
+   26 root        0 SW   [kcompactd0]
+   27 root        0 IW<  [crypto]
+   28 root        0 IW<  [kblockd]
+   29 root        0 IW<  [devfreq_wq]
+   30 root        0 SW   [watchdogd]
+   31 root        0 IW<  [rpciod]
+   32 root        0 IW<  [kworker/u5:0]
+   33 root        0 IW<  [xprtiod]
+   34 root        0 SW   [kswapd0]
+   35 root        0 IW<  [nfsiod]
+   62 root        0 IW   [kworker/u4:1-ev]
+   63 root        0 IW<  [kworker/0:1H-kb]
+   64 root        0 SW   [spi4]
+   65 root        0 IW<  [stmmac_wq]
+   67 root        0 IW<  [uas]
+   68 root        0 SW   [irq/50-mmc0]
+   69 root        0 SW   [irq/68-extcon_u]
+   71 root        0 IW<  [ipv6_addrconf]
+   80 root        0 IW   [kworker/0:2-eve]
+  169 root        0 SW   [ubi_bgt0d]
+  186 root        0 SW   [ubi_bgt1d]
+  193 root        0 SW   [ubifs_bgt1_0]
+  203 root        0 SW   [ubi_bgt2d]
+  210 root        0 SW   [ubifs_bgt2_0]
+  220 root        0 SW   [ubi_bgt3d]
+  303 root        0 DW   [npu_utilization]
+  312 root        0 SW   [draw-worker-thr]
+  313 root        0 SW   [draw-finished-t]
+  398 root        0 SW   [irq/60-vpp_isp]
+  399 root        0 SW   [irq/60-vpp_gdc]
+  400 root        0 SW   [irq/60-vpp_v0]
+  401 root        0 SW   [irq/60-vpp_v1]
+  422 root        0 SW   [irq/61-gdc_dev]
+  431 root        0 SW   [irq/62-tdp0_dev]
+  465 root        0 SW   [irq/48-csictrl0]
+  466 root        0 SW   [irq/49-csictrl1]
+  516 root     1460 S    /sbin/axsyslogd -n -S
+  520 root     1456 S    /sbin/axklogd -n
+  530 root     2200 S    watchdog -t 10 -T 30 /dev/watchdog
+  581 root        0 IW<  [reset]
+  622 root        0 IW<  [motor_queue]
+  628 root        0 DW   [runtime_thread_]
+  629 root        0 DW   [runtime_mtd_thr]
+  648 root     2332 S    {drop_caches.sh} /bin/sh /program/bin/drop_caches.sh
+  751 root     867m S    mwareserver
+  782 root        0 DW   [ive-task-thr]
+  795 root      78m S    maintain
+  804 root      10m SN   daemon /program/www/daemon.cfg
+  861 root        0 DW   [npu_task_launch]
+  862 root        0 DW   [npu_task_launch]
+  869 root        0 SW   [isp_irq_task_0]
+  870 root        0 SW   [isp_irq_task_1]
+  871 root        0 SW   [vin_nor_sch_0]
+  872 root        0 SW   [vin_nor_sch_1]
+  932 root     1872 S    mw_dhcpcd_wired -n eth0 -4 -L
+  935 root     1872 S    mw_dhcpv6_wired -n eth0 -6
+ 1072 root        0 SW   [ubifs_bgt0_0]
+ 1133 root     1376 S    -uvsh
+ 1139 root     2332 S    sh /program/bin/checksysready.sh
+ 1140 root     2332 S    /bin/sh
+ 4002 root        0 IW   [kworker/1:0-eve]
+ 5154 root        0 IW   [kworker/1:2-mm_]
+ 5674 root        0 IW   [kworker/1:1]
+ 5782 root     2332 R    ps -a
+root@root:/$ root@root:/$ ps -a[Jux
+ps: invalid option -- 'u'
+BusyBox v1.36.1 (2024-03-19 11:46:10 CST) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+root@root:/$ root@root:/$ ps -aux[J[J[J[J[J| grep "drop[J[J[Jropbear"
+ 5795 root     2332 S    grep dropbear
+root@root:/$ drop [Jbear -R -E -p 2222
+root@root:/$ [5802] Dec 01 02:24:36 Running in background
+[5808] Dec 01 02:24:39 Child connection from 192.168.1.10:61837
+[5808] Dec 01 02:24:39 Exit before auth: Exited normally
+[5816] Dec 01 02:24:51 Child connection from 192.168.1.10:61839
+[5816] Dec 01 02:24:51 Couldn't create new file /etc/dropbear/dropbear_ecdsa_host_key.tmp5816: No such file or directory
+[5816] Dec 01 02:24:51 Exit before auth: Couldn't read or generate hostkey /etc/dropbear/dropbear_ecdsa_host_key
+k[J^C
+
+root@root:/$ mkdir -p /etc/dropbear
+root@root:/$ ls /etroot@root:/$ ls /etc/[Jdroroot@root:/$ ls /etc/dropbear/[J
+root@root:/$ dropbear -R -p 2222
+root@root:/$ [5859] Dec 01 02:26:05 Child connection from 192.168.1.10:61842
+[5859] Dec 01 02:26:05 Generated hostkey /etc/dropbear/dropbear_ecdsa_host_key, fingerprint is sha1!! 70:16:93:e2:52:cc:dc:45:f3:65:08:41:40:de:ed:f3:ec:e7:73:13
+[5859] Dec 01 02:26:08 Pubkey auth attempt with unknown algo for 'root' from 192.168.1.10:61842
+[5859] Dec 01 02:26:12 Bad password attempt for 'root' from 192.168.1.10:61842
+[5859] Dec 01 02:26:17 Bad password attempt for 'root' from 192.168.1.10:61842
+[5859] Dec 01 02:26:20 Bad password attempt for 'root' from 192.168.1.10:61842
+[5859] Dec 01 02:26:21 Exit before auth (user 'root', 3 fails): Exited normally
+^C
+
+root@root:/$ root@root:/$ dropbear -R -p 2222[J
+root@root:/$ [5882] Dec 01 02:26:42 Child connection from 192.168.1.10:61846
+[5882] Dec 01 02:26:42 Pubkey auth attempt with unknown algo for 'root' from 192.168.1.10:61846
+^C
+
+root@root:/$ [5882] Dec 01 02:26:56 Exit before auth (user 'root', 0 fails): Exited normally
+[H[Jroot@root:/$ [Jls[J[J[ 8839.318118] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 8839.348659] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 8839.379177] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 8839.409694] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+???????????????????????????????????????????????????[ 8846.107076] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+^C
+
+root@root:/$ [H[Jroot@root:/$ [Jls [J[J[Jcat e/[J[J/eroot@root:/$ cat /etc/[Jp[Jdroproot@root:/$ cat /etc/dropbear/[J
+cat: read error: Is a directory
+root@root:/$ root@root:/$ cat /etc/dropbear/[Jroot@root:/$ cat /etc/dropbear/dropbear_ecdsa_host_key [J
+   ecdsa-sha2-nistp256   nistp256   As;Ûüpÿ2Îrqs{ÖZ}Z{^G¢ﬁF‚ºó‡¿ór#âXõ¬0ıq)áN∑îV)sìYÃÖé/Ô®‚£À   ! åäˇ° „•<]	Ç–ø¯Ê!#FIUô·ªˇ∆˛t§;root@root:/$ ^C
+
+root@root:/$ vi e[J/eroot@root:/$ vi /etc/[J[J[J[J[J[J[J[J[Jmkdir -p /root/.ssh
+root@root:/$ cd ro[J[J/rroot@root:/$ cd /root/[J.sroot@root:/$ cd /root/.ssh/[J
+root@root:~/.ssh$ touch authord[Jized_keys
+root@root:~/.ssh$ vji [J[J[Ji aroot@root:~/.ssh$ vi authorized_keys [J
+[?1049h[999;999H[6n[H[J[1;1H~[2;1H~[3;1H~[4;1H~[5;1H~[6;1H~[7;1H~[8;1H~[9;1H~[10;1H~[11;1H~[12;1H~[13;1H~[14;1H~[15;1H~[16;1H~[17;1H~[18;1H~[19;1H~[20;1H~[21;1H~[22;1H~[23;1H~[24;1H~[25;1H~[26;1H~[27;1H~[28;1H~[29;1H~[30;1H~[31;1H~[32;1H~[33;1H~[34;1H~[35;1H~[36;1H~[37;1H~[38;1H~[39;1H~[40;1H~[41;1H~[42;1H~[43;1H~[44;1H~[45;1H~[46;1H~[47;1H~[48;1H~[49;1H~[50;1H~[51;1H~[52;1H~[53;1H~[1;2H[54;1H[K- authorized_keys 0/0 100%[1;2H[1;1H [1;1H[54;1H[K[7mNothing in register D[m[1;1H[54;1H[K- authorized_keys 0/0 100%[1;1H[1;1H[54;1H[K[7mNothing in register D[m[1;1H[54;1H[K- authorized_keys 0/0 100%[1;1H[54;1H[KI authorized_keys 0/0 100%[1;1H[1;1HN OPENSSH PRIVATE KEY---[1;25H[54;1H[KI authorized_keys [Modified] 2/2 100%[1;25H[1;25H--[2;1Hb3BlbnNzaC1rZXktdjEAAAAABG5vb[2;30H[2;30HmUAAAAEbm[2;39H[2;39H9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn[2;71H[54;1H[KI authorized_keys [Modified] 3/3 100%[2;71H[3;1HNhAAAAAwEAAQAAAYEA3am3ILEQvl21d[3;32H[3;32HKekcACeX3hZvkoGo07J7q8tW2VkG1c6x[3;64H[54;1H[KI authorized_keys [Modified] 4/4 100%[3;64H[3;64HhZKfM2B[4;1HG4lxhgTdLE2t9xmhXkmg1WmB[4;25H[4;25HwzqbhVfE1DypnA5Ta1XabSRtJPl8+Z7q[4;57H[54;1H[KI authorized_keys [Modified] 5/5 100%[4;57H[4;57HOUgi/zkq24hBeb[5;1Hl/qBkdONKzFomG0aE[5;18H[5;18Hm3PLffiMLfrbLYAkKduBixQ/y4KmE1xS[5;50H[54;1H[KI authorized_keys [Modified] 6/6 100%[5;50H[5;50HXdzB8qor3Rv9ZX6icVBIG[6;1HTQXRxVeFzJ[6;11H[6;11HnXMvp+1j9rPLAZBgBV875IBJx+0S5B2T[6;43H[54;1H[KI authorized_keys [Modified] 7/7 100%[6;43H[6;43HP/Nga4ARijJnuko3JI7Kf+IRPdpu[7;1H5tC[7;4H[7;4HkVXLHjpYgrAZw8x4tmY9dISBNCYPOQmX[7;36H[7;36HjnIQpWKA3IDsEXYqdDEi4bMM9gsu9jvX7[7;69H[54;1H[KI authorized_keys [Modified] 8/8 100%[7;69H[7;69HAr[8;1H2WbftR/BADjAkbEZ9IZ14g7jpcWrF[8;30H[8;30H1+bi8M4u1QntDDVFaJfBu5XExTDckG7A[8;62H[54;1H[KI authorized_keys [Modified] 9/9 100%[8;62H[8;62H5d1zYlvTh[9;1HkbJF2C6xngqfxcuVIWUS/d[9;23H[9;23H6TQIGsAIRzCDrwvjAa+CUwGy9kZzeLbo[9;55H[54;1H[KI authorized_keys [Modified] 10/10 100%[9;55H[9;55H3teGi+32ANNakD34[10;1HjCBogOjh4Eh8/5O[10;16H[10;16HLd62fN9Lr4R4llD3SpFv3IjP/AAAFmBw[10;48H[54;1H[KI authorized_keys [Modified] 11/11 100%[10;48H[10;48HnRcEcJ0XBAAAAB3NzaC1yc2[11;1HEAAAGBAN[11;9H[11;9H2ptyCxEL5dtXSnpHAAnl94Wb5KBqNOye[11;41H[54;1H[KI authorized_keys [Modified] 12/12 100%[11;41H[11;41H6vLVtlZBtXOsYWSnzNgRuJcYYE3SxN[12;1Hr[12;2H[12;2HfcZoV5JoNVpgcM6m4VXxNQ8qZwOU2tV2[12;34H[12;34Hm0kbST5fPme6jlIIv85KtuIQXm5f6gZH[12;66H[54;1H[KI authorized_keys [Modified] 13/13 100%[12;66H[12;66HTjSsx[13;1HaJhtGhJtzy334jC362y2AJCnbg[13;27H[13;27HYsUP8uCphNcUl3cwfKqK90b/WV+onFQS[13;59H[54;1H[KI authorized_keys [Modified] 14/14 100%[13;59H[13;59HBk0F0cVXhcyZ[14;1H1zL6ftY/azywGQYAVfO[14;20H[14;20H+SAScftEuQdkz/zYGuAEYoyZ7pKNySOy[14;52H[54;1H[KI authorized_keys [Modified] 15/15 100%[14;52H[14;52Hn/iET3abubQpFVyx46W[15;1HIKwGcPMeLZmP[15;13H[15;13HXSEgTQmDzkJl45yEKVigNyA7BF2KnQxI[15;45H[54;1H[KI authorized_keys [Modified] 16/16 100%[15;45H[15;45HuGzDPYLLvY71+wK9lm37UfwQA4[16;1HwJGxG[16;6H[16;6HfSGdeIO46XFqxdfm4vDOLtUJ7Qw1RWiX[16;38H[16;38HwbuVxMUw3JBuwOXdc2Jb04ZGyRdgusZ4[16;70H[54;1H[KI authorized_keys [Modified] 17/17 100%[16;70H[16;70HK[17;1Hn8XLlSFlEv3ek0CBrACEcwg68L4wGv[17;31H[17;31HglMBsvZGc3i26N7Xhovt9gDTWpA9+Iwg[17;63H[54;1H[KI authorized_keys [Modified] 18/18 100%[17;63H[17;63HaIDo4eBI[18;1HfP+Ti3etnzfS6+EeJZQ90qR[18;24H[18;24Hb9yIz/wAAAAMBAAEAAAGBAKFkIZ7e7Sb[18;56H[54;1H[KI authorized_keys [Modified] 19/19 100%[18;56H[18;56H+CdFPAk4+VRGECi[19;1HufsGeVRTfROkASea[19;17H[19;17HnigDucHU3zPu6yywJeZj8Mq/5/HdwN1d[19;49H[54;1H[KI authorized_keys [Modified] 20/20 100%[19;49H[19;49HmtATsJYBTdS8WQCZpDX/+F[20;1Hugy/eexy7[20;10H[20;10Hsi9KSLd4AVeNVM0SR/8rPLSnlEyMAzXw[20;42H[54;1H[KI authorized_keys [Modified] 21/21 100%[20;42H[20;42H168bBRxjcJEd+kh5MAetQzK4X9D1n[21;1H43[21;3H[21;3HTy5eos24cvylQ9fgsc0RcglQOmA4PXzm[21;35H[21;35H9dd7p5FJi7Io6MZ+HSoecnaO89bPrxJV[21;67H[54;1H[KI authorized_keys [Modified] 22/22 100%[21;67H[21;67HEMK5[22;1Htjc6+xxpONkbK0uKOYh94xIlFAk[22;28H[54;1H[KI authorized_keys [Modified] 23/23 100%[22;28H[54;1H[KI authorized_keys [Modified] 24/24 100%[22;28H[22;28HuX1/vGTwFhbdfSuhTua0Wv/9ZwH1mLy96OiaqoM8sRn[23;1HprvcrpKE7g2GlprTy0s5lG45pUBkzNFqcJUYFw9BYPk7B8+qGUiGse2hN+0CKeLSQxhXKh[24;1HVoaSXiwe4nwbMLgNkWRuSoHhd9b0SepL0dtx/cyZnDayq[24;46H[54;1H[KI authorized_keys [Modified] 25/25 100%[24;46H[24;46HgljlR5WwAR7RRxQi4fV4s05J9[25;1Hgs65BV[25;7H[25;7HAnulJrz+ow67Q6TbBzCakGaVxPz2BPmh[25;39H[25;39HbPNiu2aW/als8GjBwTAXrtbX+6s8OQAA[25;71H[54;1H[KI authorized_keys [Modified] 26/26 100%[25;71H[26;1HAMBDnxTMlNpc8MNF5SZ+bEg/jxC62j5[26;32H[26;32Hud1tNXKg/TwMqJVOo3OWazgsKY+IZFT9[26;64H[54;1H[KI authorized_keys [Modified] 27/27 100%[26;64H[26;64HtgVvt59[27;1Hg9GZupUz1aFtWLP9M0a/C9pQ[27;25H[27;25HIPjaJnB6n5VyUeU4soNrGcNiSu5t7IaQ[27;57H[54;1H[KI authorized_keys [Modified] 28/28 100%[27;57H[27;57HvNweE2LQjqataa[28;1HlnstMmpnqs+RrzBt1[28;18H[28;18HV5Wvs7CKIyAUcfDuNthPu5XweUpsgXi9[28;50H[54;1H[KI authorized_keys [Modified] 29/29 100%[28;50H[28;50HTGZVHfFWGJp3sSbpy99wl[29;1Huu9kdbMdWA[29;11H[29;11HjwNUYEnX8wuYfLuNz/TrNqM0+V3z5qiL[29;43H[54;1H[KI authorized_keys [Modified] 30/30 100%[29;43H[29;43HoTvva/cAAADBAPmLnBp26kK/LcDF[30;1HG7K[30;4H[30;4HZJiyHt5RgJeE0pqDJJx//ukU+6Zx26jvV[30;37H[30;37HtP0n3ISc6+Kved4uwbRN4Dn0Gv5CfvU+[30;69H[54;1H[KI authorized_keys [Modified] 31/31 100%[30;69H[30;69Hxd[31;1HAT77lx//Kdha11lVNaCyCj5ZRhZr1[31;30H[31;30HI19MQXavFmjNf8N4K7kuxSEs8YLo8DIF[31;62H[54;1H[KI authorized_keys [Modified] 32/32 100%[31;62H[31;62HB7km2A6F7[32;1HCnDpH/2uD1vSUkt1f0BRuX[32;23H[32;23HeJ/kzser0hPkLLHn5yAsh818wunasOKf[32;55H[54;1H[KI authorized_keys [Modified] 33/33 100%[32;55H[32;55HE9g0v6ayZDZZCXWs[33;1H7ALxQmApKH+msAJ[33;16H[54;1H[KI authorized_keys [Modified] 34/34 100%[33;16H[33;16Hcjd+e7qxubejD/rvQAAAMEA42V6uMNeVAOLpE801+rAqO/QyQ/CX8jn[34;1HRFcIh7Id8lvYIaye2mygufqr7D3rkHT09fIfWJVv[34;41H[54;1H[KI authorized_keys [Modified] 35/35 100%[34;41H[34;41Hhx8YJz9VndaaOnVK9OLwLo22OSneyq[35;1HR[35;2H[35;2H3MY4orB2H6/MxbVNBeCOdVQ+ReGW0BUt[35;34H[35;34HozOJDf10QWWAFIlek7p7pHXx+VCgWUsx[35;66H[54;1H[KI authorized_keys [Modified] 36/36 100%[35;66H[35;66Hd4Vqw[36;1H0Myayr+tnPVAWLTuSViRgrkXMS[36;27H[36;27HCeXSJciMpeD/fODTcdx239vzUhljHzwG[36;59H[54;1H[KI authorized_keys [Modified] 37/37 100%[36;59H[36;59H9LrHxNe6oPWt[37;1H3WG42E21duShxrAAAAI[37;20H[37;20HnlnYXNodUBZb25hdGhhbnMtTWFjQm9va[37;52H[54;1H[KI authorized_keys [Modified] 38/38 100%[37;52H[37;52Hy1BaXIubG9jYWw=[38;1H-----END OPENSSH[38;17H[38;18HPRIVATE KEY-----[38;34H[38;33H[54;1H[K- authorized_keys [Modified] 38/38 100%[38;33H[54;1H[K:[38;33H[38;33H[54;1H[K- authorized_keys [Modified] 38/38 100%[38;33H[37;33H[54;1H[K- authorized_keys [Modified] 37/38 97%[37;33H[36;33H[54;1H[K- authorized_keys [Modified] 36/38 94%[36;33H[35;33H[54;1H[K- authorized_keys [Modified] 35/38 92%[35;33H[34;33H[54;1H[K- authorized_keys [Modified] 34/38 89%[34;33H[33;33H[54;1H[K- authorized_keys [Modified] 33/38 86%[33;33H[32;33H[54;1H[K- authorized_keys [Modified] 32/38 84%[32;33H[31;33H[54;1H[K- authorized_keys [Modified] 31/38 81%[31;33H[1;1H[54;1H[K- authorized_keys [Modified] 1/38 2%[1;1H[1;1H[54;1H[KI authorized_keys [Modified] 1/38 2%[1;1H[1;1H`N OPENSSH PRIVATE KEY-----[1;2H[1;2H`N OPENSSH PRIVATE KEY-----[1;3H[1;3H`N OPENSSH PRIVATE KEY-----[1;4H[1;3HN OPENSSH PRIVATE KEY----- [1;3H[1;2HN OPENSSH PRIVATE KEY----- [1;2H[1;1HN OPENSSH PRIVATE KEY----- [1;1H[1;1H[1;1H-N OPENSSH PRIVATE KEY-----[1;2H[1;2H-N OPENSSH PRIVATE KEY-----[1;3H[1;3H-N OPENSSH PRIVATE KEY-----[1;4H[1;4H-N OPENSSH PRIVATE KEY-----[1;5H[1;5H-N OPENSSH PRIVATE KEY-----[1;6H[1;6HVN OPENSSH PRIVATE KEY-----[1;7H[1;7HGN OPENSSH PRIVATE KEY-----[1;8H[1;7HN OPENSSH PRIVATE KEY----- [1;7H[1;7HEN OPENSSH PRIVATE KEY-----[1;8H[1;8HGN OPENSSH PRIVATE KEY-----[1;9H[1;9HiN OPENSSH PRIVATE KEY-----[1;10H[1;9HN OPENSSH PRIVATE KEY----- [1;9H[1;8HN OPENSSH PRIVATE KEY----- [1;8H[1;7HN OPENSSH PRIVATE KEY----- [1;7H[1;6HN OPENSSH PRIVATE KEY----- [1;6H[1;6HBN OPENSSH PRIVATE KEY-----[1;7H[1;7HEN OPENSSH PRIVATE KEY-----[1;8H[1;8HGN OPENSSH PRIVATE KEY-----[1;9H[1;9HIN OPENSSH PRIVATE KEY-----[1;10H[1;9H[54;1H[K- authorized_keys [Modified] 1/38 2%[1;9H[1;8H[1;7H[1;6H[1;5H[1;4H[1;3H[1;2H[1;1H[1;1H[54;1H[K- authorized_keys [Modified] 1/38 2%[1;1H[54;1H[K:wq[1;1H[1;1H[54;1H[K'authorized_keys' 38L, 2622C[1;1H[54;1H[K[?1049lroot@root:~/.ssh$ [6038] Dec 01 02:31:12 Child connection from 192.168.1.10:61862
+[6038] Dec 01 02:31:12 Pubkey auth attempt with unknown algo for 'root' from 192.168.1.10:61862
+[6038] Dec 01 02:31:18 Exit before auth (user 'root', 0 fails): Exited normally
+[6045] Dec 01 02:31:29 Child connection from 192.168.1.10:61863
+[6045] Dec 01 02:31:33 Bad password attempt for 'root' from 192.168.1.10:61863
+[6045] Dec 01 02:31:36 Bad password attempt for 'root' from 192.168.1.10:61863
+[6045] Dec 01 02:31:37 Exit before auth (user 'root', 2 fails): Exited normally
+[6056] Dec 01 02:31:40 Child connection from 192.168.1.10:61864
+[6056] Dec 01 02:31:41 Bad password attempt for 'root' from 192.168.1.10:61864
+[6056] Dec 01 02:31:42 Exit before auth (user 'root', 1 fails): Exited normally
+^C
+
+root@root:~/.ssh$ ls ~/.ssh/
+[0;0mauthorized_keys[m
+root@root:~/.ssh$ [H[Jroot@root:~/.ssh$ [Jcat /root/.ssh/authorized_keys
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+NhAAAAAwEAAQAAAYEA3am3ILEQvl21dKekcACeX3hZvkoGo07J7q8tW2VkG1c6xhZKfM2B
+G4lxhgTdLE2t9xmhXkmg1WmBwzqbhVfE1DypnA5Ta1XabSRtJPl8+Z7qOUgi/zkq24hBeb
+l/qBkdONKzFomG0aEm3PLffiMLfrbLYAkKduBixQ/y4KmE1xSXdzB8qor3Rv9ZX6icVBIG
+TQXRxVeFzJnXMvp+1j9rPLAZBgBV875IBJx+0S5B2TP/Nga4ARijJnuko3JI7Kf+IRPdpu
+5tCkVXLHjpYgrAZw8x4tmY9dISBNCYPOQmXjnIQpWKA3IDsEXYqdDEi4bMM9gsu9jvX7Ar
+2WbftR/BADjAkbEZ9IZ14g7jpcWrF1+bi8M4u1QntDDVFaJfBu5XExTDckG7A5d1zYlvTh
+kbJF2C6xngqfxcuVIWUS/d6TQIGsAIRzCDrwvjAa+CUwGy9kZzeLbo3teGi+32ANNakD34
+jCBogOjh4Eh8/5OLd62fN9Lr4R4llD3SpFv3IjP/AAAFmBwnRcEcJ0XBAAAAB3NzaC1yc2
+EAAAGBAN2ptyCxEL5dtXSnpHAAnl94Wb5KBqNOye6vLVtlZBtXOsYWSnzNgRuJcYYE3SxN
+rfcZoV5JoNVpgcM6m4VXxNQ8qZwOU2tV2m0kbST5fPme6jlIIv85KtuIQXm5f6gZHTjSsx
+aJhtGhJtzy334jC362y2AJCnbgYsUP8uCphNcUl3cwfKqK90b/WV+onFQSBk0F0cVXhcyZ
+1zL6ftY/azywGQYAVfO+SAScftEuQdkz/zYGuAEYoyZ7pKNySOyn/iET3abubQpFVyx46W
+IKwGcPMeLZmPXSEgTQmDzkJl45yEKVigNyA7BF2KnQxIuGzDPYLLvY71+wK9lm37UfwQA4
+wJGxGfSGdeIO46XFqxdfm4vDOLtUJ7Qw1RWiXwbuVxMUw3JBuwOXdc2Jb04ZGyRdgusZ4K
+n8XLlSFlEv3ek0CBrACEcwg68L4wGvglMBsvZGc3i26N7Xhovt9gDTWpA9+IwgaIDo4eBI
+fP+Ti3etnzfS6+EeJZQ90qRb9yIz/wAAAAMBAAEAAAGBAKFkIZ7e7Sb+CdFPAk4+VRGECi
+ufsGeVRTfROkASeanigDucHU3zPu6yywJeZj8Mq/5/HdwN1dmtATsJYBTdS8WQCZpDX/+F
+ugy/eexy7si9KSLd4AVeNVM0SR/8rPLSnlEyMAzXw168bBRxjcJEd+kh5MAetQzK4X9D1n
+43Ty5eos24cvylQ9fgsc0RcglQOmA4PXzm9dd7p5FJi7Io6MZ+HSoecnaO89bPrxJVEMK5
+tjc6+xxpONkbK0uKOYh94xIlFAkuX1/vGTwFhbdfSuhTua0Wv/9ZwH1mLy96OiaqoM8sRn
+prvcrpKE7g2GlprTy0s5lG45pUBkzNFqcJUYFw9BYPk7B8+qGUiGse2hN+0CKeLSQxhXKh
+VoaSXiwe4nwbMLgNkWRuSoHhd9b0SepL0dtx/cyZnDayqgljlR5WwAR7RRxQi4fV4s05J9
+gs65BVAnulJrz+ow67Q6TbBzCakGaVxPz2BPmhbPNiu2aW/als8GjBwTAXrtbX+6s8OQAA
+AMBDnxTMlNpc8MNF5SZ+bEg/jxC62j5ud1tNXKg/TwMqJVOo3OWazgsKY+IZFT9tgVvt59
+g9GZupUz1aFtWLP9M0a/C9pQIPjaJnB6n5VyUeU4soNrGcNiSu5t7IaQvNweE2LQjqataa
+lnstMmpnqs+RrzBt1V5Wvs7CKIyAUcfDuNthPu5XweUpsgXi9TGZVHfFWGJp3sSbpy99wl
+uu9kdbMdWAjwNUYEnX8wuYfLuNz/TrNqM0+V3z5qiLoTvva/cAAADBAPmLnBp26kK/LcDF
+G7KZJiyHt5RgJeE0pqDJJx//ukU+6Zx26jvVtP0n3ISc6+Kved4uwbRN4Dn0Gv5CfvU+xd
+AT77lx//Kdha11lVNaCyCj5ZRhZr1I19MQXavFmjNf8N4K7kuxSEs8YLo8DIFB7km2A6F7
+CnDpH/2uD1vSUkt1f0BRuXeJ/kzser0hPkLLHn5yAsh818wunasOKfE9g0v6ayZDZZCXWs
+7ALxQmApKH+msAJcjd+e7qxubejD/rvQAAAMEA42V6uMNeVAOLpE801+rAqO/QyQ/CX8jn
+RFcIh7Id8lvYIaye2mygufqr7D3rkHT09fIfWJVvhx8YJz9VndaaOnVK9OLwLo22OSneyq
+R3MY4orB2H6/MxbVNBeCOdVQ+ReGW0BUtozOJDf10QWWAFIlek7p7pHXx+VCgWUsxd4Vqw
+0Myayr+tnPVAWLTuSViRgrkXMSCeXSJciMpeD/fODTcdx239vzUhljHzwG9LrHxNe6oPWt
+3WG42E21duShxrAAAAInlnYXNodUBZb25hdGhhbnMtTWFjQm9vay1BaXIubG9jYWw=
+-----END OPENSSH PRIVATE KEY-----
+root@root:~/.ssh$ 
+root@root:~/.ssh$ chmod 700 /root/.ssh
+root@root:~/.ssh$ chmod 600 /root/.ssh/authorized_keys
+root@root:~/.ssh$ 
+root@root:~/.ssh$  2[J[Jroot@root:~/.ssh$ chmod 600 /root/.ssh/authorized_keys[Jroot@root:~/.ssh$ chmod 700 /root/.ssh[Jroot@root:~/.ssh$ cat /root/.ssh/authorized_keys[Jroot@root:~/.ssh$ ls ~/.ssh/[Jroot@root:~/.ssh$ cat /root/.ssh/authorized_keys[Jroot@root:~/.ssh$ chmod 700 /root/.ssh[Jroot@root:~/.ssh$ chmod 600 /root/.ssh/authorized_keys[Jroot@root:~/.ssh$ [J[6129] Dec 01 02:33:43 Child connection from 192.168.1.10:61869
+[6129] Dec 01 02:33:44 Exit before auth (user 'root', 0 fails): Exited normally
+^C
+
+root@root:~/.ssh$ dropbear -r `[J~/.sh[Jsroot@root:~/.ssh$ dropbear -r ~/.ssh/[Jroot@root:~/.ssh$ dropbear -r ~/.ssh/authorized_keys [J-p 2222
+root@root:~/.ssh$ jf[J[Jgrep [J[J[J[J[Jps | grep "droo[Jp"
+  648 root     2332 S    {drop_caches.sh} /bin/sh /program/bin/drop_caches.sh
+ 5802 root     1824 S    dropbear -R -E -p 2222
+ 6181 root     2332 S    grep drop
+root@root:~/.ssh$ [6194] Dec 01 02:35:42 Child connection from 192.168.1.10:61874
+[6194] Dec 01 02:35:43 Exit before auth (user 'root', 0 fails): Exited normally
+^C
+
+root@root:~/.ssh$ root@root:~/.ssh$ ps | grep "drop"[J
+  648 root     2332 S    {drop_caches.sh} /bin/sh /program/bin/drop_caches.sh
+ 5802 root     1824 S    dropbear -R -E -p 2222
+root@root:~/.ssh$ pkill 5802[J[J[J[J[J 182[J[J[J5802
+root@root:~/.ssh$ root@root:~/.ssh$ pkill 5802[Jroot@root:~/.ssh$ ps | grep "drop"[J
+  648 root     2332 S    {drop_caches.sh} /bin/sh /program/bin/drop_caches.sh
+ 5802 root     1824 S    dropbear -R -E -p 2222
+ 6215 root     2332 S    grep drop
+root@root:~/.ssh$ root@root:~/.ssh$ ps | grep "drop"[Jroot@root:~/.ssh$ pkill 5802[J
+root@root:~/.ssh$ root@root:~/.ssh$ pkill 5802[Jroot@root:~/.ssh$ ps | grep "drop"[J
+  648 root     2332 S    {drop_caches.sh} /bin/sh /program/bin/drop_caches.sh
+ 5802 root     1824 S    dropbear -R -E -p 2222
+ 6223 root     2332 S    grep drop
+root@root:~/.ssh$ p[Jsudo[J[J[J[J[H[Jroot@root:~/.ssh$ [Jcd /
+root@root:/$ [H[Jroot@root:/$ [Jls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ root@root:/$ ls[Jroot@root:/$ cd /[Jroot@root:/$ ps | grep "drop"[Jroot@root:/$ pkill 5802[Jroot@root:/$ ps | grep "drop"[Jroot@root:/$ pkill 5802[Jroot@root:/$ ps | grep "drop"[Jroot@root:/$ dropbear -r ~/.ssh/authorized_keys -p 2222[Jroot@root:/$ chmod 600 /root/.ssh/authorized_keys[Jroot@root:/$ dropbear -r ~/.ssh/authorized_keys -p 2222[Js -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J[8D -p 2222[J1  -p 2221[J[9DR  -p 2221[9D  -p 2221[J[9DE  -p 2221[9D   -p 2221[9D-  -p 2221[9Ds  -p 2221[9D   -p 2221[9D\  -p 2221[9D  -p 2221[J[9D  -p 2221[J[9D  -p 2221
+[6309] Dec 01 02:38:48 Failed loading /etc/dropbear/dropbear_rsa_host_key
+[6309] Dec 01 02:38:48 Failed loading /etc/dropbear/dropbear_dss_host_key
+[6310] Dec 01 02:38:48 Running in background
+root@root:/$ root@root:/$ dropbear -E -s  -p 2221[J- -p 2221[8DR -p 2221[8D  -p 2221[8D -p 2221[J[8D -p 2221
+[6316] Dec 01 02:38:59 Failed listening on '2221': Error listening: Address already in use
+[6316] Dec 01 02:38:59 Early exit: No listening ports available.
+root@root:/$ root@root:/$ dropbear -E -s -R -p 2221[J[J3
+root@root:/$ [6324] Dec 01 02:39:04 Running in background
+[6325] Dec 01 02:39:09 Child connection from 192.168.1.10:61879
+[6325] Dec 01 02:39:17 Exit before auth (user 'root', 0 fails): Exited normally
+cat /root/.ssh/authorized_keys
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+NhAAAAAwEAAQAAAYEA3am3ILEQvl21dKekcACeX3hZvkoGo07J7q8tW2VkG1c6xhZKfM2B
+G4lxhgTdLE2t9xmhXkmg1WmBwzqbhVfE1DypnA5Ta1XabSRtJPl8+Z7qOUgi/zkq24hBeb
+l/qBkdONKzFomG0aEm3PLffiMLfrbLYAkKduBixQ/y4KmE1xSXdzB8qor3Rv9ZX6icVBIG
+TQXRxVeFzJnXMvp+1j9rPLAZBgBV875IBJx+0S5B2TP/Nga4ARijJnuko3JI7Kf+IRPdpu
+5tCkVXLHjpYgrAZw8x4tmY9dISBNCYPOQmXjnIQpWKA3IDsEXYqdDEi4bMM9gsu9jvX7Ar
+2WbftR/BADjAkbEZ9IZ14g7jpcWrF1+bi8M4u1QntDDVFaJfBu5XExTDckG7A5d1zYlvTh
+kbJF2C6xngqfxcuVIWUS/d6TQIGsAIRzCDrwvjAa+CUwGy9kZzeLbo3teGi+32ANNakD34
+jCBogOjh4Eh8/5OLd62fN9Lr4R4llD3SpFv3IjP/AAAFmBwnRcEcJ0XBAAAAB3NzaC1yc2
+EAAAGBAN2ptyCxEL5dtXSnpHAAnl94Wb5KBqNOye6vLVtlZBtXOsYWSnzNgRuJcYYE3SxN
+rfcZoV5JoNVpgcM6m4VXxNQ8qZwOU2tV2m0kbST5fPme6jlIIv85KtuIQXm5f6gZHTjSsx
+aJhtGhJtzy334jC362y2AJCnbgYsUP8uCphNcUl3cwfKqK90b/WV+onFQSBk0F0cVXhcyZ
+1zL6ftY/azywGQYAVfO+SAScftEuQdkz/zYGuAEYoyZ7pKNySOyn/iET3abubQpFVyx46W
+IKwGcPMeLZmPXSEgTQmDzkJl45yEKVigNyA7BF2KnQxIuGzDPYLLvY71+wK9lm37UfwQA4
+wJGxGfSGdeIO46XFqxdfm4vDOLtUJ7Qw1RWiXwbuVxMUw3JBuwOXdc2Jb04ZGyRdgusZ4K
+n8XLlSFlEv3ek0CBrACEcwg68L4wGvglMBsvZGc3i26N7Xhovt9gDTWpA9+IwgaIDo4eBI
+fP+Ti3etnzfS6+EeJZQ90qRb9yIz/wAAAAMBAAEAAAGBAKFkIZ7e7Sb+CdFPAk4+VRGECi
+ufsGeVRTfROkASeanigDucHU3zPu6yywJeZj8Mq/5/HdwN1dmtATsJYBTdS8WQCZpDX/+F
+ugy/eexy7si9KSLd4AVeNVM0SR/8rPLSnlEyMAzXw168bBRxjcJEd+kh5MAetQzK4X9D1n
+43Ty5eos24cvylQ9fgsc0RcglQOmA4PXzm9dd7p5FJi7Io6MZ+HSoecnaO89bPrxJVEMK5
+tjc6+xxpONkbK0uKOYh94xIlFAkuX1/vGTwFhbdfSuhTua0Wv/9ZwH1mLy96OiaqoM8sRn
+prvcrpKE7g2GlprTy0s5lG45pUBkzNFqcJUYFw9BYPk7B8+qGUiGse2hN+0CKeLSQxhXKh
+VoaSXiwe4nwbMLgNkWRuSoHhd9b0SepL0dtx/cyZnDayqgljlR5WwAR7RRxQi4fV4s05J9
+gs65BVAnulJrz+ow67Q6TbBzCakGaVxPz2BPmhbPNiu2aW/als8GjBwTAXrtbX+6s8OQAA
+AMBDnxTMlNpc8MNF5SZ+bEg/jxC62j5ud1tNXKg/TwMqJVOo3OWazgsKY+IZFT9tgVvt59
+g9GZupUz1aFtWLP9M0a/C9pQIPjaJnB6n5VyUeU4soNrGcNiSu5t7IaQvNweE2LQjqataa
+lnstMmpnqs+RrzBt1V5Wvs7CKIyAUcfDuNthPu5XweUpsgXi9TGZVHfFWGJp3sSbpy99wl
+uu9kdbMdWAjwNUYEnX8wuYfLuNz/TrNqM0+V3z5qiLoTvva/cAAADBAPmLnBp26kK/LcDF
+G7KZJiyHt5RgJeE0pqDJJx//ukU+6Zx26jvVtP0n3ISc6+Kved4uwbRN4Dn0Gv5CfvU+xd
+AT77lx//Kdha11lVNaCyCj5ZRhZr1I19MQXavFmjNf8N4K7kuxSEs8YLo8DIFB7km2A6F7
+CnDpH/2uD1vSUkt1f0BRuXeJ/kzser0hPkLLHn5yAsh818wunasOKfE9g0v6ayZDZZCXWs
+7ALxQmApKH+msAJcjd+e7qxubejD/rvQAAAMEA42V6uMNeVAOLpE801+rAqO/QyQ/CX8jn
+RFcIh7Id8lvYIaye2mygufqr7D3rkHT09fIfWJVvhx8YJz9VndaaOnVK9OLwLo22OSneyq
+R3MY4orB2H6/MxbVNBeCOdVQ+ReGW0BUtozOJDf10QWWAFIlek7p7pHXx+VCgWUsxd4Vqw
+0Myayr+tnPVAWLTuSViRgrkXMSCeXSJciMpeD/fODTcdx239vzUhljHzwG9LrHxNe6oPWt
+3WG42E21duShxrAAAAInlnYXNodUBZb25hdGhhbnMtTWFjQm9vay1BaXIubG9jYWw=
+-----END OPENSSH PRIVATE KEY-----
+root@root:/$ 
+root@root:/$ vi /roroot@root:/$ vi /root/[J.sroot@root:/$ vi /root/.ssh/[Jauroot@root:/$ vi /root/.ssh/authorized_keys [J
+[?1049h[999;999H[6n[H[J[1;1H-----BEGIN OPENSSH PRIVATE KEY-----[2;1Hb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn[3;1HNhAAAAAwEAAQAAAYEA3am3ILEQvl21dKekcACeX3hZvkoGo07J7q8tW2VkG1c6xhZKfM2B[4;1HG4lxhgTdLE2t9xmhXkmg1WmBwzqbhVfE1DypnA5Ta1XabSRtJPl8+Z7qOUgi/zkq24hBeb[5;1Hl/qBkdONKzFomG0aEm3PLffiMLfrbLYAkKduBixQ/y4KmE1xSXdzB8qor3Rv9ZX6icVBIG[6;1HTQXRxVeFzJnXMvp+1j9rPLAZBgBV875IBJx+0S5B2TP/Nga4ARijJnuko3JI7Kf+IRPdpu[7;1H5tCkVXLHjpYgrAZw8x4tmY9dISBNCYPOQmXjnIQpWKA3IDsEXYqdDEi4bMM9gsu9jvX7Ar[8;1H2WbftR/BADjAkbEZ9IZ14g7jpcWrF1+bi8M4u1QntDDVFaJfBu5XExTDckG7A5d1zYlvTh[9;1HkbJF2C6xngqfxcuVIWUS/d6TQIGsAIRzCDrwvjAa+CUwGy9kZzeLbo3teGi+32ANNakD34[10;1HjCBogOjh4Eh8/5OLd62fN9Lr4R4llD3SpFv3IjP/AAAFmBwnRcEcJ0XBAAAAB3NzaC1yc2[11;1HEAAAGBAN2ptyCxEL5dtXSnpHAAnl94Wb5KBqNOye6vLVtlZBtXOsYWSnzNgRuJcYYE3SxN[12;1HrfcZoV5JoNVpgcM6m4VXxNQ8qZwOU2tV2m0kbST5fPme6jlIIv85KtuIQXm5f6gZHTjSsx[13;1HaJhtGhJtzy334jC362y2AJCnbgYsUP8uCphNcUl3cwfKqK90b/WV+onFQSBk0F0cVXhcyZ[14;1H1zL6ftY/azywGQYAVfO+SAScftEuQdkz/zYGuAEYoyZ7pKNySOyn/iET3abubQpFVyx46W[15;1HIKwGcPMeLZmPXSEgTQmDzkJl45yEKVigNyA7BF2KnQxIuGzDPYLLvY71+wK9lm37UfwQA4[16;1HwJGxGfSGdeIO46XFqxdfm4vDOLtUJ7Qw1RWiXwbuVxMUw3JBuwOXdc2Jb04ZGyRdgusZ4K[17;1Hn8XLlSFlEv3ek0CBrACEcwg68L4wGvglMBsvZGc3i26N7Xhovt9gDTWpA9+IwgaIDo4eBI[18;1HfP+Ti3etnzfS6+EeJZQ90qRb9yIz/wAAAAMBAAEAAAGBAKFkIZ7e7Sb+CdFPAk4+VRGECi[19;1HufsGeVRTfROkASeanigDucHU3zPu6yywJeZj8Mq/5/HdwN1dmtATsJYBTdS8WQCZpDX/+F[20;1Hugy/eexy7si9KSLd4AVeNVM0SR/8rPLSnlEyMAzXw168bBRxjcJEd+kh5MAetQzK4X9D1n[21;1H43Ty5eos24cvylQ9fgsc0RcglQOmA4PXzm9dd7p5FJi7Io6MZ+HSoecnaO89bPrxJVEMK5[22;1Htjc6+xxpONkbK0uKOYh94xIlFAkuX1/vGTwFhbdfSuhTua0Wv/9ZwH1mLy96OiaqoM8sRn[23;1HprvcrpKE7g2GlprTy0s5lG45pUBkzNFqcJUYFw9BYPk7B8+qGUiGse2hN+0CKeLSQxhXKh[24;1HVoaSXiwe4nwbMLgNkWRuSoHhd9b0SepL0dtx/cyZnDayqgljlR5WwAR7RRxQi4fV4s05J9[25;1Hgs65BVAnulJrz+ow67Q6TbBzCakGaVxPz2BPmhbPNiu2aW/als8GjBwTAXrtbX+6s8OQAA[26;1HAMBDnxTMlNpc8MNF5SZ+bEg/jxC62j5ud1tNXKg/TwMqJVOo3OWazgsKY+IZFT9tgVvt59[27;1Hg9GZupUz1aFtWLP9M0a/C9pQIPjaJnB6n5VyUeU4soNrGcNiSu5t7IaQvNweE2LQjqataa[28;1HlnstMmpnqs+RrzBt1V5Wvs7CKIyAUcfDuNthPu5XweUpsgXi9TGZVHfFWGJp3sSbpy99wl[29;1Huu9kdbMdWAjwNUYEnX8wuYfLuNz/TrNqM0+V3z5qiLoTvva/cAAADBAPmLnBp26kK/LcDF[30;1HG7KZJiyHt5RgJeE0pqDJJx//ukU+6Zx26jvVtP0n3ISc6+Kved4uwbRN4Dn0Gv5CfvU+xd[31;1HAT77lx//Kdha11lVNaCyCj5ZRhZr1I19MQXavFmjNf8N4K7kuxSEs8YLo8DIFB7km2A6F7[32;1HCnDpH/2uD1vSUkt1f0BRuXeJ/kzser0hPkLLHn5yAsh818wunasOKfE9g0v6ayZDZZCXWs[33;1H7ALxQmApKH+msAJcjd+e7qxubejD/rvQAAAMEA42V6uMNeVAOLpE801+rAqO/QyQ/CX8jn[34;1HRFcIh7Id8lvYIaye2mygufqr7D3rkHT09fIfWJVvhx8YJz9VndaaOnVK9OLwLo22OSneyq[35;1HR3MY4orB2H6/MxbVNBeCOdVQ+ReGW0BUtozOJDf10QWWAFIlek7p7pHXx+VCgWUsxd4Vqw[36;1H0Myayr+tnPVAWLTuSViRgrkXMSCeXSJciMpeD/fODTcdx239vzUhljHzwG9LrHxNe6oPWt[37;1H3WG42E21duShxrAAAAInlnYXNodUBZb25hdGhhbnMtTWFjQm9vay1BaXIubG9jYWw=[38;1H-----END OPENSSH PRIVATE KEY-----[39;1H~[40;1H~[41;1H~[42;1H~[43;1H~[44;1H~[45;1H~[46;1H~[47;1H~[48;1H~[49;1H~[50;1H~[51;1H~[52;1H~[53;1H~[1;1H[54;1H[K- /root/.ssh/authorized_keys 1/38 2%[1;1H[1;1H[54;1H[K[7m'v' is not implemented[m[1;1H[54;1H[K- /root/.ssh/authorized_keys 1/38 2%[1;1H[1;35H[1;1H[1;1H[54;1H[K[7m'v' is not implemented[m[1;1H[54;1H[K- /root/.ssh/authorized_keys 1/38 2%[1;1H[1;35H[2;70H[54;1H[K- /root/.ssh/authorized_keys 2/38 5%[2;70H[3;70H[54;1H[K- /root/.ssh/authorized_keys 3/38 7%[3;70H[4;70H[54;1H[K- /root/.ssh/authorized_keys 4/38 10%[4;70H[5;70H[54;1H[K- /root/.ssh/authorized_keys 5/38 13%[5;70H[38;1H[54;1H[K- /root/.ssh/authorized_keys 38/38 100%[38;1H[38;33H[38;1H[1;1H[54;1H[K- /root/.ssh/authorized_keys 1/38 2%[1;1H[1;1H[54;1H[K[7m'v' is not implemented[m[1;1H[54;1H[K- /root/.ssh/authorized_keys 1/38 2%[1;1H[1;1H[54;1H[K- /root/.ssh/authorized_keys 1/38 2%[1;1H[1;1H[54;1H[K[7m'v' is not implemented[m[1;1H[54;1H[K- /root/.ssh/authorized_keys 1/38 2%[1;1H[1;1H[2;1H[54;1H[K- /root/.ssh/authorized_keys 2/38 5%[2;1H[1;1H[54;1H[K- /root/.ssh/authorized_keys 1/38 2%[1;1H[1;1Hgs65BVAnulJrz+ow67Q6TbBzCakGaVxPz2BPmhbPNiu2aW/als8GjBwTAXrtbX+6s8OQAA[2;1HAMBDnxTMlNpc8MNF5SZ+bEg/jxC62j5ud1tNXKg/TwMqJVOo3OWazgsKY+IZFT9tgVvt59[3;1Hg9GZupUz1aFtWLP9M0a/C9pQIPjaJnB6n5VyUeU4soNrGcNiSu5t7IaQvNweE2LQjqataa[4;1HlnstMmpnqs+RrzBt1V5Wvs7CKIyAUcfDuNthPu5XweUpsgXi9TGZVHfFWGJp3sSbpy99wl[5;1Huu9kdbMdWAjwNUYEnX8wuYfLuNz/TrNqM0+V3z5qiLoTvva/cAAADBAPmLnBp26kK/LcDF[6;1HG7KZJiyHt5RgJeE0pqDJJx//ukU+6Zx26jvVtP0n3ISc6+Kved4uwbRN4Dn0Gv5CfvU+xd[7;1HAT77lx//Kdha11lVNaCyCj5ZRhZr1I19MQXavFmjNf8N4K7kuxSEs8YLo8DIFB7km2A6F7[8;1HCnDpH/2uD1vSUkt1f0BRuXeJ/kzser0hPkLLHn5yAsh818wunasOKfE9g0v6ayZDZZCXWs[9;1H7ALxQmApKH+msAJcjd+e7qxubejD/rvQAAAMEA42V6uMNeVAOLpE801+rAqO/QyQ/CX8jn[10;1HRFcIh7Id8lvYIaye2mygufqr7D3rkHT09fIfWJVvhx8YJz9VndaaOnVK9OLwLo22OSneyq[11;1HR3MY4orB2H6/MxbVNBeCOdVQ+ReGW0BUtozOJDf10QWWAFIlek7p7pHXx+VCgWUsxd4Vqw[12;1H0Myayr+tnPVAWLTuSViRgrkXMSCeXSJciMpeD/fODTcdx239vzUhljHzwG9LrHxNe6oPWt[13;1H3WG42E21duShxrAAAAInlnYXNodUBZb25hdGhhbnMtTWFjQm9vay1BaXIubG9jYWw=    [14;1H-----END OPENSSH PRIVATE KEY-----                                     [15;1H~                                                                     [16;1H~                                                                     [17;1H~                                                                     [18;1H~                                                                     [19;1H~                                                                     [20;1H~                                                                     [21;1H~                                                                     [22;1H~                                                                     [23;1H~                                                                     [24;1H~                                                                     [25;1H~                                                                     [26;1H~                                                                     [27;1H~                                                                     [28;1H~                                                                     [29;1H~                                                                     [30;1H~                                                                     [31;1H~                                                                     [32;1H~                                                                     [33;1H~                                                                     [34;1H~                                                                     [35;1H~                                                                     [36;1H~                                                                     [37;1H~                                                                 [38;1H~                                [1;1H[54;1H[KDelete 24 lines (1669 chars) from [D][1;1H[54;1H[K- /root/.ssh/authorized_keys [Modified] 1/14 7%[1;1H[1;1H[1;1H[1;1H[14;1H[54;1H[K- /root/.ssh/authorized_keys [Modified] 14/14 100%[14;1H[14;1H[54;1H[K- /root/.ssh/authorized_keys [Modified] 14/14 100%[14;1H[54;1H[K:q![14;1H[14;1H[54;1H[K- /root/.ssh/authorized_keys [Modified] 14/14 100%[14;1H[54;1H[K[?1049lroot@root:/$ cd rroot@root:/$ cd root/[J.sroot@root:/$ cd root/.ssh/[J
+root@root:~/.ssh$ [H[Jroot@root:~/.ssh$ [Jls
+[0;0mauthorized_keys[m
+root@root:~/.ssh$ rm su[J[Jauroot@root:~/.ssh$ rm authorized_keys [J
+root@root:~/.ssh$ touch authorized_keys
+root@root:~/.ssh$ vi auroot@root:~/.ssh$ vi authorized_keys [J
+[?1049h[999;999H[6n[H[J[1;1H~[2;1H~[3;1H~[4;1H~[5;1H~[6;1H~[7;1H~[8;1H~[9;1H~[10;1H~[11;1H~[12;1H~[13;1H~[14;1H~[15;1H~[16;1H~[17;1H~[18;1H~[19;1H~[20;1H~[21;1H~[22;1H~[23;1H~[24;1H~[25;1H~[26;1H~[27;1H~[28;1H~[29;1H~[30;1H~[31;1H~[32;1H~[33;1H~[34;1H~[35;1H~[36;1H~[37;1H~[38;1H~[39;1H~[40;1H~[41;1H~[42;1H~[43;1H~[44;1H~[45;1H~[46;1H~[47;1H~[48;1H~[49;1H~[50;1H~[51;1H~[52;1H~[53;1H~[1;2H[54;1H[K- authorized_keys 0/0 100%[1;2H[1;1H [1;1H[54;1H[K[7mNothing in register D[m[1;1H[54;1H[K- authorized_keys 0/0 100%[1;1H[1;1H[54;1H[K- authorized_keys 0/0 100%[1;1H[54;1H[KI authorized_keys 0/0 100%[1;1H[1;1Hsh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8T[1;123H[1;123HUPKmcDlNrVdptJG0k+Xz5[1;144H[1;1Ha AAAAB3NzaC1yc2EAAAADAQABAAABgQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rMWiYbR[2;1H [3;1H [4;1H [5;1H [6;1H [7;1H [8;1H [9;1H [10;1H [11;1H [12;1H [13;1H [14;1H [15;1H [16;1H [17;1H [18;1H [19;1H [20;1H [21;1H [22;1H [23;1H [24;1H [25;1H [26;1H [27;1H [28;1H [29;1H [30;1H [31;1H [32;1H [33;1H [34;1H [35;1H [36;1H [37;1H [38;1H [39;1H [40;1H [41;1H [42;1H [43;1H [44;1H [45;1H [46;1H [47;1H [48;1H [49;1H [50;1H [51;1H [52;1H [53;1H [1;171H[1;1HQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rMWiYbRoSbc8t9+Iwt+tstgCQp24GLFD/LgqYT[2;1H                                                                                                                                                                           [3;1H                                                                                                                                                                           [4;1H                                                                                                                                                                           [5;1H                                                                                                                                                                           [6;1H                                                                                                                                                                           [7;1H                                                                                                                                                                           [8;1H                                                                                                                                                                           [9;1H                                                                                                                                                                           [10;1H                                                                                                                                                                           [11;1H                                                                                                                                                                           [12;1H                                                                                                                                                                           [13;1H                                                                                                                                                                           [14;1H                                                                                                                                                                           [15;1H                                                                                                                                                                           [16;1H                                                                                                                                                                           [17;1H                                                                                                                                                                           [18;1H                                                                                                                                                                           [19;1H                                                                                                                                                                           [20;1H                                                                                                                                                                           [21;1H                                                                                                                                                                           [22;1H                                                                                                                                                                           [23;1H                                                                                                                                                                           [24;1H                                                                                                                                                                           [25;1H                                                                                                                                                                           [26;1H                                                                                                                                                                           [27;1H                                                                                                                                                                           [28;1H                                                                                                                                                                           [29;1H                                                                                                                                                                           [30;1H                                                                                                                                                                           [31;1H                                                                                                                                                                           [32;1H                                                                                                                                                                           [33;1H                                                                                                                                                                           [34;1H                                                                                                                                                                           [35;1H                                                                                                                                                                           [36;1H                                                                                                                                                                           [37;1H                                                                                                                                                                           [38;1H                                                                                                                                                                           [39;1H                                                                                                                                                                           [40;1H                                                                                                                                                                           [41;1H                                                                                                                                                                           [42;1H                                                                                                                                                                           [43;1H                                                                                                                                                                           [44;1H                                                                                                                                                                           [45;1H                                                                                                                                                                           [46;1H                                                                                                                                                                           [47;1H                                                                                                                                                                           [48;1H                                                                                                                                                                           [49;1H                                                                                                                                                                           [50;1H                                                                                                                                                                           [51;1H                                                                                                                                                                           [52;1H                                                                                                                                                                           [53;1H                                                                                                                                                                           [1;171H[54;1H[KI authorized_keys [Modified] 1/1 100%[1;171H[1;1Hsh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rMW[2;1H                                                                                                                                                                           [3;1H~[4;1H~[5;1H~[6;1H~[7;1H~[8;1H~[9;1H~[10;1H~[11;1H~[12;1H~[13;1H~[14;1H~[15;1H~[16;1H~[17;1H~[18;1H~[19;1H~[20;1H~[21;1H~[22;1H~[23;1H~[24;1H~[25;1H~[26;1H~[27;1H~[28;1H~[29;1H~[30;1H~[31;1H~[32;1H~[33;1H~[34;1H~[35;1H~[36;1H~[37;1H~[38;1H~[39;1H~[40;1H~[41;1H~[42;1H~[43;1H~[44;1H~[45;1H~[46;1H~[47;1H~[48;1H~[49;1H~[50;1H~[51;1H~[52;1H~[53;1H~[2;1H[54;1H[KI authorized_keys [Modified] 2/2 100%[2;1H[2;1Ha[2;2H[2;1H [2;1H[2;1Ha[2;2H[2;1H [2;1H[2;1H[54;1H[K- authorized_keys [Modified] 2/2 100%[2;1H[2;1H[1;1H[54;1H[K- authorized_keys [Modified] 1/2 50%[1;1H[2;1H[54;1H[K- authorized_keys [Modified] 2/2 100%[2;1H[2;1H~[1;1H[54;1H[KDelete 1 lines (1 chars) from [D][1;1H[54;1H[K- authorized_keys [Modified] 1/1 100%[1;1H[1;1H[54;1H[K- authorized_keys [Modified] 1/1 100%[1;1H[1;1H[54;1H[K- authorized_keys [Modified] 1/1 100%[1;1H[1;1H[1;1H[1;3H[1;3H[54;1H[K- authorized_keys [Modified] 1/1 100%[1;3H[54;1H[K:w[1;3H[1;3H[54;1H[K'authorized_keys' 1L, 587C[1;3H[54;1H[K- authorized_keys 1/1 100%[1;3H[1;3H[54;1H[K- authorized_keys 1/1 100%[1;3H[54;1H[K:wq[1;3H[1;3H[54;1H[K'authorized_keys' 1L, 587C[1;3H[54;1H[K[?1049lroot@root:~/.ssh$ [H[Jroot@root:~/.ssh$ [Jroot@root:~/.ssh$ vi authorized_keys [Jroot@root:~/.ssh$ touch authorized_keys[Jroot@root:~/.ssh$ rm authorized_keys [Jroot@root:~/.ssh$ ls[Jroot@root:~/.ssh$ cd root/.ssh/[Jroot@root:~/.ssh$ vi /root/.ssh/authorized_keys [Jroot@root:~/.ssh$ cat /root/.ssh/authorized_keys[Jroot@root:~/.ssh$ dropbear -E -s -R -p 2223[J
+[6414] Dec 01 02:41:38 Failed listening on '2223': Error listening: Address already in use
+[6414] Dec 01 02:41:38 Early exit: No listening ports available.
+root@root:~/.ssh$ [6420] Dec 01 02:41:45 Child connection from 192.168.1.10:61884
+[6420] Dec 01 02:41:45 Exit before auth (user 'root', 0 fails): Exited normally
+[6421] Dec 01 02:41:53 Child connection from 192.168.1.10:61885
+[6421] Dec 01 02:41:53 Exit before auth (user 'root', 0 fails): Exited normally

@@ -1,0 +1,430 @@
+??[ 9868.645808] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 9868.676356] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D[ 9876.033731] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D[ 9878.449544] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 9878.480093] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+???????????h?[12D???????????h?[12D???????????h?
+[1A[68C???????????h
+?[1A[69C???????????
+h?[1A[70C??????????
+?h?[1A[71C?????????
+??h?[1A[72C????????
+???h?[1A[73C???????
+????h?[1A[74C??????
+?????h?[1A[75C?????
+??????h?[1A[76C????
+???????h?[1A[77C???
+????????h?[1A[78C??
+?????????h?[1A[79C[ 9888.940657] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 9888.972780] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+[ 9889.003302] sysrq: HELP : loglevel(0-9) reboot(b) crash(c) terminate-all-tasks(e) memory-full-oom-kill(f) kill-all-tasks(i) thaw-filesystems(j) sak(k) show-backtrace-all-active-cpus(l) show-memory-usage(m) nice-all-RT-tasks(n) poweroff(o) show-registers(p) show-all-timers(q) unraw(r) sync(s) show-task-states(t) unmount(u) show-blocked-tasks(w) 
+?
+??????????h?[12D???????????h?[12D???????????h?[12D???????????h?[12D[1A[18C??????????????????????????????????????????????????????????????
+??????????????h?[1A[19C??????????????????????????????????????????????????????????????
+???????????????h?[1A[19C?????????????????????????????????????????????????????????????
+????????????????h?[1A[20C????????????????????????????????????????????????????????????
+?????????????????h?[1A[21C???????????????????????????????????????????????????????????
+??????????????????h?[1A[22C??????????????????????????????????????????????????????????
+???????????????????h?[1A[23C@????????????????????????????????????????????????????????
+????????????????????h?[1A[24C????????????????????????????????????????????????????????
+?????????????????????h?[1A[25C(??????????????????????????????????????????????????????
+??????????????????????h?[1A[26C??????????????????????????????????????????????????????
+???????????????????????h?[1A[27C?????????????????????????????????????????????????????
+????????????????????????h?[1A[28C????????????????????????????????????????????????????
+?????????????????????????h?[1A[29C???????????????????????????????????????????????????
+??????????????????????????h?[1A[30C??????????????????????????????????????????????????
+???????????????????????????h?[1A[31C?????????????????????????????????????????????????
+????????????????????????????h?[1A[32C????????????????????????????????????????????????
+?????????????????????????????h?[1A[33C???????????????????????????????????????????????
+??????????????????????????????h?[1A[34C??????????????????????????????????????????????
+???????????????????????????????h?[1A[35C?????????????????????????????????????????????
+????????????????????????????????h?[1A[36C????????????????????????????????????????????
+?????????????????????????????????h?[1A[37C????????????????????????????????????????????
+????????????????????????????????h?[J[1A[36C????????????????????????????????????????????
+?????????????????????????????????h?[1A[37C???????????????????????????????????????????
+??????????????????????????????????h?[1A[38C??????????????????????????????????????????
+???????????????????????????????????h?[1A[39C?????????????????????????????????????????
+????????????????????????????????????h?[1A[40C????????????????????????????????????????
+?????????????????????????????????????h?[1A[41C???????????????????????????????????????
+??????????????????????????????????????h?[1A[42C??????????????????????????????????????
+???????????????????????????????????????h?[1A[43C?????????????????????????????????????
+????????????????????????????????????????h?[1A[44C?????????????????????????????????????
+?????????????????????????????????????????h?[1A[44C????????????????????????????????????
+??????????????????????????????????????????h?[1A[45C???????????????????????????????????
+???????????????????????????????????????????h?[1A[46C??????????????????????????????????
+????????????????????????????????????????????h?[1A[47C^C
+
+root@root:~/.ssh$ [H[Jroot@root:~/.ssh$ [Jcat /root/.ssh/authorized_keys
+sh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rMWiYbRoSbc8t9+Iwt+tstgCQp24GLFD/LgqYTXFJd3MHyqivdG/1lfqJxUEgZNBdHFV4XMmdcy+n7WP2s8sBkGAFXzvkgEnH7RLkHZM/82BrgBGKMme6Sjckjsp/4hE92m7m0KRVcseOliCsBnDzHi2Zj10hIE0Jg85CZeOchClYoDcgOwRdip0MSLhswz2Cy72O9fsCvZZt+1H8EAOMCRsRn0hnXiDuOlxasXX5uLwzi7VCe0MNUVol8G7lcTFMNyQbsDl3XNiW9OGRskXYLrGeCp/Fy5UhZRL93pNAgawAhHMIOvC+MBr4JTAbL2RnN4tuje14aL7fYA01qQPfiMIGiA6OHgSHz/k4t3rZ830uvhHiWUPdKkW/ciM/8= ygashu@Yonathans-MacBook-Air.local
+root@root:~/.ssh$ vi /rooroot@root:~/.ssh$ vi /root/[J.sroot@root:~/.ssh$ vi /root/.ssh/[Jau`[Jroot@root:~/.ssh$ vi /root/.ssh/authorized_keys [J
+[?1049h[999;999H[6n[H[J[1;1Hsh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rMW[2;1H~[3;1H~[4;1H~[5;1H~[6;1H~[7;1H~[8;1H~[9;1H~[10;1H~[11;1H~[12;1H~[13;1H~[14;1H~[15;1H~[16;1H~[17;1H~[18;1H~[19;1H~[20;1H~[21;1H~[22;1H~[23;1H~[24;1H~[25;1H~[26;1H~[27;1H~[28;1H~[29;1H~[30;1H~[31;1H~[32;1H~[33;1H~[34;1H~[35;1H~[36;1H~[37;1H~[38;1H~[39;1H~[40;1H~[41;1H~[42;1H~[43;1H~[44;1H~[45;1H~[46;1H~[47;1H~[48;1H~[49;1H~[50;1H~[51;1H~[52;1H~[53;1H~[1;1H[54;1H[K- /root/.ssh/authorized_keys 1/1 100%[1;1H[1;1H[54;1H[KI /root/.ssh/authorized_keys 1/1 100%[1;1H[1;2Hsh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rM[1;2H[1;1H[54;1H[K- /root/.ssh/authorized_keys [Modified] 1/1 100%[1;1H[54;1H[K:wq[1;1H[1;1H[54;1H[K'/root/.ssh/authorized_keys' 1L, 588C[1;1H[54;1H[K[?1049lroot@root:~/.ssh$ root@root:~/.ssh$ vi /root/.ssh/authorized_keys [Jroot@root:~/.ssh$ cat /root/.ssh/authorized_keys[Jroot@root:~/.ssh$ dropbear -E -s -R -p 2223[J
+[6584] Dec 01 02:46:38 Failed listening on '2223': Error listening: Address already in use
+[6584] Dec 01 02:46:38 Early exit: No listening ports available.
+root@root:~/.ssh$ [6597] Dec 01 02:47:03 Child connection from 192.168.1.10:61893
+[6597] Dec 01 02:47:04 Exit before auth (user 'root', 0 fails): Exited normally
+v[J[6648] Dec 01 02:48:34 Child connection from 192.168.1.10:61898
+[6648] Dec 01 02:48:34 Exit before auth (user 'root', 0 fails): Exited normally
+^C
+
+root@root:~/.ssh$ root@root:~/.ssh$ dropbear -E -s -R -p 2223[Jroot@root:~/.ssh$ [Jroot@root:~/.ssh$ dropbear -E -s -R -p 2223[J -p 2223[J[8D -p 2223[J[8D -p 2223[J[8D -p 2223
+[6710] Dec 01 02:50:19 Failed loading /etc/dropbear/dropbear_rsa_host_key
+[6710] Dec 01 02:50:19 Failed loading /etc/dropbear/dropbear_dss_host_key
+[6710] Dec 01 02:50:19 Failed listening on '2223': Error listening: Address already in use
+[6710] Dec 01 02:50:19 Early exit: No listening ports available.
+root@root:~/.ssh$ root@root:~/.ssh$ dropbear -E -s -p 2223[J--p 2223[7Dr-p 2223[7D -p 2223[7D  -p 2223[8D/ -p 2223[8Dr -p 2223[8Do -p 2223[8Droot@root:~/.ssh$ dropbear -E -s -r /root/ -p 2223[J[8D. -p 2223[8Ds -p 2223[8Droot@root:~/.ssh$ dropbear -E -s -r /root/.ssh/ -p 2223[J[8Da -p 2223[8Du -p 2223[8Droot@root:~/.ssh$ dropbear -E -s -r /root/.ssh/authorized_keys  -p 2223[J[8D -p 2223
+[6716] Dec 01 02:50:34 Early exit: String too long
+root@root:~/.ssh$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')
+[5802] Dec 01 02:51:00 Early exit: Terminated by signal
+root@root:~/.ssh$ [6324] Dec 01 02:51:00 Early exit: Terminated by signal
+[6310] Dec 01 02:51:00 Early exit: Terminated by signal
+^C
+
+root@root:~/.ssh$ dropbear -E -s -R -p 2223
+root@root:~/.ssh$ [6739] Dec 01 02:51:07 Running in background
+[6745] Dec 01 02:51:10 Child connection from 192.168.1.10:61901
+[6745] Dec 01 02:51:10 Exit before auth (user 'root', 0 fails): Exited normally
+^C
+
+root@root:~/.ssh$ root@root:~/.ssh$ dropbear -E -s -R -p 2223[J
+[6875] Dec 01 02:55:08 Failed listening on '2223': Error listening: Address already in use
+[6875] Dec 01 02:55:08 Early exit: No listening ports available.
+root@root:~/.ssh$ cd [J[J[Jroot@root:~/.ssh$ dropbear -E -s -R -p 2223[Jroot@root:~/.ssh$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:~/.ssh$ dropbear -E -s -R -p 2223[Jroot@root:~/.ssh$ [Jroot@root:~/.ssh$ dropbear -E -s -R -p 2223[Jroot@root:~/.ssh$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:~/.ssh$ dropbear -E -s -r /root/.ssh/authorized_keys  -p 2223[Jroot@root:~/.ssh$ dropbear -E -s -p 2223[Jroot@root:~/.ssh$ dropbear -E -s -R -p 2223[Jroot@root:~/.ssh$ vi /root/.ssh/authorized_keys [Jroot@root:~/.ssh$ cat /root/.ssh/authorized_keys[Jroot@root:~/.ssh$ dropbear -E -s -R -p 2223[Jroot@root:~/.ssh$ cat /root/.ssh/authorized_keys[Jized_ket/.ssh/authorized_keys[J[21D/.ssh/authorized_keys[J[21D/.ssh/authorized_keys[J[21D/.ssh/authorized_keys[J[21De/.ssh/authorized_keys[21Dt/.ssh/authorized_keys[21Dc/.ssh/authorized_keys[21D//.ssh/authorized_keys[21Dd/.ssh/authorized_keys[21Dr/.ssh/authorized_keys[21Do/.ssh/authorized_keys[21Dp/.ssh/authorized_keys[21Db/.ssh/authorized_keys[21De/.ssh/authorized_keys[21Da/.ssh/authorized_keys[21Dr/.ssh/authorized_keys[21D2/.ssh/authorized_keys[21D/.ssh/authorized_keys[J[21D/.ssh/authorized_keys[J[17Dh/authorized_keys[J[17Dh/authorized_keys[J[17Dh/authorized_keys[J[17Dh/authorized_keys[J[16D/authorized_keys
+cat: can't open '/etc/dropbear/authorized_keys': No such file or directory
+root@root:~/.ssh$ mkdir [J -o [J[Jp /e[J[J[J[J[Jet[J[J/eroot@root:~/.ssh$ mkdir /etc/[Jdroproot@root:~/.ssh$ mkdir /etc/dropbear/[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[Jtouch /eroot@root:~/.ssh$ touch /etc/[Jdrroot@root:~/.ssh$ touch /etc/dropbear/[Jauthorized_keys
+root@root:~/.ssh$ nvim e[J/ets[Jcroot@root:~/.ssh$ nvim /etc/[Jdroproot@root:~/.ssh$ nvim /etc/dropbear/[Jauroot@root:~/.ssh$ nvim /etc/dropbear/authorized_keys [J
+/bin/sh: nvim: not found
+root@root:~/.ssh$ root@root:~/.ssh$ nvim /etc/dropbear/authorized_keys [Jroot@root:~/.ssh$ [Jroot@root:~/.ssh$ nvim /etc/dropbear/authorized_keys [J/etc/dropbear/authorized_keys [J[30D/etc/dropbear/authorized_keys [J[30D/etc/dropbear/authorized_keys [J[30D/etc/dropbear/authorized_keys [J[30D/etc/dropbear/authorized_keys [J[30Dv/etc/dropbear/authorized_keys [30Di/etc/dropbear/authorized_keys [30D /etc/dropbear/authorized_keys [30D/etc/dropbear/authorized_keys 
+[?1049h[999;999H[6n[H[J[1;1H~[2;1H~[3;1H~[4;1H~[5;1H~[6;1H~[7;1H~[8;1H~[9;1H~[10;1H~[11;1H~[12;1H~[13;1H~[14;1H~[15;1H~[16;1H~[17;1H~[18;1H~[19;1H~[20;1H~[21;1H~[22;1H~[23;1H~[24;1H~[25;1H~[26;1H~[27;1H~[28;1H~[29;1H~[30;1H~[31;1H~[32;1H~[33;1H~[34;1H~[35;1H~[36;1H~[37;1H~[38;1H~[39;1H~[40;1H~[41;1H~[42;1H~[43;1H~[44;1H~[45;1H~[46;1H~[47;1H~[48;1H~[49;1H~[50;1H~[51;1H~[52;1H~[53;1H~[1;2H[54;1H[K- /etc/dropbear/authorized_keys 0/0 100%[1;2H[1;1H [1;1H[54;1H[K[7mNothing in register D[m[1;1H[54;1H[K- /etc/dropbear/authorized_keys 0/0 100%[1;1H[1;1H[54;1H[K- /etc/dropbear/authorized_keys 0/0 100%[1;1H[54;1H[KI /etc/dropbear/authorized_keys 0/0 100%[1;1H[1;1Hsh-rsa AAAAB3NzaC1yc2EAAAADAQABAAA[1;35H[1;35HBgQDdqbcgsRC+XbV0p6RwAJ5feFm+Sga[1;67H[1;67HjTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8[1;122H[1;122HTUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OS[1;154H[1;1HaC1yc2EAAAADAQABAAABgQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rMWiYbRoSbc8t9+Iw[2;1H [3;1H [4;1H [5;1H [6;1H [7;1H [8;1H [9;1H [10;1H [11;1H [12;1H [13;1H [14;1H [15;1H [16;1H [17;1H [18;1H [19;1H [20;1H [21;1H [22;1H [23;1H [24;1H [25;1H [26;1H [27;1H [28;1H [29;1H [30;1H [31;1H [32;1H [33;1H [34;1H [35;1H [36;1H [37;1H [38;1H [39;1H [40;1H [41;1H [42;1H [43;1H [44;1H [45;1H [46;1H [47;1H [48;1H [49;1H [50;1H [51;1H [52;1H [53;1H [1;171H[1;1HXbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rMWiYbRoSbc8t9+Iwt+tstgCQp24GLFD/LgqYTXFJd3MHyqiv[2;1H                                                                                                                                                                           [3;1H                                                                                                                                                                           [4;1H                                                                                                                                                                           [5;1H                                                                                                                                                                           [6;1H                                                                                                                                                                           [7;1H                                                                                                                                                                           [8;1H                                                                                                                                                                           [9;1H                                                                                                                                                                           [10;1H                                                                                                                                                                           [11;1H                                                                                                                                                                           [12;1H                                                                                                                                                                           [13;1H                                                                                                                                                                           [14;1H                                                                                                                                                                           [15;1H                                                                                                                                                                           [16;1H                                                                                                                                                                           [17;1H                                                                                                                                                                           [18;1H                                                                                                                                                                           [19;1H                                                                                                                                                                           [20;1H                                                                                                                                                                           [21;1H                                                                                                                                                                           [22;1H                                                                                                                                                                           [23;1H                                                                                                                                                                           [24;1H                                                                                                                                                                           [25;1H                                                                                                                                                                           [26;1H                                                                                                                                                                           [27;1H                                                                                                                                                                           [28;1H                                                                                                                                                                           [29;1H                                                                                                                                                                           [30;1H                                                                                                                                                                           [31;1H                                                                                                                                                                           [32;1H                                                                                                                                                                           [33;1H                                                                                                                                                                           [34;1H                                                                                                                                                                           [35;1H                                                                                                                                                                           [36;1H                                                                                                                                                                           [37;1H                                                                                                                                                                           [38;1H                                                                                                                                                                           [39;1H                                                                                                                                                                           [40;1H                                                                                                                                                                           [41;1H                                                                                                                                                                           [42;1H                                                                                                                                                                           [43;1H                                                                                                                                                                           [44;1H                                                                                                                                                                           [45;1H                                                                                                                                                                           [46;1H                                                                                                                                                                           [47;1H                                                                                                                                                                           [48;1H                                                                                                                                                                           [49;1H                                                                                                                                                                           [50;1H                                                                                                                                                                           [51;1H                                                                                                                                                                           [52;1H                                                                                                                                                                           [53;1H                                                                                                                                                                           [1;171H[54;1H[KI /etc/dropbear/authorized_keys [Modified] 1/1 100%[1;171H[1;1Hsh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rMW[2;1H                                                                                                                                                                           [3;1H~[4;1H~[5;1H~[6;1H~[7;1H~[8;1H~[9;1H~[10;1H~[11;1H~[12;1H~[13;1H~[14;1H~[15;1H~[16;1H~[17;1H~[18;1H~[19;1H~[20;1H~[21;1H~[22;1H~[23;1H~[24;1H~[25;1H~[26;1H~[27;1H~[28;1H~[29;1H~[30;1H~[31;1H~[32;1H~[33;1H~[34;1H~[35;1H~[36;1H~[37;1H~[38;1H~[39;1H~[40;1H~[41;1H~[42;1H~[43;1H~[44;1H~[45;1H~[46;1H~[47;1H~[48;1H~[49;1H~[50;1H~[51;1H~[52;1H~[53;1H~[2;1H[54;1H[KI /etc/dropbear/authorized_keys [Modified] 2/2 100%[2;1H[2;1Hd[2;2H[2;2Hd[2;3H[2;2H[54;1H[K- /etc/dropbear/authorized_keys [Modified] 2/2 100%[2;2H[2;1H~ [1;1H[54;1H[KDelete 1 lines (3 chars) from [D][1;1H[54;1H[K- /etc/dropbear/authorized_keys [Modified] 1/1 100%[1;1H[1;1H[1;1H[54;1H[KI /etc/dropbear/authorized_keys [Modified] 1/1 100%[1;1H[1;2Hsh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rM[1;2H[1;1H[54;1H[K- /etc/dropbear/authorized_keys [Modified] 1/1 100%[1;1H[54;1H[K:w[1;1H[1;1H[54;1H[K'/etc/dropbear/authorized_keys' 1L, 588C[1;1H[54;1H[K- /etc/dropbear/authorized_keys 1/1 100%[1;1H[54;1H[K:q[1;1H[1;1H[54;1H[K- /etc/dropbear/authorized_keys 1/1 100%[1;1H[54;1H[K[?1049lroot@root:~/.ssh$ [H[Jroot@root:~/.ssh$ [Jdropbear -E -s -R -p 2223
+[7408] Dec 01 03:11:10 Failed listening on '2223': Error listening: Address already in use
+[7408] Dec 01 03:11:10 Early exit: No listening ports available.
+root@root:~/.ssh$ 
+root@root:~/.ssh$ [7409] Dec 01 03:11:14 Child connection from 192.168.1.10:61944
+[7409] Dec 01 03:11:14 Exit before auth (user 'root', 0 fails): Exited normally
+root@root:~/.ssh$ dropbear -E -s -R -p 2223[Jroot@root:~/.ssh$ vi /etc/dropbear/authorized_keys [Jroot@root:~/.ssh$ nvim /etc/dropbear/authorized_keys [Jroot@root:~/.ssh$ touch /etc/dropbear/authorized_keys[Jroot@root:~/.ssh$ cat /etc/dropbear/authorized_keys[Jroot@root:~/.ssh$ dropbear -E -s -R -p 2223[Jroot@root:~/.ssh$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J
+root@root:~/.ssh$ [6739] Dec 01 03:11:18 Early exit: Terminated by signal
+root@root:~/.ssh$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:~/.ssh$ dropbear -E -s -R -p 2223[J
+root@root:~/.ssh$ [7421] Dec 01 03:11:20 Running in background
+[7422] Dec 01 03:11:24 Child connection from 192.168.1.10:61945
+[7422] Dec 01 03:11:24 Exit before auth (user 'root', 0 fails): Exited normally
+^C
+
+root@root:~/.ssh$ cd ..
+root@root:~$ cd ..
+root@root:/$ cd [J[Jls
+/bin/sh: cls: not found
+root@root:/$ ls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')
+root@root:/$ [7421] Dec 01 03:15:17 Early exit: Terminated by signal
+
+root@root:/$ root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ ls[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ ls[Jroot@root:/$ cls[Jroot@root:/$ cd ..[Jroot@root:/$ dropbear -E -s -R -p 2223[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ dropbear -E -s -R -p 2223[Jroot@root:/$ vi /etc/dropbear/authorized_keys [Jroot@root:/$ nvim /etc/dropbear/authorized_keys [Jroot@root:/$ touch /etc/dropbear/authorized_keys[Jroot@root:/$ cat /etc/dropbear/authorized_keys[Jroot@root:/$ dropbear -E -s -R -p 2223[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ dropbear -E -s -r /root/.ssh/authorized_keys  -p 2223[Jroot@root:/$ dropbear -E -s -p 2223[J
+[7603] Dec 01 03:16:31 Failed loading /etc/dropbear/dropbear_rsa_host_key
+[7603] Dec 01 03:16:31 Failed loading /etc/dropbear/dropbear_dss_host_key
+root@root:/$ [7604] Dec 01 03:16:31 Running in background
+[7605] Dec 01 03:16:34 Child connection from 192.168.1.10:61953
+^C
+
+root@root:/$ root@root:/$ dropbear -E -s -p 2223[J
+[7629] Dec 01 03:17:16 Failed loading /etc/dropbear/dropbear_rsa_host_key
+[7629] Dec 01 03:17:16 Failed loading /etc/dropbear/dropbear_dss_host_key
+[7629] Dec 01 03:17:16 Failed listening on '2223': Error listening: Address already in use
+[7629] Dec 01 03:17:16 Early exit: No listening ports available.
+root@root:/$ [7605] Dec 01 03:17:19 Exit before auth: Exited normally
+^C
+
+root@root:/$ dropbearkey -t rsa -f /etc/dropbear/dropbear_rsa_host_key
+Generating 2048 bit rsa key, this may take a while...
+Public key portion is:
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwjt7GojPBX8czrPWFQ5Ohe0oiRfX2s4uaHceQ+12Jq/VNVVRVrJXyGHhz4cQc+G8heZVrRY/RjqF3LmAGxv9X+ZiPVZ+tgCdpaxV0UoPBU+NduOTGDcYc6BQpJnKDFeCcXw0yKgs2b8GDVoAlLD7hkYa1xJBCP4SdcUvC57S56pPFsVNl+SgGf6PvZoONZlCjYDLmpg9lTAResh3eaTfjzjHOcaomrU0EAf5uwg4NMoUbr4LOVh0t8rZDy2jhN7tA9ytSiD04eRe+O/qMgfB0WXojvHUb/S2IejgjovquZf5EaBM9vY8JS/cH4XbGOkVmajMQVk7gXp9Bg8q772nh root@root
+Fingerprint: sha1!! 7b:ba:e1:25:93:26:61:d3:7d:d7:59:d6:38:7d:54:48:0e:38:06:eb
+root@root:/$ dropbearkey -t ecdsa -f /etc/dropbear/dropbear_ecdsa_host_key
+Generating 256 bit ecdsa key, this may take a while...
+Failed moving key file to /etc/dropbear/dropbear_ecdsa_host_key: File exists
+Exited: Failed to generate key.
+
+root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')
+[7604] Dec 01 03:20:16 Early exit: Terminated by signal
+root@root:/$ dropbear -E -s -p 2223
+[7736] Dec 01 03:20:19 Failed loading /etc/dropbear/dropbear_dss_host_key
+[7737] Dec 01 03:20:19 Running in background
+root@root:/$ ssh -i ~/.ssh/uniview_ipc_key root@192.168.1.13 -p 2223
+/bin/sh: ssh: not found
+root@root:/$ root@root:/$ ssh -i ~/.ssh/uniview_ipc_key root@192.168.1.13 -p 2223[Jroot@root:/$ [Jroot@root:/$ ssh -i ~/.ssh/uniview_ipc_key root@192.168.1.13 -p 2223[Jroot@root:/$ dropbear -E -s -p 2223[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J
+root@root:/$ [7737] Dec 01 03:22:02 Early exit: Terminated by signal
+root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ ssh -i ~/.ssh/uniview_ipc_key root@192.168.1.13 -p 2223[Jroot@root:/$ dropbear -E -s -p 2223[J-2223F2223 22232223
+[7803] Dec 01 03:22:06 Early exit: Invalid argument: 2223
+root@root:/$ root@root:/$ dropbear -E -s -p -F 2223[JF 2223[J[5D 2223[J[5D 2223[J[5D--p 2223[7Df-p 2223[7D-p 2223[J[7DF-p 2223[7D -p 2223[7D-p 2223
+[7816] Dec 01 03:22:28 Failed loading /etc/dropbear/dropbear_dss_host_key
+[7816] Dec 01 03:22:28 Not backgrounding
+[7816] Dec 01 03:22:45 Early exit: Terminated by signal
+root@root:/$ root@root:/$ dropbear -E -s -F -p 2223[Jroot@root:/$ dropbear -E -s -p -F 2223[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J
+sh: you need to specify whom to kill
+root@root:/$ root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ [J^C
+
+root@root:/$ [H[Jroot@root:/$ [Jdropbear -R -p 2222 [enter][J[J[J[J[J[J[J[J
+root@root:/$ root@root:/$ dropbear -R -p 2222[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[Jps | gre [Jp de[Jropea[J[Jbear
+ 7937 root     1824 S    dropbear -R -p 2222
+ 7945 root     2332 S    grep dropbear
+root@root:/$ root@root:/$ ps | grep dropbear[Jroot@root:/$ dropbear -R -p 2222[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J
+root@root:/$ root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ ps | grep dropbear[Jroot@root:/$ dropbear -R -p 2222[J--p 2222[7DE-p 2222[7D -p 2222[7D-p 2222
+root@root:/$ [8079] Dec 01 03:30:00 Running in background
+^C
+
+root@root:/$ root@root:/$ dropbear -R -E -p 2222[J^C
+
+root@root:/$ root@root:/$ dropbear -R -E -p 2222[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J
+[8079] Dec 01 03:30:52 Early exit: Terminated by signal
+root@root:/$ root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ dropbear -R -E -p 2222[J--p 2222[7DF-p 2222[7D -p 2222[7D-p 2222
+[8119] Dec 01 03:31:04 Not backgrounding
+[8119] Dec 01 03:31:28 Early exit: Terminated by signal
+root@root:/$ root@root:/$ dropbear -R -E -F -p 2222[J
+[8161] Dec 01 03:32:12 Not backgrounding
+[8161] Dec 01 03:32:16 Early exit: Terminated by signal
+root@root:/$ root@root:/$ dropbear -R -E -F -p 2222[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J
+sh: you need to specify whom to kill
+root@root:/$ nc -lvnp 2223
+/bin/sh: nc: not found
+root@root:/$ root@root:/$ nc -lvnp 2223[J -lvnp 2223[J[11De -lvnp 2223[11Dt -lvnp 2223[11Dc -lvnp 2223[11Da -lvnp 2223[11Dt -lvnp 2223[11D -lvnp 2223
+/bin/sh: netcat: not found
+root@root:/$ telnet
+BusyBox v1.36.1 (2024-03-19 11:46:10 CST) multi-call binary.
+
+Usage: telnet [-a] [-l USER] HOST [PORT]
+
+Connect to telnet server
+
+	-a	Automatic login with $USER variable
+	-l USER	Automatic login as USER
+root@root:/$ telnet ss
+
+root@root:/$ ss -tulnp
+/bin/sh: ss: not found
+root@root:/$ netstat -tunlp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 127.0.0.1:54321         0.0.0.0:*               LISTEN      751/mwareserver
+tcp        0      0 :::80                   :::*                    LISTEN      751/mwareserver
+tcp        0      0 :::554                  :::*                    LISTEN      751/mwareserver
+udp        0      0 127.0.0.1:2048          0.0.0.0:*                           751/mwareserver
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           932/mw_dhcpcd_wired
+udp        0      0 127.0.0.1:7001          0.0.0.0:*                           751/mwareserver
+udp        0      0 0.0.0.0:3702            0.0.0.0:*                           751/mwareserver
+root@root:/$ ^C
+
+root@root:/$ root@root:/$ netstat -tunlp[Jroot@root:/$ ss -tulnp[Jroot@root:/$ telnet ss[Jroot@root:/$ telnet[Jroot@root:/$ netcat -lvnp 2223[Jroot@root:/$ nc -lvnp 2223[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ dropbear -R -E -F -p 2222[J
+[8411] Dec 01 03:39:33 Not backgrounding
+[8411] Dec 01 03:39:41 Early exit: Terminated by signal
+root@root:/$ [H[Jroot@root:/$ [Jnc -zv 192.168.1.13 2222
+/bin/sh: nc: not found
+root@root:/$ dropbear -R -p 2222
+root@root:/$ root@root:/$ dropbear -R -p 2222[J[J3--p 2223[7Df-p 2223[7D-p 2223[J[7DF-p 2223[7D -p 2223[7D--p 2223[7DE-p 2223[7D -p 2223[7D-p 2223
+[8440] Dec 01 03:40:22 Not backgrounding
+[8440] Dec 01 03:40:31 Early exit: Terminated by signal
+root@root:/$ root@root:/$ dropbear -R -F -E -p 2223[J
+[8448] Dec 01 03:40:33 Not backgrounding
+[8448] Dec 01 03:40:41 Early exit: Terminated by signal
+root@root:/$ ^C
+
+root@root:/$ ^C
+
+root@root:/$ [H[Jroot@root:/$ [J[H[Jroot@root:/$ [J[H[Jroot@root:/$ [Jwhich dropbear
+/usr/sbin/dropbear
+root@root:/$ dropbearkey -t rsa -f /etc/dropbear/dropbear_rsa_host_key
+Generating 2048 bit rsa key, this may take a while...
+Failed moving key file to /etc/dropbear/dropbear_rsa_host_key: File exists
+Exited: Failed to generate key.
+
+root@root:/$ dropbear -R -E -F -p 22
+[8799] Dec 01 03:51:08 Not backgrounding
+[8799] Dec 01 03:51:18 Early exit: Terminated by signal
+root@root:/$ root@root:/$ dropbear -R -E -F -p 22[J -p 22[J[6D -p 22[J[6D -p 22[J[6D -p 22
+root@root:/$ [8806] Dec 01 03:51:23 Running in background
+netstat -tulnp | grep 22
+tcp        0      0 0.0.0.0:2222            0.0.0.0:*               LISTEN      8429/dropbear
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      8806/dropbear
+tcp        0      0 :::2222                 :::*                    LISTEN      8429/dropbear
+tcp        0      0 :::22                   :::*                    LISTEN      8806/dropbear
+root@root:/$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq qlen 1000
+    link/ether e4:f1:4c:77:66:ba brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.13/24 brd 192.168.1.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::e6f1:4cff:fe77:66ba/64 scope link 
+       valid_lft forever preferred_lft forever
+3: ip6_vti0@NONE: <NOARP> mtu 1428 qdisc noop qlen 1000
+    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop qlen 1000
+    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+root@root:/$ ip route
+default via 192.168.1.1 dev eth0 
+192.168.1.0/24 dev eth0 scope link  src 192.168.1.13 
+root@root:/$ iptables -L -n -v
+/bin/sh: iptables: not found
+root@root:/$ ctcpdump -i eth0 -nn
+/bin/sh: ctcpdump: not found
+root@root:/$ tcpdump -i eth0 -nn
+/bin/sh: tcpdump: not found
+root@root:/$ cat /proc/net/dev
+Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+  eth0:  111719     941    0    0    0     0          0         0   236528    2253    0    0    0     0       0          0
+    lo:    3420      36    0    0    0     0          0         0     3420      36    0    0    0     0       0          0
+ip6tnl0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  sit0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip6_vti0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+root@root:/$ root@root:/$ cat /proc/net/dev[J
+Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+  eth0:  111972     943    0    0    0     0          0         0   236668    2255    0    0    0     0       0          0
+    lo:    3420      36    0    0    0     0          0         0     3420      36    0    0    0     0       0          0
+ip6tnl0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  sit0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip6_vti0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+root@root:/$ root@root:/$ cat /proc/net/dev[J
+Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+  eth0:  112058     944    0    0    0     0          0         0   236738    2256    0    0    0     0       0          0
+    lo:    3420      36    0    0    0     0          0         0     3420      36    0    0    0     0       0          0
+ip6tnl0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  sit0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip6_vti0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+root@root:/$ root@root:/$ cat /proc/net/dev[J
+Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+  eth0:  112238     947    0    0    0     0          0         0   236934    2260    0    0    0     0       0          0
+    lo:    3420      36    0    0    0     0          0         0     3420      36    0    0    0     0       0          0
+ip6tnl0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  sit0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip6_vti0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+root@root:/$ root@root:/$ cat /proc/net/dev[J
+Inter-|   Receive                                                |  Transmit
+ face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed
+  eth0:  112238     947    0    0    0     0          0         0   236934    2260    0    0    0     0       0          0
+    lo:    3420      36    0    0    0     0          0         0     3420      36    0    0    0     0       0          0
+ip6tnl0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  sit0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+ip6_vti0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+root@root:/$ ^C
+
+root@root:/$ [H[Jroot@root:/$ [Jhghfghfhfbvvgcgcfgcxgxgfc[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[Jjjjhkgjbjfgkfjkyhbgjk^C
+
+root@root:/$ [H[Jroot@root:/$ [Jroot@root:/$ cat /proc/net/dev[Jroot@root:/$ tcpdump -i eth0 -nn[Jroot@root:/$ ctcpdump -i eth0 -nn[Jroot@root:/$ iptables -L -n -v[Jroot@root:/$ ip route[Jroot@root:/$ ip addr[Jroot@root:/$ netstat -tulnp | grep 22[Jroot@root:/$ dropbear -R -E -p 22[J
+[10538] Dec 01 04:40:11 Failed listening on '22': Error listening: Address already in use
+[10538] Dec 01 04:40:11 Early exit: No listening ports available.
+root@root:/$ [10549] Dec 01 04:40:31 Child connection from 192.168.1.10:62210
+[10549] Dec 01 04:40:31 Exit before auth: Exited normally
+[10561] Dec 01 04:40:48 Child connection from 192.168.1.10:62212
+[10561] Dec 01 04:40:51 Pubkey auth attempt with unknown algo for 'root' from 192.168.1.10:62212
+[10561] Dec 01 04:40:55 Bad password attempt for 'root' from 192.168.1.10:62212
+[10561] Dec 01 04:40:58 Bad password attempt for 'root' from 192.168.1.10:62212
+[10561] Dec 01 04:41:01 Bad password attempt for 'root' from 192.168.1.10:62212
+[10561] Dec 01 04:41:01 Exit before auth (user 'root', 3 fails): Exited normally
+^C
+
+root@root:/$ root@root:/$ dropbear -R -E -p 22[J- -E -p 22[9D -E -p 22[J[9D  -E -p 22[9D- -E -p 22[9Ds -E -p 22[9D -E -p 22
+[10575] Dec 01 04:41:11 Failed listening on '22': Error listening: Address already in use
+[10575] Dec 01 04:41:11 Early exit: No listening ports available.
+root@root:/$ root@root:/$ dropbear -R -s -E -p 22[Jroot@root:/$ dropbear -R -E -p 22[Jroot@root:/$ cat /proc/net/dev[Jroot@root:/$ tcpdump -i eth0 -nn[Jroot@root:/$ ctcpdump -i eth0 -nn[Jroot@root:/$ iptables -L -n -v[Jroot@root:/$ ip route[Jroot@root:/$ ip addr[Jroot@root:/$ netstat -tulnp | grep 22[Jroot@root:/$ dropbear -R -E -p 22[Jroot@root:/$ dropbear -R -E -F -p 22[Jroot@root:/$ dropbearkey -t rsa -f /etc/dropbear/dropbear_rsa_host_key[Jroot@root:/$ which dropbear[Jroot@root:/$ dropbear -R -F -E -p 2223[Jroot@root:/$ dropbear -R -p 2222[Jroot@root:/$ nc -zv 192.168.1.13 2222[Jroot@root:/$ dropbear -R -E -F -p 2222[Jroot@root:/$ netstat -tunlp[Jroot@root:/$ ss -tulnp[Jroot@root:/$ telnet ss[Jroot@root:/$ telnet[Jroot@root:/$ netcat -lvnp 2223[Jroot@root:/$ nc -lvnp 2223[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J
+root@root:/$ [8806] Dec 01 04:41:19 Early exit: Terminated by signal
+root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ dropbear -R -s -E -p 22[J
+root@root:/$ [10587] Dec 01 04:41:21 Running in background
+[10588] Dec 01 04:41:24 Child connection from 192.168.1.10:62213
+[10588] Dec 01 04:41:24 Pubkey auth attempt with unknown algo for 'root' from 192.168.1.10:62213
+[10588] Dec 01 04:41:24 Exit before auth (user 'root', 0 fails): Exited normally
+[10599] Dec 01 04:41:46 Child connection from 192.168.1.10:62214
+[10599] Dec 01 04:41:47 Exit before auth (user 'root', 0 fails): Exited normally
+^C
+
+root@root:/$ root@root:/$ dropbear -R -s -E -p 22[J22[10611] Dec 01 04:42:06 Child connection from 192.168.1.10:62215
+[10611] Dec 01 04:42:06 Exit before auth: Exited normally
+root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ dropbear -R -s -E -p 22[Jroot@root:/$ dropbear -R -E -p 22[Jroot@root:/$ dropbear -R -s -E -p 22[J22
+[10620] Dec 01 04:42:16 Running in background
+root@root:/$ [10623] Dec 01 04:42:17 Child connection from 192.168.1.10:62217
+[10623] Dec 01 04:42:17 Exit before auth: Exited normally
+[10634] Dec 01 04:42:35 Child connection from 192.168.1.10:62218
+[10634] Dec 01 04:42:35 Pubkey auth attempt with unknown algo for 'root' from 192.168.1.10:62218
+[10634] Dec 01 04:42:35 Exit before auth (user 'root', 0 fails): Exited normally
+[10640] Dec 01 04:42:40 Child connection from 192.168.1.10:62219
+[10640] Dec 01 04:42:41 Pubkey auth attempt with unknown algo for 'root' from 192.168.1.10:62219
+[10640] Dec 01 04:42:41 Exit before auth (user 'root', 0 fails): Exited normally
+[10662] Dec 01 04:43:21 Child connection from 192.168.1.10:62240
+[10662] Dec 01 04:43:22 Exit before auth (user 'root', 0 fails): Exited normally
+^C
+
+root@root:/$ root@root:/$ dropbear -R -s -E -p 2222[J
+[10735] Dec 01 04:45:34 Failed listening on '2222': Error listening: Address already in use
+[10735] Dec 01 04:45:34 Early exit: No listening ports available.
+root@root:/$ [10774] Dec 01 04:46:46 Child connection from 192.168.1.10:62275
+[10774] Dec 01 04:46:46 Exit before auth (user 'root', 0 fails): Exited normally
+cat /root/.ssh/authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdqbcgsRC+XbV0p6RwAJ5feFm+SgajTsnury1bZWQbVzrGFkp8zYEbiXGGBN0sTa33GaFeSaDVaYHDOpuFV8TUPKmcDlNrVdptJG0k+Xz5nuo5SCL/OSrbiEF5uX+oGR040rMWiYbRoSbc8t9+Iwt+tstgCQp24GLFD/LgqYTXFJd3MHyqivdG/1lfqJxUEgZNBdHFV4XMmdcy+n7WP2s8sBkGAFXzvkgEnH7RLkHZM/82BrgBGKMme6Sjckjsp/4hE92m7m0KRVcseOliCsBnDzHi2Zj10hIE0Jg85CZeOchClYoDcgOwRdip0MSLhswz2Cy72O9fsCvZZt+1H8EAOMCRsRn0hnXiDuOlxasXX5uLwzi7VCe0MNUVol8G7lcTFMNyQbsDl3XNiW9OGRskXYLrGeCp/Fy5UhZRL93pNAgawAhHMIOvC+MBr4JTAbL2RnN4tuje14aL7fYA01qQPfiMIGiA6OHgSHz/k4t3rZ830uvhHiWUPdKkW/ciM/8= ygashu@Yonathans-MacBook-Air.local
+root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')
+[10620] Dec 01 04:47:15 Early exit: Terminated by signal
+[10587] Dec 01 04:47:15 Early exit: Terminated by signal
+root@root:/$ dropbear -F -E -s -R -p 2222
+[10799] Dec 01 04:47:17 Not backgrounding
+[10807] Dec 01 04:47:25 Child connection from 192.168.1.10:62277
+[10807] Dec 01 04:47:25 Exit before auth (user 'root', 0 fails): Exited normally
+[10808] Dec 01 04:47:26 Child connection from 192.168.1.10:62278
+[10808] Dec 01 04:47:26 Exit before auth (user 'root', 0 fails): Exited normally
+[10809] Dec 01 04:47:27 Child connection from 192.168.1.10:62279
+[10809] Dec 01 04:47:27 Exit before auth (user 'root', 0 fails): Exited normally
+[10831] Dec 01 04:48:11 Child connection from 192.168.1.10:62301
+[10831] Dec 01 04:48:11 Pubkey auth succeeded for 'root' with key sha1!! 2a:7b:db:5e:c4:02:e8:46:20:d2:9a:fe:a6:bb:08:f4:16:97:d0:dd from 192.168.1.10:62301
+[10799] Dec 01 04:49:00 Early exit: Terminated by signal
+root@root:/$ cat /etc/passwd
+root:$6$kkelLZS43wKdHmcQ$qX3ZquYQTQn35v5wJdrcQf4Oh3S8UP06YchVfmyfVOwPDJ22rCas239A2Tgk4h27KfSQiXzPtDBf1AS5h.lTO0:0:0:Linux User,,,:/root:/usr/bin/uvsh
+root@root:/$ sed -i 's|/usr/bin/uvsh|/bin/sh|' /etc/passwd
+root@root:/$ 
+root@root:/$ cat /etc/passwd
+root:$6$kkelLZS43wKdHmcQ$qX3ZquYQTQn35v5wJdrcQf4Oh3S8UP06YchVfmyfVOwPDJ22rCas239A2Tgk4h27KfSQiXzPtDBf1AS5h.lTO0:0:0:Linux User,,,:/root:/bin/sh
+root@root:/$ 
+root@root:/$ root@root:/$ cat /etc/passwd[Jroot@root:/$ sed -i 's|/usr/bin/uvsh|/bin/sh|' /etc/passwd[Jroot@root:/$ cat /etc/passwd[Jroot@root:/$ dropbear -F -E -s -R -p 2222[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J
+[10831] Dec 01 04:49:56 Exit (root): Terminated by signal
+root@root:/$ root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ cat /etc/passwd[Jroot@root:/$ sed -i 's|/usr/bin/uvsh|/bin/sh|' /etc/passwd[Jroot@root:/$ cat /etc/passwd[Jroot@root:/$ dropbear -F -E -s -R -p 2222[J
+[10907] Dec 01 04:50:11 Not backgrounding
+[10913] Dec 01 04:50:17 Child connection from 192.168.1.10:62304
+[10913] Dec 01 04:50:17 User 'root' has invalid shell, rejected
+[10913] Dec 01 04:50:17 Exit before auth (user 'root', 0 fails): Exited normally
+[10907] Dec 01 04:50:45 Early exit: Terminated by signal
+root@root:/$ cat /etc/passwd
+root:$6$kkelLZS43wKdHmcQ$qX3ZquYQTQn35v5wJdrcQf4Oh3S8UP06YchVfmyfVOwPDJ22rCas239A2Tgk4h27KfSQiXzPtDBf1AS5h.lTO0:0:0:Linux User,,,:/root:/bin/sh
+root@root:/$ echo "/bin/sh" >> /etc/shells
+root@root:/$ root@root:/$ echo "/bin/sh" >> /etc/shells[Jroot@root:/$ cat /etc/passwd[Jroot@root:/$ dropbear -F -E -s -R -p 2222[J
+[10941] Dec 01 04:51:02 Not backgrounding
+[10943] Dec 01 04:51:05 Child connection from 192.168.1.10:62305
+[10943] Dec 01 04:51:05 Pubkey auth succeeded for 'root' with key sha1!! 2a:7b:db:5e:c4:02:e8:46:20:d2:9a:fe:a6:bb:08:f4:16:97:d0:dd from 192.168.1.10:62305
+[10941] Dec 01 04:51:13 Early exit: Terminated by signal
+root@root:/$ root@root:/$ dropbear -F -E -s -R -p 2222[Jroot@root:/$ echo "/bin/sh" >> /etc/shells[Jroot@root:/$ cat /etc/passwd[Jroot@root:/$ dropbear -F -E -s -R -p 2222[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J
+[10943] Dec 01 04:51:19 Exit (root): Terminated by signal
+root@root:/$ root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ dropbear -F -E -s -R -p 2222[Jroot@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[J
+sh: you need to specify whom to kill
+root@root:/$ root@root:/$ kill $(ps | grep dropbear | grep -v grep | awk '{print $1}')[Jroot@root:/$ dropbear -F -E -s -R -p 2222[J
+[10979] Dec 01 04:51:49 Not backgrounding
+[10980] Dec 01 04:51:52 Child connection from 192.168.1.10:62307
+[10980] Dec 01 04:51:52 Pubkey auth succeeded for 'root' with key sha1!! 2a:7b:db:5e:c4:02:e8:46:20:d2:9a:fe:a6:bb:08:f4:16:97:d0:dd from 192.168.1.10:62307
+[10980] Dec 01 04:58:28 Exit (root): Disconnect received
+[10979] Dec 01 04:58:30 Early exit: Terminated by signal
+root@root:/$ l[Jexit
+@
+mware ready
+isp interrupts ready
+
+test result:pass
+$$
+
+User@/root>exit
+Bye bye!
+
+root login: 
