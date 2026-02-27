@@ -1,0 +1,601 @@
+[H[Jroot@root:/$ [Jls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ ct[Jat .rcs[J[J[JRcs[J[J[J[J/r[Jeroot@root:/$ cat /etc/[J
+KERNEL_VERSION         init.d/                passwd-
+TZ                     inittab                profile
+ax_syslog.conf         iscsi/                 resolv.conf
+dhcpcd.duid            localtime              sd_card_add_remove.sh
+fstab                  mdev.conf              sddpd.conf
+group                  mwareversion           shells
+hostname               passwd                 snmp.conf
+root@root:/$ cat /etc/[J
+KERNEL_VERSION         init.d/                passwd-
+TZ                     inittab                profile
+ax_syslog.conf         iscsi/                 resolv.conf
+dhcpcd.duid            localtime              sd_card_add_remove.sh
+fstab                  mdev.conf              sddpd.conf
+group                  mwareversion           shells
+hostname               passwd                 snmp.conf
+root@root:/$ cat /etc/[Jiniroot@root:/$ cat /etc/init[J.root@root:/$ cat /etc/init.d/[J.R[Jr[J[J[J[J[J[J[J[J[J[J[J[J[Jpro[J[J[Jet[Jtc/iniroot@root:/$ cat /etc/init[J
+init.d/  inittab
+root@root:/$ cat /etc/init[J.root@root:/$ cat /etc/init.d/[J
+S11init     S30ambrwfs  S80network  axklogd     axsyslogd   rcS
+root@root:/$ cat /etc/init.d/[Jrroot@root:/$ cat /etc/init.d/rcS [J
+#!/bin/sh
+
+for initscript in /etc/init.d/S[0-9]*
+do
+	if [ -x $initscript ] ;
+	then
+		echo "[RCS]: $initscript"
+		$initscript
+		if [ "$initscript" == "/etc/init.d/S30ambrwfs" ]; then
+			cmd_output=`/usr/sbin/encrypt_sign_tool 3 /program/bin/filelist.txt /usr/sbin/program_public.key /program/bin/signature.bin`
+			if [ -z "`echo $cmd_output | grep 'rsa verify ok'`" ]; then
+				echo "verify signature fail, exit!"
+				umount /program
+				exit 1
+			fi
+		fi
+	fi
+done
+
+
+echo /sbin/mdev > /proc/sys/kernel/hotplug
+
+/sbin/mdev -s
+
+ln -sf /tmp/ /var/log
+
+mkdir -p /var/log/AXSyslog/kernel
+mkdir -p /tmp/cron.d
+cp /etc/ax_syslog.conf /var/log/AXSyslog/ax_syslog.conf
+
+/program/bin/auto_load_all_drv.sh
+mount -t pstore pstore /sys/fs/pstore
+# 创建链接，便于执行systemreport.sh时同时收集上次的异常日志
+ln -sf /sys/fs/pstore /tmp/pstore
+
+/program/bin/npu_set_bw_limiter.sh start
+
+/etc/init.d/axsyslogd start
+/etc/init.d/axklogd start
+root@root:/$ ls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ ls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ lsblo[Jk
+/bin/sh: lsblk: not found
+root@root:/$ llllllla[J[J[J[J[J[J[J[Jsssss[J[J[J[J[Jaaaaaaaaaaaaaaaaaaaa[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[Jlsl[Jblk
+/bin/sh: lsblk: not found
+root@root:/$ cat iniroot@root:/$ cat init [J^C
+
+root@root:/$ ls mnroot@root:/$ ls mnt/[J
+[1;34mnasTest[m  [1;34mnasdisk[m  [1;34msdcard[m
+root@root:/$ ln[Js mnroot@root:/$ ls mnt/[J
+nasTest/  nasdisk/  sdcard/
+root@root:/$ ls mnt/[Jsdroot@root:/$ ls mnt/sdcard/[J
+root@root:/$ ls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ ls proot@root:/$ ls pro[Jcroot@root:/$ ls proc/[Jmroot@root:/$ ls proc/m[Jtroot@root:/$ ls proc/mtd [J
+[0;0mproc/mtd[m
+root@root:/$ l[Jroot@root:/$ ls proc/mtd [J[Jroot@root:/$ ls proc/mtd [J^C
+
+root@root:/$ cd dv[Jev
+root@root:/dev$ s[Jls -l
+total 0
+crw-rw----    1 root     root       10,  52 Jan  1  1970 [1;35mNetDbgDrv[m
+crw-rw----    1 root     root       10,  53 Jan  1  1970 [1;35mNetUsrDrv[m
+crw-rw----    1 root     root      218, 2001 Jan  1  1970 [1;35madec[m
+crw-rw----    1 root     root      218, 2002 Jan  1  1970 [1;35maenc[m
+crw-rw----    1 root     root      218, 2004 Jan  1  1970 [1;35mai[m
+crw-rw----    1 root     root      218, 2003 Jan  1  1970 [1;35mao[m
+crw-rw----    1 root     root      218, 2043 Jan  1  1970 [1;35max_base[m
+crw-rw----    1 root     root      218, 2045 Jan  1  1970 [1;35max_cmm[m
+crw-rw----    1 root     root       10,  63 Dec 31  1969 [1;35max_dma[m
+crw-rw----    1 root     root       10,  60 Dec 31  1969 [1;35max_gzipd[m
+crw-rw----    1 root     root       10,  62 Dec 31  1969 [1;35max_hrtimer[m
+crw-rw----    1 root     root      218, 2000 Jan  1  1970 [1;35max_ive[m
+crw-rw----    1 root     root      241,   0 Jan  1  1970 [1;35max_jenc[m
+srw-rw-rw-    1 root     root             0 Jan  1  1970 [1;35max_log[m
+crw-rw----    1 root     root      218, 2006 Jan  1  1970 [1;35max_mipi_rx[m
+crw-rw----    1 root     root       10,  61 Dec 31  1969 [1;35max_os_mem[m
+crw-rw----    1 root     root      218, 2044 Jan  1  1970 [1;35max_pool[m
+crw-rw----    1 root     root      218, 2005 Jan  1  1970 [1;35max_proton[m
+crw-rw----    1 root     root      218, 2046 Jan  1  1970 [1;35max_sys[m
+crw-rw----    1 root     root       10,  55 Dec 31  1969 [1;35max_sysmap[m
+crw-rw----    1 root     root      242,   0 Jan  1  1970 [1;35max_venc[m
+drwxr-xr-x    3 root     root            60 Jan  1  1970 [1;34mbus[m
+crw-rw----    1 root     root        5,   1 Dec  1 00:00 [1;35mconsole[m
+crw-rw----    1 root     root       10,  59 Dec 31  1969 [1;35mcpu_dma_latency[m
+crw-rw----    1 root     root        1,   7 Dec 31  1969 [1;35mfull[m
+crw-rw----    1 root     root       10,  50 Jan  1  1970 [1;35mgpioDev[m
+crw-rw----    1 root     root      254,   0 Dec 31  1969 [1;35mgpiochip0[m
+crw-rw----    1 root     root      254,   1 Dec 31  1969 [1;35mgpiochip1[m
+crw-rw----    1 root     root      254,   2 Dec 31  1969 [1;35mgpiochip2[m
+crw-rw----    1 root     root      254,   3 Dec 31  1969 [1;35mgpiochip3[m
+crw-rw----    1 root     root       89,   0 Dec 31  1969 [1;35mi2c-0[m
+crw-rw----    1 root     root       89,   1 Dec 31  1969 [1;35mi2c-1[m
+crw-rw----    1 root     root       89,   8 Dec 31  1969 [1;35mi2c-8[m
+crw-rw----    1 root     root      250,   0 Dec 31  1969 [1;35miio:device0[m
+crw-rw----    1 root     root      218, 2011 Jan  1  1970 [1;35mivps_gdc0[m
+crw-rw----    1 root     root      218, 2037 Jan  1  1970 [1;35mivps_grp0[m
+crw-rw----    1 root     root      218, 1999 Dec  1 00:00 [1;35mivps_grp0_chn0[m
+crw-rw----    1 root     root      218, 1998 Dec  1 00:00 [1;35mivps_grp0_chn1[m
+crw-rw----    1 root     root      218, 1997 Dec  1 00:00 [1;35mivps_grp0_chn2[m
+crw-rw----    1 root     root      218, 1996 Dec  1 00:00 [1;35mivps_grp0_chn3[m
+crw-rw----    1 root     root      218, 1995 Dec  1 00:00 [1;35mivps_grp0_chn4[m
+crw-rw----    1 root     root      218, 2036 Jan  1  1970 [1;35mivps_grp1[m
+crw-rw----    1 root     root      218, 2027 Jan  1  1970 [1;35mivps_grp10[m
+crw-rw----    1 root     root      218, 2026 Jan  1  1970 [1;35mivps_grp11[m
+crw-rw----    1 root     root      218, 2025 Jan  1  1970 [1;35mivps_grp12[m
+crw-rw----    1 root     root      218, 2024 Jan  1  1970 [1;35mivps_grp13[m
+crw-rw----    1 root     root      218, 2023 Jan  1  1970 [1;35mivps_grp14[m
+crw-rw----    1 root     root      218, 2022 Jan  1  1970 [1;35mivps_grp15[m
+crw-rw----    1 root     root      218, 2021 Jan  1  1970 [1;35mivps_grp16[m
+crw-rw----    1 root     root      218, 2020 Jan  1  1970 [1;35mivps_grp17[m
+crw-rw----    1 root     root      218, 2019 Jan  1  1970 [1;35mivps_grp18[m
+crw-rw----    1 root     root      218, 2018 Jan  1  1970 [1;35mivps_grp19[m
+crw-rw----    1 root     root      218, 2035 Jan  1  1970 [1;35mivps_grp2[m
+crw-rw----    1 root     root      218, 2034 Jan  1  1970 [1;35mivps_grp3[m
+crw-rw----    1 root     root      218, 2033 Jan  1  1970 [1;35mivps_grp4[m
+crw-rw----    1 root     root      218, 2032 Jan  1  1970 [1;35mivps_grp5[m
+crw-rw----    1 root     root      218, 2031 Jan  1  1970 [1;35mivps_grp6[m
+crw-rw----    1 root     root      218, 2030 Jan  1  1970 [1;35mivps_grp7[m
+crw-rw----    1 root     root      218, 2029 Jan  1  1970 [1;35mivps_grp8[m
+crw-rw----    1 root     root      218, 2028 Jan  1  1970 [1;35mivps_grp9[m
+crw-rw----    1 root     root      218, 2017 Jan  1  1970 [1;35mivps_rgn0[m
+crw-rw----    1 root     root      218, 2010 Jan  1  1970 [1;35mivps_tdp0[m
+crw-rw----    1 root     root      218, 2009 Jan  1  1970 [1;35mivps_tdp1[m
+crw-rw----    1 root     root      218, 2008 Jan  1  1970 [1;35mivps_tdp2[m
+crw-rw----    1 root     root      218, 2007 Jan  1  1970 [1;35mivps_tdp3[m
+crw-rw----    1 root     root      218, 2016 Jan  1  1970 [1;35mivps_vpp0[m
+crw-rw----    1 root     root      218, 2015 Jan  1  1970 [1;35mivps_vpp1[m
+crw-rw----    1 root     root      218, 2014 Jan  1  1970 [1;35mivps_vpp2[m
+crw-rw----    1 root     root      218, 2013 Jan  1  1970 [1;35mivps_vpp3[m
+crw-rw----    1 root     root      218, 2012 Jan  1  1970 [1;35mivps_vpp_ext0[m
+crw-rw----    1 root     root        1,  11 Dec 31  1969 [1;35mkmsg[m
+crw-rw----    1 root     root       10,  51 Jan  1  1970 [1;35mmanuparse[m
+crw-rw----    1 root     root        1,   1 Dec 31  1969 [1;35mmem[m
+crw-rw----    1 root     root       10,  56 Dec 31  1969 [1;35mmemory_bandwidth[m
+crw-rw----    1 root     root       10,  49 Jan  1  1970 [1;35mmotor[m
+crw-rw----    1 root     root       90,   0 Dec 31  1969 [1;35mmtd0[m
+crw-rw----    1 root     root       90,   1 Dec 31  1969 [1;35mmtd0ro[m
+crw-rw----    1 root     root       90,   2 Dec 31  1969 [1;35mmtd1[m
+crw-rw----    1 root     root       90,  20 Dec 31  1969 [1;35mmtd10[m
+crw-rw----    1 root     root       90,  21 Dec 31  1969 [1;35mmtd10ro[m
+crw-rw----    1 root     root       90,  22 Dec 31  1969 [1;35mmtd11[m
+crw-rw----    1 root     root       90,  23 Dec 31  1969 [1;35mmtd11ro[m
+crw-rw----    1 root     root       90,  24 Dec 31  1969 [1;35mmtd12[m
+crw-rw----    1 root     root       90,  25 Dec 31  1969 [1;35mmtd12ro[m
+crw-rw----    1 root     root       90,  26 Dec 31  1969 [1;35mmtd13[m
+crw-rw----    1 root     root       90,  27 Dec 31  1969 [1;35mmtd13ro[m
+crw-rw----    1 root     root       90,   3 Dec 31  1969 [1;35mmtd1ro[m
+crw-rw----    1 root     root       90,   4 Dec 31  1969 [1;35mmtd2[m
+crw-rw----    1 root     root       90,   5 Dec 31  1969 [1;35mmtd2ro[m
+crw-rw----    1 root     root       90,   6 Dec 31  1969 [1;35mmtd3[m
+crw-rw----    1 root     root       90,   7 Dec 31  1969 [1;35mmtd3ro[m
+crw-rw----    1 root     root       90,   8 Dec 31  1969 [1;35mmtd4[m
+crw-rw----    1 root     root       90,   9 Dec 31  1969 [1;35mmtd4ro[m
+crw-rw----    1 root     root       90,  10 Dec 31  1969 [1;35mmtd5[m
+crw-rw----    1 root     root       90,  11 Dec 31  1969 [1;35mmtd5ro[m
+crw-rw----    1 root     root       90,  12 Dec 31  1969 [1;35mmtd6[m
+crw-rw----    1 root     root       90,  13 Dec 31  1969 [1;35mmtd6ro[m
+crw-rw----    1 root     root       90,  14 Dec 31  1969 [1;35mmtd7[m
+crw-rw----    1 root     root       90,  15 Dec 31  1969 [1;35mmtd7ro[m
+crw-rw----    1 root     root       90,  16 Dec 31  1969 [1;35mmtd8[m
+crw-rw----    1 root     root       90,  17 Dec 31  1969 [1;35mmtd8ro[m
+crw-rw----    1 root     root       90,  18 Dec 31  1969 [1;35mmtd9[m
+crw-rw----    1 root     root       90,  19 Dec 31  1969 [1;35mmtd9ro[m
+lrwxrwxrwx    1 root     root             9 Jan  1  1970 [1;36mmtd_calibration[m -> [1;35m/dev/mtd5[m
+lrwxrwxrwx    1 root     root             9 Jan  1  1970 [1;36mmtd_cfgbak[m -> [1;35m/dev/mtd9[m
+lrwxrwxrwx    1 root     root             9 Jan  1  1970 [1;36mmtd_clinfo[m -> [1;35m/dev/mtd6[m
+lrwxrwxrwx    1 root     root             9 Jan  1  1970 [1;36mmtd_config[m -> [1;35m/dev/mtd7[m
+lrwxrwxrwx    1 root     root             9 Jan  1  1970 [1;36mmtd_ddrinit[m -> [1;35m/dev/mtd2[m
+lrwxrwxrwx    1 root     root            10 Jan  1  1970 [1;36mmtd_kernel[m -> [1;35m/dev/mtd10[m
+lrwxrwxrwx    1 root     root            10 Jan  1  1970 [1;36mmtd_program[m -> [1;35m/dev/mtd12[m
+lrwxrwxrwx    1 root     root             9 Jan  1  1970 [1;36mmtd_runtime[m -> [1;35m/dev/mtd8[m
+lrwxrwxrwx    1 root     root             9 Jan  1  1970 [1;36mmtd_spl[m -> [1;35m/dev/mtd1[m
+lrwxrwxrwx    1 root     root             9 Jan  1  1970 [1;36mmtd_uboot[m -> [1;35m/dev/mtd3[m
+lrwxrwxrwx    1 root     root            10 Jan  1  1970 [1;36mmtd_updateinfo[m -> [1;35m/dev/mtd11[m
+brw-rw----    1 root     root       31,   0 Dec 31  1969 [1;35mmtdblock0[m
+brw-rw----    1 root     root       31,   1 Dec 31  1969 [1;35mmtdblock1[m
+brw-rw----    1 root     root       31,  10 Dec 31  1969 [1;35mmtdblock10[m
+brw-rw----    1 root     root       31,  11 Dec 31  1969 [1;35mmtdblock11[m
+brw-rw----    1 root     root       31,  12 Dec 31  1969 [1;35mmtdblock12[m
+brw-rw----    1 root     root       31,  13 Dec 31  1969 [1;35mmtdblock13[m
+brw-rw----    1 root     root       31,   2 Dec 31  1969 [1;35mmtdblock2[m
+brw-rw----    1 root     root       31,   3 Dec 31  1969 [1;35mmtdblock3[m
+brw-rw----    1 root     root       31,   4 Dec 31  1969 [1;35mmtdblock4[m
+brw-rw----    1 root     root       31,   5 Dec 31  1969 [1;35mmtdblock5[m
+brw-rw----    1 root     root       31,   6 Dec 31  1969 [1;35mmtdblock6[m
+brw-rw----    1 root     root       31,   7 Dec 31  1969 [1;35mmtdblock7[m
+brw-rw----    1 root     root       31,   8 Dec 31  1969 [1;35mmtdblock8[m
+brw-rw----    1 root     root       31,   9 Dec 31  1969 [1;35mmtdblock9[m
+drwxr-xr-x    2 root     root            60 Dec 31  1969 [1;34mnet[m
+crw-rw----    1 root     root       10,  58 Dec 31  1969 [1;35mnetwork_latency[m
+crw-rw----    1 root     root       10,  57 Dec 31  1969 [1;35mnetwork_throughput[m
+crw-rw----    1 root     root      218, 2042 Jan  1  1970 [1;35mnpu[m
+crw-rw----    1 root     root        1,   3 Dec 31  1969 [1;35mnull[m
+brw-rw----    1 root     root      254,   0 Dec 31  1969 [1;35mnullb0[m
+crw-rw----    1 root     root      108,   0 Dec 31  1969 [1;35mppp[m
+crw-rw----    1 root     root        5,   2 Dec 31  1969 [1;35mptmx[m
+crw-rw----    1 root     root      251,   0 Jan  1  1970 [1;35mptp0[m
+crw-rw----    1 root     root        2,   0 Dec 31  1969 [1;35mptyp0[m
+crw-rw----    1 root     root        2,   1 Dec 31  1969 [1;35mptyp1[m
+crw-rw----    1 root     root        2,   2 Dec 31  1969 [1;35mptyp2[m
+crw-rw----    1 root     root        2,   3 Dec 31  1969 [1;35mptyp3[m
+crw-rw----    1 root     root        1,   8 Dec 31  1969 [1;35mrandom[m
+crw-rw----    1 root     root      253,   0 Dec 31  1969 [1;35mrtc0[m
+crw-rw----    1 root     root      240,   0 Jan  1  1970 [1;35mruntimeDev[m
+drwxr-xr-x    2 root     root           160 Dec 31  1969 [1;34msnd[m
+drwxr-xr-x    2 root     root            40 Jan  1  1970 [1;34msocket[m
+crw-rw----    1 root     root        5,   0 Dec 31  1969 [1;35mtty[m
+crw-rw----    1 root     root        4,   0 Dec 31  1969 [1;35mtty0[m
+crw-rw----    1 root     root        4,   1 Dec 31  1969 [1;35mtty1[m
+crw-rw----    1 root     root        4,  10 Dec 31  1969 [1;35mtty10[m
+crw-rw----    1 root     root        4,  11 Dec 31  1969 [1;35mtty11[m
+crw-rw----    1 root     root        4,  12 Dec 31  1969 [1;35mtty12[m
+crw-rw----    1 root     root        4,  13 Dec 31  1969 [1;35mtty13[m
+crw-rw----    1 root     root        4,  14 Dec 31  1969 [1;35mtty14[m
+crw-rw----    1 root     root        4,  15 Dec 31  1969 [1;35mtty15[m
+crw-rw----    1 root     root        4,  16 Dec 31  1969 [1;35mtty16[m
+crw-rw----    1 root     root        4,  17 Dec 31  1969 [1;35mtty17[m
+crw-rw----    1 root     root        4,  18 Dec 31  1969 [1;35mtty18[m
+crw-rw----    1 root     root        4,  19 Dec 31  1969 [1;35mtty19[m
+crw-rw----    1 root     root        4,   2 Dec 31  1969 [1;35mtty2[m
+crw-rw----    1 root     root        4,  20 Dec 31  1969 [1;35mtty20[m
+crw-rw----    1 root     root        4,  21 Dec 31  1969 [1;35mtty21[m
+crw-rw----    1 root     root        4,  22 Dec 31  1969 [1;35mtty22[m
+crw-rw----    1 root     root        4,  23 Dec 31  1969 [1;35mtty23[m
+crw-rw----    1 root     root        4,  24 Dec 31  1969 [1;35mtty24[m
+crw-rw----    1 root     root        4,  25 Dec 31  1969 [1;35mtty25[m
+crw-rw----    1 root     root        4,  26 Dec 31  1969 [1;35mtty26[m
+crw-rw----    1 root     root        4,  27 Dec 31  1969 [1;35mtty27[m
+crw-rw----    1 root     root        4,  28 Dec 31  1969 [1;35mtty28[m
+crw-rw----    1 root     root        4,  29 Dec 31  1969 [1;35mtty29[m
+crw-rw----    1 root     root        4,   3 Dec 31  1969 [1;35mtty3[m
+crw-rw----    1 root     root        4,  30 Dec 31  1969 [1;35mtty30[m
+crw-rw----    1 root     root        4,  31 Dec 31  1969 [1;35mtty31[m
+crw-rw----    1 root     root        4,  32 Dec 31  1969 [1;35mtty32[m
+crw-rw----    1 root     root        4,  33 Dec 31  1969 [1;35mtty33[m
+crw-rw----    1 root     root        4,  34 Dec 31  1969 [1;35mtty34[m
+crw-rw----    1 root     root        4,  35 Dec 31  1969 [1;35mtty35[m
+crw-rw----    1 root     root        4,  36 Dec 31  1969 [1;35mtty36[m
+crw-rw----    1 root     root        4,  37 Dec 31  1969 [1;35mtty37[m
+crw-rw----    1 root     root        4,  38 Dec 31  1969 [1;35mtty38[m
+crw-rw----    1 root     root        4,  39 Dec 31  1969 [1;35mtty39[m
+crw-rw----    1 root     root        4,   4 Dec 31  1969 [1;35mtty4[m
+crw-rw----    1 root     root        4,  40 Dec 31  1969 [1;35mtty40[m
+crw-rw----    1 root     root        4,  41 Dec 31  1969 [1;35mtty41[m
+crw-rw----    1 root     root        4,  42 Dec 31  1969 [1;35mtty42[m
+crw-rw----    1 root     root        4,  43 Dec 31  1969 [1;35mtty43[m
+crw-rw----    1 root     root        4,  44 Dec 31  1969 [1;35mtty44[m
+crw-rw----    1 root     root        4,  45 Dec 31  1969 [1;35mtty45[m
+crw-rw----    1 root     root        4,  46 Dec 31  1969 [1;35mtty46[m
+crw-rw----    1 root     root        4,  47 Dec 31  1969 [1;35mtty47[m
+crw-rw----    1 root     root        4,  48 Dec 31  1969 [1;35mtty48[m
+crw-rw----    1 root     root        4,  49 Dec 31  1969 [1;35mtty49[m
+crw-rw----    1 root     root        4,   5 Dec 31  1969 [1;35mtty5[m
+crw-rw----    1 root     root        4,  50 Dec 31  1969 [1;35mtty50[m
+crw-rw----    1 root     root        4,  51 Dec 31  1969 [1;35mtty51[m
+crw-rw----    1 root     root        4,  52 Dec 31  1969 [1;35mtty52[m
+crw-rw----    1 root     root        4,  53 Dec 31  1969 [1;35mtty53[m
+crw-rw----    1 root     root        4,  54 Dec 31  1969 [1;35mtty54[m
+crw-rw----    1 root     root        4,  55 Dec 31  1969 [1;35mtty55[m
+crw-rw----    1 root     root        4,  56 Dec 31  1969 [1;35mtty56[m
+crw-rw----    1 root     root        4,  57 Dec 31  1969 [1;35mtty57[m
+crw-rw----    1 root     root        4,  58 Dec 31  1969 [1;35mtty58[m
+crw-rw----    1 root     root        4,  59 Dec 31  1969 [1;35mtty59[m
+crw-rw----    1 root     root        4,   6 Dec 31  1969 [1;35mtty6[m
+crw-rw----    1 root     root        4,  60 Dec 31  1969 [1;35mtty60[m
+crw-rw----    1 root     root        4,  61 Dec 31  1969 [1;35mtty61[m
+crw-rw----    1 root     root        4,  62 Dec 31  1969 [1;35mtty62[m
+crw-rw----    1 root     root        4,  63 Dec 31  1969 [1;35mtty63[m
+crw-rw----    1 root     root        4,   7 Dec 31  1969 [1;35mtty7[m
+crw-rw----    1 root     root        4,   8 Dec 31  1969 [1;35mtty8[m
+crw-rw----    1 root     root        4,   9 Dec 31  1969 [1;35mtty9[m
+crw-------    1 root     root        4,  64 Dec  1 02:39 [1;35mttyS0[m
+crw-rw----    1 root     root        4,  65 Dec 31  1969 [1;35mttyS1[m
+crw-rw----    1 root     root        4,  66 Dec 31  1969 [1;35mttyS2[m
+crw-rw----    1 root     root        4,  67 Dec 31  1969 [1;35mttyS3[m
+crw-rw----    1 root     root        4,  68 Dec 31  1969 [1;35mttyS4[m
+crw-rw----    1 root     root        3,   0 Dec 31  1969 [1;35mttyp0[m
+crw-rw----    1 root     root        3,   1 Dec 31  1969 [1;35mttyp1[m
+crw-rw----    1 root     root        3,   2 Dec 31  1969 [1;35mttyp2[m
+crw-rw----    1 root     root        3,   3 Dec 31  1969 [1;35mttyp3[m
+crw-rw----    1 root     root      246,   0 Jan  1  1970 [1;35mubi0[m
+crw-rw----    1 root     root      246,   1 Jan  1  1970 [1;35mubi0_0[m
+crw-rw----    1 root     root      245,   0 Jan  1  1970 [1;35mubi1[m
+crw-rw----    1 root     root      245,   1 Jan  1  1970 [1;35mubi1_0[m
+crw-rw----    1 root     root      244,   0 Jan  1  1970 [1;35mubi2[m
+crw-rw----    1 root     root      244,   1 Jan  1  1970 [1;35mubi2_0[m
+crw-rw----    1 root     root      243,   0 Jan  1  1970 [1;35mubi3[m
+crw-rw----    1 root     root      243,   1 Jan  1  1970 [1;35mubi3_0[m
+crw-rw----    1 root     root       10,  54 Dec 31  1969 [1;35mubi_ctrl[m
+crw-rw----    1 root     root        1,   9 Dec 31  1969 [1;35murandom[m
+crw-rw----    1 root     root        7,   0 Dec 31  1969 [1;35mvcs[m
+crw-rw----    1 root     root        7,   1 Dec 31  1969 [1;35mvcs1[m
+crw-rw----    1 root     root        7, 128 Dec 31  1969 [1;35mvcsa[m
+crw-rw----    1 root     root        7, 129 Dec 31  1969 [1;35mvcsa1[m
+crw-rw----    1 root     root        7,  64 Dec 31  1969 [1;35mvcsu[m
+crw-rw----    1 root     root        7,  65 Dec 31  1969 [1;35mvcsu1[m
+crw-rw----    1 root     root      218, 2039 Jan  1  1970 [1;35mvo_dbg[m
+crw-rw----    1 root     root      218, 2041 Jan  1  1970 [1;35mvo_draw[m
+crw-rw----    1 root     root      218, 2040 Jan  1  1970 [1;35mvo_wbc0[m
+crw-rw----    1 root     root      218, 2038 Jan  1  1970 [1;35mvo_wbc1[m
+crw-rw----    1 root     root       10, 130 Dec 31  1969 [1;35mwatchdog[m
+crw-rw----    1 root     root      249,   0 Dec 31  1969 [1;35mwatchdog0[m
+crw-rw----    1 root     root        1,   5 Dec 31  1969 [1;35mzero[m
+root@root:/dev$ cd ..
+root@root:/$ [H[Jroot@root:/$ [Jdf -h
+Filesystem                Size      Used Available Use% Mounted on
+df: /dev/pts: No such file or directory
+tmpfs                    88.5M      1.0M     87.5M   1% /tmp
+tmpfs                    52.1M    132.0K     52.0M   0% /var
+devtmpfs                 50.9M         0     50.9M   0% /dev
+tmpfs                    88.5M      1.0M     87.5M   1% /root
+ubi0:program             79.9M     44.5M     35.4M  56% /program
+ubi1:config               4.3M    340.0K      3.7M   8% /config
+ubi2:cfgbak               2.5M    164.0K      2.1M   7% /cfgbak
+ubi3:calibration          2.5M     24.0K      2.3M   1% /calibration
+tmpfs                    52.1M    132.0K     52.0M   0% /etc
+root@root:/$ root@root:/$ df -h[J
+Filesystem                Size      Used Available Use% Mounted on
+df: /dev/pts: No such file or directory
+tmpfs                    88.5M      1.1M     87.4M   1% /tmp
+tmpfs                    52.1M    132.0K     52.0M   0% /var
+devtmpfs                 50.9M         0     50.9M   0% /dev
+tmpfs                    88.5M      1.1M     87.4M   1% /root
+ubi0:program             79.9M     44.5M     35.4M  56% /program
+ubi1:config               4.3M    340.0K      3.7M   8% /config
+ubi2:cfgbak               2.5M    164.0K      2.1M   7% /cfgbak
+ubi3:calibration          2.5M     24.0K      2.3M   1% /calibration
+tmpfs                    52.1M    132.0K     52.0M   0% /etc
+/dev/mmcblk0p1          510.0M     85.5M    424.5M  17% /mnt/sdcard
+root@root:/$ cd mnroot@root:/$ cd mnt/[J[J[J[J[J/mnroot@root:/$ cd /mnt/[Jsdroot@root:/$ cd /mnt/sdcard/[J
+root@root:/mnt/sdcard$ ls
+[1;32mLICENCE.broadcom[m            [1;32mfixup4.dat[m
+[1;32mbcm2710-rpi-2-b.dtb[m         [1;32mfixup4cd.dat[m
+[1;32mbcm2710-rpi-3-b-plus.dtb[m    [1;32mfixup4db.dat[m
+[1;32mbcm2710-rpi-3-b.dtb[m         [1;32mfixup4x.dat[m
+[1;32mbcm2710-rpi-cm0.dtb[m         [1;32mfixup_cd.dat[m
+[1;32mbcm2710-rpi-cm3.dtb[m         [1;32mfixup_db.dat[m
+[1;32mbcm2710-rpi-zero-2-w.dtb[m    [1;32mfixup_x.dat[m
+[1;32mbcm2710-rpi-zero-2.dtb[m      [1;32minitramfs8[m
+[1;32mbcm2711-rpi-4-b.dtb[m         [1;32minitramfs_2712[m
+[1;32mbcm2711-rpi-400.dtb[m         [1;32missue.txt[m
+[1;32mbcm2711-rpi-cm4-io.dtb[m      [1;32mkernel8.img[m
+[1;32mbcm2711-rpi-cm4.dtb[m         [1;32mkernel_2712.img[m
+[1;32mbcm2711-rpi-cm4s.dtb[m        [1;32mmeta-data[m
+[1;32mbcm2712-d-rpi-5-b.dtb[m       [1;32mnetwork-config[m
+[1;32mbcm2712-rpi-5-b.dtb[m         [1;34moverlays[m
+[1;32mbcm2712-rpi-500.dtb[m         [1;32mstart.elf[m
+[1;32mbcm2712-rpi-cm5-cm4io.dtb[m   [1;32mstart4.elf[m
+[1;32mbcm2712-rpi-cm5-cm5io.dtb[m   [1;32mstart4cd.elf[m
+[1;32mbcm2712-rpi-cm5l-cm4io.dtb[m  [1;32mstart4db.elf[m
+[1;32mbcm2712-rpi-cm5l-cm5io.dtb[m  [1;32mstart4x.elf[m
+[1;32mbcm2712d0-rpi-5-b.dtb[m       [1;32mstart_cd.elf[m
+[1;32mbootcode.bin[m                [1;32mstart_db.elf[m
+[1;32mcmdline.txt[m                 [1;32mstart_x.elf[m
+[1;32mconfig.txt[m                  [1;32muser-data[m
+[1;32mfixup.dat[m
+root@root:/mnt/sdcard$  um[J[J[Jum[J[Jcd /
+root@root:/$ umount -h
+umount: invalid option -- 'h'
+BusyBox v1.36.1 (2024-03-19 11:46:10 CST) multi-call binary.
+
+Usage: umount [-rlfa] [-t FSTYPE] FILESYSTEM|DIRECTORY
+
+Unmount filesystems
+
+	-a	Unmount all filesystems
+	-r	Remount devices read-only if mount is busy
+	-l	Lazy umount (detach filesystem)
+	-f	Force umount (i.e., unreachable NFS server)
+	-t FSTYPE[,...]	Unmount only these filesystem type(s)
+root@root:/$ root@root:/$ umount -h[J[J[J/dev/mmcroot@root:/$ umount /dev/mmcblk0[Jproot@root:/$ umount /dev/mmcblk0p[J1root@root:/$ umount /dev/mmcblk0p1 [J
+root@root:/$ df -h
+Filesystem                Size      Used Available Use% Mounted on
+df: /dev/pts: No such file or directory
+tmpfs                    88.5M      1.1M     87.5M   1% /tmp
+tmpfs                    52.1M    132.0K     52.0M   0% /var
+devtmpfs                 50.9M         0     50.9M   0% /dev
+tmpfs                    88.5M      1.1M     87.5M   1% /root
+ubi0:program             79.9M     44.5M     35.4M  56% /program
+ubi1:config               4.3M    340.0K      3.7M   8% /config
+ubi2:cfgbak               2.5M    164.0K      2.1M   7% /cfgbak
+ubi3:calibration          2.5M     24.0K      2.3M   1% /calibration
+tmpfs                    52.1M    132.0K     52.0M   0% /etc
+root@root:/$ cd /mnroot@root:/$ cd /mnt/[Jso[Jroot@root:/$ cd /mnt/sdcard/[J
+root@root:/mnt/sdcard$ s[Jls
+root@root:/mnt/sdcard$ cd /
+root@root:/$ ls -l
+total 0
+drwxrwxr-x    2 1001     1001             0 Jun 17  2024 [1;34mbin[m
+drwxr-xr-x    2 root     root           224 Dec  1 00:00 [1;34mcalibration[m
+drwxr-xr-x    2 root     root           440 Jan  1  1970 [1;34mcfgbak[m
+drwxr-xr-x    6 root     root          1528 Dec  1 00:00 [1;34mconfig[m
+drwxr-xr-x    6 root     root          4980 Dec  1 02:40 [1;34mdev[m
+drwxr-xr-x    4 root     root           460 Dec  1 00:00 [1;34metc[m
+drwxrwxr-x    2 1001     1001             0 Jun 17  2024 [1;34mhome[m
+lrwxrwxrwx    1 1001     1001            10 Jun 17  2024 [1;36minit[m -> [1;32m/sbin/init[m
+drwxrwxr-x    2 1001     1001             0 Jan  1  1970 [1;34mlib[m
+lrwxrwxrwx    1 1001     1001             3 Jun 17  2024 [1;36mlib64[m -> [1;34mlib[m
+lrwxrwxrwx    1 1001     1001            11 Jun 17  2024 [1;36mlinuxrc[m -> [1;32mbin/busybox[m
+drwxrwxr-x    5 1001     1001             0 Jun 17  2024 [1;34mmnt[m
+lrwxrwxrwx    1 1001     1001            12 Jun 17  2024 [1;36mopt[m -> [1;34m/program/opt[m
+dr-xr-xr-x  100 root     root             0 Dec 31  1969 [1;34mproc[m
+drwxrwxr-x    9 1001     1001           608 Jun 17  2024 [1;34mprogram[m
+drwxr-xr-x    2 root     root            60 Dec  1 00:08 [1;34mroot[m
+drwxrwxr-x    2 1001     1001             0 Jun 17  2024 [1;34msbin[m
+dr-xr-xr-x   11 root     root             0 Jan  1  1970 [1;34msys[m
+drwxrwxrwt   13 root     root          1300 Dec  1 02:51 [1;34mtmp[m
+drwxrwxr-x    6 1001     1001             0 Jan  1  1970 [1;34musr[m
+drwxrwxrwt    7 root     root           180 Dec  1 00:00 [1;34mvar[m
+lrwxrwxrwx    1 1001     1001            12 Jun 17  2024 [1;36mwww[m -> [1;34mprogram/www/[m
+root@root:/$ cd p[J/proroot@root:/$ cd /pro[Jc/m[J
+root@root:/proc$ ls
+[1;34m1[m              [1;34m28[m             [1;34m6[m              [1;34m970[m            [0;0mkmsg[m
+[1;34m10[m             [1;34m29[m             [1;34m622[m            [1;34m971[m            [0;0mkpagecount[m
+[1;34m1036[m           [1;34m3[m              [1;34m628[m            [1;34m972[m            [0;0mkpageflags[m
+[1;34m1042[m           [1;34m30[m             [1;34m629[m            [1;34m973[m            [0;0mloadavg[m
+[1;34m11[m             [1;34m302[m            [1;34m6359[m           [1;34masound[m         [0;0mlocks[m
+[1;34m1178[m           [1;34m306[m            [1;34m64[m             [1;34max_proc[m        [0;0mmeminfo[m
+[1;34m12[m             [1;34m31[m             [1;34m6445[m           [0;0mbuddyinfo[m      [0;0mmisc[m
+[1;34m1204[m           [1;34m312[m            [1;34m6450[m           [1;34mbus[m            [0;0mmodules[m
+[1;34m1205[m           [1;34m313[m            [1;34m6462[m           [0;0mcgroups[m        [1;36mmounts[m
+[1;34m13[m             [1;34m32[m             [1;34m6463[m           [0;0mcmdline[m        [0;0mmtd[m
+[1;34m14[m             [1;34m33[m             [1;34m648[m            [0;0mconsoles[m       [1;36mnet[m
+[1;34m15[m             [1;34m34[m             [1;34m6483[m           [1;34mcpu[m            [0;0mpagetypeinfo[m
+[1;34m16[m             [1;34m35[m             [1;34m65[m             [0;0mcpuinfo[m        [0;0mpartitions[m
+[1;34m169[m            [1;34m398[m            [1;34m6637[m           [0;0mcrypto[m         [1;36mself[m
+[1;34m17[m             [1;34m399[m            [1;34m6648[m           [1;36mdevice-tree[m    [0;0mslabinfo[m
+[1;34m186[m            [1;34m4[m              [1;34m67[m             [0;0mdevices[m        [0;0msoftirqs[m
+[1;34m193[m            [1;34m400[m            [1;34m68[m             [0;0mdiskstats[m      [0;0mstat[m
+[1;34m2[m              [1;34m401[m            [1;34m6887[m           [1;34mdriver[m         [1;34msys[m
+[1;34m20[m             [1;34m422[m            [1;34m69[m             [0;0mexecdomains[m    [0;0msysrq-trigger[m
+[1;34m203[m            [1;34m431[m            [1;34m71[m             [0;0mfilesystems[m    [1;34msysvipc[m
+[1;34m21[m             [1;34m465[m            [1;34m8[m              [1;34mfs[m             [1;36mthread-self[m
+[1;34m210[m            [1;34m466[m            [1;34m852[m            [0;0minterrupts[m     [0;0mtimer_list[m
+[1;34m220[m            [1;34m516[m            [1;34m884[m            [0;0miomem[m          [1;34mtty[m
+[1;34m23[m             [1;34m520[m            [1;34m896[m            [0;0mioports[m        [0;0muptime[m
+[1;34m24[m             [1;34m522[m            [1;34m9[m              [1;34mirq[m            [0;0mversion[m
+[1;34m25[m             [1;34m530[m            [1;34m905[m            [0;0mkallsyms[m       [0;0mvmallocinfo[m
+[1;34m26[m             [1;34m5577[m           [1;34m962[m            [0;0mkey-users[m      [0;0mvmstat[m
+[1;34m27[m             [1;34m581[m            [1;34m963[m            [0;0mkeys[m           [0;0mzoneinfo[m
+root@root:/proc$ l[Jcd mtd[J[J[J[J[J[Jcat mtd
+dev:    size   erasesize  name
+mtd0: 08000000 00020000 "spi4.0"
+mtd1: 00100000 00020000 "spl"
+mtd2: 00080000 00020000 "ddrinit"
+mtd3: 00200000 00020000 "uboot"
+mtd4: 00080000 00020000 "env"
+mtd5: 00600000 00020000 "calibration"
+mtd6: 00100000 00020000 "cliinfo"
+mtd7: 00800000 00020000 "config"
+mtd8: 00100000 00020000 "runtime"
+mtd9: 00600000 00020000 "cfgbak"
+mtd10: 00700000 00020000 "kernel"
+mtd11: 00080000 00020000 "update"
+mtd12: 05e00000 00020000 "program"
+mtd13: 00080000 00020000 "other"
+root@root:/proc$ cat /sys/class/mtd/mtd0/type
+nand
+root@root:/proc$ cat /sys/class/mtd/mtd0/name
+spi4.0
+root@root:/proc$ cat /sys/class/mtd/mtd0/erasesize
+131072
+root@root:/proc$ dd [J[J[Jmount /dev/mmcblk0p1 /mnt/sdcard
+root@root:/proc$ ls md[Jnt[J[J[J/mnt/sdcard
+[1;32mLICENCE.broadcom[m            [1;32mfixup4.dat[m
+[1;32mbcm2710-rpi-2-b.dtb[m         [1;32mfixup4cd.dat[m
+[1;32mbcm2710-rpi-3-b-plus.dtb[m    [1;32mfixup4db.dat[m
+[1;32mbcm2710-rpi-3-b.dtb[m         [1;32mfixup4x.dat[m
+[1;32mbcm2710-rpi-cm0.dtb[m         [1;32mfixup_cd.dat[m
+[1;32mbcm2710-rpi-cm3.dtb[m         [1;32mfixup_db.dat[m
+[1;32mbcm2710-rpi-zero-2-w.dtb[m    [1;32mfixup_x.dat[m
+[1;32mbcm2710-rpi-zero-2.dtb[m      [1;32minitramfs8[m
+[1;32mbcm2711-rpi-4-b.dtb[m         [1;32minitramfs_2712[m
+[1;32mbcm2711-rpi-400.dtb[m         [1;32missue.txt[m
+[1;32mbcm2711-rpi-cm4-io.dtb[m      [1;32mkernel8.img[m
+[1;32mbcm2711-rpi-cm4.dtb[m         [1;32mkernel_2712.img[m
+[1;32mbcm2711-rpi-cm4s.dtb[m        [1;32mmeta-data[m
+[1;32mbcm2712-d-rpi-5-b.dtb[m       [1;32mnetwork-config[m
+[1;32mbcm2712-rpi-5-b.dtb[m         [1;34moverlays[m
+[1;32mbcm2712-rpi-500.dtb[m         [1;32mstart.elf[m
+[1;32mbcm2712-rpi-cm5-cm4io.dtb[m   [1;32mstart4.elf[m
+[1;32mbcm2712-rpi-cm5-cm5io.dtb[m   [1;32mstart4cd.elf[m
+[1;32mbcm2712-rpi-cm5l-cm4io.dtb[m  [1;32mstart4db.elf[m
+[1;32mbcm2712-rpi-cm5l-cm5io.dtb[m  [1;32mstart4x.elf[m
+[1;32mbcm2712d0-rpi-5-b.dtb[m       [1;32mstart_cd.elf[m
+[1;32mbootcode.bin[m                [1;32mstart_db.elf[m
+[1;32mcmdline.txt[m                 [1;32mstart_x.elf[m
+[1;32mconfig.txt[m                  [1;32muser-data[m
+[1;32mfixup.dat[m
+root@root:/proc$ k[Jdd -if[J[J[Jif [J=/dev/mroot@root:/proc$ dd if=/dev/m[J
+manuparse         mtd12ro           mtd7ro            mtd_updateinfo
+mem               mtd13             mtd8              mtdblock0
+memory_bandwidth  mtd13ro           mtd8ro            mtdblock1
+mmcblk0           mtd1ro            mtd9              mtdblock10
+mmcblk0p1         mtd2              mtd9ro            mtdblock11
+mmcblk0p2         mtd2ro            mtd_calibration   mtdblock12
+motor             mtd3              mtd_cfgbak        mtdblock13
+mtd0              mtd3ro            mtd_clinfo        mtdblock2
+mtd0ro            mtd4              mtd_config        mtdblock3
+mtd1              mtd4ro            mtd_ddrinit       mtdblock4
+mtd10             mtd5              mtd_kernel        mtdblock5
+mtd10ro           mtd5ro            mtd_program       mtdblock6
+mtd11             mtd6              mtd_runtime       mtdblock7
+mtd11ro           mtd6ro            mtd_spl           mtdblock8
+mtd12             mtd7              mtd_uboot         mtdblock9
+root@root:/proc$ dd if=/dev/m[Jtd0 [J of=/mntroot@root:/proc$ dd if=/dev/mtd0 of=/mnt/[Jshared/[J[J[J[J[J[Jdcard/uniview_full_firmware_[J[J[J[J[J[J[Jw[J[Jwf[J_fals[J[J[J[J[J[J[J[J[Jl_fw.bin 4[Jbs=4096
+32768+0 records in
+32768+0 records out
+134217728 bytes (128.0MB) copied, 21.442120 seconds, 6.0MB/s
+root@root:/proc$ ls /mnt/sdcard
+[1;32mLICENCE.broadcom[m            [1;32mfixup4.dat[m
+[1;32mbcm2710-rpi-2-b.dtb[m         [1;32mfixup4cd.dat[m
+[1;32mbcm2710-rpi-3-b-plus.dtb[m    [1;32mfixup4db.dat[m
+[1;32mbcm2710-rpi-3-b.dtb[m         [1;32mfixup4x.dat[m
+[1;32mbcm2710-rpi-cm0.dtb[m         [1;32mfixup_cd.dat[m
+[1;32mbcm2710-rpi-cm3.dtb[m         [1;32mfixup_db.dat[m
+[1;32mbcm2710-rpi-zero-2-w.dtb[m    [1;32mfixup_x.dat[m
+[1;32mbcm2710-rpi-zero-2.dtb[m      [1;32minitramfs8[m
+[1;32mbcm2711-rpi-4-b.dtb[m         [1;32minitramfs_2712[m
+[1;32mbcm2711-rpi-400.dtb[m         [1;32missue.txt[m
+[1;32mbcm2711-rpi-cm4-io.dtb[m      [1;32mkernel8.img[m
+[1;32mbcm2711-rpi-cm4.dtb[m         [1;32mkernel_2712.img[m
+[1;32mbcm2711-rpi-cm4s.dtb[m        [1;32mmeta-data[m
+[1;32mbcm2712-d-rpi-5-b.dtb[m       [1;32mnetwork-config[m
+[1;32mbcm2712-rpi-5-b.dtb[m         [1;34moverlays[m
+[1;32mbcm2712-rpi-500.dtb[m         [1;32mstart.elf[m
+[1;32mbcm2712-rpi-cm5-cm4io.dtb[m   [1;32mstart4.elf[m
+[1;32mbcm2712-rpi-cm5-cm5io.dtb[m   [1;32mstart4cd.elf[m
+[1;32mbcm2712-rpi-cm5l-cm4io.dtb[m  [1;32mstart4db.elf[m
+[1;32mbcm2712-rpi-cm5l-cm5io.dtb[m  [1;32mstart4x.elf[m
+[1;32mbcm2712d0-rpi-5-b.dtb[m       [1;32mstart_cd.elf[m
+[1;32mbootcode.bin[m                [1;32mstart_db.elf[m
+[1;32mcmdline.txt[m                 [1;32mstart_x.elf[m
+[1;32mconfig.txt[m                  [1;32muniview_full_fw.bin[m
+[1;32mfixup.dat[m                   [1;32muser-data[m
+root@root:/proc$ root@root:/proc$ ls /mnt/sdcard[Jroot@root:/proc$ dd if=/dev/mtd0 of=/mnt/sdcard/uniview_full_fw.bin bs=4096[Jroot@root:/proc$ ls /mnt/sdcard[Jroot@root:/proc$ mount /dev/mmcblk0p1 /mnt/sdcard[Jroot@root:/proc$ cat /sys/class/mtd/mtd0/erasesize[Jroot@root:/proc$ cat /sys/class/mtd/mtd0/name[Jroot@root:/proc$ cat /sys/class/mtd/mtd0/type[Jroot@root:/proc$ cat mtd[Jroot@root:/proc$ ls[Jroot@root:/proc$ cat mtd[Jroot@root:/proc$ ls[Jroot@root:/proc$ cd /proc/[Jroot@root:/proc$ ls -l[Jroot@root:/proc$ cd /proc/[Jroot@root:/proc$ ls -l[Jroot@root:/proc$ cd /[Jroot@root:/proc$ ls[Jroot@root:/proc$ cd /mnt/sdcard/[Jroot@root:/proc$ df -h[Jroot@root:/proc$ umount /dev/mmcblk0p1 [Jroot@root:/proc$ df -h[J
+Filesystem                Size      Used Available Use% Mounted on
+df: /dev/pts: No such file or directory
+tmpfs                    88.5M      1.3M     87.3M   1% /tmp
+tmpfs                    52.1M    132.0K     52.0M   0% /var
+devtmpfs                 50.9M         0     50.9M   0% /dev
+tmpfs                    88.5M      1.3M     87.3M   1% /root
+ubi0:program             79.9M     44.5M     35.4M  56% /program
+ubi1:config               4.3M    340.0K      3.7M   8% /config
+ubi2:cfgbak               2.5M    164.0K      2.1M   7% /cfgbak
+ubi3:calibration          2.5M     24.0K      2.3M   1% /calibration
+tmpfs                    52.1M    132.0K     52.0M   0% /etc
+/dev/mmcblk0p1          510.0M    213.5M    296.5M  42% /mnt/sdcard
+root@root:/proc$ j[Jroot@root:/proc$ df -h[Jroot@root:/proc$ ls /mnt/sdcard[Jroot@root:/proc$ dd if=/dev/mtd0 of=/mnt/sdcard/uniview_full_fw.bin bs=4096[Jroot@root:/proc$ ls /mnt/sdcard[Jroot@root:/proc$ dd if=/dev/mtd0 of=/mnt/sdcard/uniview_full_fw.bin bs=4096[J0 of=/mnt/sdcard/uniview_full_fw.bin bs=4096[J[43D1 of=/mnt/sdcard/uniview_full_fw.bin bs=4096[43D2 of=/mnt/sdcard/uniview_full_fw.bin bs=4096[43D of=/mnt/sdcard/uniview_full_fw..bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12Dp.bin bs=4096[12Dr.bin bs=4096[12Do.bin bs=4096[12Dr.bin bs=4096[12Da.bin bs=4096[12D.bin bs=4096[J[12D.bin bs=4096[J[12Dg.bin bs=4096[12Dr.bin bs=4096[12Da.bin bs=4096[12Dm.bin bs=4096[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12D.bin bs=4096[J[12Du.bin bs=4096[12Dn.bin bs=4096[12Di.bin bs=4096[12Dv.bin bs=4096[12Di.bin bs=4096[12De.bin bs=4096[12Dw.bin bs=4096[12D_.bin bs=4096[12Dp.bin bs=4096[12Dr.bin bs=4096[12Do.bin bs=4096[12Dg.bin bs=4096[12Dr.bin bs=4096[12Da.bin bs=4096[12Dm.bin bs=4096[12D_.bin bs=4096[12Df.bin bs=4096[12Dw.bin bs=4096[12D.bin bs=4096[J[12Dl.bin bs=4096[12Da.bin bs=4096
+[1A[68Cs.bin bs=409
+6[1A[69Ch.bin bs=40
+96[1A[70C.bin bs=40
+96
+24064+0 records in
+24064+0 records out
+98566144 bytes (94.0MB) copied, 16.218559 seconds, 5.8MB/s
+root@root:/proc$ sync
+root@root:/proc$ 
+root@root:/proc$ umount /mnt/sdcard
+root@root:/proc$ ls /mnroot@root:/proc$ ls /mnt/[J
+[1;34mnasTest[m  [1;34mnasdisk[m  [1;34msdcard[m
+root@root:/proc$ /[Jks[J[Jls /mroot@root:/proc$ ls /mnt/[Jsroot@root:/proc$ ls /mnt/sdcard/[J
+root@root:/proc$ 
