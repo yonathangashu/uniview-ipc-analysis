@@ -1,0 +1,71 @@
+[H[Jroot@root:/$ [Jls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ ct[Jat .rcs[J[J[JRcs[J[J[J[J/r[Jeroot@root:/$ cat /etc/[J
+KERNEL_VERSION         init.d/                passwd-
+TZ                     inittab                profile
+ax_syslog.conf         iscsi/                 resolv.conf
+dhcpcd.duid            localtime              sd_card_add_remove.sh
+fstab                  mdev.conf              sddpd.conf
+group                  mwareversion           shells
+hostname               passwd                 snmp.conf
+root@root:/$ cat /etc/[J
+KERNEL_VERSION         init.d/                passwd-
+TZ                     inittab                profile
+ax_syslog.conf         iscsi/                 resolv.conf
+dhcpcd.duid            localtime              sd_card_add_remove.sh
+fstab                  mdev.conf              sddpd.conf
+group                  mwareversion           shells
+hostname               passwd                 snmp.conf
+root@root:/$ cat /etc/[Jiniroot@root:/$ cat /etc/init[J.root@root:/$ cat /etc/init.d/[J.R[Jr[J[J[J[J[J[J[J[J[J[J[J[J[Jpro[J[J[Jet[Jtc/iniroot@root:/$ cat /etc/init[J
+init.d/  inittab
+root@root:/$ cat /etc/init[J.root@root:/$ cat /etc/init.d/[J
+S11init     S30ambrwfs  S80network  axklogd     axsyslogd   rcS
+root@root:/$ cat /etc/init.d/[Jrroot@root:/$ cat /etc/init.d/rcS [J
+#!/bin/sh
+
+for initscript in /etc/init.d/S[0-9]*
+do
+	if [ -x $initscript ] ;
+	then
+		echo "[RCS]: $initscript"
+		$initscript
+		if [ "$initscript" == "/etc/init.d/S30ambrwfs" ]; then
+			cmd_output=`/usr/sbin/encrypt_sign_tool 3 /program/bin/filelist.txt /usr/sbin/program_public.key /program/bin/signature.bin`
+			if [ -z "`echo $cmd_output | grep 'rsa verify ok'`" ]; then
+				echo "verify signature fail, exit!"
+				umount /program
+				exit 1
+			fi
+		fi
+	fi
+done
+
+
+echo /sbin/mdev > /proc/sys/kernel/hotplug
+
+/sbin/mdev -s
+
+ln -sf /tmp/ /var/log
+
+mkdir -p /var/log/AXSyslog/kernel
+mkdir -p /tmp/cron.d
+cp /etc/ax_syslog.conf /var/log/AXSyslog/ax_syslog.conf
+
+/program/bin/auto_load_all_drv.sh
+mount -t pstore pstore /sys/fs/pstore
+# 创建链接，便于执行systemreport.sh时同时收集上次的异常日志
+ln -sf /sys/fs/pstore /tmp/pstore
+
+/program/bin/npu_set_bw_limiter.sh start
+
+/etc/init.d/axsyslogd start
+/etc/init.d/axklogd start
+root@root:/$ ls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ 
