@@ -27,4 +27,5 @@ tmpfs                    52.1M    132.0K     52.0M   0% /etc
 
 ```
 root@root:/proc$ dd if=/dev/mtd0 of=/mnt/sdcard/uniview_full_fw.bin bs=4096
+
 ```
