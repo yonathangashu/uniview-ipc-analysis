@@ -1,0 +1,2724 @@
+V3N2C0N2C0RS
+
+U-Boot 2020.04-00011-gddf6f040-dirty (Jun 17 2024 - 18:12:02 +0800), Build: jenkins-Compile_64位(10.188.40.119)-7385
+
+U-Boot code: 5C000400 -> 5C095BEC  BSS: -> 5C0BD52C
+Model: AXERA AX620E_Qnand Board
+DRAM:  Monitor len: 000BD12C
+Ram size: 10000000
+Ram top: 50000000
+TLB table from 4fff0000 to 4fff4000
+Reserving 756k for U-Boot at: 4ff32000
+Reserving 3584k for malloc() at: 4fbb2000
+Reserving 96 Bytes for Board Info at: 4fbb1fa0
+Reserving 216 Bytes for Global Data at: 4fbb1ec8
+Reserving 14400 Bytes for FDT at: 4fbae688
+
+RAM Configuration:
+Bank #0: 40000000 
+DRAM:  256 MiB
+New Stack Pointer is: 4fbae660
+Relocation Offset is: f3f31c00
+Relocating to 4ff32000, new gd at 4fbb1ec8, sp at 4fbae660
+WARNING: Caches not enabled
+ax_adc_probe
+No available THERMAL device
+MMC:   mmc@1B40000: 0, mmc@104E0000: 1
+NAND:  128 MiB
+Loading Environment from NAND... *** Warning - bad CRC, using default environment
+
+Loading Environment from SPI Flash... unrecognized JEDEC id bytes: ff, a1, e4
+uclass_get_device: Invalid bus 0 (err=-2)
+In:    serial
+Out:   serial
+Err:   serial
+Current chip type: AX620Q_CHIP
+Current board type: AX620Q_LP4_DEMO_V1_1
+boot_reason:0x0
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+selecting mode MMC legacy (freq : 0 MHz)
+Card did not respond to voltage select!
+mmc_init: -95, time 24
+no sd card
+enter normal boot mode
+boot_info_data.mode = 7
+Net:   
+Warning: ethernet@0x104C0000 (eth0) using random MAC address - 6a:eb:0c:31:68:88
+eth0: ethernet@0x104C0000  
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+module_get_macaddr_test
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+module_get_macaddr_test
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+Detected MACID:e4:f1:4c:77:66:ba
+Detected ETH1 MACID:e4:f1:4c:77:66:ba
+Press Ctrl+B to abort autoboot in 2 seconds
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+ax_shutdown_ephy:0x410021d1
+enter do_axera_boot
+reading kernel image size 0x700000 from spi nand flash ...
+bondopt secureboot bit is enable:1, key_bits:2048
+CACHE: Misaligned operation at range [4fbadb4c, 4fbadcd8]
+total kernel image size = 6151640
+>>> * kernel image verify success! * <<< 
+header_info.blk_num=17, isize=6151640, osize=8629099, tile_cnt=12, last_tile_size=474568
+boot cmd is :bootm 0x4e000000#conf-1
+## Loading kernel from FIT Image at 4e000000 ...
+   Using 'conf-1' configuration
+   Trying 'kernel' kernel subimage
+     Description:  Axera Linux kernel
+     Type:         Kernel Image
+     Compression:  uncompressed
+     Data Start:   0x4e0000e4
+     Data Size:    8485640 Bytes = 8.1 MiB
+     Architecture: ARM
+     OS:           Linux
+     Load Address: 0x40008000
+     Entry Point:  0x40008000
+   Verifying Hash Integrity ... OK
+## Loading fdt from FIT Image at 4e000000 ...
+   Using 'conf-1' configuration
+   Trying 'fdt-1' fdt subimage
+     Description:  Flattened Device Tree blob
+     Type:         Flat Device Tree
+     Compression:  uncompressed
+     Data Start:   0x4e817c9c
+     Data Size:    141709 Bytes = 138.4 KiB
+     Architecture: ARM
+     Load Address: 0x42008000
+   Verifying Hash Integrity ... OK
+   Loading fdt from 0x4e817c9c to 0x42008000
+   Booting using the fdt blob at 0x42008000
+   Loading Kernel Image
+   Using Device Tree in place at 42008000, end 4202d98c
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+result is 1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+boot_mode->magic = 0x12345678
+boot_mode->dl_channel = 0
+boot_mode->storage_sel = 1
+boot_mode->boot_type = 5
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.19.125 (jenkins@root123) (gcc version 7.5.0 (Linaro GCC 7.5-2019.12)) #1 SMP PREEMPT Mon Jun 17 18:12:19 CST 2024
+[    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=50c5383d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: axera,ax620e
+[    0.000000] ENC:0302C5TP;SEN:0302C4XQ;LENS:4801C0G2
+[    0.000000] PROTOTYPE_NAME:IPC3624LE-ADF28K-WP
+[    0.000000] chip type: 0x1
+[    0.000000] memory total: 0x10000000, Media: 0x9000000
+[    0.000000] earlycon: uart8250 at MMIO32 0x04880000 (options '')
+[    0.000000] bootconsole [uart8250] enabled
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 28672
+[    0.000000]   Normal zone: 224 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 28672 pages, LIFO batch:7
+[    0.000000] percpu: Embedded 18 pages/cpu s44236 r8192 d21300 u73728
+[    0.000000] pcpu-alloc: s44236 r8192 d21300 u73728 alloc=18*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 28448
+[    0.000000] Kernel command line: mem=112M console=ttyS0,115200n8 loglevel=8 earlycon=uart8250,mmio32,0x4880000 board_id=0,boot_reason=0x0 root=/dev/axramdisk rw rootfstype=ext2 init=/linuxrc mtdparts=spi4.0:1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 104156K/114688K available (3967K kernel code, 222K rwdata, 1384K rodata, 2516K init, 396K bss, 10532K reserved, 0K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xc7800000 - 0xff800000   ( 896 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xc7000000   ( 112 MB)
+[    0.000000]     modules : 0xbf800000 - 0xc0000000   (   8 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (3969 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (2516 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 223 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 397 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000004] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.008019] Switching to timer-based delay loop, resolution 41ns
+[    0.016608] Console: colour dummy device 80x30
+[    0.021083] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=120000)
+[    0.031455] pid_max: default: 32768 minimum: 301
+[    0.036172] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.042802] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.050252] CPU: Testing write buffer coherency: ok
+[    0.055393] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.091153] Setting up static identity map for 0x40008240 - 0x40008278
+[    0.107718] rcu: Hierarchical SRCU implementation.
+[    0.127746] smp: Bringing up secondary CPUs ...
+[    0.157967] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.158064] smp: Brought up 1 node, 2 CPUs
+[    0.167853] SMP: Total of 2 processors activated (96.00 BogoMIPS).
+[    0.174048] CPU: All CPU(s) started in SVC mode.
+[    0.179253] devtmpfs: initialized
+[    0.210140] random: get_random_u32 called from bucket_table_alloc+0x63/0x118 with crng_init=0
+[    0.218862] VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+[    0.226730] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 9556302231375000 ns
+[    0.236501] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.242724] pinctrl core: initialized pinctrl subsystem
+[    0.248214] NET: Registered protocol family 16
+[    0.252948] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.260682] ax_pin_init ret 0 index 7
+[    0.265908] console [pstore-1] enabled
+[    0.269664] pstore: Registered ramoops as persistent store backend
+[    0.275864] ramoops: attached 0x8000@0x41000000, ecc: 0/0
+[    0.293961] SCSI subsystem initialized
+[    0.297878] usbcore: registered new interface driver usbfs
+[    0.303425] usbcore: registered new interface driver hub
+[    0.308800] usbcore: registered new device driver usb
+[    0.314492] pps_core: LinuxPPS API ver. 1 registered
+[    0.319484] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.328646] PTP clock support registered
+[    0.332788] Advanced Linux Sound Architecture Driver Initialized.
+[    0.339977] dma_per 48a0000.dma_per: Axera DMA Peripherals Controller, 16 channels
+[    0.347992] dma:ax_dma_probe:1605: done
+[    0.352199] clocksource: Switched to clocksource arch_sys_counter
+[    0.362875] NET: Registered protocol family 2
+[    0.367711] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+[    0.375415] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.382410] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.388797] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.395222] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.401087] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.407468] NET: Registered protocol family 1
+[    0.412119] RPC: Registered named UNIX socket transport module.
+[    0.418066] RPC: Registered udp transport module.
+[    0.422789] RPC: Registered tcp transport module.
+[    0.427506] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.543121] workingset: timestamp_bits=30 max_order=15 bucket_order=0
+[    0.553713] axera_logctl_init: of_find_compatible_node 'axera,logctl' success!!!
+[    0.553719] axera_logctl_init: of_find_compatible_node config: /etc/ax_syslog.conf
+[    0.561196] axera_logctl_init: logstate:1 1 len:2
+[    0.573518] axera_logctl_init: loglevel:4 4 len:2
+[    0.578471] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.584788] NFS: Registering the id_resolver key type
+[    0.589876] Key type id_resolver registered
+[    0.594073] Key type id_legacy registered
+[    0.598117] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.607056] io scheduler noop registered (default)
+[    0.611891] io scheduler mq-deadline registered
+[    0.616442] io scheduler kyber registered
+[    0.621671] axera-pinctrl 2300000.pinctrl: initialized pinctrl driver
+[    0.631905] ax_os_mem_init
+[    0.634778] [GZIP][D]: [     1][ax_gzipd_init : 730] enter ax_gzipd_init
+[    0.642322] Serial: 8250/16550 driver, 5 ports, IRQ sharing disabled
+[    0.649695] console [ttyS0] disabled
+[    0.653343] 4880000.ax_uart: ttyS0 at MMIO 0x4880000 (irq = 20, base_baud = 13000000) is a 16550A
+[    0.662270] console [ttyS0] enabled
+[    0.662270] console [ttyS0] enabled
+[    0.669253] bootconsole [uart8250] disabled
+[    0.669253] bootconsole [uart8250] disabled
+[    0.678833] null: module loaded
+[    0.682514] ax_ramdisk_init:can't find ramdisk device tree node
+[    0.689407] dw_spi_setup: rx_sample_dly_ns=0x6, chip->rx_sample_dly=0x3
+[    0.696182] spi_master spi4: set clk_div=0x4, speed_hz=104000000, dws->max_freq=416000000
+[    0.704382] spi_master spi4: set rx_sample_dly=0x3
+[    0.709227] spi-nand spi4.0: FudanMicroelec SPI NAND was found.
+[    0.715163] spi-nand spi4.0: 128 MiB, block size: 128 KiB, page size: 2048, OOB size: 64
+[    0.723769] 13 cmdlinepart partitions found on MTD device spi4.0
+[    0.729792] Creating 13 MTD partitions on "spi4.0":
+[    0.734683] 0x000000000000-0x000000100000 : "spl"
+[    0.740702] 0x000000100000-0x000000180000 : "ddrinit"
+[    0.746577] 0x000000180000-0x000000380000 : "uboot"
+[    0.753661] 0x000000380000-0x000000400000 : "env"
+[    0.759189] 0x000000400000-0x000000a00000 : "calibration"
+[    0.770425] 0x000000a00000-0x000000b00000 : "cliinfo"
+[    0.776764] 0x000000b00000-0x000001300000 : "config"
+[    0.789388] 0x000001300000-0x000001400000 : "runtime"
+[    0.795725] 0x000001400000-0x000001a00000 : "cfgbak"
+[    0.806521] 0x000001a00000-0x000002100000 : "kernel"
+[    0.818253] 0x000002100000-0x000002180000 : "update"
+[    0.824081] 0x000002180000-0x000007f80000 : "program"
+[    0.915171] 0x000007f80000-0x000008000000 : "other"
+[    0.921151] libphy: Fixed MDIO Bus: probed
+[    0.925316] tun: Universal TUN/TAP device driver, 1.6
+[    0.930607] stmmaceth 104c0000.ethernet: probe axera emac
+[    0.936125] stmmaceth 104c0000.ethernet: phy-rst-gpio not configure
+[    0.942429] stmmaceth 104c0000.ethernet: emac bus clock: 312MHz
+[    0.948391] stmmaceth 104c0000.ethernet: emac phy clock: 25MHz
+[    0.954270] stmmaceth 104c0000.ethernet: PTP rate: 50MHz
+[    0.959612] stmmaceth 104c0000.ethernet: reset axera emac...
+[    0.970294] stmmaceth 104c0000.ethernet: EMAC: select Inner RMII interface, value:0x00000000
+[    0.978865] stmmaceth 104c0000.ethernet: User ID: 0x10, Synopsys ID: 0x52
+[    0.985670] stmmaceth 104c0000.ethernet: 	DWMAC4/5
+[    0.990473] stmmaceth 104c0000.ethernet: DMA HW capability register supported
+[    0.997623] stmmaceth 104c0000.ethernet: RX Checksum Offload Engine supported
+[    1.004768] stmmaceth 104c0000.ethernet: TX Checksum insertion supported
+[    1.011479] stmmaceth 104c0000.ethernet: Wake-Up On Lan supported
+[    1.017585] stmmaceth 104c0000.ethernet: TSO supported
+[    1.022734] stmmaceth 104c0000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+[    1.030411] stmmaceth 104c0000.ethernet: Enabling HW TC (entries=256, max_off=256)
+[    1.037997] stmmaceth 104c0000.ethernet: USO feature enabled
+[    1.043666] stmmaceth 104c0000.ethernet: TSO feature enabled
+[    1.049415] libphy: stmmac: probed
+[    1.055800] PPP generic driver version 2.4.2
+[    1.060224] PPP BSD Compression module registered
+[    1.064946] PPP Deflate Compression module registered
+[    1.070009] NET: Registered protocol family 24
+[    1.074813] axera dwc3 soc:axera_dwc3: axera usb probe
+[    1.080138] axera dwc3 soc:axera_dwc3: usb bus clock: 312MHz
+[    1.085827] axera dwc3 soc:axera_dwc3: axera usb clk set succeed.
+[    1.091956] axera dwc3 soc:axera_dwc3: axera usb reset succeed.
+[    1.098147] dwc3 8000000.dwc3: probe later.
+[    1.102801] usbcore: registered new interface driver cdc_acm
+[    1.108473] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.116631] usbcore: registered new interface driver uas
+[    1.121989] usbcore: registered new interface driver usb-storage
+[    1.128067] usbcore: registered new interface driver usbserial_generic
+[    1.134621] usbserial: USB Serial support registered for generic
+[    1.176590] rtc_axera 23e0000.rtc-top: rtc core: registered 23e0000.rtc-top as rtc0
+[    1.184353] i2c /dev entries driver
+[    1.189320] ax_wdt:ax_wdt_drv_probe:346: done!
+[    1.189663] sdhci: Secure Digital Host Controller Interface driver
+[    1.200329] sdhci: Copyright(c) Pierre Ossman
+[    1.204720] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.204810] sdhci-axera 104e0000.sdhc: axera sdhci probe
+[    1.211050] usbcore: registered new interface driver usbhid
+[    1.218003] get cd gpio failed
+[    1.221293] usbhid: USB HID core driver
+[    1.230053] dev->intr_type = 0
+[    1.233143] dw_i2s_probe, hdmi_i2s: 0
+[    1.236907] config pin_sd_misc to 0x300100
+[    1.241032] dw_i2s_probe get irq is -6
+[    1.244803] IIS get i2s_mclk: 12288000
+[    1.248566] IIS get i2s_mclk: 12288000
+[    1.252359] IIS probe OK
+[    1.254941] dev->intr_type = 1
+[    1.258007] dw_i2s_probe, hdmi_i2s: 0
+[    1.261726] config pin_sd_misc to 0x300100
+[    1.265841] dw_i2s_probe get irq is -6
+[    1.269604] IIS get i2s_mclk: 12288000
+[    1.273363] IIS get i2s_mclk: 12288000
+[    1.277134] IIS probe OK
+[    1.280025] ax_actt_probe
+[    1.282711] designware-actt 23f2000.audio_codec: No cache used with register defaults set!
+[    1.291089] oprofile: hardware counters not available
+[    1.292283] mmc0: SDHCI controller on 104e0000.sdhc [104e0000.sdhc] using ADMA 64-bit
+[    1.296160] oprofile: using timer interrupt.
+[    1.304014] sdhci_cdns_read_phy_reg: phy lock successful
+[    1.308919] NET: Registered protocol family 10
+[    1.336429] Segment Routing with IPv6
+[    1.340237] mip6: Mobile IPv6
+[    1.343695] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.350365] NET: Registered protocol family 17
+[    1.354904] l2tp_core: L2TP core driver, V2.0
+[    1.359283] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.364106] Key type dns_resolver registered
+[    1.368557] Registering SWP/SWPB emulation handler
+[    1.373362] chip type: AX620Q
+[    1.376338] product init ok
+[    1.379897] pstore: Using compression: deflate
+[    1.385326] i2c_designware 4850000.i2c: running with gpio recovery mode! scl,sda
+[    1.392904] i2c i2c-0: using pinctrl states for GPIO recovery
+[    1.399059] i2c_designware 4851000.i2c: running with gpio recovery mode! scl,sda
+[    1.406594] i2c i2c-1: using pinctrl states for GPIO recovery
+[    1.412714] dwc3 8000000.dwc3: dr_mode is 3 (1-host 2-device 3-otg)
+[    1.419020] dwc3 8000000.dwc3: EP NUM:16
+[    1.423263] actt_component_probe
+[    1.423263]  
+[    1.423399] bengin actt_set_sysclk
+[    1.428205] actt_set_sysclk, freq: 12288000
+[    1.435799] actt_set_dai_fmt, fmt: 0x1001
+[    1.439816] actt_set_dai_fmt, actt rx only support master fmt_mode: 0x1000
+[    1.446699] actt in I2S Format
+[    1.449762] dw_i2s_set_fmt, fmt: 0x1001
+[    1.454151] asoc-simple-card sound: 23f2000.audio_codec <-> 6051000.i2s_slv mapping ok
+[    1.462079] bengin actt_set_sysclk
+[    1.462081] actt_set_sysclk, freq: 12288000
+[    1.469680] actt_set_dai_fmt, fmt: 0x4001
+[    1.473696] actt_set_dai_fmt, actt tx only support salve .fmt_mode: 0x4000
+[    1.480578] actt in I2S Format
+[    1.483640] dw_i2s_set_fmt, fmt: 0x4001
+[    1.487999] asoc-simple-card sound: 23f2000.audio_codec <-> 6050000.i2s_mst mapping ok
+[    1.496112] dwc3 8000000.dwc3: axera usb gadget init
+[    1.512776] rtc_axera 23e0000.rtc-top: setting system clock to 1970-01-01 08:00:00 UTC (28800)
+[    1.521823] OF: fdt: not creating '/sys/firmware/fdt': CRC check failed
+[    1.528717] ALSA device list:
+[    1.531687]   #0: Axera Audio
+[    1.534825] ttyS0 - failed to request DMA
+[    1.540772] Freeing unused kernel memory: 2516K
+[    1.545313] This architecture does not have kernel memory protection.
+[    1.551763] Run /init as init process
+[RCS]: /etc/init.d/S11init
+mount: mounting debugfs on /sys/kernel/debug failed: No such file or directory
+[RCS]: /etc/init.d/S30ambrwfs
+cp: can't stat '/root/*': No such file or directory
+[    1.853998] ubi0: default fastmap pool size: 35
+[    1.858785] ubi0: default fastmap WL pool size: 17
+[    1.863594] ubi0: attaching mtd12
+[    1.909817] random: fast init done
+[    2.137369] ubi0: scanning is finished
+[    2.149714] ubi0: attached mtd12 (name "program", size 94 MiB)
+[    2.155591] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.162488] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.169289] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.176264] ubi0: good PEBs: 751, bad PEBs: 1, corrupted PEBs: 0
+[    2.182326] ubi0: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.189564] ubi0: max/mean erase counter: 4/1, WL threshold: 4096, image sequence number: 1390195764
+[    2.198711] ubi0: available PEBs: 0, total reserved PEBs: 751, PEBs reserved for bad PEB handling: 15
+[    2.207983] ubi0: background thread "ubi_bgt0d" started, PID 169
+UBI device number 0, total 751 LEBs (95358976 bytes, 90.9 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+u[    2.224352] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 176
+bi0_0 exist.
+create Directory:/program
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi0:program /program 
+[    2.254879] UBIFS (ubi0:0): recovery needed
+[    2.331825] UBIFS (ubi0:0): recovery completed
+[    2.336813] UBIFS (ubi0:0): UBIFS: mounted UBI device 0, volume 0, name "program"
+[    2.344311] UBIFS (ubi0:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.354240] UBIFS (ubi0:0): FS size: 91295744 bytes (87 MiB, 719 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+[    2.364687] UBIFS (ubi0:0): reserved for root: 0 bytes (0 KiB)
+[    2.370591] UBIFS (ubi0:0): media format: w4/r0 (latest is w5/r0), UUID 5AA93821-CE3B-42DF-8B4C-323281550D45, small LPT model
+[    2.397118] ubi1: default fastmap pool size: 8
+[    2.401624] ubi1: default fastmap WL pool size: 4
+[    2.406344] ubi1: attaching mtd7
+[    2.433135] ubi1: scanning is finished
+[    2.444603] ubi1: attached mtd7 (name "config", size 8 MiB)
+[    2.450235] ubi1: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.457137] ubi1: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.463949] ubi1: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.470931] ubi1: good PEBs: 64, bad PEBs: 0, corrupted PEBs: 0
+[    2.476911] ubi1: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.484152] ubi1: max/mean erase counter: 25/14, WL threshold: 4096, image sequence number: 3376025183
+[    2.493473] ubi1: available PEBs: 0, total reserved PEBs: 64, PEBs reserved for bad PEB handling: 4
+UBI device number 1, total 64 LEBs (8126464 bytes, 7.7 MiB), ava[    2.503223] ubi1: background thread "ubi_bgt1d" started, PID 186
+ilable 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubi1_0 exist.
+create Directory:/config
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi1[    2.524648] UBIFS (ubi1:0): background thread "ubifs_bgt1_0" started, PID 193
+:config /config 
+[    2.558897] UBIFS (ubi1:0): recovery needed
+[    2.660950] UBIFS (ubi1:0): recovery completed
+[    2.665939] UBIFS (ubi1:0): UBIFS: mounted UBI device 1, volume 0, name "config"
+[    2.673350] UBIFS (ubi1:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.683279] UBIFS (ubi1:0): FS size: 5586944 bytes (5 MiB, 44 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    2.693378] UBIFS (ubi1:0): reserved for root: 263884 bytes (257 KiB)
+[    2.699831] UBIFS (ubi1:0): media format: w5/r0 (latest is w5/r0), UUID 6D0233DC-6B50-42EA-8560-1142E2371A7A, small LPT model
+[    2.725878] ubi2: default fastmap pool size: 8
+[    2.730400] ubi2: default fastmap WL pool size: 4
+[    2.735138] ubi2: attaching mtd9
+[    2.756111] ubi2: scanning is finished
+[    2.767301] ubi2: attached mtd9 (name "cfgbak", size 6 MiB)
+[    2.772918] ubi2: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.779827] ubi2: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.786628] ubi2: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.793614] ubi2: good PEBs: 48, bad PEBs: 0, corrupted PEBs: 0
+[    2.799546] ubi2: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.806790] ubi2: max/mean erase counter: 24/14, WL threshold: 4096, image sequence number: 1034400906
+[    2.816121] ubi2: available PEBs: 0, total reserved PEBs: 48, PEBs reserved for bad PEB handling: 4
+[    2.825198] ubi2: background thread "ubi_bgt2d" started, PID 203
+UBI device number 2, total 48 LEBs (6094848 bytes, 5.8 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubi2[    2.841596] UBIFS (ubi2:0): background thread "ubifs_bgt2_0" started, PID 210
+_0 exist.
+create Directory:/cfgbak
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi2:cfgbak /cfgbak 
+[    2.872128] UBIFS (ubi2:0): recovery needed
+[    2.961691] UBIFS (ubi2:0): recovery completed
+[    2.966680] UBIFS (ubi2:0): UBIFS: mounted UBI device 2, volume 0, name "cfgbak"
+[    2.974092] UBIFS (ubi2:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.984021] UBIFS (ubi2:0): FS size: 3555328 bytes (3 MiB, 28 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    2.994120] UBIFS (ubi2:0): reserved for root: 167926 bytes (163 KiB)
+[    3.000573] UBIFS (ubi2:0): media format: w5/r0 (latest is w5/r0), UUID 53E3460B-080A-4FEE-AEE2-4B0AFEB51CC3, small LPT model
+[    3.026619] ubi3: default fastmap pool size: 8
+[    3.031140] ubi3: default fastmap WL pool size: 4
+[    3.035877] ubi3: attaching mtd5
+[    3.056837] ubi3: scanning is finished
+[    3.067299] ubi3: attached mtd5 (name "calibration", size 6 MiB)
+[    3.073351] ubi3: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    3.080260] ubi3: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    3.087060] ubi3: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    3.094047] ubi3: good PEBs: 48, bad PEBs: 0, corrupted PEBs: 0
+[    3.099978] ubi3: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    3.107225] ubi3: max/mean erase counter: 7/3, WL threshold: 4096, image sequence number: 3091558067
+[    3.116370] ubi3: available PEBs: 0, total reserved PEBs: 48, PEBs reserved for bad PEB handling: 4
+[    3.125449] ubi3: background thread "ubi_bgt3d" started, PID 220
+UBI device number 3, total 48 LEBs (6094848 bytes, 5.8 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubi3[    3.139696] UBIFS (ubi3:0): background thread "ubifs_bgt3_0" started, PID 226
+_0 exist.
+    /calibration exists
+df: /dev/pts: No such file or directory
+    mount -t ubifs ubi3:calibration /calibration 
+[    3.207219] UBIFS (ubi3:0): UBIFS: mounted UBI device 3, volume 0, name "calibration"
+[    3.215075] UBIFS (ubi3:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    3.225006] UBIFS (ubi3:0): FS size: 3555328 bytes (3 MiB, 28 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    3.235108] UBIFS (ubi3:0): reserved for root: 167926 bytes (163 KiB)
+[    3.241561] UBIFS (ubi3:0): media format: w5/r0 (latest is w5/r0), UUID BF7BD558-BC9A-4D8D-B2C4-EE4F6925CECD, small LPT model
+[    3.277149] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" stops
+[    6.217231] random: crng init done
+[RCS]: /etc/init.d/S80network
+[    6.240329] NetUserDrv: loading out-of-tree module taints kernel.
+[    6.247062] NET_USR module init ok!
+[    6.259151] NET_DBG module init ok!
+      IP: 192.168.0.13
+   BOOTP: 
+ GATEWAY: 192.168.0.1
+ NETMASK: 255.255.255.0
+HO[    6.268858] stmmaceth 104c0000.ethernet: axera_reset_phy
+STNAME: 
+  NETDEV: eth0
+AUTOCONF: 
+[    6.279020] stmmaceth 104c0000.ethernet: ephy bgs=0x1, trim=0x7, ephy0_reg=0x410021d1
+[    6.392200] ax_ephy_config_init
+[    6.527205] AX620E Fast Ethernet stmmac-0:01: attached PHY driver [AX620E Fast Ethernet] (mii_bus:phy_addr=stmmac-0:01, irq=POLL)
+[    6.549671] stmmaceth 104c0000.ethernet eth0: No Safety Features support found
+[    6.556917] stmmaceth 104c0000.ethernet eth0: IEEE 1588-2008 Advanced Timestamp supported
+[    6.565266] stmmaceth 104c0000.ethernet eth0: registered PTP clock
+[    6.571892] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+passwd has changed
+run auto_load_all_drv.sh start 
+[    6.778804] npu 3800000.ax_npu: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 594000000, volt: 0, enabled: 1. New: freq: 594000000, volt: 0, enabled: 1
+[    6.829426] unsupport register display0
+[    6.834927] unsupport register display1
+run auto_load_all_drv.sh end 
+run npu_set_bw_limiter.sh start 
+already register bw limit for NPU
+this chip type is AX620Q_CHIP
+run npu_set_bw_limiter.sh end 
+
+root login: the same spl, don't need update
+[    7.666554] manuparse_inf[Manuparse_Init                : 293 ]ProductName[IPC3624LE-ADF28K-WP]
+[    7.675380] manuparse_inf[Manuparse_Init                : 294 ]BuildInfo[ENC-0302C5TP;SEN-0302C4XQ;LENS-4801C0G2]
+[    7.685682] manuparse_inf[Manuparse_Init                : 295 ]SerialNum[210235UEDW3247000191]
+[    7.694421] manuparse_inf[Manuparse_AnalysisSensorType  : 96  ]Sensor[0] type[589841] name[sc450ai]
+[    7.703494] manuparse_inf[Manuparse_AnalysisSpecialImageInv: 178 ]SpecialImgInverse[0]
+[    7.711424] manuparse_war[Manuparse_AnalysisLightInfo   : 152 ]Product type[1] no Light info
+[    7.719890] manuparse_inf[Manuparse_AnalysisFormCap     : 105 ]Manuparse form type [0]
+[    7.727825] manuparse_war[Manuparse_AnalysisLensInfo    : 89  ]Lens[0] build[4801C0G2] not match default OTHER_LENS
+[    7.738282] manuparse_inf[Manuparse_AnalysisIrCutType   : 235 ]Manuparse IrCut type[0]
+[    7.746234] manuparse_inf[Manuparse_AnalysisIrCutMotorType: 297 ]Manuparse IrCut Motor type[0]
+[    7.754868] manuparse_inf[Manuparse_LensType_Trans      : 360 ]Manuparse pcLensFlag: []
+[    7.762892] manuparse_inf[Manuparse_AnalysisFisheyeType : 301 ]Manuparse:IPC3624LE-ADF28K-WP FisheyeType[FALSE]
+[    7.773003] manuparse_inf[Manuparse_AnalysisAlarmCnt    : 635 ]Manuparse AlmInNum[2] AlmOutNum [1]
+[    7.781972] manuparse_inf[Manuparse_AnalysisHalfType    : 140 ]SerialNumber[210235UEDW3247000191]: IsHalfType[0]
+[    7.792168] manuparse_inf[Manuparse_AnalysisResButtLimi : 437 ]Manuparse:IPC3624LE-ADF28K-WP Reset button limit is TRUE
+[    7.802978] manuparse_inf[Manuparse_AnalysisSpkPowerType: 695 ]ENC speaker power type:[1]
+[    7.811164] manuparse_inf[Manuparse_AnalysisCloseSpkInFreeCap: 211 ]CloseSpkInFree[0]
+[    7.819014] manuparse_inf[Manuparse_AnalysisPOEatType   : 751 ]POEATType:[0]
+[    7.826072] manuparse_inf[Manuparse_AnalysisRunLedSite  : 808 ]Manuparse:IPC3624LE-ADF28K-WP Run Led on DSP
+[    7.835833] manuparse_inf[Manuparse_AnalysisAlarmLedSite: 865 ]Manuparse:IPC3624LE-ADF28K-WP Alarm Led on DSP
+[    7.845760] manuparse_inf[Manuparse_AnalysisPtMcuImageInfo: 490 ]Manuparse PtMcuImageInfo:no_pt_mcu_image
+cat: can't open '/proc/nandid': No such file or directory
+[    7.903214] gpio_inf[product_fixdome_init: 653 ]kgpio for fixdome 
+[    7.909464] gpio_inf[prior_init          : 825 ]Product type is FIXDOME
+[    7.922305] 
+[    7.922305] Encryption Board Reset
+[    7.927211] gpio_inf[SetAllLedGpio       : 485 ]no [gstGreenRunLedGpio] led pin
+[    7.934541] gpio_inf[SetAllLedGpio       : 486 ]no [gstRedRunLedGpio] led pin
+[    7.941687] gpio_inf[SetAllLedGpio       : 487 ]no [gstBlueRunLedGpio] led pin
+[    7.948933] gpio_inf[LightCtrlInit       : 417 ]Light channl 1 ctrled invalued, no need to init
+[    7.949056] gpio_inf[Pwm_Init            : 192 ]Pwm_Init[4] Ok
+[    7.949090] dwc3 8000000.dwc3: dwc3_drd_notifier, mode is host
+[    7.957814] gpio_inf[Pwm_Init            : 192 ]Pwm_Init[5] Ok
+[    7.966584] dwc3 8000000.dwc3: axera usb host init
+[    7.969571] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[    7.982978] dwc3 8000000.dwc3: usb2.0-only mode
+[    7.986943] gpio_err[RunLightInit        : 547 ]Red run led init Fail
+[    7.991682] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    8.004030] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 1
+[    8.013101] xhci-hcd xhci-hcd.1.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x0000000000010010
+[    8.023029] xhci-hcd xhci-hcd.1.auto: irq 67, io mem 0x08000000
+[    8.029455] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.19
+[    8.038043] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+reset motor position axes, zoompos=[] focuspos=[] status=[][    8.045817] usb usb1: Product: xHCI Host Controller
+
+[    8.055974] usb usb1: Manufacturer: Linux 4.19.125 xhci-hcd
+[    8.061637] usb usb1: SerialNumber: xhci-hcd.1.auto
+[    8.068080] hub 1-0:1.0: USB hub found
+[    8.071973] hub 1-0:1.0: 1 port detected
+[    8.076623] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    8.082343] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 2
+[    8.090109] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+[    8.096736] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    8.105008] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 4.19
+[    8.113301] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    8.120558] usb usb2: Product: xHCI Host Controller
+[    8.125474] usb usb2: Manufacturer: Linux 4.19.125 xhci-hcd
+[    8.131078] usb usb2: SerialNumber: xhci-hcd.1.auto
+[    8.136692] hub 2-0:1.0: USB hub found
+[    8.140617] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    8.167034] motor_err[0234 @ Hw_Timer_Init]:	
+[    8.167038] Timer id invalid:1
+[    8.171511] 
+[    8.177294] motor_info[0321 @ WorkQueue_Init]:	
+[    8.177296] Work Queue init
+[    8.181830] 
+[    8.186200] motor_info[1558 @ motor_init]:	
+[    8.186202] motor finish init
+[    8.186209] motor_info[0094 @ LensPortMode_Init]:	
+[    8.190405] 
+[    8.193479] Init LensPortMode:2
+[    8.193480] 
+[    8.204356] motor_info[0827 @ Ircut_IPC_Init]:	
+[    8.204359] ircut init ch[0] type[0]
+[    8.208936] 
+[    8.214091] motor_info[0476 @ DC_Ircut_Init]:	
+[    8.214095] dc[ch0] ircut init ok
+[    8.218586] 
+[    8.223424] i2c_get_adapter fail!
+[    8.226749] driver init fail
+[    8.229649] i2c init fail
+[    8.232286] motor_info[0500 @ motor_init_thread]:	
+[    8.232288] motor thread init ok
+[    8.237089] 
+[    8.254167] RunTm_inf[runtime_set_startup_date      : 814 ]start system at: year=1970 month=1 date=1 hour=8 minute=0 second=0
+[    8.280140] RunTm_err[runtime_set_current_date_lastrtinfo: 893 ]iTmp=0, size=212
+[    8.287655] RunTm_war[runtime_init                  : 1434]wait for runtime_thread_process thread 
+[    8.296686] RunTm_war[runtime_init                  : 1452]wait for runtime_thread_process thread 
+[    8.305669] RunTm_inf[runtime_init                  : 1455]End of runtime!
+insmod: can't insert '/lib/modules/4.19.125/extra/SC450AI_MIPI.ko': No such file or directory
+net.core.wmem_max = 655360
+net.core.wmem_default = 655360
+cp: can't stat '/data/*': No such file or directory
+mount: mounting /tmp/.data/ on /data failed: No such file or directory
+vm.overcommit_memory = 0
+vm.overcommit_ratio = 50
+vm.min_free_kbytes = 598
+vm.dirty_background_ratio = 2
+vm.dirty_expire_centisecs = 500
+vm.dirty_ratio = 2
+vm.dirty_writeback_centisecs = 100
+vm.admin_reserve_kbytes = 0
+vm.user_reserve_kbytes = 0
+[    8.367351] drop_caches.sh (648): drop_caches: 4
+chmod: /tmp/bin/update: Read-only file system
+cp: can't stat '/usr/sbin/nandwrite_move': No such file or directory
+chmod: /tmp/bin/nandwrite: No such file or directory
+ln: /www/www: Read-only file system
+ln: /program/www/ActiveX/Setup64.exe: Read-only file system
+cp: can't stat '/program/bin/ca.cer': No such file or directory
+Open file fail
+rm: can't remove 'logo.png': Read-only file system
+ln: logo.png: File exists
+/program/www/skin/default_1/images
+Interversion is :GIPCV600R002B15D001SP68D2308NB
+
+DeviceName is SC-3243-IWPS-F28; PrototypeName is IPC3624LE-ADF28K-WP; ManufacturingDate is 2024-07-25. 
+Interversion is :GIPCV600R002B15D001SP68D2308NB
+
+szTmpManufacturingDate error:
+do: ls /program/factory/default_cfg_IPC2314LE.xml 
+[0;0m/program/factory/default_cfg_IPC2314LE.xml[m
+do: cp /program/factory/device_cap_IPC2314LE.xml /config/device_cap.xml 
+do: cp /program/factory/default_cfg_IPC2314LE.xml /config/default_cfg.xml 
+do: cp /program/factory/preset_scene_IPC2XXX.xml /config/preset_scene.xml 
+do: cp -rf /program/factory/ipu_lfw.bin /config/dla/ 
+cp: can't stat '/program/factory/ipu_lfw.bin': No such file or directory
+MW_XML_LoadFile:Open file fail! /calibration/customize/customized.xml
+Load XML File failed!
+Customize Time Zone Fail
+CustomerCode val is 02 
+ln: /www/skin/default_1/images/logo.png: File exists
+DeviceName is SC-3243-IWPS-F28. CustomCode is 02
+ShowLangList is [1,0,17,4,8,3,36,11,20,7,52,5,6]
+chmod: /program/bin/kernelsendbuff.sh: Read-only file system
+sed: no address after comma
+sed: no address after comma
+sed: no address after comma
+CPU type is AX620Q_CHIP
+CFG rowcnt[42]
+CFG rowcnt[97]
+CFG rowcnt[149]
+CFG rowcnt[172]
+CFG rowcnt[226]
+CFG rowcnt[403]
+CFG rowcnt[521]
+CFG rowcnt[1402]
+CFG rowcnt[1581]
+CFG rowcnt[1623]
+CFG rowcnt[1701]
+CFG rowcnt[1732]
+CFG rowcnt[1765]
+CFG rowcnt[1772]
+CFG rowcnt[1778]
+CFG rowcnt[1781]
+CFG rowcnt[1798]
+CFG rowcnt[1819]
+CFG rowcnt[1826]
+CFG rowcnt[1852]
+CFG rowcnt[1879]
+CFG rowcnt[1884]
+CFG rowcnt[1946]
+CFG rowcnt[1956]
+CFG rowcnt[1972]
+CFG rowcnt[1980]
+CFG rowcnt[1991]
+CFG rowcnt[1998]
+CFG rowcnt[2109]
+CFG rowcnt[2217]
+CFG rowcnt[2466]
+CFG rowcnt[2507]
+CFG rowcnt[2665]
+CFG rowcnt[2713]
+CFG rowcnt[2808]
+CFG rowcnt[3077]
+CFG rowcnt[3376]
+CFG rowcnt[3475]
+
+ MWARE System Initializing...
+
+ Invalid system time, restore default! 
+...Init Courese success...
+Control Init Config Capability success, ProductType:10, DoubleChlDevType:0, VideoInNum:1
+route: SIOCDELRT: No such process
+sh: can't create /proc/vpe/vpe_debug: nonexistent directory
+sh: can't create /proc/vpe/vpe_debug: nonexistent directory
+The Node areadly exist!
+ln: /www/device_cap.xml: File exists
+chpasswd: password for 'root' changed
+.....i2c_init: i2c device is /dev/i2c-0 
+can not find match model, just use manual table model and param
+
+MW_XML_LoadFile:Open file fail! /program/custom/config.xml
+MW_XML_LoadFile:Open file fail! /config/ftp.xml
+adding the following line to /var/net-snmp/snmpd.conf:
+adding the following line to /etc/snmp.conf:
+   rouser MD5
+sdk init success
+MW_XML_LoadFile:Open file fail! /program/custom/config.xml
+..Done !
+
+root login: 
+root login: 
+root login: 
+root login: 
+root login: 
+root login: root
+Password: 
+login[522]: root login on 'ttyS0'
+
+User@/root> 
+User@/root>
+User@/root>
+User@/root>
+User@/root>
+User@/root>
+User@/root>checkUser@/root>checksysready
+root@root:~$ ls
+root@root:~$ cd ..
+root@root:/$ ls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ [H[Jroot@root:/$ [Jls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ exit
+@
+mware ready
+isp interrupts ready
+
+test result:pass
+$$
+
+User@/root>l 
+User@/root>
+User@/root>nand
+    Not Matched Cmd!
+User@/root>nandna  dup mp
+Not support cmd yet!
+
+User@/root>ubo
+    Not Matched Cmd!
+User@/root>ubo
+    Not Matched Cmd!
+User@/root>ubo
+    Not Matched Cmd!
+User@/root>ubo
+    Not Matched Cmd!
+User@/root>ubo
+    Not Matched Cmd!
+User@/root>ubo
+Not support cmd yet!
+
+User@/root>
+User@/root>
+User@/root>
+User@/root>
+User@/root>
+User@/root>checj
+    Not Matched Cmd!
+User@/root>checj User@/root>checksysready
+root@root:~$ cd /
+root@root:/$ [H[Jroot@root:/$ [Jdf -h | Grep[J[J[J[Jgrep sdcard
+df: /dev/pts: No such file or directory
+/dev/mmcblk0p1          510.0M    309.2M    200.8M  61% /mnt/sdcard
+root@root:/$ cd /mnt/sdcard
+root@root:/mnt/sdcard$ ls
+[1;32mLICENCE.broadcom[m            [1;32mfixup4cd.dat[m
+[1;32mbcm2710-rpi-2-b.dtb[m         [1;32mfixup4db.dat[m
+[1;32mbcm2710-rpi-3-b-plus.dtb[m    [1;32mfixup4x.dat[m
+[1;32mbcm2710-rpi-3-b.dtb[m         [1;32mfixup_cd.dat[m
+[1;32mbcm2710-rpi-cm0.dtb[m         [1;32mfixup_db.dat[m
+[1;32mbcm2710-rpi-cm3.dtb[m         [1;32mfixup_x.dat[m
+[1;32mbcm2710-rpi-zero-2-w.dtb[m    [1;32minitramfs8[m
+[1;32mbcm2710-rpi-zero-2.dtb[m      [1;32minitramfs_2712[m
+[1;32mbcm2711-rpi-4-b.dtb[m         [1;32missue.txt[m
+[1;32mbcm2711-rpi-400.dtb[m         [1;32mkernel8.img[m
+[1;32mbcm2711-rpi-cm4-io.dtb[m      [1;32mkernel_2712.img[m
+[1;32mbcm2711-rpi-cm4.dtb[m         [1;32mmeta-data[m
+[1;32mbcm2711-rpi-cm4s.dtb[m        [1;32mnetwork-config[m
+[1;32mbcm2712-d-rpi-5-b.dtb[m       [1;34moverlays[m
+[1;32mbcm2712-rpi-5-b.dtb[m         [1;32mstart.elf[m
+[1;32mbcm2712-rpi-500.dtb[m         [1;32mstart4.elf[m
+[1;32mbcm2712-rpi-cm5-cm4io.dtb[m   [1;32mstart4cd.elf[m
+[1;32mbcm2712-rpi-cm5-cm5io.dtb[m   [1;32mstart4db.elf[m
+[1;32mbcm2712-rpi-cm5l-cm4io.dtb[m  [1;32mstart4x.elf[m
+[1;32mbcm2712-rpi-cm5l-cm5io.dtb[m  [1;32mstart_cd.elf[m
+[1;32mbcm2712d0-rpi-5-b.dtb[m       [1;32mstart_db.elf[m
+[1;32mbootcode.bin[m                [1;32mstart_x.elf[m
+[1;32mcmdline.txt[m                 [1;32muniview_full_fw.bin[m
+[1;32mconfig.txt[m                  [1;32muniview_program_flash.bin[m
+[1;32mfixup.dat[m                   [1;32muser-data[m
+[1;32mfixup4.dat[m
+root@root:/mnt/sdcard$ rm uniroot@root:/mnt/sdcard$ rm uniview_[J*
+root@root:/mnt/sdcard$ ls
+[1;32mLICENCE.broadcom[m            [1;32mfixup4.dat[m
+[1;32mbcm2710-rpi-2-b.dtb[m         [1;32mfixup4cd.dat[m
+[1;32mbcm2710-rpi-3-b-plus.dtb[m    [1;32mfixup4db.dat[m
+[1;32mbcm2710-rpi-3-b.dtb[m         [1;32mfixup4x.dat[m
+[1;32mbcm2710-rpi-cm0.dtb[m         [1;32mfixup_cd.dat[m
+[1;32mbcm2710-rpi-cm3.dtb[m         [1;32mfixup_db.dat[m
+[1;32mbcm2710-rpi-zero-2-w.dtb[m    [1;32mfixup_x.dat[m
+[1;32mbcm2710-rpi-zero-2.dtb[m      [1;32minitramfs8[m
+[1;32mbcm2711-rpi-4-b.dtb[m         [1;32minitramfs_2712[m
+[1;32mbcm2711-rpi-400.dtb[m         [1;32missue.txt[m
+[1;32mbcm2711-rpi-cm4-io.dtb[m      [1;32mkernel8.img[m
+[1;32mbcm2711-rpi-cm4.dtb[m         [1;32mkernel_2712.img[m
+[1;32mbcm2711-rpi-cm4s.dtb[m        [1;32mmeta-data[m
+[1;32mbcm2712-d-rpi-5-b.dtb[m       [1;32mnetwork-config[m
+[1;32mbcm2712-rpi-5-b.dtb[m         [1;34moverlays[m
+[1;32mbcm2712-rpi-500.dtb[m         [1;32mstart.elf[m
+[1;32mbcm2712-rpi-cm5-cm4io.dtb[m   [1;32mstart4.elf[m
+[1;32mbcm2712-rpi-cm5-cm5io.dtb[m   [1;32mstart4cd.elf[m
+[1;32mbcm2712-rpi-cm5l-cm4io.dtb[m  [1;32mstart4db.elf[m
+[1;32mbcm2712-rpi-cm5l-cm5io.dtb[m  [1;32mstart4x.elf[m
+[1;32mbcm2712d0-rpi-5-b.dtb[m       [1;32mstart_cd.elf[m
+[1;32mbootcode.bin[m                [1;32mstart_db.elf[m
+[1;32mcmdline.txt[m                 [1;32mstart_x.elf[m
+[1;32mconfig.txt[m                  [1;32muser-data[m
+[1;32mfixup.dat[m
+root@root:/mnt/sdcard$ root@root:/mnt/sdcard$ ls[Jroot@root:/mnt/sdcard$ rm uniview_*[Jroot@root:/mnt/sdcard$ ls[Jroot@root:/mnt/sdcard$ cd /mnt/sdcard[Jroot@root:/mnt/sdcard$ df -h | grep sdcard[J
+df: /dev/pts: No such file or directory
+/dev/mmcblk0p1          510.0M     87.2M    422.8M  17% /mnt/sdcard
+root@root:/mnt/sdcard$ mkdir unii[Jview/[J
+root@root:/mnt/sdcard$ cd unroot@root:/mnt/sdcard$ cd uniview/[J
+root@root:/mnt/sdcard/uniview$ mkdir bins/[J[J[J[J[J[J bins
+root@root:/mnt/sdcard/uniview$ mkdir fsc[J
+root@root:/mnt/sdcard/uniview$ cdf[J fs
+root@root:/mnt/sdcard/uniview/fs$ cp -rP /prroot@root:/mnt/sdcard/uniview/fs$ cp -rP /pro[J[J[J[J[J[J[J[J[J[J[J[Jls /
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/mnt/sdcard/uniview/fs$ cp /proroot@root:/mnt/sdcard/uniview/fs$ cp /pro[J[J[J[J[Jr[J=r[J[J-rP /prograroot@root:/mnt/sdcard/uniview/fs$ cp -rP /program/[J ,[J.
+cp: can't create symlink './program/bin/libs/lib_hiawb.so' to '/program/lib/lib_hiawb.so': Operation not permitted
+cp: can't create symlink './program/bin/libs/libisp.so' to '/program/lib/libisp.so': Operation not permitted
+cp: can't create symlink './program/bin/libs/lib_hiae.so' to '/program/lib/lib_hiae.so': Operation not permitted
+cp: can't create symlink './program/bin/libs/lib_hiaf.so' to '/program/lib/lib_hiaf.so': Operation not permitted
+cp: can't create symlink './program/bin/libs/libmpi.so' to '/program/lib/libmpi.so': Operation not permitted
+cp: can't create symlink './program/bin/libs/lib_hidefog.so' to '/program/lib/lib_hidefog.so': Operation not permitted
+cp: can't create symlink './program/bin/libs/lib_iniparser.so' to '/program/lib/lib_iniparser.so': Operation not permitted
+cp: can't create symlink './program/bin/arptables-compat' to 'xtables-compat-multi': Operation not permitted
+cp: can't create symlink './program/bin/ebtables-compat' to 'xtables-compat-multi': Operation not permitted
+cp: can't create symlink './program/lib/libz.so' to 'libz.so.1.2.11': Operation not permitted
+cp: can't create symlink './program/lib/libnss_dns.so.2' to 'libnss_dns-2.25.so': Operation not permitted
+cp: can't create symlink './program/lib/configs/dump_mmap' to 'config_tool': Operation not permitted
+cp: can't create symlink './program/lib/configs/dump_config' to 'config_tool': Operation not permitted
+cp: can't create symlink './program/lib/libtinyalsa.so' to 'libtinyalsa.so.2': Operation not permitted
+cp: can't create symlink './program/lib/libnl-genl-3.so.200' to 'libnl-genl-3.so.200.26.0': Operation not permitted
+cp: can't create symlink './program/lib/libz.so.1' to 'libz.so.1.2.11': Operation not permitted
+cp: can't create symlink './program/lib/libnl-3.so.200' to 'libnl-3.so.200.26.0': Operation not permitted
+cp: can't create symlink './program/lib/libwolfssl.so' to 'libwolfssl.so.35.5.1': Operation not permitted
+cp: can't create symlink './program/lib/libwolfssl.so.35' to 'libwolfssl.so.35.5.1': Operation not permitted
+cp: can't create symlink './program/www/LANG/custom' to '/config/customize/language': Operation not permitted
+cp: can't create symlink './program/www/skin/default_1/images/logo.png' to '../../../../../tmp/logo.png': Operation not permitted
+cp: can't create symlink './program/www/skin/static/css' to '../../../../../tmp/css/': Operation not permitted
+cp: can't create symlink './program/www/skin/static/images' to '../../../../../tmp/images/': Operation not permitted
+cp: can't create symlink './program/www/Version.html' to '/tmp/Version.html': Operation not permitted
+cp: can't create symlink './program/www/script/plugins/datepicker/lang/custom' to '/config/customize/lang': Operation not permitted
+cp: can't create symlink './program/www/script/common/device_type.js' to '../../../../tmp/device_type.js': Operation not permitted
+cp: can't create symlink './program/www/fingerprint.htm' to '../../tmp/fingerprint.htm': Operation not permitted
+cp: can't create symlink './program/www/map_ports.html' to '/tmp/map_ports.html': Operation not permitted
+cp: can't create symlink './program/www/ActiveX/Setup.exe' to '../../../tmp/Setup.exe': Operation not permitted
+cp: can't create symlink './program/www/device_cap.xml' to '/config/device_cap.xml': Operation not permitted
+cp: can't create symlink './program/modules/4.19.125/build' to '/home/jenkins/IPC_BUILD/GIPCV6R2B15/SRC/DRIVER/osdrv/build/out/AX620Q_nand_arm32_k419/objs/kernel/linux/linux-4.19.125': Operation not permitted
+cp: can't create symlink './program/modules/4.19.125/source' to '/home/jenkins/IPC_BUILD/GIPCV6R2B15/SRC/DRIVER/osdrv/kernel/linux/linux-4.19.125': Operation not permitted
+root@root:/mnt/sdcard/uniview/fs$ ls prroot@root:/mnt/sdcard/uniview/fs$ ls program/[J
+[1;34mbin[m      [1;34mfactory[m  [1;34mlib[m      [1;34mmodules[m  [1;34mopt[m      [1;34mserver[m   [1;34mwww[m
+root@root:/mnt/sdcard/uniview/fs$ cd proroot@root:/mnt/sdcard/uniview/fs$ cd program/[J
+root@root:/mnt/sdcard/uniview/fs/program$ ls
+[1;34mbin[m      [1;34mfactory[m  [1;34mlib[m      [1;34mmodules[m  [1;34mopt[m      [1;34mserver[m   [1;34mwww[m
+root@root:/mnt/sdcard/uniview/fs/program$ cd p[Jbroot@root:/mnt/sdcard/uniview/fs/program$ cd bin/[J
+root@root:/mnt/sdcard/uniview/fs/program/bin$ ;s
+/bin/sh: syntax error: unexpected ";"
+root@root:/mnt/sdcard/uniview/fs/program/bin$ cd .[J[J[J[Jls
+[1;32mCalibPoly_new.bin[m
+[1;32mDelConfig.sh[m
+[1;32mM=EISSw=Move=+0000,+0216,Rotate=+000,RI=3840x2160,RO=3072x1728,Grid=32x32.json[m
+[1;32mMainFrame_sawtooth_optimize.txt[m
+[1;32mSubFrame_Divp_sawtooth_optimize.txt[m
+[1;32mSubFrame_sawtooth_optimize.txt[m
+[1;32m_hide[m
+[1;32mauto_load_all_drv.sh[m
+[1;32mautotest[m
+[1;32mautotestlog.sh[m
+[1;32mcfgtool[m
+[1;32mcheck_isp_int.sh[m
+[1;32mchecksysready.sh[m
+[1;32mcleancfg.sh[m
+[1;32mcomm_init[m
+[1;32mconfig.cfg[m
+[1;32mcontrolgpio.sh[m
+[1;32mcreathwinfo.sh[m
+[1;32mdaemon[m
+[1;32mdhcpcd_mware[m
+[1;32mdrop_caches.sh[m
+[1;32mdt[m
+[1;32mfactorymode[m
+[1;32mfc95G1.10_SWLUT.txt[m
+[1;32mfilelist.txt[m
+[1;32mgatherlog.sh[m
+[1;32mgetmanuinfo[m
+[1;32minit.sh[m
+[1;32misp_tool[m
+[1;32mittb_control[m
+[1;32mkernelsendbuff.sh[m
+[1;34mlibs[m
+[1;32mloadlensdata[m
+[1;32mlocaltime[m
+[1;32mmactool[m
+[1;32mmaintain[m
+[1;32mmanuinfotool[m
+[1;32mmma_release.sh[m
+[1;32mmountnfs.sh[m
+[1;32mmware_init.sh[m
+[1;32mmwarecmd.sh[m
+[1;32mmwareserver[m
+[1;32mnet-snmp-config[m
+[1;32mnewvermanuinfo[m
+[1;32mnpu_set_bw_limiter.sh[m
+[1;32mpanel[m
+[1;32mpasswd.sh[m
+[1;32mpppd[m
+[1;32mprepare_hide.sh[m
+[1;32mreboot.sh[m
+[1;32mresetconfig.sh[m
+[1;32msdformat[m
+[1;32msdk_update[m
+[1;32msecure_boot[m
+[1;32msetconfig.sh[m
+[1;32msignature.bin[m
+[1;32mspl.bin[m
+[1;32mssl_cert.pem[m
+[1;32mssl_cert_nobrand.pem[m
+[1;32msystemreport.sh[m
+[1;32mtmp_update[m
+[1;32mtop[m
+[1;32mudhcpc_mware[m
+[1;32mupdate_http[m
+[1;32mupdate_move[m
+[1;32mupdatecpld.sh[m
+[1;32mupdatespl.sh[m
+[1;32mwpa_supplicant[m
+root@root:/mnt/sdcard/uniview/fs/program/bin$ cd ..
+root@root:/mnt/sdcard/uniview/fs/program$ l[Jcd ..
+root@root:/mnt/sdcard/uniview/fs$ [H[Jroot@root:/mnt/sdcard/uniview/fs$ [Jls
+[1;34mprogram[m
+root@root:/mnt/sdcard/uniview/fs$ root@root:/mnt/sdcard/uniview/fs$ ls[Jroot@root:/mnt/sdcard/uniview/fs$ cd ..[Jroot@root:/mnt/sdcard/uniview/fs$ ls[Jroot@root:/mnt/sdcard/uniview/fs$ ;s[Jroot@root:/mnt/sdcard/uniview/fs$ cd bin/[J^C
+
+root@root:/mnt/sdcard/uniview/fs$ cp root@root:/mnt/sdcard/uniview/fs$ ls[Jroot@root:/mnt/sdcard/uniview/fs$ cp [J[J[J[Jcp -rP /tmproot@root:/mnt/sdcard/uniview/fs$ cp -rP /tmp/[J .[J[J[J .
+cp: can't create './tmp/SlabInfoFIFO': Operation not permitted
+cp: can't create './tmp/queue_7_fifo': Operation not permitted
+cp: can't create './tmp/queue_6_fifo': Operation not permitted
+cp: can't create './tmp/queue_5_fifo': Operation not permitted
+cp: can't create './tmp/queue_4_fifo': Operation not permitted
+cp: can't create './tmp/queue_3_fifo': Operation not permitted
+cp: can't create './tmp/queue_2_fifo': Operation not permitted
+cp: can't create './tmp/queue_1_fifo': Operation not permitted
+cp: can't create './tmp/queue_0_fifo': Operation not permitted
+cp: can't create symlink './tmp/Setup.exe' to '/program/www/ActiveX/Setup_NB.exe': Operation not permitted
+cp: can't create symlink './tmp/pstore' to '/sys/fs/pstore': Operation not permitted
+cp: can't create symlink './tmp/bin/mw_wpas_8021x' to '/program/bin/wpa_supplicant': Operation not permitted
+cp: can't create symlink './tmp/bin/mw_dhcpv6_wired' to '/program/bin/dhcpcd_mware': Operation not permitted
+cp: can't create symlink './tmp/bin/mw_dhcpcd_UNP' to '/program/bin/dhcpcd_mware': Operation not permitted
+cp: can't create symlink './tmp/bin/mw_dhcpcd_WiFi' to '/program/bin/dhcpcd_mware': Operation not permitted
+cp: can't create symlink './tmp/bin/mw_dhcpcd_4G' to '/program/bin/dhcpcd_mware': Operation not permitted
+cp: can't create symlink './tmp/bin/mw_dhcpcd_wired' to '/program/bin/dhcpcd_mware': Operation not permitted
+cp: can't create symlink './tmp/bin/update' to '/program/bin/update_move': Operation not permitted
+cp: can't preserve permissions of './tmp': Operation not permitted
+root@root:/mnt/sdcard/uniview/fs$ ls
+[1;34mprogram[m  [1;34mtmp[m
+root@root:/mnt/sdcard/uniview/fs$ cp -rp[JP /p[Jvar
+BusyBox v1.36.1 (2024-03-19 11:46:10 CST) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+root@root:/mnt/sdcard/uniview/fs$ root@root:/mnt/sdcard/uniview/fs$ cp -rP /var[J .
+cp: can't create symlink './var/flashlog' to '/config/flashlog': Operation not permitted
+cp: can't create symlink './var/log' to '/tmp/': Operation not permitted
+cp: can't create symlink './var/etc/sddpd.conf' to '/program/factory/sddpd.conf': Operation not permitted
+cp: can't preserve permissions of './var': Operation not permitted
+root@root:/mnt/sdcard/uniview/fs$ ls
+[1;34mprogram[m  [1;34mtmp[m      [1;34mvar[m
+root@root:/mnt/sdcard/uniview/fs$ ?[Jwhoaim[J[Jmi
+root
+root@root:/mnt/sdcard/uniview/fs$ ls[J[Jls /
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/mnt/sdcard/uniview/fs$ cp -rP /libroot@root:/mnt/sdcard/uniview/fs$ cp -rP /lib[J .
+cp: can't create symlink './lib/firmware' to '/program/firmware': Operation not permitted
+cp: can't create symlink './lib/modules' to '/program/modules': Operation not permitted
+cp: can't create symlink './lib/libutil.so.1' to 'libutil-2.25.so': Operation not permitted
+cp: can't create symlink './lib/libstdc++.so.6' to 'libstdc++.so.6.0.24': Operation not permitted
+cp: can't create symlink './lib/libstdc++.so' to 'libstdc++.so.6.0.24': Operation not permitted
+cp: can't create symlink './lib/librt.so.1' to 'librt-2.25.so': Operation not permitted
+cp: can't create symlink './lib/libresolv.so.2' to 'libresolv-2.25.so': Operation not permitted
+cp: can't create symlink './lib/libpthread.so.0' to 'libpthread-2.25.so': Operation not permitted
+cp: can't create symlink './lib/libnss_files.so.2' to 'libnss_files-2.25.so': Operation not permitted
+cp: can't create symlink './lib/libm.so.6' to 'libm-2.25.so': Operation not permitted
+cp: can't create symlink './lib/libgomp.so.1' to 'libgomp.so.1.0.0': Operation not permitted
+cp: can't create symlink './lib/libgomp.so' to 'libgomp.so.1.0.0': Operation not permitted
+cp: can't create symlink './lib/libdl.so.2' to 'libdl-2.25.so': Operation not permitted
+cp: can't create symlink './lib/libcrypt.so.1' to 'libcrypt-2.25.so': Operation not permitted
+cp: can't create symlink './lib/libc.so.6' to 'libc-2.25.so': Operation not permitted
+cp: can't create symlink './lib/ld-linux-armhf.so.3' to 'ld-2.25.so': Operation not permitted
+root@root:/mnt/sdcard/uniview/fs$ cp =[J-rP .[J/var .
+cp: can't create symlink './var/flashlog' to '/config/flashlog': Operation not permitted
+cp: can't create symlink './var/log' to '/tmp/': Operation not permitted
+cp: can't create symlink './var/etc/sddpd.conf' to '/program/factory/sddpd.conf': Operation not permitted
+root@root:/mnt/sdcard/uniview/fs$ cp -RP[J[JrP /etc .
+cp: can't create symlink './etc/sddpd.conf' to '/program/factory/sddpd.conf': Operation not permitted
+root@root:/mnt/sdcard/uniview/fs$ cp -rP /sbin .
+cp: can't create symlink './sbin/watchdog' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/udhcpc' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/tunctl' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/syslogd' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/sysctl' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/swapon' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/swapoff' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/start-stop-daemon' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/route' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/rmmod' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/reboot' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/poweroff' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/modprobe' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/modinfo' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/mkfs.vfat' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/mdev' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/lsmod' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/logread' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/klogd' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/iptunnel' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/iprule' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/iproute' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/ipneigh' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/iplink' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/ipaddr' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/ip' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/insmod' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/init' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/ifup' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/ifdown' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/ifconfig' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/hwclock' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/halt' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/getty' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/fsck' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/fdisk' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/devmem' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/depmod' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/blkid' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/axsyslogd' to '../bin/axbox': Operation not permitted
+cp: can't create symlink './sbin/axklogd' to '../bin/axbox': Operation not permitted
+cp: can't create symlink './sbin/arp' to '../bin/busybox': Operation not permitted
+cp: can't create symlink './sbin/adjtimex' to '../bin/busybox': Operation not permitted
+root@root:/mnt/sdcard/uniview/fs$ cp -rp[JP /binroot@root:/mnt/sdcard/uniview/fs$ cp -rP /bin/[J [J[J ,[J.
+cp: can't create symlink './bin/zcat' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/watch' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/vi' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/usleep' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/uname' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/umount' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/true' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/touch' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/tar' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/sync' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/stty' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/stat' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/sleep' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/sh' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/sed' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/rmdir' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/rm' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/pwd' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/ps' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/printenv' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/pipe_progress' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/ping6' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/ping' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/pidof' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/nice' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/netstat' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/mv' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/mpstat' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/mount' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/more' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/mknod' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/mkdir' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/lsattr' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/ls' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/login' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/ln' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/link' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/kill' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/iostat' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/ionice' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/hush' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/hostname' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/gzip' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/gunzip' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/grep' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/fsync' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/fgrep' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/false' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/egrep' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/ed' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/echo' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/dnsdomainname' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/dmesg' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/df' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/dd' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/date' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/cttyhack' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/cp' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/chown' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/chmod' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/chgrp' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/chattr' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/cat' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/base64' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/base32' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/axdmesg' to 'axbox': Operation not permitted
+cp: can't create symlink './bin/ash' to 'busybox': Operation not permitted
+cp: can't create symlink './bin/arch' to 'busybox': Operation not permitted
+root@root:/mnt/sdcard/uniview/fs$ [H[Jroot@root:/mnt/sdcard/uniview/fs$ [Jls
+[1;34mbin[m      [1;34metc[m      [1;34mlib[m      [1;34mprogram[m  [1;34msbin[m     [1;34mtmp[m      [1;34mvar[m
+root@root:/mnt/sdcard/uniview/fs$ ls /
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/mnt/sdcard/uniview/fs$ cp -rP /coroot@root:/mnt/sdcard/uniview/fs$ cp -rP /config/[J
+BusyBox v1.36.1 (2024-03-19 11:46:10 CST) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+root@root:/mnt/sdcard/uniview/fs$ root@root:/mnt/sdcard/uniview/fs$ cp -rP /config/[J[J .
+root@root:/mnt/sdcard/uniview/fs$ root@root:/mnt/sdcard/uniview/fs$ cp -rP /config .[Jg .[J .[J .[J .[J .[Ja .l . .[J .[Jf .root@root:/mnt/sdcard/uniview/fs$ cp -rP /cfgbak/ .[J .[J .
+root@root:/mnt/sdcard/uniview/fs$ root@root:/mnt/sdcard/uniview/fs$ cp -rP /cfgbak .[J .[J .[J .[J .[J .[Ja .l .root@root:/mnt/sdcard/uniview/fs$ cp -rP /calibration/ .[J .[J .
+root@root:/mnt/sdcard/uniview/fs$ root@root:/mnt/sdcard/uniview/fs$ cp -rP /calibration .[J .[J .[J .[J .[J .[J .[J .[J .[J .[J .[J .[Je . .[Js . .[Ju .s .r . .
+cp: can't create symlink './usr/local/bin' to '/program/bin': Operation not permitted
+cp: can't create symlink './usr/sbin/pppd' to '/program/bin/pppd': Operation not permitted
+cp: can't create symlink './usr/sbin/udhcpd' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/seedrng' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/powertop' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/ntpd' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/nandwrite' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/nanddump' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/mim' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/killall5' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/i2ctransfer' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/i2cset' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/i2cget' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/i2cdump' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/i2cdetect' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/flash_eraseall' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/dhcprelay' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/deluser' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/chroot' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/chpasswd' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/arping' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/sbin/adduser' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/yes' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/xxd' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/xargs' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/whoami' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/who' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/which' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/wc' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/w' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/uuencode' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/uudecode' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/users' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/uptime' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/unzip' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/unlink' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/unix2dos' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/uniq' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/unexpand' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/udhcpc6' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/tty' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/tsort' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/truncate' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/tree' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/traceroute6' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/traceroute' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/tr' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/top' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/timeout' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/time' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/tftp' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/test' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/telnet' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/tee' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/tail' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/tac' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/sum' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/strings' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/split' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/sort' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/smemcap' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/shuf' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/shred' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/seq' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/realpath' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/readlink' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/pwdx' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/pstree' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/pscan' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/printf' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/pmap' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/pkill' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/pgrep' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/paste' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/passwd' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/od' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/nproc' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/nohup' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/nmeter' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/nl' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/mkfifo' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/microcom' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/md5sum' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/lsusb' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/lsof' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/logname' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/logger' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/less' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/killall' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/install' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/id' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/hostid' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/hexdump' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/head' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/hd' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/groups' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/fuser' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/ftpput' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/ftpget' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/free' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/fold' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/find' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/factor' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/expr' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/expand' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/env' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/dumpleases' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/du' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/dos2unix' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/dirname' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/cut' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/crc32' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/cmp' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/bzip2' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/bunzip2' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/basename' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/awk' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/ascii' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/[[' to '../../bin/busybox': Operation not permitted
+cp: can't create symlink './usr/bin/[' to '../../bin/busybox': Operation not permitted
+root@root:/mnt/sdcard/uniview/fs$ [H[Jroot@root:/mnt/sdcard/uniview/fs$ [Jls
+[1;34mbin[m          [1;34mcfgbak[m       [1;34metc[m          [1;34mprogram[m      [1;34mtmp[m          [1;34mvar[m
+[1;34mcalibration[m  [1;34mconfig[m       [1;34mlib[m          [1;34msbin[m         [1;34musr[m
+root@root:/mnt/sdcard/uniview/fs$ cd ..
+root@root:/mnt/sdcard/uniview$ ls
+[1;34mbins[m  [1;34mfs[m
+root@root:/mnt/sdcard/uniview$ cd binroot@root:/mnt/sdcard/uniview$ cd bins/[J
+root@root:/mnt/sdcard/uniview/bins$ df -h | grep sdcard
+df: /dev/pts: No such file or directory
+/dev/mmcblk0p1          510.0M    186.9M    323.1M  37% /mnt/sdcard
+root@root:/mnt/sdcard/uniview/bins$ um[J[Jcd /
+root@root:/$ umount /mroot@root:/$ umount /mnt/[Jsdroot@root:/$ umount /mnt/sdcard/[J
+root@root:/$ ls[J[Jdf -gr[J[Jh
+Filesystem                Size      Used Available Use% Mounted on
+df: /dev/pts: No such file or directory
+tmpfs                    88.5M   1020.0K     87.6M   1% /tmp
+tmpfs                    52.1M    132.0K     52.0M   0% /var
+devtmpfs                 50.9M         0     50.9M   0% /dev
+tmpfs                    88.5M   1020.0K     87.6M   1% /root
+ubi0:program             79.9M     44.5M     35.4M  56% /program
+ubi1:config               4.3M    340.0K      3.7M   8% /config
+ubi2:cfgbak               2.5M    160.0K      2.1M   7% /cfgbak
+ubi3:calibration          2.5M     24.0K      2.3M   1% /calibration
+tmpfs                    52.1M    132.0K     52.0M   0% /etc
+root@root:/$ root@root:/$ df -h[Jroot@root:/$ umount /mnt/sdcard/[Jroot@root:/$ df -h[J
+Filesystem                Size      Used Available Use% Mounted on
+df: /dev/pts: No such file or directory
+tmpfs                    88.5M      1.0M     87.5M   1% /tmp
+tmpfs                    52.1M    132.0K     52.0M   0% /var
+devtmpfs                 50.9M         0     50.9M   0% /dev
+tmpfs                    88.5M      1.0M     87.5M   1% /root
+ubi0:program             79.9M     44.5M     35.4M  56% /program
+ubi1:config               4.3M    340.0K      3.7M   8% /config
+ubi2:cfgbak               2.5M    160.0K      2.1M   7% /cfgbak
+ubi3:calibration          2.5M     24.0K      2.3M   1% /calibration
+tmpfs                    52.1M    132.0K     52.0M   0% /etc
+/dev/mmcblk0p1          510.0M    186.9M    323.1M  37% /mnt/sdcard
+root@root:/$ [H[Jroot@root:/$ [Jdd if= .[J[J/devroot@root:/$ dd if=/dev/[Jmroot@root:/$ dd if=/dev/m[Jtroot@root:/$ dd if=/dev/mtd[Jbroot@root:/$ dd if=/dev/mtdblock[J0root@root:/$ dd if=/dev/mtdblock0 [Jof=/mnroot@root:/$ dd if=/dev/mtdblock0 of=/mnt/[Jsroot@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/[Jmroot@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/meta-data [J[J[J[J[J[J[J[J[J[Jtdblo[J[J[J[J[J[Junroot@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/[Jbroot@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/[Jmtdblock0.bin bs =
+[1A[79C[J[J=4
+M
+dd: /dev/mtdblock0: Input/output error
+root@root:/$ ls d[J/dev [J.[J/nt[J[Jmtdroot@root:/$ ls /dev/mtd[Jbloroot@root:/$ ls /dev/mtdblock[J0root@root:/$ ls /dev/mtdblock0 [J
+[1;35m/dev/mtdblock0[m
+root@root:/$ ls /mroot@root:/$ ls /mnt/[Jsroot@root:/$ ls /mnt/sdcard/[Juroot@root:/$ ls /mnt/sdcard/u[Jb[Jnroot@root:/$ ls /mnt/sdcard/uniview/[Jbroot@root:/$ ls /mnt/sdcard/uniview/bins/[Jmroot@root:/$ ls /mnt/sdcard/uniview/bins/mtdblock0.bin [J[J[J[J[J[J[J[J[J[J[J[J[J[J[J
+[1;32mmtdblock0.bin[m
+root@root:/$ root@root:/$ ls /mnt/sdcard/uniview/bins/[Jroot@root:/$ ls /dev/mtdblock0 [Jroot@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=4
+M[J[J[1A[79C[J4
+M
+dd: /dev/mtdblock0: Input/output error
+root@root:/$ root@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=4
+M[J[1Aroot@root:/$ ls /mnt/sdcard/uniview/bins/[Jroot@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=4
+M[J[1A[79C0.bin bs=4M
+[J[1A[70C1.bin bs=4
+M[1A[71C of=/mnt/sdcard/uniview/bins/mtdblock1.bin bs=4M
+[J[1A[32C1 of=/mnt/sdcard/uniview/bins/mtdblock1.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock1.bin bs=4
+M
+dd: /dev/mtdblock1: Input/output error
+root@root:/$ root@root:/$ dd if=/dev/mtdblock1 of=/mnt/sdcard/uniview/bins/mtdblock1.bin bs=4
+M[J[1A[79C.bin bs=4M
+[J[1A[70C2.bin bs=4
+M[1A[71Cmtdblock1 of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4M
+[J[1A[32C2 of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4
+M
+0+1 records in
+0+1 records out
+524288 bytes (512.0KB) copied, 0.316059 seconds, 1.6MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock2 of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4
+M[J^C
+
+root@root:/$ root@root:/$ dd if=/dev/mtdblock2 of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4
+M[J[1A[79Cmtdblock2.bin bs=4M
+[J[1A[70C3.bin bs=4
+M[1A[71C2 of=/mnt/sdcard/uniview/bins/mtdblock3.bin bs=4M
+[J[1A[32C3 of=/mnt/sdcard/uniview/bins/mtdblock3.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock3.bin bs=4
+M
+0+1 records in
+0+1 records out
+2097152 bytes (2.0MB) copied, 1.515451 seconds, 1.3MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock3 of=/mnt/sdcard/uniview/bins/mtdblock3.bin bs=4
+M[J[1A[79C.bin bs=4M
+[J[1A[70C4.bin bs=4
+M[1A[71Cmtdblock3 of=/mnt/sdcard/uniview/bins/mtdblock4.bin bs=4M
+[J[1A[32C3 of=/mnt/sdcard/uniview/bins/mtdblock4.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock4.bin bs=4
+M
+
+root@root:/$ root@root:/$ dd if=/dev/mtdblock3 of=/mnt/sdcard/uniview/bins/mtdblock4.bin bs=4
+M[J[1A[79C of=/mnt/sdcard/uniview/bins/mtdblock4.bin bs=4M
+[J[1A[32C4 of=/mnt/sdcard/uniview/bins/mtdblock4.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock4.bin bs=4
+M
+0+1 records in
+0+1 records out
+524288 bytes (512.0KB) copied, 0.303433 seconds, 1.6MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock4 of=/mnt/sdcard/uniview/bins/mtdblock4.bin bs=4
+M[J[1A[79C.bin bs=4M
+[J[1A[70C5.bin bs=4
+M[1A[71C4 of=/mnt/sdcard/uniview/bins/mtdblock5.bin bs=4M
+[J[1A[32C5 of=/mnt/sdcard/uniview/bins/mtdblock5.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock5.bin bs=4
+M
+1+1 records in
+1+1 records out
+6291456 bytes (6.0MB) copied, 3.512369 seconds, 1.7MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock5 of=/mnt/sdcard/uniview/bins/mtdblock5.bin bs=4
+M[J[1A[79Cmtdblock5.bin bs=4M
+[J[1A[70C5.bin bs=4
+M[1A[71C.bin bs=4M
+[J[1A[70C6.bin bs=4
+M[1A[71C of=/mnt/sdcard/uniview/bins/mtdblock6.bin bs=4M
+[J[1A[32C6 of=/mnt/sdcard/uniview/bins/mtdblock6.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock6.bin bs=4
+M
+0+1 records in
+0+1 records out
+1048576 bytes (1.0MB) copied, 0.518086 seconds, 1.9MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock6 of=/mnt/sdcard/uniview/bins/mtdblock6.bin bs=4
+M[J[1A[79C.bin bs=4M
+[J[1A[70C7.bin bs=4
+M[1A[71Cmtdblock6 of=/mnt/sdcard/uniview/bins/mtdblock7.bin bs=4M
+[J[1A[32C7 of=/mnt/sdcard/uniview/bins/mtdblock7.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock7.bin bs=4
+M
+2+0 records in
+2+0 records out
+8388608 bytes (8.0MB) copied, 4.562254 seconds, 1.8MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock7 of=/mnt/sdcard/uniview/bins/mtdblock7.bin bs=4
+M[J[1A[79C.bin bs=4M
+[J[1A[70C8.bin bs=4
+M[1A[71C of=/mnt/sdcard/uniview/bins/mtdblock8.bin bs=4M
+[J[1A[32C8 of=/mnt/sdcard/uniview/bins/mtdblock8.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock8.bin bs=4
+M
+0+1 records in
+0+1 records out
+1048576 bytes (1.0MB) copied, 0.608102 seconds, 1.6MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock8 of=/mnt/sdcard/uniview/bins/mtdblock8.bin bs=4
+M[J[1A[79C.bin bs=4M
+[J[1A[70C9.bin bs=4
+M[1A[71C of=/mnt/sdcard/uniview/bins/mtdblock9.bin bs=4M
+[J[1A[32C9 of=/mnt/sdcard/uniview/bins/mtdblock9.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock9.bin bs=4
+M
+1+1 records in
+1+1 records out
+6291456 bytes (6.0MB) copied, 3.542684 seconds, 1.7MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock9 of=/mnt/sdcard/uniview/bins/mtdblock9.bin bs=4
+M[J[1A[79C.bin bs=4M
+[J[1A[70C1.bin bs=4
+M[1A[71C0.bin bs=
+4M[1A[72C of=/mnt/sdcard/uniview/bins/mtdblock10.bin bs=4
+M[J[1A[32C1 of=/mnt/sdcard/uniview/bins/mtdblock10.bin bs=
+4M[1A[33C0 of=/mnt/sdcard/uniview/bins/mtdblock10.bin bs
+=4M[1A[34C of=/mnt/sdcard/uniview/bins/mtdblock10.bin bs
+=4M
+1+1 records in
+1+1 records out
+7340032 bytes (7.0MB) copied, 3.802368 seconds, 1.8MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock10 of=/mnt/sdcard/uniview/bins/mtdblock10.bin bs
+=4M[J[1A[79Cmtdblock10.bin bs=
+4M[J[1A[72C1.bin bs
+=4M[1A[73C of=/mnt/sdcard/uniview/bins/mtdblock11.bin bs=
+4M[J[1A[33C1 of=/mnt/sdcard/uniview/bins/mtdblock11.bin bs
+=4M[1A[34C of=/mnt/sdcard/uniview/bins/mtdblock11.bin bs
+=4M
+0+1 records in
+0+1 records out
+524288 bytes (512.0KB) copied, 0.291951 seconds, 1.7MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock11 of=/mnt/sdcard/uniview/bins/mtdblock11.bin bs
+=4M[J[1A[79C.bin bs=
+4M[J[1A[72C2.bin bs
+=4M[1A[73C of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs=
+4M[J[1A[33C2 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=4M[1A[34C of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=4M
+dd: /dev/mtdblock12: Input/output error
+root@root:/$ root@root:/$ dd if=/dev/mtdblock12 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=4M[J[1A[79C.bin bs=
+4M[J[1A[72C3.bin bs
+=4M[1A[73C of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs=
+4M[J[1A[33C3 of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs
+=4M[1A[34C of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs
+=4M
+0+1 records in
+0+1 records out
+524288 bytes (512.0KB) copied, 0.300694 seconds, 1.7MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock13 of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs
+=4M[J[1A[79C.bin bs=
+4M[J[1A[72C2.bin bs
+=4M[1A[73Cmtdblock13 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs=
+4M[J[1A[33C2 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=4M[1A[34C of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=4M
+dd: /dev/mtdblock12: Input/output error
+root@root:/$ dmesg
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.19.125 (jenkins@root123) (gcc version 7.5.0 (Linaro GCC 7.5-2019.12)) #1 SMP PREEMPT Mon Jun 17 18:12:19 CST 2024
+[    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=50c5383d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: axera,ax620e
+[    0.000000] ENC:0302C5TP;SEN:0302C4XQ;LENS:4801C0G2
+[    0.000000] PROTOTYPE_NAME:IPC3624LE-ADF28K-WP
+[    0.000000] chip type: 0x1
+[    0.000000] memory total: 0x10000000, Media: 0x9000000
+[    0.000000] earlycon: uart8250 at MMIO32 0x04880000 (options '')
+[    0.000000] bootconsole [uart8250] enabled
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 28672
+[    0.000000]   Normal zone: 224 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 28672 pages, LIFO batch:7
+[    0.000000] percpu: Embedded 18 pages/cpu s44236 r8192 d21300 u73728
+[    0.000000] pcpu-alloc: s44236 r8192 d21300 u73728 alloc=18*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 28448
+[    0.000000] Kernel command line: mem=112M console=ttyS0,115200n8 loglevel=8 earlycon=uart8250,mmio32,0x4880000 board_id=0,boot_reason=0x0 root=/dev/axramdisk rw rootfstype=ext2 init=/linuxrc mtdparts=spi4.0:1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 104156K/114688K available (3967K kernel code, 222K rwdata, 1384K rodata, 2516K init, 396K bss, 10532K reserved, 0K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xc7800000 - 0xff800000   ( 896 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xc7000000   ( 112 MB)
+[    0.000000]     modules : 0xbf800000 - 0xc0000000   (   8 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (3969 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (2516 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 223 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 397 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000004] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.008019] Switching to timer-based delay loop, resolution 41ns
+[    0.016608] Console: colour dummy device 80x30
+[    0.021083] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=120000)
+[    0.031455] pid_max: default: 32768 minimum: 301
+[    0.036172] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.042802] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.050252] CPU: Testing write buffer coherency: ok
+[    0.055393] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.091153] Setting up static identity map for 0x40008240 - 0x40008278
+[    0.107718] rcu: Hierarchical SRCU implementation.
+[    0.127746] smp: Bringing up secondary CPUs ...
+[    0.157967] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.158064] smp: Brought up 1 node, 2 CPUs
+[    0.167853] SMP: Total of 2 processors activated (96.00 BogoMIPS).
+[    0.174048] CPU: All CPU(s) started in SVC mode.
+[    0.179253] devtmpfs: initialized
+[    0.210140] random: get_random_u32 called from bucket_table_alloc+0x63/0x118 with crng_init=0
+[    0.218862] VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+[    0.226730] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 9556302231375000 ns
+[    0.236501] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.242724] pinctrl core: initialized pinctrl subsystem
+[    0.248214] NET: Registered protocol family 16
+[    0.252948] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.260682] ax_pin_init ret 0 index 7
+[    0.265908] console [pstore-1] enabled
+[    0.269664] pstore: Registered ramoops as persistent store backend
+[    0.275864] ramoops: attached 0x8000@0x41000000, ecc: 0/0
+[    0.293961] SCSI subsystem initialized
+[    0.297878] usbcore: registered new interface driver usbfs
+[    0.303425] usbcore: registered new interface driver hub
+[    0.308800] usbcore: registered new device driver usb
+[    0.314492] pps_core: LinuxPPS API ver. 1 registered
+[    0.319484] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.328646] PTP clock support registered
+[    0.332788] Advanced Linux Sound Architecture Driver Initialized.
+[    0.339977] dma_per 48a0000.dma_per: Axera DMA Peripherals Controller, 16 channels
+[    0.347992] dma:ax_dma_probe:1605: done
+[    0.352199] clocksource: Switched to clocksource arch_sys_counter
+[    0.362875] NET: Registered protocol family 2
+[    0.367711] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+[    0.375415] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.382410] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.388797] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.395222] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.401087] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.407468] NET: Registered protocol family 1
+[    0.412119] RPC: Registered named UNIX socket transport module.
+[    0.418066] RPC: Registered udp transport module.
+[    0.422789] RPC: Registered tcp transport module.
+[    0.427506] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.543121] workingset: timestamp_bits=30 max_order=15 bucket_order=0
+[    0.553713] axera_logctl_init: of_find_compatible_node 'axera,logctl' success!!!
+[    0.553719] axera_logctl_init: of_find_compatible_node config: /etc/ax_syslog.conf
+[    0.561196] axera_logctl_init: logstate:1 1 len:2
+[    0.573518] axera_logctl_init: loglevel:4 4 len:2
+[    0.578471] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.584788] NFS: Registering the id_resolver key type
+[    0.589876] Key type id_resolver registered
+[    0.594073] Key type id_legacy registered
+[    0.598117] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.607056] io scheduler noop registered (default)
+[    0.611891] io scheduler mq-deadline registered
+[    0.616442] io scheduler kyber registered
+[    0.621671] axera-pinctrl 2300000.pinctrl: initialized pinctrl driver
+[    0.631905] ax_os_mem_init
+[    0.634778] [GZIP][D]: [     1][ax_gzipd_init : 730] enter ax_gzipd_init
+[    0.642322] Serial: 8250/16550 driver, 5 ports, IRQ sharing disabled
+[    0.649695] console [ttyS0] disabled
+[    0.653343] 4880000.ax_uart: ttyS0 at MMIO 0x4880000 (irq = 20, base_baud = 13000000) is a 16550A
+[    0.662270] console [ttyS0] enabled
+[    0.669253] bootconsole [uart8250] disabled
+[    0.678833] null: module loaded
+[    0.682514] ax_ramdisk_init:can't find ramdisk device tree node
+[    0.689407] dw_spi_setup: rx_sample_dly_ns=0x6, chip->rx_sample_dly=0x3
+[    0.696182] spi_master spi4: set clk_div=0x4, speed_hz=104000000, dws->max_freq=416000000
+[    0.704382] spi_master spi4: set rx_sample_dly=0x3
+[    0.709227] spi-nand spi4.0: FudanMicroelec SPI NAND was found.
+[    0.715163] spi-nand spi4.0: 128 MiB, block size: 128 KiB, page size: 2048, OOB size: 64
+[    0.723769] 13 cmdlinepart partitions found on MTD device spi4.0
+[    0.729792] Creating 13 MTD partitions on "spi4.0":
+[    0.734683] 0x000000000000-0x000000100000 : "spl"
+[    0.740702] 0x000000100000-0x000000180000 : "ddrinit"
+[    0.746577] 0x000000180000-0x000000380000 : "uboot"
+[    0.753661] 0x000000380000-0x000000400000 : "env"
+[    0.759189] 0x000000400000-0x000000a00000 : "calibration"
+[    0.770425] 0x000000a00000-0x000000b00000 : "cliinfo"
+[    0.776764] 0x000000b00000-0x000001300000 : "config"
+[    0.789388] 0x000001300000-0x000001400000 : "runtime"
+[    0.795725] 0x000001400000-0x000001a00000 : "cfgbak"
+[    0.806521] 0x000001a00000-0x000002100000 : "kernel"
+[    0.818253] 0x000002100000-0x000002180000 : "update"
+[    0.824081] 0x000002180000-0x000007f80000 : "program"
+[    0.915171] 0x000007f80000-0x000008000000 : "other"
+[    0.921151] libphy: Fixed MDIO Bus: probed
+[    0.925316] tun: Universal TUN/TAP device driver, 1.6
+[    0.930607] stmmaceth 104c0000.ethernet: probe axera emac
+[    0.936125] stmmaceth 104c0000.ethernet: phy-rst-gpio not configure
+[    0.942429] stmmaceth 104c0000.ethernet: emac bus clock: 312MHz
+[    0.948391] stmmaceth 104c0000.ethernet: emac phy clock: 25MHz
+[    0.954270] stmmaceth 104c0000.ethernet: PTP rate: 50MHz
+[    0.959612] stmmaceth 104c0000.ethernet: reset axera emac...
+[    0.970294] stmmaceth 104c0000.ethernet: EMAC: select Inner RMII interface, value:0x00000000
+[    0.978865] stmmaceth 104c0000.ethernet: User ID: 0x10, Synopsys ID: 0x52
+[    0.985670] stmmaceth 104c0000.ethernet: 	DWMAC4/5
+[    0.990473] stmmaceth 104c0000.ethernet: DMA HW capability register supported
+[    0.997623] stmmaceth 104c0000.ethernet: RX Checksum Offload Engine supported
+[    1.004768] stmmaceth 104c0000.ethernet: TX Checksum insertion supported
+[    1.011479] stmmaceth 104c0000.ethernet: Wake-Up On Lan supported
+[    1.017585] stmmaceth 104c0000.ethernet: TSO supported
+[    1.022734] stmmaceth 104c0000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+[    1.030411] stmmaceth 104c0000.ethernet: Enabling HW TC (entries=256, max_off=256)
+[    1.037997] stmmaceth 104c0000.ethernet: USO feature enabled
+[    1.043666] stmmaceth 104c0000.ethernet: TSO feature enabled
+[    1.049415] libphy: stmmac: probed
+[    1.055800] PPP generic driver version 2.4.2
+[    1.060224] PPP BSD Compression module registered
+[    1.064946] PPP Deflate Compression module registered
+[    1.070009] NET: Registered protocol family 24
+[    1.074813] axera dwc3 soc:axera_dwc3: axera usb probe
+[    1.080138] axera dwc3 soc:axera_dwc3: usb bus clock: 312MHz
+[    1.085827] axera dwc3 soc:axera_dwc3: axera usb clk set succeed.
+[    1.091956] axera dwc3 soc:axera_dwc3: axera usb reset succeed.
+[    1.098147] dwc3 8000000.dwc3: probe later.
+[    1.102801] usbcore: registered new interface driver cdc_acm
+[    1.108473] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.116631] usbcore: registered new interface driver uas
+[    1.121989] usbcore: registered new interface driver usb-storage
+[    1.128067] usbcore: registered new interface driver usbserial_generic
+[    1.134621] usbserial: USB Serial support registered for generic
+[    1.176590] rtc_axera 23e0000.rtc-top: rtc core: registered 23e0000.rtc-top as rtc0
+[    1.184353] i2c /dev entries driver
+[    1.189320] ax_wdt:ax_wdt_drv_probe:346: done!
+[    1.189663] sdhci: Secure Digital Host Controller Interface driver
+[    1.200329] sdhci: Copyright(c) Pierre Ossman
+[    1.204720] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.204810] sdhci-axera 104e0000.sdhc: axera sdhci probe
+[    1.211050] usbcore: registered new interface driver usbhid
+[    1.218003] get cd gpio failed
+[    1.221293] usbhid: USB HID core driver
+[    1.230053] dev->intr_type = 0
+[    1.233143] dw_i2s_probe, hdmi_i2s: 0
+[    1.236907] config pin_sd_misc to 0x300100
+[    1.241032] dw_i2s_probe get irq is -6
+[    1.244803] IIS get i2s_mclk: 12288000
+[    1.248566] IIS get i2s_mclk: 12288000
+[    1.252359] IIS probe OK
+[    1.254941] dev->intr_type = 1
+[    1.258007] dw_i2s_probe, hdmi_i2s: 0
+[    1.261726] config pin_sd_misc to 0x300100
+[    1.265841] dw_i2s_probe get irq is -6
+[    1.269604] IIS get i2s_mclk: 12288000
+[    1.273363] IIS get i2s_mclk: 12288000
+[    1.277134] IIS probe OK
+[    1.280025] ax_actt_probe
+[    1.282711] designware-actt 23f2000.audio_codec: No cache used with register defaults set!
+[    1.291089] oprofile: hardware counters not available
+[    1.292283] mmc0: SDHCI controller on 104e0000.sdhc [104e0000.sdhc] using ADMA 64-bit
+[    1.296160] oprofile: using timer interrupt.
+[    1.304014] sdhci_cdns_read_phy_reg: phy lock successful
+[    1.308919] NET: Registered protocol family 10
+[    1.336429] Segment Routing with IPv6
+[    1.340237] mip6: Mobile IPv6
+[    1.343695] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.350365] NET: Registered protocol family 17
+[    1.354904] l2tp_core: L2TP core driver, V2.0
+[    1.359283] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.364106] Key type dns_resolver registered
+[    1.368557] Registering SWP/SWPB emulation handler
+[    1.373362] chip type: AX620Q
+[    1.376338] product init ok
+[    1.379897] pstore: Using compression: deflate
+[    1.385326] i2c_designware 4850000.i2c: running with gpio recovery mode! scl,sda
+[    1.392904] i2c i2c-0: using pinctrl states for GPIO recovery
+[    1.399059] i2c_designware 4851000.i2c: running with gpio recovery mode! scl,sda
+[    1.406594] i2c i2c-1: using pinctrl states for GPIO recovery
+[    1.412714] dwc3 8000000.dwc3: dr_mode is 3 (1-host 2-device 3-otg)
+[    1.419020] dwc3 8000000.dwc3: EP NUM:16
+[    1.423263] actt_component_probe
+[    1.423263]  
+[    1.423399] bengin actt_set_sysclk
+[    1.428205] actt_set_sysclk, freq: 12288000
+[    1.435799] actt_set_dai_fmt, fmt: 0x1001
+[    1.439816] actt_set_dai_fmt, actt rx only support master fmt_mode: 0x1000
+[    1.446699] actt in I2S Format
+[    1.449762] dw_i2s_set_fmt, fmt: 0x1001
+[    1.454151] asoc-simple-card sound: 23f2000.audio_codec <-> 6051000.i2s_slv mapping ok
+[    1.462079] bengin actt_set_sysclk
+[    1.462081] actt_set_sysclk, freq: 12288000
+[    1.469680] actt_set_dai_fmt, fmt: 0x4001
+[    1.473696] actt_set_dai_fmt, actt tx only support salve .fmt_mode: 0x4000
+[    1.480578] actt in I2S Format
+[    1.483640] dw_i2s_set_fmt, fmt: 0x4001
+[    1.487999] asoc-simple-card sound: 23f2000.audio_codec <-> 6050000.i2s_mst mapping ok
+[    1.496112] dwc3 8000000.dwc3: axera usb gadget init
+[    1.512776] rtc_axera 23e0000.rtc-top: setting system clock to 1970-01-01 08:00:00 UTC (28800)
+[    1.521823] OF: fdt: not creating '/sys/firmware/fdt': CRC check failed
+[    1.528717] ALSA device list:
+[    1.531687]   #0: Axera Audio
+[    1.534825] ttyS0 - failed to request DMA
+[    1.540772] Freeing unused kernel memory: 2516K
+[    1.545313] This architecture does not have kernel memory protection.
+[    1.551763] Run /init as init process
+[    1.853998] ubi0: default fastmap pool size: 35
+[    1.858785] ubi0: default fastmap WL pool size: 17
+[    1.863594] ubi0: attaching mtd12
+[    1.909817] random: fast init done
+[    2.137369] ubi0: scanning is finished
+[    2.149714] ubi0: attached mtd12 (name "program", size 94 MiB)
+[    2.155591] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.162488] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.169289] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.176264] ubi0: good PEBs: 751, bad PEBs: 1, corrupted PEBs: 0
+[    2.182326] ubi0: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.189564] ubi0: max/mean erase counter: 4/1, WL threshold: 4096, image sequence number: 1390195764
+[    2.198711] ubi0: available PEBs: 0, total reserved PEBs: 751, PEBs reserved for bad PEB handling: 15
+[    2.207983] ubi0: background thread "ubi_bgt0d" started, PID 169
+[    2.224352] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 176
+[    2.254879] UBIFS (ubi0:0): recovery needed
+[    2.331825] UBIFS (ubi0:0): recovery completed
+[    2.336813] UBIFS (ubi0:0): UBIFS: mounted UBI device 0, volume 0, name "program"
+[    2.344311] UBIFS (ubi0:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.354240] UBIFS (ubi0:0): FS size: 91295744 bytes (87 MiB, 719 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+[    2.364687] UBIFS (ubi0:0): reserved for root: 0 bytes (0 KiB)
+[    2.370591] UBIFS (ubi0:0): media format: w4/r0 (latest is w5/r0), UUID 5AA93821-CE3B-42DF-8B4C-323281550D45, small LPT model
+[    2.397118] ubi1: default fastmap pool size: 8
+[    2.401624] ubi1: default fastmap WL pool size: 4
+[    2.406344] ubi1: attaching mtd7
+[    2.433135] ubi1: scanning is finished
+[    2.444603] ubi1: attached mtd7 (name "config", size 8 MiB)
+[    2.450235] ubi1: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.457137] ubi1: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.463949] ubi1: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.470931] ubi1: good PEBs: 64, bad PEBs: 0, corrupted PEBs: 0
+[    2.476911] ubi1: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.484152] ubi1: max/mean erase counter: 25/14, WL threshold: 4096, image sequence number: 3376025183
+[    2.493473] ubi1: available PEBs: 0, total reserved PEBs: 64, PEBs reserved for bad PEB handling: 4
+[    2.503223] ubi1: background thread "ubi_bgt1d" started, PID 186
+[    2.524648] UBIFS (ubi1:0): background thread "ubifs_bgt1_0" started, PID 193
+[    2.558897] UBIFS (ubi1:0): recovery needed
+[    2.660950] UBIFS (ubi1:0): recovery completed
+[    2.665939] UBIFS (ubi1:0): UBIFS: mounted UBI device 1, volume 0, name "config"
+[    2.673350] UBIFS (ubi1:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.683279] UBIFS (ubi1:0): FS size: 5586944 bytes (5 MiB, 44 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    2.693378] UBIFS (ubi1:0): reserved for root: 263884 bytes (257 KiB)
+[    2.699831] UBIFS (ubi1:0): media format: w5/r0 (latest is w5/r0), UUID 6D0233DC-6B50-42EA-8560-1142E2371A7A, small LPT model
+[    2.725878] ubi2: default fastmap pool size: 8
+[    2.730400] ubi2: default fastmap WL pool size: 4
+[    2.735138] ubi2: attaching mtd9
+[    2.756111] ubi2: scanning is finished
+[    2.767301] ubi2: attached mtd9 (name "cfgbak", size 6 MiB)
+[    2.772918] ubi2: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.779827] ubi2: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.786628] ubi2: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.793614] ubi2: good PEBs: 48, bad PEBs: 0, corrupted PEBs: 0
+[    2.799546] ubi2: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.806790] ubi2: max/mean erase counter: 24/14, WL threshold: 4096, image sequence number: 1034400906
+[    2.816121] ubi2: available PEBs: 0, total reserved PEBs: 48, PEBs reserved for bad PEB handling: 4
+[    2.825198] ubi2: background thread "ubi_bgt2d" started, PID 203
+[    2.841596] UBIFS (ubi2:0): background thread "ubifs_bgt2_0" started, PID 210
+[    2.872128] UBIFS (ubi2:0): recovery needed
+[    2.961691] UBIFS (ubi2:0): recovery completed
+[    2.966680] UBIFS (ubi2:0): UBIFS: mounted UBI device 2, volume 0, name "cfgbak"
+[    2.974092] UBIFS (ubi2:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.984021] UBIFS (ubi2:0): FS size: 3555328 bytes (3 MiB, 28 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    2.994120] UBIFS (ubi2:0): reserved for root: 167926 bytes (163 KiB)
+[    3.000573] UBIFS (ubi2:0): media format: w5/r0 (latest is w5/r0), UUID 53E3460B-080A-4FEE-AEE2-4B0AFEB51CC3, small LPT model
+[    3.026619] ubi3: default fastmap pool size: 8
+[    3.031140] ubi3: default fastmap WL pool size: 4
+[    3.035877] ubi3: attaching mtd5
+[    3.056837] ubi3: scanning is finished
+[    3.067299] ubi3: attached mtd5 (name "calibration", size 6 MiB)
+[    3.073351] ubi3: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    3.080260] ubi3: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    3.087060] ubi3: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    3.094047] ubi3: good PEBs: 48, bad PEBs: 0, corrupted PEBs: 0
+[    3.099978] ubi3: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    3.107225] ubi3: max/mean erase counter: 7/3, WL threshold: 4096, image sequence number: 3091558067
+[    3.116370] ubi3: available PEBs: 0, total reserved PEBs: 48, PEBs reserved for bad PEB handling: 4
+[    3.125449] ubi3: background thread "ubi_bgt3d" started, PID 220
+[    3.139696] UBIFS (ubi3:0): background thread "ubifs_bgt3_0" started, PID 226
+[    3.207219] UBIFS (ubi3:0): UBIFS: mounted UBI device 3, volume 0, name "calibration"
+[    3.215075] UBIFS (ubi3:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    3.225006] UBIFS (ubi3:0): FS size: 3555328 bytes (3 MiB, 28 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    3.235108] UBIFS (ubi3:0): reserved for root: 167926 bytes (163 KiB)
+[    3.241561] UBIFS (ubi3:0): media format: w5/r0 (latest is w5/r0), UUID BF7BD558-BC9A-4D8D-B2C4-EE4F6925CECD, small LPT model
+[    3.277149] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" stops
+[    6.217231] random: crng init done
+[    6.240329] NetUserDrv: loading out-of-tree module taints kernel.
+[    6.247062] NET_USR module init ok!
+[    6.259151] NET_DBG module init ok!
+[    6.268858] stmmaceth 104c0000.ethernet: axera_reset_phy
+[    6.279020] stmmaceth 104c0000.ethernet: ephy bgs=0x1, trim=0x7, ephy0_reg=0x410021d1
+[    6.392200] ax_ephy_config_init
+[    6.527205] AX620E Fast Ethernet stmmac-0:01: attached PHY driver [AX620E Fast Ethernet] (mii_bus:phy_addr=stmmac-0:01, irq=POLL)
+[    6.549671] stmmaceth 104c0000.ethernet eth0: No Safety Features support found
+[    6.556917] stmmaceth 104c0000.ethernet eth0: IEEE 1588-2008 Advanced Timestamp supported
+[    6.565266] stmmaceth 104c0000.ethernet eth0: registered PTP clock
+[    6.571892] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    6.778804] npu 3800000.ax_npu: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 594000000, volt: 0, enabled: 1. New: freq: 594000000, volt: 0, enabled: 1
+[    6.829426] unsupport register display0
+[    6.834927] unsupport register display1
+[    7.666554] manuparse_inf[Manuparse_Init                : 293 ]ProductName[IPC3624LE-ADF28K-WP]
+[    7.675380] manuparse_inf[Manuparse_Init                : 294 ]BuildInfo[ENC-0302C5TP;SEN-0302C4XQ;LENS-4801C0G2]
+[    7.685682] manuparse_inf[Manuparse_Init                : 295 ]SerialNum[210235UEDW3247000191]
+[    7.694421] manuparse_inf[Manuparse_AnalysisSensorType  : 96  ]Sensor[0] type[589841] name[sc450ai]
+[    7.703494] manuparse_inf[Manuparse_AnalysisSpecialImageInv: 178 ]SpecialImgInverse[0]
+[    7.711424] manuparse_war[Manuparse_AnalysisLightInfo   : 152 ]Product type[1] no Light info
+[    7.719890] manuparse_inf[Manuparse_AnalysisFormCap     : 105 ]Manuparse form type [0]
+[    7.727825] manuparse_war[Manuparse_AnalysisLensInfo    : 89  ]Lens[0] build[4801C0G2] not match default OTHER_LENS
+[    7.738282] manuparse_inf[Manuparse_AnalysisIrCutType   : 235 ]Manuparse IrCut type[0]
+[    7.746234] manuparse_inf[Manuparse_AnalysisIrCutMotorType: 297 ]Manuparse IrCut Motor type[0]
+[    7.754868] manuparse_inf[Manuparse_LensType_Trans      : 360 ]Manuparse pcLensFlag: []
+[    7.762892] manuparse_inf[Manuparse_AnalysisFisheyeType : 301 ]Manuparse:IPC3624LE-ADF28K-WP FisheyeType[FALSE]
+[    7.773003] manuparse_inf[Manuparse_AnalysisAlarmCnt    : 635 ]Manuparse AlmInNum[2] AlmOutNum [1]
+[    7.781972] manuparse_inf[Manuparse_AnalysisHalfType    : 140 ]SerialNumber[210235UEDW3247000191]: IsHalfType[0]
+[    7.792168] manuparse_inf[Manuparse_AnalysisResButtLimi : 437 ]Manuparse:IPC3624LE-ADF28K-WP Reset button limit is TRUE
+[    7.802978] manuparse_inf[Manuparse_AnalysisSpkPowerType: 695 ]ENC speaker power type:[1]
+[    7.811164] manuparse_inf[Manuparse_AnalysisCloseSpkInFreeCap: 211 ]CloseSpkInFree[0]
+[    7.819014] manuparse_inf[Manuparse_AnalysisPOEatType   : 751 ]POEATType:[0]
+[    7.826072] manuparse_inf[Manuparse_AnalysisRunLedSite  : 808 ]Manuparse:IPC3624LE-ADF28K-WP Run Led on DSP
+[    7.835833] manuparse_inf[Manuparse_AnalysisAlarmLedSite: 865 ]Manuparse:IPC3624LE-ADF28K-WP Alarm Led on DSP
+[    7.845760] manuparse_inf[Manuparse_AnalysisPtMcuImageInfo: 490 ]Manuparse PtMcuImageInfo:no_pt_mcu_image
+[    7.903214] gpio_inf[product_fixdome_init: 653 ]kgpio for fixdome 
+[    7.909464] gpio_inf[prior_init          : 825 ]Product type is FIXDOME
+[    7.922305] 
+[    7.922305] Encryption Board Reset
+[    7.927211] gpio_inf[SetAllLedGpio       : 485 ]no [gstGreenRunLedGpio] led pin
+[    7.934541] gpio_inf[SetAllLedGpio       : 486 ]no [gstRedRunLedGpio] led pin
+[    7.941687] gpio_inf[SetAllLedGpio       : 487 ]no [gstBlueRunLedGpio] led pin
+[    7.948933] gpio_inf[LightCtrlInit       : 417 ]Light channl 1 ctrled invalued, no need to init
+[    7.949056] gpio_inf[Pwm_Init            : 192 ]Pwm_Init[4] Ok
+[    7.949090] dwc3 8000000.dwc3: dwc3_drd_notifier, mode is host
+[    7.957814] gpio_inf[Pwm_Init            : 192 ]Pwm_Init[5] Ok
+[    7.966584] dwc3 8000000.dwc3: axera usb host init
+[    7.969571] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[    7.982978] dwc3 8000000.dwc3: usb2.0-only mode
+[    7.986943] gpio_err[RunLightInit        : 547 ]Red run led init Fail
+[    7.991682] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    8.004030] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 1
+[    8.013101] xhci-hcd xhci-hcd.1.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x0000000000010010
+[    8.023029] xhci-hcd xhci-hcd.1.auto: irq 67, io mem 0x08000000
+[    8.029455] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.19
+[    8.038043] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    8.045817] usb usb1: Product: xHCI Host Controller
+[    8.055974] usb usb1: Manufacturer: Linux 4.19.125 xhci-hcd
+[    8.061637] usb usb1: SerialNumber: xhci-hcd.1.auto
+[    8.068080] hub 1-0:1.0: USB hub found
+[    8.071973] hub 1-0:1.0: 1 port detected
+[    8.076623] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    8.082343] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 2
+[    8.090109] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+[    8.096736] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    8.105008] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 4.19
+[    8.113301] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    8.120558] usb usb2: Product: xHCI Host Controller
+[    8.125474] usb usb2: Manufacturer: Linux 4.19.125 xhci-hcd
+[    8.131078] usb usb2: SerialNumber: xhci-hcd.1.auto
+[    8.136692] hub 2-0:1.0: USB hub found
+[    8.140617] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    8.167034] motor_err[0234 @ Hw_Timer_Init]:	
+[    8.167038] Timer id invalid:1
+[    8.171511] 
+[    8.177294] motor_info[0321 @ WorkQueue_Init]:	
+[    8.177296] Work Queue init
+[    8.181830] 
+[    8.186200] motor_info[1558 @ motor_init]:	
+[    8.186202] motor finish init
+[    8.186209] motor_info[0094 @ LensPortMode_Init]:	
+[    8.190405] 
+[    8.193479] Init LensPortMode:2
+[    8.193480] 
+[    8.204356] motor_info[0827 @ Ircut_IPC_Init]:	
+[    8.204359] ircut init ch[0] type[0]
+[    8.208936] 
+[    8.214091] motor_info[0476 @ DC_Ircut_Init]:	
+[    8.214095] dc[ch0] ircut init ok
+[    8.218586] 
+[    8.223424] i2c_get_adapter fail!
+[    8.226749] driver init fail
+[    8.229649] i2c init fail
+[    8.232286] motor_info[0500 @ motor_init_thread]:	
+[    8.232288] motor thread init ok
+[    8.237089] 
+[    8.254167] RunTm_inf[runtime_set_startup_date      : 814 ]start system at: year=1970 month=1 date=1 hour=8 minute=0 second=0
+[    8.280140] RunTm_err[runtime_set_current_date_lastrtinfo: 893 ]iTmp=0, size=212
+[    8.287655] RunTm_war[runtime_init                  : 1434]wait for runtime_thread_process thread 
+[    8.296686] RunTm_war[runtime_init                  : 1452]wait for runtime_thread_process thread 
+[    8.305669] RunTm_inf[runtime_init                  : 1455]End of runtime!
+[    8.367351] drop_caches.sh (648): drop_caches: 4
+[    9.622933] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 816
+[    9.646540] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" stops
+[    9.686504] UBIFS (ubi3:0): background thread "ubifs_bgt3_0" stops
+[    9.707348] stmmaceth 104c0000.ethernet eth0: Link is Up - 100Mbps/Full - flow control rx/tx
+[    9.707381] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   10.979728] [net_speed_duplex_set] in, enNetPortType: 0, enSpeedDuplexMode: 10.
+[   10.979734] phy_net_speed_duplex_set in.
+[   11.002204] [net_speed_duplex_set] ok!
+[   11.117913] gpio_war[gpiodev_unlocked_ioctl: 2112]rs485[0] has no tx en pin
+[   11.125486] motor_info[0642 @ motor_ioctl]:	
+[   11.125490] Init Status[0]
+[   11.125495] 
+[   11.125965] motor_info[0752 @ motor_ioctl]:	
+[   11.125967] ZOOM_GET_MAXPOS is 0
+[   11.125970] 
+[   11.125976] motor_info[0806 @ motor_ioctl]:	
+[   11.125978] FOCUS_GET_MAXPOS is 0
+[   11.125980] 
+[   13.597612] [axlogctl] AWB's(id: 43) user log level set to 4
+[   13.723198] dw_i2s_startup, 231
+[   13.723214] bengin actt_startup
+[   13.723368] bengin actt_hw_params set.
+[   13.723375] coeff: 5  dev->blk_frequency: 80 
+[   13.724401] dw_i2s_hw_params, 333, sample_rate: 48000, data_width: 16, dev->ccr: 0
+[   13.727137] actt_set_bias_level 1
+[   13.727143] actt_set_bias_level 2
+[   13.729739] gpio_is_valid miclp ok
+[   13.729749] gpio_is_valid micln ok
+[   13.729754] gpio_is_valid micrn ok
+[   13.729758] gpio_is_valid micrp ok
+[   13.757238] actt_rx_amic_en! 
+[   13.757325] actt_set_bias_level 3
+[   13.757344] bengin actt_mute 0
+[   13.757411] dw_i2s_trigger, 382, cmd: 1
+[   13.856791] gpio_inf[reset_status_clear  : 263 ]clear reset button status!
+[   14.917487] motor_info[0986 @ Ircut_IPC_SetType]:	
+[   14.917491] ch[0] set type[1]
+[   14.917498] 
+[   14.919937] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   17.255827] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 1177
+[   18.187883] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[   18.187971] gpio_err[gpiodev_unlocked_ioctl: 1919]Run Led not support
+[   18.187977] gpio_err[gpiodev_unlocked_ioctl: 1919]Run Led not support
+[   18.187982] gpio_err[gpiodev_unlocked_ioctl: 1919]Run Led not support
+[   18.187986] gpio_err[gpiodev_unlocked_ioctl: 1919]Run Led not support
+[   19.192260] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   20.197310] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[   21.202249] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   22.207427] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[   23.212333] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   24.217271] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[   25.222279] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   26.227301] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[   27.232251] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   28.237329] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   28.237346] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[5] duty[0]
+[  111.270963] mmc0: new high speed SDHC card at address 0001
+[  111.271855] mmcblk0: mmc0:0001 016GB 14.6 GiB 
+[  111.274810]  mmcblk0: p1 p2
+[  111.973163] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[ 1224.969302] mmc0: card 0001 removed
+[ 1241.441027] mmc0: new high speed SDHC card at address 0001
+[ 1241.449024] mmcblk0: mmc0:0001 016GB 14.6 GiB 
+[ 1241.450568]  mmcblk0: p1 p2
+[ 1242.125581] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[ 1285.659476] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1285.762525] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1285.762536] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1285.764610] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1285.764621] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1319.087413] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1319.207879] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1319.207889] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1319.209551] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1319.209567] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1339.936471] print_req_error: I/O error, dev mtdblock1, sector 208
+[ 1340.103403] print_req_error: I/O error, dev mtdblock1, sector 208
+[ 1340.103415] Buffer I/O error on dev mtdblock1, logical block 26, async page read
+[ 1340.106076] print_req_error: I/O error, dev mtdblock1, sector 208
+[ 1340.106098] Buffer I/O error on dev mtdblock1, logical block 26, async page read
+[ 1467.572093] print_req_error: I/O error, dev mtdblock12, sector 61440
+[ 1467.572326] print_req_error: I/O error, dev mtdblock12, sector 61448
+[ 1467.572519] print_req_error: I/O error, dev mtdblock12, sector 61456
+[ 1467.572708] print_req_error: I/O error, dev mtdblock12, sector 61464
+[ 1467.572914] print_req_error: I/O error, dev mtdblock12, sector 61472
+[ 1467.573105] print_req_error: I/O error, dev mtdblock12, sector 61480
+[ 1467.573294] print_req_error: I/O error, dev mtdblock12, sector 61488
+[ 1467.573484] print_req_error: I/O error, dev mtdblock12, sector 61496
+[ 1467.573678] print_req_error: I/O error, dev mtdblock12, sector 61504
+[ 1467.573873] print_req_error: I/O error, dev mtdblock12, sector 61512
+[ 1467.650998] Buffer I/O error on dev mtdblock12, logical block 7680, async page read
+[ 1467.821040] Buffer I/O error on dev mtdblock12, logical block 7680, async page read
+[ 1499.504786] print_req_error: 25 callbacks suppressed
+[ 1499.504796] print_req_error: I/O error, dev mtdblock12, sector 61440
+[ 1499.504996] print_req_error: I/O error, dev mtdblock12, sector 61448
+[ 1499.505191] print_req_error: I/O error, dev mtdblock12, sector 61456
+[ 1499.505385] print_req_error: I/O error, dev mtdblock12, sector 61464
+[ 1499.505579] print_req_error: I/O error, dev mtdblock12, sector 61472
+[ 1499.505777] print_req_error: I/O error, dev mtdblock12, sector 61480
+[ 1499.505966] print_req_error: I/O error, dev mtdblock12, sector 61488
+[ 1499.506159] print_req_error: I/O error, dev mtdblock12, sector 61496
+[ 1499.506351] print_req_error: I/O error, dev mtdblock12, sector 61504
+[ 1499.506545] print_req_error: I/O error, dev mtdblock12, sector 61512
+[ 1499.568399] Buffer I/O error on dev mtdblock12, logical block 7680, async page read
+[ 1499.695784] Buffer I/O error on dev mtdblock12, logical block 7680, async page read
+root@root:/$ root@root:/$ dmesg[Jroot@root:/$ dd if=/dev/mtdblock12 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=4M[J4M[J1MM
+dd: /dev/mtdblock12: Input/output error
+root@root:/$ root@root:/$ dd if=/dev/mtdblock12 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=1M[J1M[J4M[1A[79C2.bin bs=
+4M[J[1A[72C3.bin bs
+=4M[1A[73C of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs=
+4M[J[1A[33C3 of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs
+=4M[1A[34C of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs
+=4M
+0+1 records in
+0+1 records out
+524288 bytes (512.0KB) copied, 0.340223 seconds, 1.5MB/s
+root@root:/$ ls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ ls /mnroot@root:/$ ls /mnt/[Jds[J[Jsdroot@root:/$ ls /mnt/sdcard/[Junroot@root:/$ ls /mnt/sdcard/uniview/[Jbroot@root:/$ ls /mnt/sdcard/uniview/bins/[J
+[1;32mmtdblock0.bin[m   [1;32mmtdblock12.bin[m  [1;32mmtdblock4.bin[m   [1;32mmtdblock8.bin[m
+[1;32mmtdblock1.bin[m   [1;32mmtdblock13.bin[m  [1;32mmtdblock5.bin[m   [1;32mmtdblock9.bin[m
+[1;32mmtdblock10.bin[m  [1;32mmtdblock2.bin[m   [1;32mmtdblock6.bin[m
+[1;32mmtdblock11.bin[m  [1;32mmtdblock3.bin[m   [1;32mmtdblock7.bin[m
+root@root:/$ r [Jm /mnr[Jt/root@root:/$ ls /mnt/sdcard/uniview/bins/[Jroot@root:/$ rm /mnt/[Jsdcard/unroot@root:/$ rm /mnt/sdcard/uniview/[Jbroot@root:/$ rm /mnt/sdcard/uniview/bins/[Jmroot@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock[J0root@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock0.bin [J
+root@root:/$ root@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock0.bin [J0.bin [J[5D1.bin [5D.bin 
+root@root:/$ root@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock1.bin [J.bin [J[5D2.bin [5D.bin 
+root@root:/$ root@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock2.bin [J12.bin [6D2.bin 
+root@root:/$ root@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock12.bin [Jroot@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock2.bin [Jroot@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock1.bin [Jroot@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock0.bin [Jroot@root:/$ ls /mnt/sdcard/uniview/bins/[Jroot@root:/$ ls[Jroot@root:/$ dd if=/dev/mtdblock13 of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs
+=4M[J[1A[79Cmtdblock13.bin bs=
+4M[J[1A[72C.bin bs=4
+M[J[1A[71C2.bin bs=
+4M[1A[72C of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4
+M[J[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4M
+[J[1A[32C2 of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4
+M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4
+M
+0+1 records in
+0+1 records out
+524288 bytes (512.0KB) copied, 0.321127 seconds, 1.6MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock2 of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4
+M[J[1A[79C12.bin bs=
+4M[1A[71C0 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=4M[1A[34C of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs=
+4M[J[1A[33C0 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=4M[1A[34C of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs=
+4M[J[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs=4
+M[J[1A[32C0 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs=
+4M[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock12.bin.bin bs=4
+M[J[1A[71C.bin bs=4M
+[J[1A[70C0.bin bs=4
+M[1A[71C of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=4M
+[J[1A[32C0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=4
+M[1A[33Croot@root:/$ dd if=/dev/mtdblock0  of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=
+4M[J[1A[34C of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=4
+M[J[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=4M
+[J[1A[78C4M
+[1A[79C[J[J=2
+m
+dd: invalid number '2m'
+root@root:/$ root@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=2
+m[J[JM
+dd: /dev/mtdblock0: Input/output error
+root@root:/$ root@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=2
+M[J[J[1A[79C[J2
+18k[J[J2[J18k[J[J[J8k
+dd: /dev/mtdblock0: Input/output error
+root@root:/$ root@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=2
+18k[J[1Aroot@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=2
+M[J[1Aroot@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=2
+m[J[1Aroot@root:/$ dd if=/dev/mtdblock2 of=/mnt/sdcard/uniview/bins/mtdblock2.bin bs=4
+M[J[1Aroot@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock12.bin [Jroot@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock2.bin [Jroot@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock1.bin [Jroot@root:/$ rm /mnt/sdcard/uniview/bins/mtdblock0.bin [Jroot@root:/$ ls /mnt/sdcard/uniview/bins/[Jroot@root:/$ ls[Jroot@root:/$ dd if=/dev/mtdblock13 of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs
+=4M[J[1Aroot@root:/$ ls[Jroot@root:/$ dd if=/dev/mtdblock13 of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs
+=4M[J[1Aroot@root:/$ ls[Jroot@root:/$ ls /mnt/sdcard/uniview/bins/[Jroot@root:/$ ls[Jroot@root:/$ dd if=/dev/mtdblock13 of=/mnt/sdcard/uniview/bins/mtdblock13.bin bs
+=4M[J[1Aroot@root:/$ dd if=/dev/mtdblock12 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=1M[J[1Aroot@root:/$ dmesg[Jroot@root:/$ dd if=/dev/mtdblock12 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=4M[J[1Aroot@root:/$ dmesg[J
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.19.125 (jenkins@root123) (gcc version 7.5.0 (Linaro GCC 7.5-2019.12)) #1 SMP PREEMPT Mon Jun 17 18:12:19 CST 2024
+[    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=50c5383d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: axera,ax620e
+[    0.000000] ENC:0302C5TP;SEN:0302C4XQ;LENS:4801C0G2
+[    0.000000] PROTOTYPE_NAME:IPC3624LE-ADF28K-WP
+[    0.000000] chip type: 0x1
+[    0.000000] memory total: 0x10000000, Media: 0x9000000
+[    0.000000] earlycon: uart8250 at MMIO32 0x04880000 (options '')
+[    0.000000] bootconsole [uart8250] enabled
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 28672
+[    0.000000]   Normal zone: 224 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 28672 pages, LIFO batch:7
+[    0.000000] percpu: Embedded 18 pages/cpu s44236 r8192 d21300 u73728
+[    0.000000] pcpu-alloc: s44236 r8192 d21300 u73728 alloc=18*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 28448
+[    0.000000] Kernel command line: mem=112M console=ttyS0,115200n8 loglevel=8 earlycon=uart8250,mmio32,0x4880000 board_id=0,boot_reason=0x0 root=/dev/axramdisk rw rootfstype=ext2 init=/linuxrc mtdparts=spi4.0:1M(spl),512K(ddrinit),2048K(uboot),512K(env),6M(calibration),1M(cliinfo),8M(config),1M(runtime),6M(cfgbak),7M(kernel),512K(update),94M(program),-(other)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 104156K/114688K available (3967K kernel code, 222K rwdata, 1384K rodata, 2516K init, 396K bss, 10532K reserved, 0K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xc7800000 - 0xff800000   ( 896 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xc7000000   ( 112 MB)
+[    0.000000]     modules : 0xbf800000 - 0xc0000000   (   8 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (3969 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (2516 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 223 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 397 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000004] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.008019] Switching to timer-based delay loop, resolution 41ns
+[    0.016608] Console: colour dummy device 80x30
+[    0.021083] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=120000)
+[    0.031455] pid_max: default: 32768 minimum: 301
+[    0.036172] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.042802] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.050252] CPU: Testing write buffer coherency: ok
+[    0.055393] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.091153] Setting up static identity map for 0x40008240 - 0x40008278
+[    0.107718] rcu: Hierarchical SRCU implementation.
+[    0.127746] smp: Bringing up secondary CPUs ...
+[    0.157967] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.158064] smp: Brought up 1 node, 2 CPUs
+[    0.167853] SMP: Total of 2 processors activated (96.00 BogoMIPS).
+[    0.174048] CPU: All CPU(s) started in SVC mode.
+[    0.179253] devtmpfs: initialized
+[    0.210140] random: get_random_u32 called from bucket_table_alloc+0x63/0x118 with crng_init=0
+[    0.218862] VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+[    0.226730] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 9556302231375000 ns
+[    0.236501] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.242724] pinctrl core: initialized pinctrl subsystem
+[    0.248214] NET: Registered protocol family 16
+[    0.252948] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.260682] ax_pin_init ret 0 index 7
+[    0.265908] console [pstore-1] enabled
+[    0.269664] pstore: Registered ramoops as persistent store backend
+[    0.275864] ramoops: attached 0x8000@0x41000000, ecc: 0/0
+[    0.293961] SCSI subsystem initialized
+[    0.297878] usbcore: registered new interface driver usbfs
+[    0.303425] usbcore: registered new interface driver hub
+[    0.308800] usbcore: registered new device driver usb
+[    0.314492] pps_core: LinuxPPS API ver. 1 registered
+[    0.319484] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.328646] PTP clock support registered
+[    0.332788] Advanced Linux Sound Architecture Driver Initialized.
+[    0.339977] dma_per 48a0000.dma_per: Axera DMA Peripherals Controller, 16 channels
+[    0.347992] dma:ax_dma_probe:1605: done
+[    0.352199] clocksource: Switched to clocksource arch_sys_counter
+[    0.362875] NET: Registered protocol family 2
+[    0.367711] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+[    0.375415] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.382410] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.388797] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.395222] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.401087] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.407468] NET: Registered protocol family 1
+[    0.412119] RPC: Registered named UNIX socket transport module.
+[    0.418066] RPC: Registered udp transport module.
+[    0.422789] RPC: Registered tcp transport module.
+[    0.427506] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.543121] workingset: timestamp_bits=30 max_order=15 bucket_order=0
+[    0.553713] axera_logctl_init: of_find_compatible_node 'axera,logctl' success!!!
+[    0.553719] axera_logctl_init: of_find_compatible_node config: /etc/ax_syslog.conf
+[    0.561196] axera_logctl_init: logstate:1 1 len:2
+[    0.573518] axera_logctl_init: loglevel:4 4 len:2
+[    0.578471] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.584788] NFS: Registering the id_resolver key type
+[    0.589876] Key type id_resolver registered
+[    0.594073] Key type id_legacy registered
+[    0.598117] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.607056] io scheduler noop registered (default)
+[    0.611891] io scheduler mq-deadline registered
+[    0.616442] io scheduler kyber registered
+[    0.621671] axera-pinctrl 2300000.pinctrl: initialized pinctrl driver
+[    0.631905] ax_os_mem_init
+[    0.634778] [GZIP][D]: [     1][ax_gzipd_init : 730] enter ax_gzipd_init
+[    0.642322] Serial: 8250/16550 driver, 5 ports, IRQ sharing disabled
+[    0.649695] console [ttyS0] disabled
+[    0.653343] 4880000.ax_uart: ttyS0 at MMIO 0x4880000 (irq = 20, base_baud = 13000000) is a 16550A
+[    0.662270] console [ttyS0] enabled
+[    0.669253] bootconsole [uart8250] disabled
+[    0.678833] null: module loaded
+[    0.682514] ax_ramdisk_init:can't find ramdisk device tree node
+[    0.689407] dw_spi_setup: rx_sample_dly_ns=0x6, chip->rx_sample_dly=0x3
+[    0.696182] spi_master spi4: set clk_div=0x4, speed_hz=104000000, dws->max_freq=416000000
+[    0.704382] spi_master spi4: set rx_sample_dly=0x3
+[    0.709227] spi-nand spi4.0: FudanMicroelec SPI NAND was found.
+[    0.715163] spi-nand spi4.0: 128 MiB, block size: 128 KiB, page size: 2048, OOB size: 64
+[    0.723769] 13 cmdlinepart partitions found on MTD device spi4.0
+[    0.729792] Creating 13 MTD partitions on "spi4.0":
+[    0.734683] 0x000000000000-0x000000100000 : "spl"
+[    0.740702] 0x000000100000-0x000000180000 : "ddrinit"
+[    0.746577] 0x000000180000-0x000000380000 : "uboot"
+[    0.753661] 0x000000380000-0x000000400000 : "env"
+[    0.759189] 0x000000400000-0x000000a00000 : "calibration"
+[    0.770425] 0x000000a00000-0x000000b00000 : "cliinfo"
+[    0.776764] 0x000000b00000-0x000001300000 : "config"
+[    0.789388] 0x000001300000-0x000001400000 : "runtime"
+[    0.795725] 0x000001400000-0x000001a00000 : "cfgbak"
+[    0.806521] 0x000001a00000-0x000002100000 : "kernel"
+[    0.818253] 0x000002100000-0x000002180000 : "update"
+[    0.824081] 0x000002180000-0x000007f80000 : "program"
+[    0.915171] 0x000007f80000-0x000008000000 : "other"
+[    0.921151] libphy: Fixed MDIO Bus: probed
+[    0.925316] tun: Universal TUN/TAP device driver, 1.6
+[    0.930607] stmmaceth 104c0000.ethernet: probe axera emac
+[    0.936125] stmmaceth 104c0000.ethernet: phy-rst-gpio not configure
+[    0.942429] stmmaceth 104c0000.ethernet: emac bus clock: 312MHz
+[    0.948391] stmmaceth 104c0000.ethernet: emac phy clock: 25MHz
+[    0.954270] stmmaceth 104c0000.ethernet: PTP rate: 50MHz
+[    0.959612] stmmaceth 104c0000.ethernet: reset axera emac...
+[    0.970294] stmmaceth 104c0000.ethernet: EMAC: select Inner RMII interface, value:0x00000000
+[    0.978865] stmmaceth 104c0000.ethernet: User ID: 0x10, Synopsys ID: 0x52
+[    0.985670] stmmaceth 104c0000.ethernet: 	DWMAC4/5
+[    0.990473] stmmaceth 104c0000.ethernet: DMA HW capability register supported
+[    0.997623] stmmaceth 104c0000.ethernet: RX Checksum Offload Engine supported
+[    1.004768] stmmaceth 104c0000.ethernet: TX Checksum insertion supported
+[    1.011479] stmmaceth 104c0000.ethernet: Wake-Up On Lan supported
+[    1.017585] stmmaceth 104c0000.ethernet: TSO supported
+[    1.022734] stmmaceth 104c0000.ethernet: Enable RX Mitigation via HW Watchdog Timer
+[    1.030411] stmmaceth 104c0000.ethernet: Enabling HW TC (entries=256, max_off=256)
+[    1.037997] stmmaceth 104c0000.ethernet: USO feature enabled
+[    1.043666] stmmaceth 104c0000.ethernet: TSO feature enabled
+[    1.049415] libphy: stmmac: probed
+[    1.055800] PPP generic driver version 2.4.2
+[    1.060224] PPP BSD Compression module registered
+[    1.064946] PPP Deflate Compression module registered
+[    1.070009] NET: Registered protocol family 24
+[    1.074813] axera dwc3 soc:axera_dwc3: axera usb probe
+[    1.080138] axera dwc3 soc:axera_dwc3: usb bus clock: 312MHz
+[    1.085827] axera dwc3 soc:axera_dwc3: axera usb clk set succeed.
+[    1.091956] axera dwc3 soc:axera_dwc3: axera usb reset succeed.
+[    1.098147] dwc3 8000000.dwc3: probe later.
+[    1.102801] usbcore: registered new interface driver cdc_acm
+[    1.108473] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.116631] usbcore: registered new interface driver uas
+[    1.121989] usbcore: registered new interface driver usb-storage
+[    1.128067] usbcore: registered new interface driver usbserial_generic
+[    1.134621] usbserial: USB Serial support registered for generic
+[    1.176590] rtc_axera 23e0000.rtc-top: rtc core: registered 23e0000.rtc-top as rtc0
+[    1.184353] i2c /dev entries driver
+[    1.189320] ax_wdt:ax_wdt_drv_probe:346: done!
+[    1.189663] sdhci: Secure Digital Host Controller Interface driver
+[    1.200329] sdhci: Copyright(c) Pierre Ossman
+[    1.204720] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.204810] sdhci-axera 104e0000.sdhc: axera sdhci probe
+[    1.211050] usbcore: registered new interface driver usbhid
+[    1.218003] get cd gpio failed
+[    1.221293] usbhid: USB HID core driver
+[    1.230053] dev->intr_type = 0
+[    1.233143] dw_i2s_probe, hdmi_i2s: 0
+[    1.236907] config pin_sd_misc to 0x300100
+[    1.241032] dw_i2s_probe get irq is -6
+[    1.244803] IIS get i2s_mclk: 12288000
+[    1.248566] IIS get i2s_mclk: 12288000
+[    1.252359] IIS probe OK
+[    1.254941] dev->intr_type = 1
+[    1.258007] dw_i2s_probe, hdmi_i2s: 0
+[    1.261726] config pin_sd_misc to 0x300100
+[    1.265841] dw_i2s_probe get irq is -6
+[    1.269604] IIS get i2s_mclk: 12288000
+[    1.273363] IIS get i2s_mclk: 12288000
+[    1.277134] IIS probe OK
+[    1.280025] ax_actt_probe
+[    1.282711] designware-actt 23f2000.audio_codec: No cache used with register defaults set!
+[    1.291089] oprofile: hardware counters not available
+[    1.292283] mmc0: SDHCI controller on 104e0000.sdhc [104e0000.sdhc] using ADMA 64-bit
+[    1.296160] oprofile: using timer interrupt.
+[    1.304014] sdhci_cdns_read_phy_reg: phy lock successful
+[    1.308919] NET: Registered protocol family 10
+[    1.336429] Segment Routing with IPv6
+[    1.340237] mip6: Mobile IPv6
+[    1.343695] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.350365] NET: Registered protocol family 17
+[    1.354904] l2tp_core: L2TP core driver, V2.0
+[    1.359283] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.364106] Key type dns_resolver registered
+[    1.368557] Registering SWP/SWPB emulation handler
+[    1.373362] chip type: AX620Q
+[    1.376338] product init ok
+[    1.379897] pstore: Using compression: deflate
+[    1.385326] i2c_designware 4850000.i2c: running with gpio recovery mode! scl,sda
+[    1.392904] i2c i2c-0: using pinctrl states for GPIO recovery
+[    1.399059] i2c_designware 4851000.i2c: running with gpio recovery mode! scl,sda
+[    1.406594] i2c i2c-1: using pinctrl states for GPIO recovery
+[    1.412714] dwc3 8000000.dwc3: dr_mode is 3 (1-host 2-device 3-otg)
+[    1.419020] dwc3 8000000.dwc3: EP NUM:16
+[    1.423263] actt_component_probe
+[    1.423263]  
+[    1.423399] bengin actt_set_sysclk
+[    1.428205] actt_set_sysclk, freq: 12288000
+[    1.435799] actt_set_dai_fmt, fmt: 0x1001
+[    1.439816] actt_set_dai_fmt, actt rx only support master fmt_mode: 0x1000
+[    1.446699] actt in I2S Format
+[    1.449762] dw_i2s_set_fmt, fmt: 0x1001
+[    1.454151] asoc-simple-card sound: 23f2000.audio_codec <-> 6051000.i2s_slv mapping ok
+[    1.462079] bengin actt_set_sysclk
+[    1.462081] actt_set_sysclk, freq: 12288000
+[    1.469680] actt_set_dai_fmt, fmt: 0x4001
+[    1.473696] actt_set_dai_fmt, actt tx only support salve .fmt_mode: 0x4000
+[    1.480578] actt in I2S Format
+[    1.483640] dw_i2s_set_fmt, fmt: 0x4001
+[    1.487999] asoc-simple-card sound: 23f2000.audio_codec <-> 6050000.i2s_mst mapping ok
+[    1.496112] dwc3 8000000.dwc3: axera usb gadget init
+[    1.512776] rtc_axera 23e0000.rtc-top: setting system clock to 1970-01-01 08:00:00 UTC (28800)
+[    1.521823] OF: fdt: not creating '/sys/firmware/fdt': CRC check failed
+[    1.528717] ALSA device list:
+[    1.531687]   #0: Axera Audio
+[    1.534825] ttyS0 - failed to request DMA
+[    1.540772] Freeing unused kernel memory: 2516K
+[    1.545313] This architecture does not have kernel memory protection.
+[    1.551763] Run /init as init process
+[    1.853998] ubi0: default fastmap pool size: 35
+[    1.858785] ubi0: default fastmap WL pool size: 17
+[    1.863594] ubi0: attaching mtd12
+[    1.909817] random: fast init done
+[    2.137369] ubi0: scanning is finished
+[    2.149714] ubi0: attached mtd12 (name "program", size 94 MiB)
+[    2.155591] ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.162488] ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.169289] ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.176264] ubi0: good PEBs: 751, bad PEBs: 1, corrupted PEBs: 0
+[    2.182326] ubi0: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.189564] ubi0: max/mean erase counter: 4/1, WL threshold: 4096, image sequence number: 1390195764
+[    2.198711] ubi0: available PEBs: 0, total reserved PEBs: 751, PEBs reserved for bad PEB handling: 15
+[    2.207983] ubi0: background thread "ubi_bgt0d" started, PID 169
+[    2.224352] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 176
+[    2.254879] UBIFS (ubi0:0): recovery needed
+[    2.331825] UBIFS (ubi0:0): recovery completed
+[    2.336813] UBIFS (ubi0:0): UBIFS: mounted UBI device 0, volume 0, name "program"
+[    2.344311] UBIFS (ubi0:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.354240] UBIFS (ubi0:0): FS size: 91295744 bytes (87 MiB, 719 LEBs), journal size 9023488 bytes (8 MiB, 72 LEBs)
+[    2.364687] UBIFS (ubi0:0): reserved for root: 0 bytes (0 KiB)
+[    2.370591] UBIFS (ubi0:0): media format: w4/r0 (latest is w5/r0), UUID 5AA93821-CE3B-42DF-8B4C-323281550D45, small LPT model
+[    2.397118] ubi1: default fastmap pool size: 8
+[    2.401624] ubi1: default fastmap WL pool size: 4
+[    2.406344] ubi1: attaching mtd7
+[    2.433135] ubi1: scanning is finished
+[    2.444603] ubi1: attached mtd7 (name "config", size 8 MiB)
+[    2.450235] ubi1: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.457137] ubi1: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.463949] ubi1: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.470931] ubi1: good PEBs: 64, bad PEBs: 0, corrupted PEBs: 0
+[    2.476911] ubi1: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.484152] ubi1: max/mean erase counter: 25/14, WL threshold: 4096, image sequence number: 3376025183
+[    2.493473] ubi1: available PEBs: 0, total reserved PEBs: 64, PEBs reserved for bad PEB handling: 4
+[    2.503223] ubi1: background thread "ubi_bgt1d" started, PID 186
+[    2.524648] UBIFS (ubi1:0): background thread "ubifs_bgt1_0" started, PID 193
+[    2.558897] UBIFS (ubi1:0): recovery needed
+[    2.660950] UBIFS (ubi1:0): recovery completed
+[    2.665939] UBIFS (ubi1:0): UBIFS: mounted UBI device 1, volume 0, name "config"
+[    2.673350] UBIFS (ubi1:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.683279] UBIFS (ubi1:0): FS size: 5586944 bytes (5 MiB, 44 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    2.693378] UBIFS (ubi1:0): reserved for root: 263884 bytes (257 KiB)
+[    2.699831] UBIFS (ubi1:0): media format: w5/r0 (latest is w5/r0), UUID 6D0233DC-6B50-42EA-8560-1142E2371A7A, small LPT model
+[    2.725878] ubi2: default fastmap pool size: 8
+[    2.730400] ubi2: default fastmap WL pool size: 4
+[    2.735138] ubi2: attaching mtd9
+[    2.756111] ubi2: scanning is finished
+[    2.767301] ubi2: attached mtd9 (name "cfgbak", size 6 MiB)
+[    2.772918] ubi2: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    2.779827] ubi2: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    2.786628] ubi2: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    2.793614] ubi2: good PEBs: 48, bad PEBs: 0, corrupted PEBs: 0
+[    2.799546] ubi2: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    2.806790] ubi2: max/mean erase counter: 24/14, WL threshold: 4096, image sequence number: 1034400906
+[    2.816121] ubi2: available PEBs: 0, total reserved PEBs: 48, PEBs reserved for bad PEB handling: 4
+[    2.825198] ubi2: background thread "ubi_bgt2d" started, PID 203
+[    2.841596] UBIFS (ubi2:0): background thread "ubifs_bgt2_0" started, PID 210
+[    2.872128] UBIFS (ubi2:0): recovery needed
+[    2.961691] UBIFS (ubi2:0): recovery completed
+[    2.966680] UBIFS (ubi2:0): UBIFS: mounted UBI device 2, volume 0, name "cfgbak"
+[    2.974092] UBIFS (ubi2:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    2.984021] UBIFS (ubi2:0): FS size: 3555328 bytes (3 MiB, 28 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    2.994120] UBIFS (ubi2:0): reserved for root: 167926 bytes (163 KiB)
+[    3.000573] UBIFS (ubi2:0): media format: w5/r0 (latest is w5/r0), UUID 53E3460B-080A-4FEE-AEE2-4B0AFEB51CC3, small LPT model
+[    3.026619] ubi3: default fastmap pool size: 8
+[    3.031140] ubi3: default fastmap WL pool size: 4
+[    3.035877] ubi3: attaching mtd5
+[    3.056837] ubi3: scanning is finished
+[    3.067299] ubi3: attached mtd5 (name "calibration", size 6 MiB)
+[    3.073351] ubi3: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+[    3.080260] ubi3: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+[    3.087060] ubi3: VID header offset: 2048 (aligned 2048), data offset: 4096
+[    3.094047] ubi3: good PEBs: 48, bad PEBs: 0, corrupted PEBs: 0
+[    3.099978] ubi3: user volume: 1, internal volumes: 1, max. volumes count: 128
+[    3.107225] ubi3: max/mean erase counter: 7/3, WL threshold: 4096, image sequence number: 3091558067
+[    3.116370] ubi3: available PEBs: 0, total reserved PEBs: 48, PEBs reserved for bad PEB handling: 4
+[    3.125449] ubi3: background thread "ubi_bgt3d" started, PID 220
+[    3.139696] UBIFS (ubi3:0): background thread "ubifs_bgt3_0" started, PID 226
+[    3.207219] UBIFS (ubi3:0): UBIFS: mounted UBI device 3, volume 0, name "calibration"
+[    3.215075] UBIFS (ubi3:0): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+[    3.225006] UBIFS (ubi3:0): FS size: 3555328 bytes (3 MiB, 28 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+[    3.235108] UBIFS (ubi3:0): reserved for root: 167926 bytes (163 KiB)
+[    3.241561] UBIFS (ubi3:0): media format: w5/r0 (latest is w5/r0), UUID BF7BD558-BC9A-4D8D-B2C4-EE4F6925CECD, small LPT model
+[    3.277149] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" stops
+[    6.217231] random: crng init done
+[    6.240329] NetUserDrv: loading out-of-tree module taints kernel.
+[    6.247062] NET_USR module init ok!
+[    6.259151] NET_DBG module init ok!
+[    6.268858] stmmaceth 104c0000.ethernet: axera_reset_phy
+[    6.279020] stmmaceth 104c0000.ethernet: ephy bgs=0x1, trim=0x7, ephy0_reg=0x410021d1
+[    6.392200] ax_ephy_config_init
+[    6.527205] AX620E Fast Ethernet stmmac-0:01: attached PHY driver [AX620E Fast Ethernet] (mii_bus:phy_addr=stmmac-0:01, irq=POLL)
+[    6.549671] stmmaceth 104c0000.ethernet eth0: No Safety Features support found
+[    6.556917] stmmaceth 104c0000.ethernet eth0: IEEE 1588-2008 Advanced Timestamp supported
+[    6.565266] stmmaceth 104c0000.ethernet eth0: registered PTP clock
+[    6.571892] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    6.778804] npu 3800000.ax_npu: _opp_is_duplicate: duplicate OPPs detected. Existing: freq: 594000000, volt: 0, enabled: 1. New: freq: 594000000, volt: 0, enabled: 1
+[    6.829426] unsupport register display0
+[    6.834927] unsupport register display1
+[    7.666554] manuparse_inf[Manuparse_Init                : 293 ]ProductName[IPC3624LE-ADF28K-WP]
+[    7.675380] manuparse_inf[Manuparse_Init                : 294 ]BuildInfo[ENC-0302C5TP;SEN-0302C4XQ;LENS-4801C0G2]
+[    7.685682] manuparse_inf[Manuparse_Init                : 295 ]SerialNum[210235UEDW3247000191]
+[    7.694421] manuparse_inf[Manuparse_AnalysisSensorType  : 96  ]Sensor[0] type[589841] name[sc450ai]
+[    7.703494] manuparse_inf[Manuparse_AnalysisSpecialImageInv: 178 ]SpecialImgInverse[0]
+[    7.711424] manuparse_war[Manuparse_AnalysisLightInfo   : 152 ]Product type[1] no Light info
+[    7.719890] manuparse_inf[Manuparse_AnalysisFormCap     : 105 ]Manuparse form type [0]
+[    7.727825] manuparse_war[Manuparse_AnalysisLensInfo    : 89  ]Lens[0] build[4801C0G2] not match default OTHER_LENS
+[    7.738282] manuparse_inf[Manuparse_AnalysisIrCutType   : 235 ]Manuparse IrCut type[0]
+[    7.746234] manuparse_inf[Manuparse_AnalysisIrCutMotorType: 297 ]Manuparse IrCut Motor type[0]
+[    7.754868] manuparse_inf[Manuparse_LensType_Trans      : 360 ]Manuparse pcLensFlag: []
+[    7.762892] manuparse_inf[Manuparse_AnalysisFisheyeType : 301 ]Manuparse:IPC3624LE-ADF28K-WP FisheyeType[FALSE]
+[    7.773003] manuparse_inf[Manuparse_AnalysisAlarmCnt    : 635 ]Manuparse AlmInNum[2] AlmOutNum [1]
+[    7.781972] manuparse_inf[Manuparse_AnalysisHalfType    : 140 ]SerialNumber[210235UEDW3247000191]: IsHalfType[0]
+[    7.792168] manuparse_inf[Manuparse_AnalysisResButtLimi : 437 ]Manuparse:IPC3624LE-ADF28K-WP Reset button limit is TRUE
+[    7.802978] manuparse_inf[Manuparse_AnalysisSpkPowerType: 695 ]ENC speaker power type:[1]
+[    7.811164] manuparse_inf[Manuparse_AnalysisCloseSpkInFreeCap: 211 ]CloseSpkInFree[0]
+[    7.819014] manuparse_inf[Manuparse_AnalysisPOEatType   : 751 ]POEATType:[0]
+[    7.826072] manuparse_inf[Manuparse_AnalysisRunLedSite  : 808 ]Manuparse:IPC3624LE-ADF28K-WP Run Led on DSP
+[    7.835833] manuparse_inf[Manuparse_AnalysisAlarmLedSite: 865 ]Manuparse:IPC3624LE-ADF28K-WP Alarm Led on DSP
+[    7.845760] manuparse_inf[Manuparse_AnalysisPtMcuImageInfo: 490 ]Manuparse PtMcuImageInfo:no_pt_mcu_image
+[    7.903214] gpio_inf[product_fixdome_init: 653 ]kgpio for fixdome 
+[    7.909464] gpio_inf[prior_init          : 825 ]Product type is FIXDOME
+[    7.922305] 
+[    7.922305] Encryption Board Reset
+[    7.927211] gpio_inf[SetAllLedGpio       : 485 ]no [gstGreenRunLedGpio] led pin
+[    7.934541] gpio_inf[SetAllLedGpio       : 486 ]no [gstRedRunLedGpio] led pin
+[    7.941687] gpio_inf[SetAllLedGpio       : 487 ]no [gstBlueRunLedGpio] led pin
+[    7.948933] gpio_inf[LightCtrlInit       : 417 ]Light channl 1 ctrled invalued, no need to init
+[    7.949056] gpio_inf[Pwm_Init            : 192 ]Pwm_Init[4] Ok
+[    7.949090] dwc3 8000000.dwc3: dwc3_drd_notifier, mode is host
+[    7.957814] gpio_inf[Pwm_Init            : 192 ]Pwm_Init[5] Ok
+[    7.966584] dwc3 8000000.dwc3: axera usb host init
+[    7.969571] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[    7.982978] dwc3 8000000.dwc3: usb2.0-only mode
+[    7.986943] gpio_err[RunLightInit        : 547 ]Red run led init Fail
+[    7.991682] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    8.004030] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 1
+[    8.013101] xhci-hcd xhci-hcd.1.auto: hcc params 0x0220fe65 hci version 0x110 quirks 0x0000000000010010
+[    8.023029] xhci-hcd xhci-hcd.1.auto: irq 67, io mem 0x08000000
+[    8.029455] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.19
+[    8.038043] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    8.045817] usb usb1: Product: xHCI Host Controller
+[    8.055974] usb usb1: Manufacturer: Linux 4.19.125 xhci-hcd
+[    8.061637] usb usb1: SerialNumber: xhci-hcd.1.auto
+[    8.068080] hub 1-0:1.0: USB hub found
+[    8.071973] hub 1-0:1.0: 1 port detected
+[    8.076623] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    8.082343] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 2
+[    8.090109] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+[    8.096736] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    8.105008] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 4.19
+[    8.113301] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    8.120558] usb usb2: Product: xHCI Host Controller
+[    8.125474] usb usb2: Manufacturer: Linux 4.19.125 xhci-hcd
+[    8.131078] usb usb2: SerialNumber: xhci-hcd.1.auto
+[    8.136692] hub 2-0:1.0: USB hub found
+[    8.140617] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    8.167034] motor_err[0234 @ Hw_Timer_Init]:	
+[    8.167038] Timer id invalid:1
+[    8.171511] 
+[    8.177294] motor_info[0321 @ WorkQueue_Init]:	
+[    8.177296] Work Queue init
+[    8.181830] 
+[    8.186200] motor_info[1558 @ motor_init]:	
+[    8.186202] motor finish init
+[    8.186209] motor_info[0094 @ LensPortMode_Init]:	
+[    8.190405] 
+[    8.193479] Init LensPortMode:2
+[    8.193480] 
+[    8.204356] motor_info[0827 @ Ircut_IPC_Init]:	
+[    8.204359] ircut init ch[0] type[0]
+[    8.208936] 
+[    8.214091] motor_info[0476 @ DC_Ircut_Init]:	
+[    8.214095] dc[ch0] ircut init ok
+[    8.218586] 
+[    8.223424] i2c_get_adapter fail!
+[    8.226749] driver init fail
+[    8.229649] i2c init fail
+[    8.232286] motor_info[0500 @ motor_init_thread]:	
+[    8.232288] motor thread init ok
+[    8.237089] 
+[    8.254167] RunTm_inf[runtime_set_startup_date      : 814 ]start system at: year=1970 month=1 date=1 hour=8 minute=0 second=0
+[    8.280140] RunTm_err[runtime_set_current_date_lastrtinfo: 893 ]iTmp=0, size=212
+[    8.287655] RunTm_war[runtime_init                  : 1434]wait for runtime_thread_process thread 
+[    8.296686] RunTm_war[runtime_init                  : 1452]wait for runtime_thread_process thread 
+[    8.305669] RunTm_inf[runtime_init                  : 1455]End of runtime!
+[    8.367351] drop_caches.sh (648): drop_caches: 4
+[    9.622933] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 816
+[    9.646540] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" stops
+[    9.686504] UBIFS (ubi3:0): background thread "ubifs_bgt3_0" stops
+[    9.707348] stmmaceth 104c0000.ethernet eth0: Link is Up - 100Mbps/Full - flow control rx/tx
+[    9.707381] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   10.979728] [net_speed_duplex_set] in, enNetPortType: 0, enSpeedDuplexMode: 10.
+[   10.979734] phy_net_speed_duplex_set in.
+[   11.002204] [net_speed_duplex_set] ok!
+[   11.117913] gpio_war[gpiodev_unlocked_ioctl: 2112]rs485[0] has no tx en pin
+[   11.125486] motor_info[0642 @ motor_ioctl]:	
+[   11.125490] Init Status[0]
+[   11.125495] 
+[   11.125965] motor_info[0752 @ motor_ioctl]:	
+[   11.125967] ZOOM_GET_MAXPOS is 0
+[   11.125970] 
+[   11.125976] motor_info[0806 @ motor_ioctl]:	
+[   11.125978] FOCUS_GET_MAXPOS is 0
+[   11.125980] 
+[   13.597612] [axlogctl] AWB's(id: 43) user log level set to 4
+[   13.723198] dw_i2s_startup, 231
+[   13.723214] bengin actt_startup
+[   13.723368] bengin actt_hw_params set.
+[   13.723375] coeff: 5  dev->blk_frequency: 80 
+[   13.724401] dw_i2s_hw_params, 333, sample_rate: 48000, data_width: 16, dev->ccr: 0
+[   13.727137] actt_set_bias_level 1
+[   13.727143] actt_set_bias_level 2
+[   13.729739] gpio_is_valid miclp ok
+[   13.729749] gpio_is_valid micln ok
+[   13.729754] gpio_is_valid micrn ok
+[   13.729758] gpio_is_valid micrp ok
+[   13.757238] actt_rx_amic_en! 
+[   13.757325] actt_set_bias_level 3
+[   13.757344] bengin actt_mute 0
+[   13.757411] dw_i2s_trigger, 382, cmd: 1
+[   13.856791] gpio_inf[reset_status_clear  : 263 ]clear reset button status!
+[   14.917487] motor_info[0986 @ Ircut_IPC_SetType]:	
+[   14.917491] ch[0] set type[1]
+[   14.917498] 
+[   14.919937] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   17.255827] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 1177
+[   18.187883] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[   18.187971] gpio_err[gpiodev_unlocked_ioctl: 1919]Run Led not support
+[   18.187977] gpio_err[gpiodev_unlocked_ioctl: 1919]Run Led not support
+[   18.187982] gpio_err[gpiodev_unlocked_ioctl: 1919]Run Led not support
+[   18.187986] gpio_err[gpiodev_unlocked_ioctl: 1919]Run Led not support
+[   19.192260] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   20.197310] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[   21.202249] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   22.207427] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[   23.212333] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   24.217271] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[   25.222279] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   26.227301] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[129]
+[   27.232251] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   28.237329] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[4] duty[0]
+[   28.237346] gpio_inf[Pwm_SetDuty         : 235 ]set pwm chl[5] duty[0]
+[  111.270963] mmc0: new high speed SDHC card at address 0001
+[  111.271855] mmcblk0: mmc0:0001 016GB 14.6 GiB 
+[  111.274810]  mmcblk0: p1 p2
+[  111.973163] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[ 1224.969302] mmc0: card 0001 removed
+[ 1241.441027] mmc0: new high speed SDHC card at address 0001
+[ 1241.449024] mmcblk0: mmc0:0001 016GB 14.6 GiB 
+[ 1241.450568]  mmcblk0: p1 p2
+[ 1242.125581] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[ 1285.659476] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1285.762525] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1285.762536] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1285.764610] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1285.764621] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1319.087413] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1319.207879] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1319.207889] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1319.209551] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1319.209567] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1339.936471] print_req_error: I/O error, dev mtdblock1, sector 208
+[ 1340.103403] print_req_error: I/O error, dev mtdblock1, sector 208
+[ 1340.103415] Buffer I/O error on dev mtdblock1, logical block 26, async page read
+[ 1340.106076] print_req_error: I/O error, dev mtdblock1, sector 208
+[ 1340.106098] Buffer I/O error on dev mtdblock1, logical block 26, async page read
+[ 1467.572093] print_req_error: I/O error, dev mtdblock12, sector 61440
+[ 1467.572326] print_req_error: I/O error, dev mtdblock12, sector 61448
+[ 1467.572519] print_req_error: I/O error, dev mtdblock12, sector 61456
+[ 1467.572708] print_req_error: I/O error, dev mtdblock12, sector 61464
+[ 1467.572914] print_req_error: I/O error, dev mtdblock12, sector 61472
+[ 1467.573105] print_req_error: I/O error, dev mtdblock12, sector 61480
+[ 1467.573294] print_req_error: I/O error, dev mtdblock12, sector 61488
+[ 1467.573484] print_req_error: I/O error, dev mtdblock12, sector 61496
+[ 1467.573678] print_req_error: I/O error, dev mtdblock12, sector 61504
+[ 1467.573873] print_req_error: I/O error, dev mtdblock12, sector 61512
+[ 1467.650998] Buffer I/O error on dev mtdblock12, logical block 7680, async page read
+[ 1467.821040] Buffer I/O error on dev mtdblock12, logical block 7680, async page read
+[ 1499.504786] print_req_error: 25 callbacks suppressed
+[ 1499.504796] print_req_error: I/O error, dev mtdblock12, sector 61440
+[ 1499.504996] print_req_error: I/O error, dev mtdblock12, sector 61448
+[ 1499.505191] print_req_error: I/O error, dev mtdblock12, sector 61456
+[ 1499.505385] print_req_error: I/O error, dev mtdblock12, sector 61464
+[ 1499.505579] print_req_error: I/O error, dev mtdblock12, sector 61472
+[ 1499.505777] print_req_error: I/O error, dev mtdblock12, sector 61480
+[ 1499.505966] print_req_error: I/O error, dev mtdblock12, sector 61488
+[ 1499.506159] print_req_error: I/O error, dev mtdblock12, sector 61496
+[ 1499.506351] print_req_error: I/O error, dev mtdblock12, sector 61504
+[ 1499.506545] print_req_error: I/O error, dev mtdblock12, sector 61512
+[ 1499.568399] Buffer I/O error on dev mtdblock12, logical block 7680, async page read
+[ 1499.695784] Buffer I/O error on dev mtdblock12, logical block 7680, async page read
+[ 1582.424827] print_req_error: 25 callbacks suppressed
+[ 1582.424839] print_req_error: I/O error, dev mtdblock12, sector 61440
+[ 1582.425035] print_req_error: I/O error, dev mtdblock12, sector 61448
+[ 1582.425225] print_req_error: I/O error, dev mtdblock12, sector 61456
+[ 1582.425413] print_req_error: I/O error, dev mtdblock12, sector 61464
+[ 1582.425601] print_req_error: I/O error, dev mtdblock12, sector 61472
+[ 1582.425892] print_req_error: I/O error, dev mtdblock12, sector 61480
+[ 1582.426081] print_req_error: I/O error, dev mtdblock12, sector 61488
+[ 1582.426271] print_req_error: I/O error, dev mtdblock12, sector 61496
+[ 1582.426521] print_req_error: I/O error, dev mtdblock12, sector 61504
+[ 1582.426710] print_req_error: I/O error, dev mtdblock12, sector 61512
+[ 1582.593608] Buffer I/O error on dev mtdblock12, logical block 7680, async page read
+[ 1718.193226] print_req_error: 24 callbacks suppressed
+[ 1718.193239] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1718.337950] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1718.337961] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1718.339402] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1718.339414] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1732.551424] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1732.694059] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1732.694070] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+[ 1732.695793] print_req_error: I/O error, dev mtdblock0, sector 208
+[ 1732.695806] Buffer I/O error on dev mtdblock0, logical block 26, async page read
+root@root:/$ root@root:/$ dmesg[Jroot@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=2
+18k[J onv=noerror,syncconv=noerror,sync[16Donv=noerror,sync
+dd: /dev/mtdblock0: Input/output error
+dd: /dev/mtdblock0: Input/output error
+597+5 records in
+602+0 records out
+134385664 bytes (128.2MB) copied, 72.807695 seconds, 1.8MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock0.bin bs=2
+18k conv=noerror,sync[J[1A[79C0.bin bs=21
+8k conv=noerror,sync[J[1A[69C0.bin bs=218
+k conv=noerror,sync[J[1A[69Ck.bin bs=21
+8k conv=noerror,sync[1A[70C1.bin bs=2
+18k conv=noerror,sync[1A[71Cmtdblock0 of=/mnt/sdcard/uniview/bins/mtdblock1.bin bs=21
+8k conv=noerror,sync[J[1A[32C1 of=/mnt/sdcard/uniview/bins/mtdblock1.bin bs=2
+18k conv=noerror,sync[1A[33C of=/mnt/sdcard/uniview/bins/mtdblock1.bin bs=2
+18k conv=noerror,sync
+dd: /dev/mtdblock1: Input/output error
+3+3 records in
+6+0 records out
+1339392 bytes (1.3MB) copied, 0.617746 seconds, 2.1MB/s
+root@root:/$ root@root:/$ dd if=/dev/mtdblock1 of=/mnt/sdcard/uniview/bins/mtdblock1.bin bs=2
+18k conv=noerror,sync[J[1A[79Cmtdblock12.bin bs=
+218k conv=noerror,sync[1A[72C2 of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=218k conv=noerror,sync[1A[34C of=/mnt/sdcard/uniview/bins/mtdblock12.bin bs
+=218k conv=noerror,sync
+dd: /dev/mtdblock12: Input/output error
+439+3 records in
+442+0 records out
+98668544 bytes (94.1MB) copied, 53.504495 seconds, 1.8MB/s
+root@root:/$ ls /mntsd[J]/[J[J[J/sdroot@root:/$ ls /mnt/sdcard/[Junroot@root:/$ ls /mnt/sdcard/uniview/[J
+[1;34mbins[m  [1;34mfs[m
+root@root:/$ ls[J[Jcd [J[J[J[H[Jroot@root:/$ [Jls
+[1;34mbin[m          [1;34mdev[m          [1;34mlib[m          [1;36mopt[m          [1;34msbin[m         [1;34mvar[m
+[1;34mcalibration[m  [1;34metc[m          [1;36mlib64[m        [1;34mproc[m         [1;34msys[m          [1;36mwww[m
+[1;34mcfgbak[m       [1;34mhome[m         [1;36mlinuxrc[m      [1;34mprogram[m      [1;34mtmp[m
+[1;34mconfig[m       [1;36minit[m         [1;34mmnt[m          [1;34mroot[m         [1;34musr[m
+root@root:/$ 

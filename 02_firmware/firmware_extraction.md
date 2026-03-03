@@ -25,7 +25,37 @@ tmpfs                    52.1M    132.0K     52.0M   0% /etc
 
 ## Approach
 
-```
-root@root:/proc$ dd if=/dev/mtd0 of=/mnt/sdcard/uniview_full_fw.bin bs=4096
+### Live Filesystem Copy
 
+The primary extraction method was simply using root shell access and the mounted sdcard to copy the runtime filesystem directly from the live device using `cp -rP` on
+all mounted partitions:
+
+```bas
+cp -rP /program/ /mnt/sdcard/
+cp -rP /config/ /mnt/sdcard/
+cp -rP /cfgbak/ /mnt/sdcard/
+cp -rP /calibration/ /mnt/sdcard/
+cp -rP /etc/ /mnt/sdcard/
+cp -rP /tmp /mnt/sdcard/
+cp -rP /var /mnt/sdcard/
+cp -rP /lib /mnt/sdcard/
+cp -rP /bin /mnt/sdcard/
+cp -rP /sbin /mnt/sdcard/
+cp -rP /usr /mnt/sdcard/
 ```
+
+This leverages the UBI layer's transparent bad block remapping, producing a clean and complete copy of each partitions's content as seen at runtime.
+
+### Raw MTD Dump
+
+A dump of the raw MTD block devices was also obtained using `dd conv=noerror,sync` for archival purposes. Offline UBIFS extraction from these images did not yield usable results.
+
+```bash
+dd if=/dev/mtd0 of=/mnt/sdcard/uniview_full_fw.bin bs=131072 conv=noerror,sync
+dd if=/dev/mtd12 of=/mnt/sdcard/uniview_program_flash.bin bs=131072 conv=noerror,sync
+```
+
+## Preqrequisites
+
+- Root shell on line firmware (see shell_escape.md)
+- microSD card with sufficient free space
