@@ -1,12 +1,13 @@
 #!/bin/sh
 
-# the S11init and S30ambrwfs scripts gave us these commands
+# S11init - Setup Directories and Devices
 mkdir -p /dev/shm
 mkdir -p /dev/pts
 mount -a
 
 /sbin/mdev -s
 
+#S30ambrwfs - Mounting Program Partition
 MtdNum=$(cat /proc/mtd | grep "program" | awk '{print $1}' | sed -e s/mtd// | sed -e s/\://)
 UbiNum=0
 BabReserved=16
